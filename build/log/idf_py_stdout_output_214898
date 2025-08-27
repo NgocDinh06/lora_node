@@ -1,0 +1,639 @@
+[1/71] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[2/71] Performing build step for 'bootloader'
+[1/1] cd /home/thefee/esp-idf/esp32-http-relay/build/bootloader/esp-idf/esptool_py && /home/thefee/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/thefee/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/thefee/esp-idf/esp32-http-relay/build/bootloader/bootloader.bin
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[3/69] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lora_TX.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/lora_TX.c.obj 
+/home/thefee/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.2-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/thefee/esp-idf/esp32-http-relay/build/config -I/home/thefee/esp-idf/esp32-http-relay/main -I/home/thefee/esp-idf/components/newlib/platform_include -I/home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/thefee/esp-idf/components/freertos/esp_additions/include/freertos -I/home/thefee/esp-idf/components/freertos/esp_additions/include -I/home/thefee/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/home/thefee/esp-idf/components/esp_hw_support/include -I/home/thefee/esp-idf/components/esp_hw_support/include/soc -I/home/thefee/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/thefee/esp-idf/components/esp_hw_support/port/esp32/. -I/home/thefee/esp-idf/components/esp_hw_support/port/esp32/private_include -I/home/thefee/esp-idf/components/heap/include -I/home/thefee/esp-idf/components/log/include -I/home/thefee/esp-idf/components/soc/include -I/home/thefee/esp-idf/components/soc/esp32 -I/home/thefee/esp-idf/components/soc/esp32/include -I/home/thefee/esp-idf/components/hal/esp32/include -I/home/thefee/esp-idf/components/hal/include -I/home/thefee/esp-idf/components/hal/platform_port/include -I/home/thefee/esp-idf/components/esp_rom/include -I/home/thefee/esp-idf/components/esp_rom/include/esp32 -I/home/thefee/esp-idf/components/esp_rom/esp32 -I/home/thefee/esp-idf/components/esp_common/include -I/home/thefee/esp-idf/components/esp_system/include -I/home/thefee/esp-idf/components/esp_system/port/soc -I/home/thefee/esp-idf/components/esp_system/port/include/private -I/home/thefee/esp-idf/components/xtensa/include -I/home/thefee/esp-idf/components/xtensa/esp32/include -I/home/thefee/esp-idf/components/lwip/include -I/home/thefee/esp-idf/components/lwip/include/apps -I/home/thefee/esp-idf/components/lwip/include/apps/sntp -I/home/thefee/esp-idf/components/lwip/lwip/src/include -I/home/thefee/esp-idf/components/lwip/port/include -I/home/thefee/esp-idf/components/lwip/port/freertos/include -I/home/thefee/esp-idf/components/lwip/port/esp32xx/include -I/home/thefee/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/thefee/esp-idf/components/esp_ringbuf/include -I/home/thefee/esp-idf/components/efuse/include -I/home/thefee/esp-idf/components/efuse/esp32/include -I/home/thefee/esp-idf/components/driver/include -I/home/thefee/esp-idf/components/driver/deprecated -I/home/thefee/esp-idf/components/driver/analog_comparator/include -I/home/thefee/esp-idf/components/driver/dac/include -I/home/thefee/esp-idf/components/driver/gpio/include -I/home/thefee/esp-idf/components/driver/gptimer/include -I/home/thefee/esp-idf/components/driver/i2c/include -I/home/thefee/esp-idf/components/driver/i2s/include -I/home/thefee/esp-idf/components/driver/ledc/include -I/home/thefee/esp-idf/components/driver/mcpwm/include -I/home/thefee/esp-idf/components/driver/parlio/include -I/home/thefee/esp-idf/components/driver/pcnt/include -I/home/thefee/esp-idf/components/driver/rmt/include -I/home/thefee/esp-idf/components/driver/sdio_slave/include -I/home/thefee/esp-idf/components/driver/sdmmc/include -I/home/thefee/esp-idf/components/driver/sigma_delta/include -I/home/thefee/esp-idf/components/driver/spi/include -I/home/thefee/esp-idf/components/driver/temperature_sensor/include -I/home/thefee/esp-idf/components/driver/touch_sensor/include -I/home/thefee/esp-idf/components/driver/twai/include -I/home/thefee/esp-idf/components/driver/uart/include -I/home/thefee/esp-idf/components/driver/usb_serial_jtag/include -I/home/thefee/esp-idf/components/driver/touch_sensor/esp32/include -I/home/thefee/esp-idf/components/esp_pm/include -I/home/thefee/esp-idf/components/mbedtls/port/include -I/home/thefee/esp-idf/components/mbedtls/mbedtls/include -I/home/thefee/esp-idf/components/mbedtls/mbedtls/library -I/home/thefee/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/thefee/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/thefee/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/thefee/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/thefee/esp-idf/components/esp_app_format/include -I/home/thefee/esp-idf/components/bootloader_support/include -I/home/thefee/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/thefee/esp-idf/components/esp_partition/include -I/home/thefee/esp-idf/components/app_update/include -I/home/thefee/esp-idf/components/esp_mm/include -I/home/thefee/esp-idf/components/spi_flash/include -I/home/thefee/esp-idf/components/pthread/include -I/home/thefee/esp-idf/components/esp_timer/include -I/home/thefee/esp-idf/components/app_trace/include -I/home/thefee/esp-idf/components/esp_event/include -I/home/thefee/esp-idf/components/nvs_flash/include -I/home/thefee/esp-idf/components/esp_phy/include -I/home/thefee/esp-idf/components/esp_phy/esp32/include -I/home/thefee/esp-idf/components/vfs/include -I/home/thefee/esp-idf/components/esp_netif/include -I/home/thefee/esp-idf/components/wpa_supplicant/include -I/home/thefee/esp-idf/components/wpa_supplicant/port/include -I/home/thefee/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/thefee/esp-idf/components/esp_coex/include -I/home/thefee/esp-idf/components/esp_wifi/include -I/home/thefee/esp-idf/components/esp_wifi/wifi_apps/include -I/home/thefee/esp-idf/components/unity/include -I/home/thefee/esp-idf/components/unity/unity/src -I/home/thefee/esp-idf/components/cmock/CMock/src -I/home/thefee/esp-idf/components/console -I/home/thefee/esp-idf/components/http_parser -I/home/thefee/esp-idf/components/esp-tls -I/home/thefee/esp-idf/components/esp-tls/esp-tls-crypto -I/home/thefee/esp-idf/components/esp_adc/include -I/home/thefee/esp-idf/components/esp_adc/interface -I/home/thefee/esp-idf/components/esp_adc/esp32/include -I/home/thefee/esp-idf/components/esp_adc/deprecated/include -I/home/thefee/esp-idf/components/esp_eth/include -I/home/thefee/esp-idf/components/esp_gdbstub/include -I/home/thefee/esp-idf/components/esp_hid/include -I/home/thefee/esp-idf/components/tcp_transport/include -I/home/thefee/esp-idf/components/esp_http_client/include -I/home/thefee/esp-idf/components/esp_http_server/include -I/home/thefee/esp-idf/components/esp_https_ota/include -I/home/thefee/esp-idf/components/esp_psram/include -I/home/thefee/esp-idf/components/esp_lcd/include -I/home/thefee/esp-idf/components/esp_lcd/interface -I/home/thefee/esp-idf/components/protobuf-c/protobuf-c -I/home/thefee/esp-idf/components/protocomm/include/common -I/home/thefee/esp-idf/components/protocomm/include/security -I/home/thefee/esp-idf/components/protocomm/include/transports -I/home/thefee/esp-idf/components/esp_local_ctrl/include -I/home/thefee/esp-idf/components/espcoredump/include -I/home/thefee/esp-idf/components/espcoredump/include/port/xtensa -I/home/thefee/esp-idf/components/wear_levelling/include -I/home/thefee/esp-idf/components/sdmmc/include -I/home/thefee/esp-idf/components/fatfs/diskio -I/home/thefee/esp-idf/components/fatfs/vfs -I/home/thefee/esp-idf/components/fatfs/src -I/home/thefee/esp-idf/components/idf_test/include -I/home/thefee/esp-idf/components/idf_test/include/esp32 -I/home/thefee/esp-idf/components/ieee802154/include -I/home/thefee/esp-idf/components/json/cJSON -I/home/thefee/esp-idf/components/mqtt/esp-mqtt/include -I/home/thefee/esp-idf/components/perfmon/include -I/home/thefee/esp-idf/components/spiffs/include -I/home/thefee/esp-idf/components/wifi_provisioning/include -I/home/thefee/esp-idf/esp32-http-relay/components/radio_lib -I/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src -mlongcalls -Wno-frame-address  -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/thefee/esp-idf/esp32-http-relay=. -fmacro-prefix-map=/home/thefee/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/lora_TX.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/lora_TX.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/lora_TX.c.obj -c /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/Module.h:5,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:46,
+                 from /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:685:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/Hal.h:16:1: error: unknown type name 'class'
+   16 | class RadioLibHal {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/Hal.h:16:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   16 | class RadioLibHal {
+      |                   ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/Module.h:6:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/utils/Utils.h:36:86: error: expected ';', ',' or ')' before '=' token
+   36 | void rlb_hexdump(const char* level, const uint8_t* data, size_t len, uint32_t offset = 0, uint8_t width = 1, bool be = false);
+      |                                                                                      ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/Module.h:73:1: error: unknown type name 'class'
+   73 | class Module {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/Module.h:73:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   73 | class Module {
+      |              ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/CC1101.h:7,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:76:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:76:3: error: unknown type name 'LoRaRate_t'
+   76 |   LoRaRate_t lora;
+      |   ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:79:3: error: unknown type name 'FSKRate_t'
+   79 |   FSKRate_t fsk;
+      |   ^~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:82:3: error: unknown type name 'LrFhssRate_t'
+   82 |   LrFhssRate_t lrFhss;
+      |   ^~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:127:3: error: unknown type name 'CADScanConfig_t'
+  127 |   CADScanConfig_t cad;
+      |   ^~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:130:3: error: unknown type name 'RSSIScanConfig_t'
+  130 |   RSSIScanConfig_t rssi;
+      |   ^~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:170:3: error: unknown type name 'StandbyConfig_t'
+  170 |   StandbyConfig_t standby;
+      |   ^~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:173:3: error: unknown type name 'ReceiveConfig_t'
+  173 |   ReceiveConfig_t receive;
+      |   ^~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:176:3: error: unknown type name 'TransmitConfig_t'
+  176 |   TransmitConfig_t transmit;
+      |   ^~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:179:3: error: unknown type name 'ChannelScanConfig_t'
+  179 |   ChannelScanConfig_t scan;
+      |   ^~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:182:3: error: unknown type name 'SleepConfig_t'
+  182 |   SleepConfig_t sleep;
+      |   ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:216:1: error: unknown type name 'class'
+  216 | class PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/../../protocols/PhysicalLayer/PhysicalLayer.h:216:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  216 | class PhysicalLayer {
+      |                     ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/CC1101.h:529:1: error: unknown type name 'class'
+  529 | class CC1101: public PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/CC1101/CC1101.h:529:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  529 | class CC1101: public PhysicalLayer {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/SX126x.h:11,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/SX1262.h:9,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/LLCC68.h:9,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:77:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/../../utils/FEC.h:23:1: error: unknown type name 'class'
+   23 | class RadioLibBCH {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/../../utils/FEC.h:23:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   23 | class RadioLibBCH {
+      |                   ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/../../utils/FEC.h:69:8: error: unknown type name 'RadioLibBCH'
+   69 | extern RadioLibBCH RadioLibBCHInstance;
+      |        ^~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/../../utils/FEC.h:110:1: error: unknown type name 'class'
+  110 | class RadioLibConvCode {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/../../utils/FEC.h:110:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  110 | class RadioLibConvCode {
+      |                        ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/../../utils/FEC.h:152:8: error: unknown type name 'RadioLibConvCode'
+  152 | extern RadioLibConvCode RadioLibConvCodeInstance;
+      |        ^~~~~~~~~~~~~~~~
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/SX126x.h:12:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/../../utils/CRC.h:16:1: error: unknown type name 'class'
+   16 | class RadioLibCRC {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/../../utils/CRC.h:16:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   16 | class RadioLibCRC {
+      |                   ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/../../utils/CRC.h:63:8: error: unknown type name 'RadioLibCRC'
+   63 | extern RadioLibCRC RadioLibCRCInstance;
+      |        ^~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/SX126x.h:475:1: error: unknown type name 'class'
+  475 | class SX126x: public PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/SX126x.h:475:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  475 | class SX126x: public PhysicalLayer {
+      |             ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/SX1262.h:22:1: error: unknown type name 'class'
+   22 | class SX1262: public SX126x {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/SX1262.h:22:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   22 | class SX1262: public SX126x {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/LLCC68.h:10:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/SX1261.h:22:1: error: unknown type name 'class'
+   22 | class SX1261 : public SX1262 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/../SX126x/SX1261.h:22:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   22 | class SX1261 : public SX1262 {
+      |              ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/LLCC68.h:19:1: error: unknown type name 'class'
+   19 | class LLCC68: public SX1262 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LLCC68/LLCC68.h:19:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   19 | class LLCC68: public SX1262 {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR1110.h:9,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:78:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR11x0.h:703:30: error: expected identifier or '(' before ':' token
+  703 | struct LR11x0WifiResultFull_t: public LR11x0WifiResult_t {
+      |                              ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR11x0.h:733:34: error: expected identifier or '(' before ':' token
+  733 | struct LR11x0WifiResultExtended_t: public LR11x0WifiResultFull_t {
+      |                                  ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR11x0.h:869:3: error: unknown type name 'LR11x0GnssAlmanacStatusPart_t'
+  869 |   LR11x0GnssAlmanacStatusPart_t gps;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR11x0.h:872:3: error: unknown type name 'LR11x0GnssAlmanacStatusPart_t'
+  872 |   LR11x0GnssAlmanacStatusPart_t beidou;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR11x0.h:889:1: error: unknown type name 'class'
+  889 | class LR11x0: public PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR11x0.h:889:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  889 | class LR11x0: public PhysicalLayer {
+      |             ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR1110.h:15:1: error: unknown type name 'class'
+   15 | class LR1110: public LR11x0 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR1110.h:15:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   15 | class LR1110: public LR11x0 {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:79:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR1120.h:15:1: error: unknown type name 'class'
+   15 | class LR1120: public LR11x0 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR1120.h:15:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   15 | class LR1120: public LR11x0 {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:80:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR1121.h:16:1: error: unknown type name 'class'
+   16 | class LR1121: public LR1120 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/LR11x0/LR1121.h:16:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   16 | class LR1121: public LR1120 {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:81:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/nRF24/nRF24.h:186:1: error: unknown type name 'class'
+  186 | class nRF24: public PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/nRF24/nRF24.h:186:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  186 | class nRF24: public PhysicalLayer {
+      |            ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:82:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RF69/RF69.h:479:1: error: unknown type name 'class'
+  479 | class RF69: public PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RF69/RF69.h:479:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  479 | class RF69: public PhysicalLayer {
+      |           ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/RFM22.h:9,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:83:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/../Si443x/Si443x.h:553:1: error: unknown type name 'class'
+  553 | class Si443x: public PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/../Si443x/Si443x.h:553:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  553 | class Si443x: public PhysicalLayer {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/RFM22.h:10:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/../Si443x/Si4432.h:15:1: error: unknown type name 'class'
+   15 | class Si4432: public Si443x {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/../Si443x/Si4432.h:15:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   15 | class Si4432: public Si443x {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/TypeDef.h:6,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:45:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:55: error: unknown type name 'using'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                       ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/RFM22.h:16:1: note: in expansion of macro 'RADIOLIB_TYPE_ALIAS'
+   16 | RADIOLIB_TYPE_ALIAS(Si4432, RFM22)
+      | ^~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/RFM22.h:16:21: error: 'Si4432' undeclared here (not in a function)
+   16 | RADIOLIB_TYPE_ALIAS(Si4432, RFM22)
+      |                     ^~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:69: note: in definition of macro 'RADIOLIB_TYPE_ALIAS'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                                     ^~~~
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/RFM23.h:10,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:84:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/../Si443x/Si4431.h:15:1: error: unknown type name 'class'
+   15 | class Si4431: public Si4432 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/../Si443x/Si4431.h:15:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   15 | class Si4431: public Si4432 {
+      |             ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:55: error: unknown type name 'using'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                       ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/RFM23.h:16:1: note: in expansion of macro 'RADIOLIB_TYPE_ALIAS'
+   16 | RADIOLIB_TYPE_ALIAS(Si4431, RFM23)
+      | ^~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/RFM2x/RFM23.h:16:21: error: 'Si4431' undeclared here (not in a function)
+   16 | RADIOLIB_TYPE_ALIAS(Si4431, RFM23)
+      |                     ^~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:69: note: in definition of macro 'RADIOLIB_TYPE_ALIAS'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                                     ^~~~
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:85:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/Si443x/Si4430.h:15:1: error: unknown type name 'class'
+   15 | class Si4430: public Si4432 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/Si443x/Si4430.h:15:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   15 | class Si4430: public Si4432 {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:88:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX123x/SX1231.h:94:1: error: unknown type name 'class'
+   94 | class SX1231: public RF69  {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX123x/SX1231.h:94:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   94 | class SX1231: public RF69  {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:89:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX123x/SX1233.h:23:1: error: unknown type name 'class'
+   23 | class SX1233: public SX1231  {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX123x/SX1233.h:23:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   23 | class SX1233: public SX1231  {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:92:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX126x/SX1268.h:21:1: error: unknown type name 'class'
+   21 | class SX1268: public SX126x {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX126x/SX1268.h:21:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   21 | class SX1268: public SX126x {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1272.h:9,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:94:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX127x.h:583:1: error: unknown type name 'class'
+  583 | class SX127x: public PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX127x.h:583:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  583 | class SX127x: public PhysicalLayer {
+      |             ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1272.h:94:1: error: unknown type name 'class'
+   94 | class SX1272: public SX127x {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1272.h:94:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   94 | class SX1272: public SX127x {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:95:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1273.h:14:1: error: unknown type name 'class'
+   14 | class SX1273: public SX1272 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1273.h:14:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   14 | class SX1273: public SX1272 {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1276.h:8,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:96:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1278.h:105:1: error: unknown type name 'class'
+  105 | class SX1278: public SX127x {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1278.h:105:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  105 | class SX1278: public SX127x {
+      |             ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:55: error: unknown type name 'using'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                       ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1278.h:348:1: note: in expansion of macro 'RADIOLIB_TYPE_ALIAS'
+  348 | RADIOLIB_TYPE_ALIAS(SX1278, RFM98)
+      | ^~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1278.h:348:21: error: 'SX1278' undeclared here (not in a function)
+  348 | RADIOLIB_TYPE_ALIAS(SX1278, RFM98)
+      |                     ^~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:69: note: in definition of macro 'RADIOLIB_TYPE_ALIAS'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                                     ^~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1276.h:14:1: error: unknown type name 'class'
+   14 | class SX1276: public SX1278 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1276.h:14:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   14 | class SX1276: public SX1278 {
+      |             ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:55: error: unknown type name 'using'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                       ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1276.h:84:1: note: in expansion of macro 'RADIOLIB_TYPE_ALIAS'
+   84 | RADIOLIB_TYPE_ALIAS(SX1276, RFM95)
+      | ^~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1276.h:84:21: error: 'SX1276' undeclared here (not in a function)
+   84 | RADIOLIB_TYPE_ALIAS(SX1276, RFM95)
+      |                     ^~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:69: note: in definition of macro 'RADIOLIB_TYPE_ALIAS'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                                     ^~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:55: error: unknown type name 'using'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                       ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1276.h:90:1: note: in expansion of macro 'RADIOLIB_TYPE_ALIAS'
+   90 | RADIOLIB_TYPE_ALIAS(SX1276, RFM96)
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:97:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1277.h:14:1: error: unknown type name 'class'
+   14 | class SX1277: public SX1278 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1277.h:14:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   14 | class SX1277: public SX1278 {
+      |             ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:55: error: unknown type name 'using'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                       ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1277.h:105:1: note: in expansion of macro 'RADIOLIB_TYPE_ALIAS'
+  105 | RADIOLIB_TYPE_ALIAS(SX1277, RFM97)
+      | ^~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1277.h:105:21: error: 'SX1277' undeclared here (not in a function)
+  105 | RADIOLIB_TYPE_ALIAS(SX1277, RFM97)
+      |                     ^~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/BuildOpt.h:452:69: note: in definition of macro 'RADIOLIB_TYPE_ALIAS'
+  452 |   #define RADIOLIB_TYPE_ALIAS(type, alias)            using alias = type;
+      |                                                                     ^~~~
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:99:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1279.h:14:1: error: unknown type name 'class'
+   14 | class SX1279: public SX1278 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX127x/SX1279.h:14:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   14 | class SX1279: public SX1278 {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX1280.h:9,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:100:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX128x.h:351:1: error: unknown type name 'class'
+  351 | class SX128x: public PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX128x.h:351:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  351 | class SX128x: public PhysicalLayer {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX1280.h:10:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX1281.h:15:1: error: unknown type name 'class'
+   15 | class SX1281: public SX128x {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX1281.h:15:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   15 | class SX1281: public SX128x {
+      |             ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX1280.h:16:1: error: unknown type name 'class'
+   16 | class SX1280: public SX1281 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX1280.h:16:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   16 | class SX1280: public SX1281 {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:102:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX1282.h:16:1: error: unknown type name 'class'
+   16 | class SX1282: public SX1280 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/modules/SX128x/SX1282.h:16:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   16 | class SX1282: public SX1280 {
+      |             ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:106:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AFSK/AFSK.h:16:1: error: unknown type name 'class'
+   16 | class AFSKClient  {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AFSK/AFSK.h:16:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   16 | class AFSKClient  {
+      |                   ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/../BellModem/../Print/Print.h:6,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/../BellModem/BellModem.h:11,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/AX25.h:10,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:107:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/../BellModem/../Print/ITA2String.h:24:1: error: unknown type name 'class'
+   24 | class ITA2String {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/../BellModem/../Print/ITA2String.h:24:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   24 | class ITA2String {
+      |                  ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/../BellModem/../Print/Print.h:17:1: error: unknown type name 'class'
+   17 | class RadioLibPrint {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/../BellModem/../Print/Print.h:17:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   17 | class RadioLibPrint {
+      |                     ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/../BellModem/BellModem.h:54:1: error: unknown type name 'class'
+   54 | class BellClient: public AFSKClient, public RadioLibPrint {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/../BellModem/BellModem.h:54:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   54 | class BellClient: public AFSKClient, public RadioLibPrint {
+      |                 ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/AX25.h:71:1: error: unknown type name 'class'
+   71 | class AX25Frame {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/AX25.h:71:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   71 | class AX25Frame {
+      |                 ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/AX25.h:233:1: error: unknown type name 'class'
+  233 | class AX25Client {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/AX25/AX25.h:233:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  233 | class AX25Client {
+      |                  ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:108:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/Hellschreiber/Hellschreiber.h:90:1: error: unknown type name 'class'
+   90 | class HellClient: public RadioLibPrint {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/Hellschreiber/Hellschreiber.h:90:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   90 | class HellClient: public RadioLibPrint {
+      |                 ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:109:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/Morse/Morse.h:94:1: error: unknown type name 'class'
+   94 | class MorseClient: public RadioLibPrint {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/Morse/Morse.h:94:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   94 | class MorseClient: public RadioLibPrint {
+      |                  ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:110:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/Pager/Pager.h:62:1: error: unknown type name 'class'
+   62 | class PagerClient {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/Pager/Pager.h:62:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   62 | class PagerClient {
+      |                   ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:111:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/RTTY/RTTY.h:17:1: error: unknown type name 'class'
+   17 | class RTTYClient: public RadioLibPrint {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/RTTY/RTTY.h:17:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   17 | class RTTYClient: public RadioLibPrint {
+      |                 ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:112:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:101:3: error: unknown type name 'tone_t'
+  101 |   tone_t tones[9];
+      |   ^~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:105:14: error: unknown type name 'SSTVMode_t'
+  105 | extern const SSTVMode_t Scottie1;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:106:14: error: unknown type name 'SSTVMode_t'
+  106 | extern const SSTVMode_t Scottie2;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:107:14: error: unknown type name 'SSTVMode_t'
+  107 | extern const SSTVMode_t ScottieDX;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:108:14: error: unknown type name 'SSTVMode_t'
+  108 | extern const SSTVMode_t Martin1;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:109:14: error: unknown type name 'SSTVMode_t'
+  109 | extern const SSTVMode_t Martin2;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:110:14: error: unknown type name 'SSTVMode_t'
+  110 | extern const SSTVMode_t Wrasse;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:111:14: error: unknown type name 'SSTVMode_t'
+  111 | extern const SSTVMode_t PasokonP3;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:112:14: error: unknown type name 'SSTVMode_t'
+  112 | extern const SSTVMode_t PasokonP5;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:113:14: error: unknown type name 'SSTVMode_t'
+  113 | extern const SSTVMode_t PasokonP7;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:114:14: error: unknown type name 'SSTVMode_t'
+  114 | extern const SSTVMode_t Robot36;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:115:14: error: unknown type name 'SSTVMode_t'
+  115 | extern const SSTVMode_t Robot72;
+      |              ^~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:121:1: error: unknown type name 'class'
+  121 | class SSTVClient {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/SSTV/SSTV.h:121:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  121 | class SSTVClient {
+      |                  ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:113:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/FSK4/FSK4.h:15:1: error: unknown type name 'class'
+   15 | class FSK4Client {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/FSK4/FSK4.h:15:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   15 | class FSK4Client {
+      |                  ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:114:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/APRS/APRS.h:85:1: error: unknown type name 'class'
+   85 | class APRSClient {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/APRS/APRS.h:85:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   85 | class APRSClient {
+      |                  ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:115:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/ExternalRadio/ExternalRadio.h:13:1: error: unknown type name 'class'
+   13 | class ExternalRadio: public PhysicalLayer {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/ExternalRadio/ExternalRadio.h:13:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   13 | class ExternalRadio: public PhysicalLayer {
+      |                    ^
+In file included from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:6,
+                 from /home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/RadioLib.h:118:
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/../../utils/Cryptography.h:97:1: error: unknown type name 'class'
+   97 | class RadioLibAES128 {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/../../utils/Cryptography.h:97:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   97 | class RadioLibAES128 {
+      |                      ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/../../utils/Cryptography.h:172:8: error: unknown type name 'RadioLibAES128'
+  172 | extern RadioLibAES128 RadioLibAES128Instance;
+      |        ^~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:260:1: error: unknown type name 'constexpr'
+  260 | constexpr LoRaWANMacCommand_t MacTable[RADIOLIB_LORAWAN_NUM_MAC_COMMANDS] = {
+      | ^~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:260:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'MacTable'
+  260 | constexpr LoRaWANMacCommand_t MacTable[RADIOLIB_LORAWAN_NUM_MAC_COMMANDS] = {
+      |                               ^~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:307:1: error: unknown type name 'constexpr'
+  307 | constexpr LoRaWANPackage_t PackageTable[RADIOLIB_LORAWAN_NUM_SUPPORTED_PACKAGES] = {
+      | ^~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:307:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PackageTable'
+  307 | constexpr LoRaWANPackage_t PackageTable[RADIOLIB_LORAWAN_NUM_SUPPORTED_PACKAGES] = {
+      |                            ^~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:468:3: error: unknown type name 'LoRaWANChannel_t'
+  468 |   LoRaWANChannel_t txFreqs[3];
+      |   ^~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:474:3: error: unknown type name 'LoRaWANChannelSpan_t'
+  474 |   LoRaWANChannelSpan_t txSpans[2];
+      |   ^~~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:477:3: error: unknown type name 'LoRaWANChannelSpan_t'
+  477 |   LoRaWANChannelSpan_t rx1Span;
+      |   ^~~~~~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:482:3: error: unknown type name 'LoRaWANChannel_t'
+  482 |   LoRaWANChannel_t rx2;
+      |   ^~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:485:3: error: unknown type name 'LoRaWANChannel_t'
+  485 |   LoRaWANChannel_t txWoR[2];
+      |   ^~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:488:3: error: unknown type name 'LoRaWANChannel_t'
+  488 |   LoRaWANChannel_t txAck[2];
+      |   ^~~~~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:495:14: error: unknown type name 'LoRaWANBand_t'
+  495 | extern const LoRaWANBand_t EU868;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:496:14: error: unknown type name 'LoRaWANBand_t'
+  496 | extern const LoRaWANBand_t US915;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:497:14: error: unknown type name 'LoRaWANBand_t'
+  497 | extern const LoRaWANBand_t EU433;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:498:14: error: unknown type name 'LoRaWANBand_t'
+  498 | extern const LoRaWANBand_t AU915;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:499:14: error: unknown type name 'LoRaWANBand_t'
+  499 | extern const LoRaWANBand_t CN470;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:500:14: error: unknown type name 'LoRaWANBand_t'
+  500 | extern const LoRaWANBand_t AS923;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:501:14: error: unknown type name 'LoRaWANBand_t'
+  501 | extern const LoRaWANBand_t AS923_2;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:502:14: error: unknown type name 'LoRaWANBand_t'
+  502 | extern const LoRaWANBand_t AS923_3;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:503:14: error: unknown type name 'LoRaWANBand_t'
+  503 | extern const LoRaWANBand_t AS923_4;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:504:14: error: unknown type name 'LoRaWANBand_t'
+  504 | extern const LoRaWANBand_t KR920;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:505:14: error: unknown type name 'LoRaWANBand_t'
+  505 | extern const LoRaWANBand_t IN865;
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:530:14: error: unknown type name 'LoRaWANBand_t'
+  530 | extern const LoRaWANBand_t* LoRaWANBands[];
+      |              ^~~~~~~~~~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:538:19: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+  538 |   bool newSession = false;
+      |                   ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:591:1: error: unknown type name 'class'
+  591 | class LoRaWANNode {
+      | ^~~~~
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:591:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  591 | class LoRaWANNode {
+      |                   ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:1266:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ 1266 | template<typename T>
+      |         ^
+/home/thefee/esp-idf/esp32-http-relay/components/radio_lib/src/protocols/LoRaWAN/LoRaWAN.h:1280:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ 1280 | template<typename T>
+      |         ^
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:697:1: error: unknown type name 'Module'
+  697 | Module* mod;
+      | ^~~~~~
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:698:1: error: unknown type name 'SX1278'
+  698 | SX1278* radio;
+      | ^~~~~~
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c: In function 'lora_init':
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:730:11: error: 'new' undeclared (first use in this function)
+  730 |     mod = new Module(LORA_CS, LORA_DIO0, 18, 23);  // CS, DIO0, SCK, MOSI
+      |           ^~~
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:730:11: note: each undeclared identifier is reported only once for each function it appears in
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:730:14: error: expected ';' before 'Module'
+  730 |     mod = new Module(LORA_CS, LORA_DIO0, 18, 23);  // CS, DIO0, SCK, MOSI
+      |              ^~~~~~~
+      |              ;
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:731:16: error: expected ';' before 'SX1278'
+  731 |     radio = new SX1278(*mod);
+      |                ^~~~~~~
+      |                ;
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:732:22: error: request for member 'begin' in something not a structure or union
+  732 |     int state = radio->begin(470.0, 125.0, 10, 7, 20, 8);  // Freq, BW, SF, CR, Pwr, PRlen
+      |                      ^~
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c: In function 'lora_send_packet':
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:791:25: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  791 |     if (sequence_number > 255) sequence_number = 0;
+      |                         ^
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c: In function 'lora_receive_ack':
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:840:25: error: request for member 'getRSSI' in something not a structure or union
+  840 |         int rssi = radio->getRSSI();  // Đọc RSSI từ ACK
+      |                         ^~
+[4/69] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp32-http-relay.c.obj
+/home/thefee/esp-idf/esp32-http-relay/main/esp32-http-relay.c: In function 'wifi_init_sta':
+/home/thefee/esp-idf/esp32-http-relay/main/esp32-http-relay.c:129:17: warning: unused variable 'bits' [-Wunused-variable]
+  129 |     EventBits_t bits;
+      |                 ^~~~
+[5/69] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/LR11x0/LR11x0_gnss.cpp.obj
+ninja: build stopped: subcommand failed.

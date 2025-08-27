@@ -1,0 +1,182 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0af30h ( 44848) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001af58 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d1cc vaddr=40080000 size=02e4ch ( 11852) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=163d0h ( 91088) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000363f8 vaddr=40082e4c size=0a9e0h ( 43488) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (223) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (233) cpu_start: App version:      v5.1.2[0m
+[0;32mI (238) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (244) cpu_start: ELF file SHA256:  3c4022c2444ea7af...[0m
+[0;32mI (250) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (255) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (264) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (269) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (309) spi_flash: detected chip: generic[0m
+[0;32mI (312) spi_flash: flash io: dio[0m
+[0;33mW (316) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (330) app_start: Starting scheduler on CPU0[0m
+[0;32mI (334) app_start: Starting scheduler on CPU1[0m
+[0;32mI (334) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (454) LORA_TX: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (7724) LORA_TX: Hết thời gian chờ ACK cho STT: 0[0m
+[0;31mE (7724) LORA_TX: Không nhận được ACK cho gói tin STT: 0[0m
+[0;32mI (9724) LORA_TX: Gửi đến Node 0x02, STT: 1, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (20804) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (20804) LORA_TX: Không nhận được ACK cho gói tin STT: 1[0m
+[0;32mI (22804) LORA_TX: Gửi đến Node 0x02, STT: 2, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (27324) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (27324) LORA_TX: Không nhận được ACK cho gói tin STT: 2[0m
+[0;32mI (29324) LORA_TX: Gửi đến Node 0x02, STT: 3, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (40874) LORA_TX: Hết thời gian chờ ACK cho STT: 3[0m
+[0;31mE (40874) LORA_TX: Không nhận được ACK cho gói tin STT: 3[0m
+[0;32mI (42874) LORA_TX: Gửi đến Node 0x02, STT: 4, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (54024) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (54024) LORA_TX: Không nhận được ACK cho gói tin STT: 4[0m
+[0;32mI (56024) LORA_TX: Gửi đến Node 0x02, STT: 5, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (59844) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (59844) LORA_TX: Không nhận được ACK cho gói tin STT: 5[0m
+[0;32mI (61844) LORA_TX: Gửi đến Node 0x02, STT: 6, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (65764) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (65764) LORA_TX: Không nhận được ACK cho gói tin STT: 6[0m
+[0;32mI (67764) LORA_TX: Gửi đến Node 0x02, STT: 7, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (77094) LORA_TX: Hết thời gian chờ ACK cho STT: 7[0m
+[0;31mE (77094) LORA_TX: Không nhận được ACK cho gói tin STT: 7[0m
+[0;32mI (79094) LORA_TX: Gửi đến Node 0x02, STT: 8, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (94034) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (94034) LORA_TX: Không nhận được ACK cho gói tin STT: 8[0m
+[0;32mI (96034) LORA_TX: Gửi đến Node 0x02, STT: 9, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (104504) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (104504) LORA_TX: Không nhận được ACK cho gói tin STT: 9[0m
+[0;32mI (106504) LORA_TX: Gửi đến Node 0x02, STT: 10, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (131494) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (131494) LORA_TX: Không nhận được ACK cho gói tin STT: 10[0m
+[0;32mI (133494) LORA_TX: Gửi đến Node 0x02, STT: 11, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (154154) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (154154) LORA_TX: Không nhận được ACK cho gói tin STT: 11[0m
+[0;32mI (156154) LORA_TX: Gửi đến Node 0x02, STT: 12, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (161974) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (161974) LORA_TX: Không nhận được ACK cho gói tin STT: 12[0m
+[0;32mI (163974) LORA_TX: Gửi đến Node 0x02, STT: 13, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (170334) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (170334) LORA_TX: Không nhận được ACK cho gói tin STT: 13[0m
+[0;32mI (172334) LORA_TX: Gửi đến Node 0x02, STT: 14, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (175594) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (175594) LORA_TX: Không nhận được ACK cho gói tin STT: 14[0m
+[0;32mI (177594) LORA_TX: Gửi đến Node 0x02, STT: 15, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (184534) LORA_TX: Hết thời gian chờ ACK cho STT: 15[0m
+[0;31mE (184534) LORA_TX: Không nhận được ACK cho gói tin STT: 15[0m
+[0;32mI (186534) LORA_TX: Gửi đến Node 0x02, STT: 16, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (195094) LORA_TX: Hết thời gian chờ ACK cho STT: 16[0m
+[0;31mE (195094) LORA_TX: Không nhận được ACK cho gói tin STT: 16[0m
+[0;32mI (197094) LORA_TX: Gửi đến Node 0x02, STT: 17, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (204054) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (204054) LORA_TX: Không nhận được ACK cho gói tin STT: 17[0m
+[0;32mI (206054) LORA_TX: Gửi đến Node 0x02, STT: 18, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (214064) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (214064) LORA_TX: Không nhận được ACK cho gói tin STT: 18[0m
+[0;32mI (216064) LORA_TX: Gửi đến Node 0x02, STT: 19, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (229334) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (229334) LORA_TX: Không nhận được ACK cho gói tin STT: 19[0m
+[0;32mI (231334) LORA_TX: Gửi đến Node 0x02, STT: 20, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (239734) LORA_TX: Hết thời gian chờ ACK cho STT: 20[0m
+[0;31mE (239734) LORA_TX: Không nhận được ACK cho gói tin STT: 20[0m
+[0;32mI (241734) LORA_TX: Gửi đến Node 0x02, STT: 21, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (258574) LORA_TX: Hết thời gian chờ ACK cho STT: 21[0m
+[0;31mE (258574) LORA_TX: Không nhận được ACK cho gói tin STT: 21[0m
+[0;32mI (260574) LORA_TX: Gửi đến Node 0x02, STT: 22, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (268744) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (268744) LORA_TX: Không nhận được ACK cho gói tin STT: 22[0m
+[0;32mI (270744) LORA_TX: Gửi đến Node 0x02, STT: 23, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (277674) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (277674) LORA_TX: Không nhận được ACK cho gói tin STT: 23[0m
+[0;32mI (279674) LORA_TX: Gửi đến Node 0x02, STT: 24, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (284554) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (284554) LORA_TX: Không nhận được ACK cho gói tin STT: 24[0m
+[0;32mI (286554) LORA_TX: Gửi đến Node 0x02, STT: 25, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (297614) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (297614) LORA_TX: Không nhận được ACK cho gói tin STT: 25[0m
+[0;32mI (299614) LORA_TX: Gửi đến Node 0x02, STT: 26, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (306234) LORA_TX: Hết thời gian chờ ACK cho STT: 26[0m
+[0;31mE (306234) LORA_TX: Không nhận được ACK cho gói tin STT: 26[0m
+[0;32mI (308234) LORA_TX: Gửi đến Node 0x02, STT: 27, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (312154) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (312154) LORA_TX: Không nhận được ACK cho gói tin STT: 27[0m
+[0;32mI (314154) LORA_TX: Gửi đến Node 0x02, STT: 28, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (327694) LORA_TX: Hết thời gian chờ ACK cho STT: 28[0m
+[0;31mE (327694) LORA_TX: Không nhận được ACK cho gói tin STT: 28[0m
+[0;32mI (329694) LORA_TX: Gửi đến Node 0x02, STT: 29, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (336564) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (336564) LORA_TX: Không nhận được ACK cho gói tin STT: 29[0m
+[0;32mI (338564) LORA_TX: Gửi đến Node 0x02, STT: 30, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (365194) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (365194) LORA_TX: Không nhận được ACK cho gói tin STT: 30[0m
+[0;32mI (367194) LORA_TX: Gửi đến Node 0x02, STT: 31, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (372614) LORA_TX: Độ dài ACK không hợp lệ: 204[0m
+[0;31mE (372614) LORA_TX: Không nhận được ACK cho gói tin STT: 31[0m
+[0;32mI (374614) LORA_TX: Gửi đến Node 0x02, STT: 32, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (385184) LORA_TX: Hết thời gian chờ ACK cho STT: 32[0m
+[0;31mE (385184) LORA_TX: Không nhận được ACK cho gói tin STT: 32[0m
+[0;32mI (387184) LORA_TX: Gửi đến Node 0x02, STT: 33, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (397014) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (397014) LORA_TX: Không nhận được ACK cho gói tin STT: 33[0m
+[0;32mI (399014) LORA_TX: Gửi đến Node 0x02, STT: 34, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (405804) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (405804) LORA_TX: Không nhận được ACK cho gói tin STT: 34[0m
+[0;32mI (407804) LORA_TX: Gửi đến Node 0x02, STT: 35, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (415644) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (415644) LORA_TX: Không nhận được ACK cho gói tin STT: 35[0m
+[0;32mI (417644) LORA_TX: Gửi đến Node 0x02, STT: 36, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (428594) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (428594) LORA_TX: Không nhận được ACK cho gói tin STT: 36[0m
+[0;32mI (430594) LORA_TX: Gửi đến Node 0x02, STT: 37, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (436874) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (436874) LORA_TX: Không nhận được ACK cho gói tin STT: 37[0m
+[0;32mI (438874) LORA_TX: Gửi đến Node 0x02, STT: 38, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (450054) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (450054) LORA_TX: Không nhận được ACK cho gói tin STT: 38[0m
+[0;32mI (452054) LORA_TX: Gửi đến Node 0x02, STT: 39, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (454264) LORA_TX: Độ dài ACK không hợp lệ: 0[0m
+[0;31mE (454264) LORA_TX: Không nhận được ACK cho gói tin STT: 39[0m
+[0;32mI (456264) LORA_TX: Gửi đến Node 0x02, STT: 40, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m

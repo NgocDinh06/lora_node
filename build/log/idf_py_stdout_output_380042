@@ -1,0 +1,851 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf60h ( 48992) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001bf88 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001e298 vaddr=40080000 size=01d80h (  7552) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17c7ch ( 97404) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00037ca4 vaddr=40081d80 size=0bfc8h ( 49096) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu up.[0m
+[0;32mI (211) cpu_start: Starting app cpu, entry point is 0x400811f8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (229) cpu_start: Pro cpu start user code[0m
+[0;32mI (229) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (229) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (239) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  3656e3e4e3a3acfc...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (267) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (272) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2BC0 len 0002D440 (181 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008DD48 len 000122B8 (72 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (323) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (337) app_start: Starting scheduler on CPU0[0m
+[0;32mI (342) app_start: Starting scheduler on CPU1[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (352) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (362) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (372) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (382) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (502) NODE_TX: LoRa init done[0m
+[0;32mI (502) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (502) NODE_TX: Send REGISTER[0m
+[0;32mI (502) main_task: Returned from app_main()[0m
+[0;33mW (20802) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (20802) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (21802) NODE_TX: Send REGISTER[0m
+[0;33mW (42092) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (42092) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (43092) NODE_TX: Send REGISTER[0m
+[0;33mW (63382) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (63382) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (64382) NODE_TX: Send REGISTER[0m
+[0;32mI (75612) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (75612) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (75612) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (76612) NODE_TX: Send REGISTER[0m
+[0;33mW (96902) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (96902) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (97902) NODE_TX: Send REGISTER[0m
+[0;32mI (109152) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (109152) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (109152) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (110152) NODE_TX: Send REGISTER[0m
+[0;33mW (130442) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (130442) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (131442) NODE_TX: Send REGISTER[0m
+[0;32mI (144062) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (144062) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (144062) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (145062) NODE_TX: Send REGISTER[0m
+[0;33mW (165352) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (165352) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (166352) NODE_TX: Send REGISTER[0m
+[0;32mI (177612) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (177612) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (177612) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (178612) NODE_TX: Send REGISTER[0m
+[0;33mW (198902) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (198902) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (199902) NODE_TX: Send REGISTER[0m
+[0;32mI (211152) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (211152) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (211152) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (212152) NODE_TX: Send REGISTER[0m
+[0;33mW (232442) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (232442) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (233442) NODE_TX: Send REGISTER[0m
+[0;32mI (244732) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (244732) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (244732) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (245732) NODE_TX: Send REGISTER[0m
+[0;33mW (266022) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (266022) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (267022) NODE_TX: Send REGISTER[0m
+[0;32mI (278462) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (278462) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (278462) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (279472) NODE_TX: Send REGISTER[0m
+[0;33mW (299762) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (299762) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (300762) NODE_TX: Send REGISTER[0m
+[0;32mI (311982) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (311982) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (311982) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (312982) NODE_TX: Send REGISTER[0m
+[0;33mW (333272) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (333272) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (334272) NODE_TX: Send REGISTER[0m
+[0;32mI (345512) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (345512) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (345512) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (346512) NODE_TX: Send REGISTER[0m
+[0;33mW (366802) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (366802) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (367802) NODE_TX: Send REGISTER[0m
+[0;32mI (379102) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (379102) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (379102) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (380102) NODE_TX: Send REGISTER[0m
+[0;33mW (400392) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (400392) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (401392) NODE_TX: Send REGISTER[0m
+[0;32mI (412682) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (412682) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (412682) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (413682) NODE_TX: Send REGISTER[0m
+[0;33mW (433972) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (433972) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (434972) NODE_TX: Send REGISTER[0m
+[0;32mI (446292) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (446292) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (446292) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (447292) NODE_TX: Send REGISTER[0m
+[0;33mW (467582) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (467582) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (468582) NODE_TX: Send REGISTER[0m
+[0;32mI (479832) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (479832) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (479832) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (480832) NODE_TX: Send REGISTER[0m
+[0;33mW (501122) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (501122) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (502122) NODE_TX: Send REGISTER[0m
+[0;32mI (513332) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (513332) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (513332) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (514332) NODE_TX: Send REGISTER[0m
+[0;33mW (534622) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (534622) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (535622) NODE_TX: Send REGISTER[0m
+[0;32mI (548722) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (548722) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (548722) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (549722) NODE_TX: Send REGISTER[0m
+[0;33mW (570012) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (570012) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (571012) NODE_TX: Send REGISTER[0m
+[0;32mI (582242) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (582242) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (582242) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (583242) NODE_TX: Send REGISTER[0m
+[0;33mW (603532) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (603532) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (604532) NODE_TX: Send REGISTER[0m
+[0;32mI (616042) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (616042) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (616042) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (617042) NODE_TX: Send REGISTER[0m
+[0;33mW (637332) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (637332) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (638332) NODE_TX: Send REGISTER[0m
+[0;32mI (649872) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (649872) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (649872) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (650872) NODE_TX: Send REGISTER[0m
+[0;33mW (671162) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (671162) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (672162) NODE_TX: Send REGISTER[0m
+[0;32mI (683422) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (683422) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (683422) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (684422) NODE_TX: Send REGISTER[0m
+[0;33mW (704712) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (704712) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (705712) NODE_TX: Send REGISTER[0m
+[0;32mI (717062) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (717062) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (717062) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (718062) NODE_TX: Send REGISTER[0m
+[0;33mW (738352) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (738352) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (739352) NODE_TX: Send REGISTER[0m
+[0;32mI (750732) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (750732) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (750732) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (751732) NODE_TX: Send REGISTER[0m
+[0;33mW (772022) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (772022) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (773022) NODE_TX: Send REGISTER[0m
+[0;32mI (784352) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (784352) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (784352) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (785352) NODE_TX: Send REGISTER[0m
+[0;33mW (805642) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (805642) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (806642) NODE_TX: Send REGISTER[0m
+[0;32mI (818112) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (818112) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (818112) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (819122) NODE_TX: Send REGISTER[0m
+[0;33mW (839412) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (839412) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (840412) NODE_TX: Send REGISTER[0m
+[0;32mI (851892) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (851892) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (851892) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (852892) NODE_TX: Send REGISTER[0m
+[0;33mW (873182) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (873182) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (874182) NODE_TX: Send REGISTER[0m
+[0;33mW (894472) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (894472) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (895472) NODE_TX: Send REGISTER[0m
+[0;32mI (908322) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (908322) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (908322) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (909332) NODE_TX: Send REGISTER[0m
+[0;33mW (929622) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (929622) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (930622) NODE_TX: Send REGISTER[0m
+[0;32mI (941992) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (941992) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (941992) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (942992) NODE_TX: Send REGISTER[0m
+[0;33mW (963282) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (963282) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (964282) NODE_TX: Send REGISTER[0m
+[0;32mI (975462) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (975462) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (975462) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (976462) NODE_TX: Send REGISTER[0m
+[0;33mW (996752) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (996752) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (997752) NODE_TX: Send REGISTER[0m
+[0;32mI (1009022) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1009022) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1009022) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1010022) NODE_TX: Send REGISTER[0m
+[0;33mW (1030312) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1030312) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1031312) NODE_TX: Send REGISTER[0m
+[0;32mI (1042512) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1042512) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1042512) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1043522) NODE_TX: Send REGISTER[0m
+[0;33mW (1063812) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1063812) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1064812) NODE_TX: Send REGISTER[0m
+[0;32mI (1076512) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1076512) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1076512) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1077522) NODE_TX: Send REGISTER[0m
+[0;33mW (1097812) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1097812) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1098812) NODE_TX: Send REGISTER[0m
+[0;32mI (1113942) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1113942) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1113942) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1114952) NODE_TX: Send REGISTER[0m
+[0;33mW (1135242) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1135242) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1136242) NODE_TX: Send REGISTER[0m
+[0;32mI (1148522) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1148522) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1148522) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1149532) NODE_TX: Send REGISTER[0m
+[0;33mW (1169822) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1169822) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1170822) NODE_TX: Send REGISTER[0m
+[0;32mI (1182082) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1182082) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1182082) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1183092) NODE_TX: Send REGISTER[0m
+[0;33mW (1203382) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1203382) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1204382) NODE_TX: Send REGISTER[0m
+[0;32mI (1215712) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1215712) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1215712) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1216722) NODE_TX: Send REGISTER[0m
+[0;33mW (1237012) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1237012) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1238012) NODE_TX: Send REGISTER[0m
+[0;32mI (1249212) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1249212) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1249212) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1250222) NODE_TX: Send REGISTER[0m
+[0;33mW (1270512) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1270512) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1271512) NODE_TX: Send REGISTER[0m
+[0;32mI (1282792) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1282792) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1282792) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1283802) NODE_TX: Send REGISTER[0m
+[0;33mW (1304092) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1304092) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1305092) NODE_TX: Send REGISTER[0m
+[0;32mI (1316322) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1316322) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1316322) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1317332) NODE_TX: Send REGISTER[0m
+[0;33mW (1337622) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1337622) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1338622) NODE_TX: Send REGISTER[0m
+[0;32mI (1350392) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1350392) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1350392) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1351402) NODE_TX: Send REGISTER[0m
+[0;33mW (1371692) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1371692) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1372692) NODE_TX: Send REGISTER[0m
+[0;32mI (1386242) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1386242) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1386242) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1387252) NODE_TX: Send REGISTER[0m
+[0;33mW (1407542) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1407542) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1408542) NODE_TX: Send REGISTER[0m
+[0;32mI (1421332) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1421332) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1421332) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1422342) NODE_TX: Send REGISTER[0m
+[0;33mW (1442632) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1442632) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1443632) NODE_TX: Send REGISTER[0m
+[0;32mI (1462892) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1462892) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1462892) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1463902) NODE_TX: Send REGISTER[0m
+[0;33mW (1484192) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1484192) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1485192) NODE_TX: Send REGISTER[0m
+[0;32mI (1496862) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1496862) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1496862) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1497872) NODE_TX: Send REGISTER[0m
+[0;33mW (1518162) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1518162) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1519162) NODE_TX: Send REGISTER[0m
+[0;32mI (1532482) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1532482) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1532482) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1533492) NODE_TX: Send REGISTER[0m
+[0;33mW (1553782) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1553782) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1554782) NODE_TX: Send REGISTER[0m
+[0;32mI (1566012) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1566012) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1566012) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1567022) NODE_TX: Send REGISTER[0m
+[0;33mW (1587312) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1587312) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1588312) NODE_TX: Send REGISTER[0m
+[0;33mW (1608602) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1608602) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1609602) NODE_TX: Send REGISTER[0m
+[0;33mW (1629892) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1629892) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1630892) NODE_TX: Send REGISTER[0m
+[0;33mW (1651182) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1651182) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1652182) NODE_TX: Send REGISTER[0m
+[0;32mI (1663902) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1663902) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1663902) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1664912) NODE_TX: Send REGISTER[0m
+[0;33mW (1685202) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1685202) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1686202) NODE_TX: Send REGISTER[0m
+[0;32mI (1699242) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1699242) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1699242) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1700252) NODE_TX: Send REGISTER[0m
+[0;33mW (1720542) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1720542) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1721542) NODE_TX: Send REGISTER[0m
+[0;32mI (1737632) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1737632) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1737632) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1738642) NODE_TX: Send REGISTER[0m
+[0;33mW (1758932) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1758932) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1759932) NODE_TX: Send REGISTER[0m
+[0;32mI (1772782) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1772782) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1772782) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1773792) NODE_TX: Send REGISTER[0m
+[0;33mW (1794082) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1794082) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1795082) NODE_TX: Send REGISTER[0m
+[0;32mI (1806372) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1806372) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1806372) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1807382) NODE_TX: Send REGISTER[0m
+[0;33mW (1827672) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1827672) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1828672) NODE_TX: Send REGISTER[0m
+[0;32mI (1840712) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1840712) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1840712) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1841722) NODE_TX: Send REGISTER[0m
+[0;33mW (1862012) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1862012) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1863012) NODE_TX: Send REGISTER[0m
+[0;32mI (1875872) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1875872) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1875872) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1876882) NODE_TX: Send REGISTER[0m
+[0;33mW (1897172) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1897172) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1898172) NODE_TX: Send REGISTER[0m
+[0;32mI (1909552) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1909552) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1909552) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1910562) NODE_TX: Send REGISTER[0m
+[0;33mW (1930852) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1930852) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1931852) NODE_TX: Send REGISTER[0m
+[0;32mI (1943382) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1943382) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1943382) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1944392) NODE_TX: Send REGISTER[0m
+[0;33mW (1964682) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1964682) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1965682) NODE_TX: Send REGISTER[0m
+[0;32mI (1985132) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1985132) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1985132) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1986142) NODE_TX: Send REGISTER[0m
+[0;33mW (2006432) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2006432) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2007432) NODE_TX: Send REGISTER[0m
+[0;32mI (2018872) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2018872) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2018872) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2019882) NODE_TX: Send REGISTER[0m
+[0;33mW (2040172) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2040172) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2041172) NODE_TX: Send REGISTER[0m
+[0;32mI (2053052) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2053052) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2053052) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2054062) NODE_TX: Send REGISTER[0m
+[0;33mW (2074352) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2074352) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2075352) NODE_TX: Send REGISTER[0m
+[0;32mI (2086622) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2086622) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2086622) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2087632) NODE_TX: Send REGISTER[0m
+[0;33mW (2107922) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2107922) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2108922) NODE_TX: Send REGISTER[0m
+[0;32mI (2123022) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2123022) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2123022) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2124032) NODE_TX: Send REGISTER[0m
+[0;33mW (2144322) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2144322) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2145322) NODE_TX: Send REGISTER[0m
+[0;32mI (2156572) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2156572) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2156572) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2157582) NODE_TX: Send REGISTER[0m
+[0;33mW (2177872) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2177872) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2178872) NODE_TX: Send REGISTER[0m
+[0;32mI (2190142) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2190142) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2190142) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2191152) NODE_TX: Send REGISTER[0m
+[0;33mW (2211442) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2211442) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2212442) NODE_TX: Send REGISTER[0m
+[0;32mI (2223722) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2223722) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2223722) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2224732) NODE_TX: Send REGISTER[0m
+[0;33mW (2245022) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2245022) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2246022) NODE_TX: Send REGISTER[0m
+[0;32mI (2257552) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2257552) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2257552) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2258562) NODE_TX: Send REGISTER[0m
+[0;33mW (2278852) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2278852) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2279852) NODE_TX: Send REGISTER[0m
+[0;32mI (2292622) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2292622) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2292622) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2293632) NODE_TX: Send REGISTER[0m
+[0;33mW (2313922) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2313922) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2314922) NODE_TX: Send REGISTER[0m
+[0;32mI (2327582) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2327582) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2327582) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2328592) NODE_TX: Send REGISTER[0m
+[0;33mW (2348882) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2348882) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2349882) NODE_TX: Send REGISTER[0m
+[0;32mI (2364432) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2364432) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2364432) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2365442) NODE_TX: Send REGISTER[0m
+[0;33mW (2385732) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2385732) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2386732) NODE_TX: Send REGISTER[0m
+[0;32mI (2397952) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2397952) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2397952) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2398962) NODE_TX: Send REGISTER[0m
+[0;33mW (2419252) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2419252) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2420252) NODE_TX: Send REGISTER[0m
+[0;32mI (2432642) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2432642) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2432642) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2433652) NODE_TX: Send REGISTER[0m
+[0;33mW (2453942) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2453942) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2454942) NODE_TX: Send REGISTER[0m
+[0;32mI (2469062) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2469062) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2469062) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2470072) NODE_TX: Send REGISTER[0m
+[0;33mW (2490362) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2490362) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2491362) NODE_TX: Send REGISTER[0m
+[0;32mI (2502712) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2502712) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2502712) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2503722) NODE_TX: Send REGISTER[0m
+[0;33mW (2524012) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2524012) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2525012) NODE_TX: Send REGISTER[0m
+[0;32mI (2537982) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2537982) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2537982) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2538992) NODE_TX: Send REGISTER[0m
+[0;33mW (2559282) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2559282) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2560282) NODE_TX: Send REGISTER[0m
+[0;32mI (2571582) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2571582) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2571582) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2572592) NODE_TX: Send REGISTER[0m
+[0;33mW (2592882) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2592882) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2593882) NODE_TX: Send REGISTER[0m
+[0;32mI (2605572) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2605572) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2605572) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2606582) NODE_TX: Send REGISTER[0m
+[0;33mW (2626872) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2626872) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2627872) NODE_TX: Send REGISTER[0m
+[0;32mI (2640812) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2640812) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2640812) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2641822) NODE_TX: Send REGISTER[0m
+[0;33mW (2662112) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2662112) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2663112) NODE_TX: Send REGISTER[0m
+[0;32mI (2674402) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2674402) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2674402) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2675412) NODE_TX: Send REGISTER[0m
+[0;33mW (2695702) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2695702) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2696702) NODE_TX: Send REGISTER[0m
+[0;32mI (2709172) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2709172) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2709172) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2710182) NODE_TX: Send REGISTER[0m
+[0;33mW (2730472) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2730472) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2731472) NODE_TX: Send REGISTER[0m
+[0;32mI (2742692) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2742692) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2742692) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2743702) NODE_TX: Send REGISTER[0m
+[0;33mW (2763992) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2763992) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2764992) NODE_TX: Send REGISTER[0m
+[0;32mI (2776372) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2776372) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2776372) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2777382) NODE_TX: Send REGISTER[0m
+[0;33mW (2797672) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2797672) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2798672) NODE_TX: Send REGISTER[0m
+[0;32mI (2810052) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2810052) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2810052) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2811062) NODE_TX: Send REGISTER[0m
+[0;33mW (2831352) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2831352) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2832352) NODE_TX: Send REGISTER[0m
+[0;32mI (2843682) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2843682) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2843682) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2844692) NODE_TX: Send REGISTER[0m
+[0;33mW (2864982) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2864982) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2865982) NODE_TX: Send REGISTER[0m
+[0;32mI (2877452) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2877452) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2877452) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2878462) NODE_TX: Send REGISTER[0m
+[0;33mW (2898752) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2898752) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2899752) NODE_TX: Send REGISTER[0m
+[0;32mI (2911052) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2911052) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2911052) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2912062) NODE_TX: Send REGISTER[0m
+[0;33mW (2932352) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2932352) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2933352) NODE_TX: Send REGISTER[0m
+[0;32mI (2947462) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2947462) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2947462) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2948472) NODE_TX: Send REGISTER[0m
+[0;33mW (2968762) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (2968762) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (2969762) NODE_TX: Send REGISTER[0m
+[0;32mI (2982812) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (2982812) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (2982812) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (2983822) NODE_TX: Send REGISTER[0m
+[0;33mW (3004112) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3004112) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3005112) NODE_TX: Send REGISTER[0m
+[0;32mI (3016712) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3016712) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3016712) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3017712) NODE_TX: Send REGISTER[0m
+[0;33mW (3038002) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3038002) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3039002) NODE_TX: Send REGISTER[0m
+[0;32mI (3050502) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3050502) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3050502) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3051512) NODE_TX: Send REGISTER[0m
+[0;33mW (3071802) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3071802) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3072802) NODE_TX: Send REGISTER[0m
+[0;32mI (3084142) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3084142) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3084142) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3085152) NODE_TX: Send REGISTER[0m
+[0;33mW (3105442) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3105442) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3106442) NODE_TX: Send REGISTER[0m
+[0;32mI (3117682) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3117682) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3117682) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3118692) NODE_TX: Send REGISTER[0m
+[0;33mW (3138982) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3138982) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3139982) NODE_TX: Send REGISTER[0m
+[0;33mW (3160272) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3160272) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3161272) NODE_TX: Send REGISTER[0m
+[0;33mW (3181562) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3181562) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3182562) NODE_TX: Send REGISTER[0m
+[0;33mW (3202852) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3202852) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3203852) NODE_TX: Send REGISTER[0m
+[0;32mI (3216702) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3216702) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3216702) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3217712) NODE_TX: Send REGISTER[0m
+[0;33mW (3238002) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3238002) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3239002) NODE_TX: Send REGISTER[0m
+[0;32mI (3251232) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3251232) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3251232) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3252242) NODE_TX: Send REGISTER[0m
+[0;33mW (3272532) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3272532) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3273532) NODE_TX: Send REGISTER[0m
+[0;32mI (3284812) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3284812) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3284812) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3285822) NODE_TX: Send REGISTER[0m
+[0;33mW (3306112) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3306112) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3307112) NODE_TX: Send REGISTER[0m
+[0;32mI (3318532) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3318532) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3318532) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3319542) NODE_TX: Send REGISTER[0m
+[0;33mW (3339832) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3339832) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3340832) NODE_TX: Send REGISTER[0m
+[0;33mW (3361122) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3361122) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3362122) NODE_TX: Send REGISTER[0m
+[0;33mW (3382412) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3382412) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3383412) NODE_TX: Send REGISTER[0m
+[0;32mI (3394592) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3394592) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3394592) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3395602) NODE_TX: Send REGISTER[0m
+[0;33mW (3415892) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3415892) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3416892) NODE_TX: Send REGISTER[0m
+[0;32mI (3428122) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3428122) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3428122) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3429132) NODE_TX: Send REGISTER[0m
+[0;33mW (3449422) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3449422) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3450422) NODE_TX: Send REGISTER[0m
+[0;32mI (3463072) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3463072) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3463072) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3464082) NODE_TX: Send REGISTER[0m
+[0;33mW (3484372) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3484372) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3485372) NODE_TX: Send REGISTER[0m
+[0;32mI (3502932) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3502932) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3502932) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3503942) NODE_TX: Send REGISTER[0m
+[0;33mW (3524232) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3524232) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3525232) NODE_TX: Send REGISTER[0m
+[0;32mI (3537032) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3537032) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3537032) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3538042) NODE_TX: Send REGISTER[0m
+[0;33mW (3558332) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3558332) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3559332) NODE_TX: Send REGISTER[0m
+[0;32mI (3572632) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3572632) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3572632) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3573642) NODE_TX: Send REGISTER[0m
+[0;33mW (3593932) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3593932) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3594932) NODE_TX: Send REGISTER[0m
+[0;32mI (3606422) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3606422) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3606422) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3607432) NODE_TX: Send REGISTER[0m
+[0;33mW (3627722) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3627722) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3628722) NODE_TX: Send REGISTER[0m
+[0;32mI (3640382) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3640382) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3640382) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3641392) NODE_TX: Send REGISTER[0m
+[0;33mW (3661682) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3661682) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3662682) NODE_TX: Send REGISTER[0m
+[0;32mI (3673902) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3673902) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3673902) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3674912) NODE_TX: Send REGISTER[0m
+[0;33mW (3695202) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3695202) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3696202) NODE_TX: Send REGISTER[0m
+[0;32mI (3716182) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3716182) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3716182) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3717192) NODE_TX: Send REGISTER[0m
+[0;33mW (3737482) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3737482) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3738482) NODE_TX: Send REGISTER[0m
+[0;32mI (3750402) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3750402) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3750402) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3751412) NODE_TX: Send REGISTER[0m
+[0;33mW (3771702) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3771702) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3772702) NODE_TX: Send REGISTER[0m
+[0;32mI (3784102) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3784102) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3784102) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3785112) NODE_TX: Send REGISTER[0m
+[0;33mW (3805402) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3805402) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3806402) NODE_TX: Send REGISTER[0m
+[0;32mI (3817672) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3817672) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3817672) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3818682) NODE_TX: Send REGISTER[0m
+[0;33mW (3838972) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3838972) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3839972) NODE_TX: Send REGISTER[0m
+[0;32mI (3851272) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3851272) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3851272) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3852282) NODE_TX: Send REGISTER[0m
+[0;33mW (3872572) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3872572) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3873572) NODE_TX: Send REGISTER[0m
+[0;32mI (3884962) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3884962) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3884962) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3885972) NODE_TX: Send REGISTER[0m
+[0;33mW (3906262) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (3906262) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (3907262) NODE_TX: Send REGISTER[0m
+[0;32mI (3918672) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (3918672) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (3918672) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (3919682) NODE_TX: Send REGISTER[0m

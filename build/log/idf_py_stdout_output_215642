@@ -1,0 +1,138 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 1 dependencies:
+NOTICE: [1/1] idf (5.1.2)
+-- Project sdkconfig file /home/thefee/esp-idf/esp32-http-relay/sdkconfig
+-- App "esp32-http-relay" version: v5.1.2-dirty
+-- Adding linker script /home/thefee/esp-idf/esp32-http-relay/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/thefee/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/thefee/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/thefee/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/thefee/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/thefee/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/thefee/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/thefee/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/thefee/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread radio_lib sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/thefee/esp-idf/components/app_trace /home/thefee/esp-idf/components/app_update /home/thefee/esp-idf/components/bootloader /home/thefee/esp-idf/components/bootloader_support /home/thefee/esp-idf/components/bt /home/thefee/esp-idf/components/cmock /home/thefee/esp-idf/components/console /home/thefee/esp-idf/components/cxx /home/thefee/esp-idf/components/driver /home/thefee/esp-idf/components/efuse /home/thefee/esp-idf/components/esp-tls /home/thefee/esp-idf/components/esp_adc /home/thefee/esp-idf/components/esp_app_format /home/thefee/esp-idf/components/esp_coex /home/thefee/esp-idf/components/esp_common /home/thefee/esp-idf/components/esp_eth /home/thefee/esp-idf/components/esp_event /home/thefee/esp-idf/components/esp_gdbstub /home/thefee/esp-idf/components/esp_hid /home/thefee/esp-idf/components/esp_http_client /home/thefee/esp-idf/components/esp_http_server /home/thefee/esp-idf/components/esp_https_ota /home/thefee/esp-idf/components/esp_https_server /home/thefee/esp-idf/components/esp_hw_support /home/thefee/esp-idf/components/esp_lcd /home/thefee/esp-idf/components/esp_local_ctrl /home/thefee/esp-idf/components/esp_mm /home/thefee/esp-idf/components/esp_netif /home/thefee/esp-idf/components/esp_netif_stack /home/thefee/esp-idf/components/esp_partition /home/thefee/esp-idf/components/esp_phy /home/thefee/esp-idf/components/esp_pm /home/thefee/esp-idf/components/esp_psram /home/thefee/esp-idf/components/esp_ringbuf /home/thefee/esp-idf/components/esp_rom /home/thefee/esp-idf/components/esp_system /home/thefee/esp-idf/components/esp_timer /home/thefee/esp-idf/components/esp_wifi /home/thefee/esp-idf/components/espcoredump /home/thefee/esp-idf/components/esptool_py /home/thefee/esp-idf/components/fatfs /home/thefee/esp-idf/components/freertos /home/thefee/esp-idf/components/hal /home/thefee/esp-idf/components/heap /home/thefee/esp-idf/components/http_parser /home/thefee/esp-idf/components/idf_test /home/thefee/esp-idf/components/ieee802154 /home/thefee/esp-idf/components/json /home/thefee/esp-idf/components/log /home/thefee/esp-idf/components/lwip /home/thefee/esp-idf/esp32-http-relay/main /home/thefee/esp-idf/components/mbedtls /home/thefee/esp-idf/components/mqtt /home/thefee/esp-idf/components/newlib /home/thefee/esp-idf/components/nvs_flash /home/thefee/esp-idf/components/openthread /home/thefee/esp-idf/components/partition_table /home/thefee/esp-idf/components/perfmon /home/thefee/esp-idf/components/protobuf-c /home/thefee/esp-idf/components/protocomm /home/thefee/esp-idf/components/pthread /home/thefee/esp-idf/esp32-http-relay/components/radio_lib /home/thefee/esp-idf/components/sdmmc /home/thefee/esp-idf/components/soc /home/thefee/esp-idf/components/spi_flash /home/thefee/esp-idf/components/spiffs /home/thefee/esp-idf/components/tcp_transport /home/thefee/esp-idf/components/ulp /home/thefee/esp-idf/components/unity /home/thefee/esp-idf/components/usb /home/thefee/esp-idf/components/vfs /home/thefee/esp-idf/components/wear_levelling /home/thefee/esp-idf/components/wifi_provisioning /home/thefee/esp-idf/components/wpa_supplicant /home/thefee/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/thefee/esp-idf/esp32-http-relay/build
+[1/68] Performing build step for 'bootloader'
+[1/1] cd /home/thefee/esp-idf/esp32-http-relay/build/bootloader/esp-idf/esptool_py && /home/thefee/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/thefee/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/thefee/esp-idf/esp32-http-relay/build/bootloader/bootloader.bin
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/66] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lora_TX.c.obj
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c: In function 'lora_send_packet':
+/home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:572:25: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  572 |     if (sequence_number > 255) sequence_number = 0;
+      |                         ^
+[3/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/LR11x0/LR11x0_wifi.cpp.obj
+[4/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/LLCC68/LLCC68.cpp.obj
+[5/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/Module.cpp.obj
+[6/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/LR11x0/LR1120.cpp.obj
+[7/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/LR11x0/LR1121.cpp.obj
+[8/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/LR11x0/LR1110.cpp.obj
+[9/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/CC1101/CC1101.cpp.obj
+[10/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/LR11x0/LR11x0_crypto.cpp.obj
+[11/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX123x/SX1233.cpp.obj
+[12/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/LR11x0/LR11x0_commands.cpp.obj
+[13/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX126x/STM32WLx.cpp.obj
+[14/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX123x/SX1231.cpp.obj
+[15/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/LR11x0/LR11x0.cpp.obj
+[16/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX126x/SX1261.cpp.obj
+[17/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX126x/STM32WLx_Module.cpp.obj
+[18/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX126x/SX1262.cpp.obj
+[19/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/RF69/RF69.cpp.obj
+[20/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX127x/SX1276.cpp.obj
+[21/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX126x/SX1268.cpp.obj
+[22/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX127x/SX1273.cpp.obj
+[23/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX126x/SX126x.cpp.obj
+[24/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX126x/SX126x_LR_FHSS.cpp.obj
+[25/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX127x/SX1272.cpp.obj
+[26/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX127x/SX1277.cpp.obj
+[27/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX127x/SX1279.cpp.obj
+[28/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX127x/SX1278.cpp.obj
+[29/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX128x/SX1282.cpp.obj
+[30/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX128x/SX1281.cpp.obj
+[31/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX128x/SX1280.cpp.obj
+[32/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/Si443x/Si4430.cpp.obj
+[33/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/Si443x/Si4432.cpp.obj
+[34/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/Si443x/Si4431.cpp.obj
+[35/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/nRF24/nRF24.cpp.obj
+[36/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX127x/SX127x.cpp.obj
+[37/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/APRS/APRS.cpp.obj
+[38/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/AFSK/AFSK.cpp.obj
+[39/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/BellModem/BellModem.cpp.obj
+[40/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/SX128x/SX128x.cpp.obj
+[41/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/ExternalRadio/ExternalRadio.cpp.obj
+[42/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/modules/Si443x/Si443x.cpp.obj
+[43/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/Print/ITA2String.cpp.obj
+[44/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/AX25/AX25.cpp.obj
+[45/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/PhysicalLayer/PhysicalLayer.cpp.obj
+[46/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/Hellschreiber/Hellschreiber.cpp.obj
+[47/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/LoRaWAN/LoRaWANBands.cpp.obj
+[48/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/Morse/Morse.cpp.obj
+[49/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/FSK4/FSK4.cpp.obj
+[50/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/SSTV/SSTV.cpp.obj
+[51/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/Pager/Pager.cpp.obj
+[52/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/RTTY/RTTY.cpp.obj
+[53/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/LoRaWAN/LoRaWAN.cpp.obj
+[54/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/utils/CRC.cpp.obj
+[55/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/utils/Cryptography.cpp.obj
+[56/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/utils/Utils.cpp.obj
+[57/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/utils/FEC.cpp.obj
+[58/66] Building CXX object esp-idf/radio_lib/CMakeFiles/__idf_radio_lib.dir/src/protocols/Print/Print.cpp.obj
+[59/66] Linking C static library esp-idf/radio_lib/libradio_lib.a
+[60/66] Linking C static library esp-idf/main/libmain.a
+[61/66] Generating ld/sections.ld
+[62/66] Building C object CMakeFiles/esp32-http-relay.elf.dir/project_elf_src_esp32.c.obj
+[63/66] Linking CXX executable esp32-http-relay.elf
+[64/66] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/thefee/esp-idf/esp32-http-relay/build/esp32-http-relay.bin
+[65/66] cd /home/thefee/esp-idf/esp32-http-relay/build/esp-idf/esptool_py && /home/thefee/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/thefee/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/thefee/esp-idf/esp32-http-relay/build/partition_table/partition-table.bin /home/thefee/esp-idf/esp32-http-relay/build/esp32-http-relay.bin
+esp32-http-relay.bin binary size 0x30eb0 bytes. Smallest app partition is 0x100000 bytes. 0xcf150 bytes (81%) free.
+[65/66] cd /home/thefee/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/thefee/esp-idf -D "SERIAL_TOOL=/home/thefee/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/thefee/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/thefee/esp-idf/esp32-http-relay/build -P /home/thefee/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 esp32-http-relay.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: fc:b4:67:78:be:cc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00040fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26640 bytes to 16684...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768e... (100 %)
+Wrote 26640 bytes (16684 compressed) at 0x00001000 in 0.7 seconds (effective 325.6 kbit/s)...
+Hash of data verified.
+Compressed 200368 bytes to 111241...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001ce11... (28 %)
+Writing at 0x00022ab7... (42 %)
+Writing at 0x00028777... (57 %)
+Writing at 0x0002eaa1... (71 %)
+Writing at 0x000366ab... (85 %)
+Writing at 0x0003c1f2... (100 %)
+Wrote 200368 bytes (111241 compressed) at 0x00010000 in 2.7 seconds (effective 602.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 691.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

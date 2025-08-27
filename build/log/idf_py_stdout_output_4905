@@ -1,0 +1,953 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b450h ( 46160) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b478 vaddr=3ffb0000 size=022dch (  8924) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d75c vaddr=40080000 size=028bch ( 10428) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16b90h ( 93072) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036bb8 vaddr=400828bc size=0af70h ( 44912) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (206) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (229) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (235) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (240) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (246) cpu_start: ELF file SHA256:  4a520fc59c93f141...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (267) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (272) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFB2B90 len 0002D470 (181 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (312) spi_flash: detected chip: generic[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (319) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (457) NODE_TX: MAC Node: 3C:8A:1F:0B:6D:DC[0m
+[0;32mI (457) NODE_TX: Send REGISTER seq=0[0m
+[0;33mW (3757) NODE_TX: ACK timeout for seq=0[0m
+[0;32mI (6757) NODE_TX: Send REGISTER seq=1[0m
+[0;33mW (10057) NODE_TX: ACK timeout for seq=1[0m
+[0;32mI (13057) NODE_TX: Send REGISTER seq=2[0m
+[0;33mW (16357) NODE_TX: ACK timeout for seq=2[0m
+[0;32mI (19357) NODE_TX: Send REGISTER seq=3[0m
+[0;33mW (22657) NODE_TX: ACK timeout for seq=3[0m
+[0;32mI (25657) NODE_TX: Send REGISTER seq=4[0m
+[0;33mW (28957) NODE_TX: ACK timeout for seq=4[0m
+[0;32mI (31957) NODE_TX: Send REGISTER seq=5[0m
+[0;33mW (35257) NODE_TX: ACK timeout for seq=5[0m
+[0;32mI (38257) NODE_TX: Send REGISTER seq=6[0m
+[0;33mW (41557) NODE_TX: ACK timeout for seq=6[0m
+[0;32mI (44557) NODE_TX: Send REGISTER seq=7[0m
+[0;33mW (47857) NODE_TX: ACK timeout for seq=7[0m
+[0;32mI (50857) NODE_TX: Send REGISTER seq=8[0m
+[0;33mW (54157) NODE_TX: ACK timeout for seq=8[0m
+[0;32mI (57157) NODE_TX: Send REGISTER seq=9[0m
+[0;33mW (60457) NODE_TX: ACK timeout for seq=9[0m
+[0;32mI (63457) NODE_TX: Send REGISTER seq=10[0m
+[0;33mW (66757) NODE_TX: ACK timeout for seq=10[0m
+[0;32mI (69757) NODE_TX: Send REGISTER seq=11[0m
+[0;33mW (73057) NODE_TX: ACK timeout for seq=11[0m
+[0;32mI (76057) NODE_TX: Send REGISTER seq=12[0m
+[0;33mW (79357) NODE_TX: ACK timeout for seq=12[0m
+[0;32mI (82357) NODE_TX: Send REGISTER seq=13[0m
+[0;33mW (85657) NODE_TX: ACK timeout for seq=13[0m
+[0;32mI (88657) NODE_TX: Send REGISTER seq=14[0m
+[0;33mW (91957) NODE_TX: ACK timeout for seq=14[0m
+[0;32mI (94957) NODE_TX: Send REGISTER seq=15[0m
+[0;33mW (98257) NODE_TX: ACK timeout for seq=15[0m
+[0;32mI (101257) NODE_TX: Send REGISTER seq=16[0m
+[0;33mW (104557) NODE_TX: ACK timeout for seq=16[0m
+[0;32mI (107557) NODE_TX: Send REGISTER seq=17[0m
+[0;33mW (110857) NODE_TX: ACK timeout for seq=17[0m
+[0;32mI (113857) NODE_TX: Send REGISTER seq=18[0m
+[0;33mW (117157) NODE_TX: ACK timeout for seq=18[0m
+[0;32mI (120157) NODE_TX: Send REGISTER seq=19[0m
+[0;33mW (123457) NODE_TX: ACK timeout for seq=19[0m
+[0;32mI (126457) NODE_TX: Send REGISTER seq=20[0m
+[0;32mI (127047) NODE_TX: Got ACK for seq=20[0m
+[0;32mI (130047) NODE_TX: Send REGISTER seq=21[0m
+[0;32mI (130637) NODE_TX: Got ACK for seq=21[0m
+[0;32mI (133637) NODE_TX: Send REGISTER seq=22[0m
+[0;32mI (134227) NODE_TX: Got ACK for seq=22[0m
+[0;32mI (137227) NODE_TX: Send REGISTER seq=23[0m
+[0;32mI (137817) NODE_TX: Got ACK for seq=23[0m
+[0;32mI (140817) NODE_TX: Send REGISTER seq=24[0m
+[0;32mI (141407) NODE_TX: Got ACK for seq=24[0m
+[0;32mI (144407) NODE_TX: Send REGISTER seq=25[0m
+[0;32mI (144997) NODE_TX: Got ACK for seq=25[0m
+[0;32mI (147997) NODE_TX: Send REGISTER seq=26[0m
+[0;32mI (148587) NODE_TX: Got ACK for seq=26[0m
+[0;32mI (151587) NODE_TX: Send REGISTER seq=27[0m
+[0;32mI (152177) NODE_TX: Got ACK for seq=27[0m
+[0;32mI (155177) NODE_TX: Send REGISTER seq=28[0m
+[0;33mW (155177) NODE_TX: ACK timeout for seq=28[0m
+[0;32mI (158177) NODE_TX: Send REGISTER seq=29[0m
+[0;33mW (158177) NODE_TX: ACK timeout for seq=29[0m
+[0;32mI (161177) NODE_TX: Send REGISTER seq=30[0m
+[0;33mW (161177) NODE_TX: ACK timeout for seq=30[0m
+[0;32mI (164177) NODE_TX: Send REGISTER seq=31[0m
+[0;33mW (164177) NODE_TX: ACK timeout for seq=31[0m
+[0;32mI (167177) NODE_TX: Send REGISTER seq=32[0m
+[0;33mW (167177) NODE_TX: ACK timeout for seq=32[0m
+[0;32mI (170177) NODE_TX: Send REGISTER seq=33[0m
+[0;33mW (170177) NODE_TX: ACK timeout for seq=33[0m
+[0;32mI (173177) NODE_TX: Send REGISTER seq=34[0m
+[0;33mW (173177) NODE_TX: ACK timeout for seq=34[0m
+[0;32mI (176177) NODE_TX: Send REGISTER seq=35[0m
+[0;33mW (176177) NODE_TX: ACK timeout for seq=35[0m
+[0;32mI (179177) NODE_TX: Send REGISTER seq=36[0m
+[0;33mW (179177) NODE_TX: ACK timeout for seq=36[0m
+[0;32mI (182177) NODE_TX: Send REGISTER seq=37[0m
+[0;33mW (182177) NODE_TX: ACK timeout for seq=37[0m
+[0;32mI (185177) NODE_TX: Send REGISTER seq=38[0m
+[0;33mW (185177) NODE_TX: ACK timeout for seq=38[0m
+[0;32mI (188177) NODE_TX: Send REGISTER seq=39[0m
+[0;33mW (188177) NODE_TX: ACK timeout for seq=39[0m
+[0;32mI (191177) NODE_TX: Send REGISTER seq=40[0m
+[0;33mW (191177) NODE_TX: ACK timeout for seq=40[0m
+[0;32mI (194177) NODE_TX: Send REGISTER seq=41[0m
+[0;33mW (194177) NODE_TX: ACK timeout for seq=41[0m
+[0;32mI (197177) NODE_TX: Send REGISTER seq=42[0m
+[0;33mW (197177) NODE_TX: ACK timeout for seq=42[0m
+[0;32mI (200177) NODE_TX: Send REGISTER seq=43[0m
+[0;33mW (200177) NODE_TX: ACK timeout for seq=43[0m
+[0;32mI (203177) NODE_TX: Send REGISTER seq=44[0m
+[0;33mW (203177) NODE_TX: ACK timeout for seq=44[0m
+[0;32mI (206177) NODE_TX: Send REGISTER seq=45[0m
+[0;33mW (206177) NODE_TX: ACK timeout for seq=45[0m
+[0;32mI (209177) NODE_TX: Send REGISTER seq=46[0m
+[0;33mW (209177) NODE_TX: ACK timeout for seq=46[0m
+[0;32mI (212177) NODE_TX: Send REGISTER seq=47[0m
+[0;33mW (212177) NODE_TX: ACK timeout for seq=47[0m
+[0;32mI (215177) NODE_TX: Send REGISTER seq=48[0m
+[0;33mW (215177) NODE_TX: ACK timeout for seq=48[0m
+[0;32mI (218177) NODE_TX: Send REGISTER seq=49[0m
+[0;33mW (218177) NODE_TX: ACK timeout for seq=49[0m
+[0;32mI (221177) NODE_TX: Send REGISTER seq=50[0m
+[0;33mW (221177) NODE_TX: ACK timeout for seq=50[0m
+[0;32mI (224177) NODE_TX: Send REGISTER seq=51[0m
+[0;33mW (224177) NODE_TX: ACK timeout for seq=51[0m
+[0;32mI (227177) NODE_TX: Send REGISTER seq=52[0m
+[0;33mW (227177) NODE_TX: ACK timeout for seq=52[0m
+[0;32mI (230177) NODE_TX: Send REGISTER seq=53[0m
+[0;33mW (230177) NODE_TX: ACK timeout for seq=53[0m
+[0;32mI (233177) NODE_TX: Send REGISTER seq=54[0m
+[0;33mW (233177) NODE_TX: ACK timeout for seq=54[0m
+[0;32mI (236177) NODE_TX: Send REGISTER seq=55[0m
+[0;33mW (236177) NODE_TX: ACK timeout for seq=55[0m
+[0;32mI (239177) NODE_TX: Send REGISTER seq=56[0m
+[0;33mW (239177) NODE_TX: ACK timeout for seq=56[0m
+[0;32mI (242177) NODE_TX: Send REGISTER seq=57[0m
+[0;33mW (242177) NODE_TX: ACK timeout for seq=57[0m
+[0;32mI (245177) NODE_TX: Send REGISTER seq=58[0m
+[0;33mW (245177) NODE_TX: ACK timeout for seq=58[0m
+[0;32mI (248177) NODE_TX: Send REGISTER seq=59[0m
+[0;33mW (248177) NODE_TX: ACK timeout for seq=59[0m
+[0;32mI (251177) NODE_TX: Send REGISTER seq=60[0m
+[0;33mW (251177) NODE_TX: ACK timeout for seq=60[0m
+[0;32mI (254177) NODE_TX: Send REGISTER seq=61[0m
+[0;33mW (254177) NODE_TX: ACK timeout for seq=61[0m
+[0;32mI (257177) NODE_TX: Send REGISTER seq=62[0m
+[0;33mW (257177) NODE_TX: ACK timeout for seq=62[0m
+[0;32mI (260177) NODE_TX: Send REGISTER seq=63[0m
+[0;33mW (260177) NODE_TX: ACK timeout for seq=63[0m
+[0;32mI (263177) NODE_TX: Send REGISTER seq=64[0m
+[0;33mW (263177) NODE_TX: ACK timeout for seq=64[0m
+[0;32mI (266177) NODE_TX: Send REGISTER seq=65[0m
+[0;33mW (266177) NODE_TX: ACK timeout for seq=65[0m
+[0;32mI (269177) NODE_TX: Send REGISTER seq=66[0m
+[0;33mW (269177) NODE_TX: ACK timeout for seq=66[0m
+[0;32mI (272177) NODE_TX: Send REGISTER seq=67[0m
+[0;33mW (272177) NODE_TX: ACK timeout for seq=67[0m
+[0;32mI (275177) NODE_TX: Send REGISTER seq=68[0m
+[0;33mW (275177) NODE_TX: ACK timeout for seq=68[0m
+[0;32mI (278177) NODE_TX: Send REGISTER seq=69[0m
+[0;33mW (278177) NODE_TX: ACK timeout for seq=69[0m
+[0;32mI (281177) NODE_TX: Send REGISTER seq=70[0m
+[0;33mW (281177) NODE_TX: ACK timeout for seq=70[0m
+[0;32mI (284177) NODE_TX: Send REGISTER seq=71[0m
+[0;33mW (284177) NODE_TX: ACK timeout for seq=71[0m
+[0;32mI (287177) NODE_TX: Send REGISTER seq=72[0m
+[0;33mW (287177) NODE_TX: ACK timeout for seq=72[0m
+[0;32mI (290177) NODE_TX: Send REGISTER seq=73[0m
+[0;33mW (290177) NODE_TX: ACK timeout for seq=73[0m
+[0;32mI (293177) NODE_TX: Send REGISTER seq=74[0m
+[0;33mW (293177) NODE_TX: ACK timeout for seq=74[0m
+[0;32mI (296177) NODE_TX: Send REGISTER seq=75[0m
+[0;33mW (296177) NODE_TX: ACK timeout for seq=75[0m
+[0;32mI (299177) NODE_TX: Send REGISTER seq=76[0m
+[0;33mW (299177) NODE_TX: ACK timeout for seq=76[0m
+[0;32mI (302177) NODE_TX: Send REGISTER seq=77[0m
+[0;33mW (302177) NODE_TX: ACK timeout for seq=77[0m
+[0;32mI (305177) NODE_TX: Send REGISTER seq=78[0m
+[0;33mW (305177) NODE_TX: ACK timeout for seq=78[0m
+[0;32mI (308177) NODE_TX: Send REGISTER seq=79[0m
+[0;33mW (308177) NODE_TX: ACK timeout for seq=79[0m
+[0;32mI (311177) NODE_TX: Send REGISTER seq=80[0m
+[0;33mW (311177) NODE_TX: ACK timeout for seq=80[0m
+[0;32mI (314177) NODE_TX: Send REGISTER seq=81[0m
+[0;33mW (314177) NODE_TX: ACK timeout for seq=81[0m
+[0;32mI (317177) NODE_TX: Send REGISTER seq=82[0m
+[0;33mW (317177) NODE_TX: ACK timeout for seq=82[0m
+[0;32mI (320177) NODE_TX: Send REGISTER seq=83[0m
+[0;33mW (320177) NODE_TX: ACK timeout for seq=83[0m
+[0;32mI (323177) NODE_TX: Send REGISTER seq=84[0m
+[0;33mW (323177) NODE_TX: ACK timeout for seq=84[0m
+[0;32mI (326177) NODE_TX: Send REGISTER seq=85[0m
+[0;33mW (326177) NODE_TX: ACK timeout for seq=85[0m
+[0;32mI (329177) NODE_TX: Send REGISTER seq=86[0m
+[0;33mW (329177) NODE_TX: ACK timeout for seq=86[0m
+[0;32mI (332177) NODE_TX: Send REGISTER seq=87[0m
+[0;33mW (332177) NODE_TX: ACK timeout for seq=87[0m
+[0;32mI (335177) NODE_TX: Send REGISTER seq=88[0m
+[0;33mW (335177) NODE_TX: ACK timeout for seq=88[0m
+[0;32mI (338177) NODE_TX: Send REGISTER seq=89[0m
+[0;33mW (338177) NODE_TX: ACK timeout for seq=89[0m
+[0;32mI (341177) NODE_TX: Send REGISTER seq=90[0m
+[0;33mW (341177) NODE_TX: ACK timeout for seq=90[0m
+[0;32mI (344177) NODE_TX: Send REGISTER seq=91[0m
+[0;33mW (344177) NODE_TX: ACK timeout for seq=91[0m
+[0;32mI (347177) NODE_TX: Send REGISTER seq=92[0m
+[0;33mW (347177) NODE_TX: ACK timeout for seq=92[0m
+[0;32mI (350177) NODE_TX: Send REGISTER seq=93[0m
+[0;33mW (350177) NODE_TX: ACK timeout for seq=93[0m
+[0;32mI (353177) NODE_TX: Send REGISTER seq=94[0m
+[0;33mW (353177) NODE_TX: ACK timeout for seq=94[0m
+[0;32mI (356177) NODE_TX: Send REGISTER seq=95[0m
+[0;33mW (356177) NODE_TX: ACK timeout for seq=95[0m
+[0;32mI (359177) NODE_TX: Send REGISTER seq=96[0m
+[0;33mW (359177) NODE_TX: ACK timeout for seq=96[0m
+[0;32mI (362177) NODE_TX: Send REGISTER seq=97[0m
+[0;33mW (362177) NODE_TX: ACK timeout for seq=97[0m
+[0;32mI (365177) NODE_TX: Send REGISTER seq=98[0m
+[0;33mW (365177) NODE_TX: ACK timeout for seq=98[0m
+[0;32mI (368177) NODE_TX: Send REGISTER seq=99[0m
+[0;33mW (368177) NODE_TX: ACK timeout for seq=99[0m
+[0;32mI (371177) NODE_TX: Send REGISTER seq=100[0m
+[0;33mW (371177) NODE_TX: ACK timeout for seq=100[0m
+[0;32mI (374177) NODE_TX: Send REGISTER seq=101[0m
+[0;33mW (374177) NODE_TX: ACK timeout for seq=101[0m
+[0;32mI (377177) NODE_TX: Send REGISTER seq=102[0m
+[0;33mW (377177) NODE_TX: ACK timeout for seq=102[0m
+[0;32mI (380177) NODE_TX: Send REGISTER seq=103[0m
+[0;33mW (380177) NODE_TX: ACK timeout for seq=103[0m
+[0;32mI (383177) NODE_TX: Send REGISTER seq=104[0m
+[0;33mW (383177) NODE_TX: ACK timeout for seq=104[0m
+[0;32mI (386177) NODE_TX: Send REGISTER seq=105[0m
+[0;33mW (386177) NODE_TX: ACK timeout for seq=105[0m
+[0;32mI (389177) NODE_TX: Send REGISTER seq=106[0m
+[0;33mW (389177) NODE_TX: ACK timeout for seq=106[0m
+[0;32mI (392177) NODE_TX: Send REGISTER seq=107[0m
+[0;33mW (392177) NODE_TX: ACK timeout for seq=107[0m
+[0;32mI (395177) NODE_TX: Send REGISTER seq=108[0m
+[0;33mW (395177) NODE_TX: ACK timeout for seq=108[0m
+[0;32mI (398177) NODE_TX: Send REGISTER seq=109[0m
+[0;33mW (398177) NODE_TX: ACK timeout for seq=109[0m
+[0;32mI (401177) NODE_TX: Send REGISTER seq=110[0m
+[0;33mW (401177) NODE_TX: ACK timeout for seq=110[0m
+[0;32mI (404177) NODE_TX: Send REGISTER seq=111[0m
+[0;33mW (404177) NODE_TX: ACK timeout for seq=111[0m
+[0;32mI (407177) NODE_TX: Send REGISTER seq=112[0m
+[0;33mW (407177) NODE_TX: ACK timeout for seq=112[0m
+[0;32mI (410177) NODE_TX: Send REGISTER seq=113[0m
+[0;33mW (410177) NODE_TX: ACK timeout for seq=113[0m
+[0;32mI (413177) NODE_TX: Send REGISTER seq=114[0m
+[0;33mW (413177) NODE_TX: ACK timeout for seq=114[0m
+[0;32mI (416177) NODE_TX: Send REGISTER seq=115[0m
+[0;33mW (416177) NODE_TX: ACK timeout for seq=115[0m
+[0;32mI (419177) NODE_TX: Send REGISTER seq=116[0m
+[0;33mW (419177) NODE_TX: ACK timeout for seq=116[0m
+[0;32mI (422177) NODE_TX: Send REGISTER seq=117[0m
+[0;33mW (422177) NODE_TX: ACK timeout for seq=117[0m
+[0;32mI (425177) NODE_TX: Send REGISTER seq=118[0m
+[0;33mW (425177) NODE_TX: ACK timeout for seq=118[0m
+[0;32mI (428177) NODE_TX: Send REGISTER seq=119[0m
+[0;33mW (428177) NODE_TX: ACK timeout for seq=119[0m
+[0;32mI (431177) NODE_TX: Send REGISTER seq=120[0m
+[0;33mW (431177) NODE_TX: ACK timeout for seq=120[0m
+[0;32mI (434177) NODE_TX: Send REGISTER seq=121[0m
+[0;33mW (434177) NODE_TX: ACK timeout for seq=121[0m
+[0;32mI (437177) NODE_TX: Send REGISTER seq=122[0m
+[0;33mW (437177) NODE_TX: ACK timeout for seq=122[0m
+[0;32mI (440177) NODE_TX: Send REGISTER seq=123[0m
+[0;33mW (440177) NODE_TX: ACK timeout for seq=123[0m
+[0;32mI (443177) NODE_TX: Send REGISTER seq=124[0m
+[0;33mW (443177) NODE_TX: ACK timeout for seq=124[0m
+[0;32mI (446177) NODE_TX: Send REGISTER seq=125[0m
+[0;33mW (446177) NODE_TX: ACK timeout for seq=125[0m
+[0;32mI (449177) NODE_TX: Send REGISTER seq=126[0m
+[0;33mW (449177) NODE_TX: ACK timeout for seq=126[0m
+[0;32mI (452177) NODE_TX: Send REGISTER seq=127[0m
+[0;33mW (452177) NODE_TX: ACK timeout for seq=127[0m
+[0;32mI (455177) NODE_TX: Send REGISTER seq=128[0m
+[0;33mW (455177) NODE_TX: ACK timeout for seq=128[0m
+[0;32mI (458177) NODE_TX: Send REGISTER seq=129[0m
+[0;33mW (458177) NODE_TX: ACK timeout for seq=129[0m
+[0;32mI (461177) NODE_TX: Send REGISTER seq=130[0m
+[0;33mW (461177) NODE_TX: ACK timeout for seq=130[0m
+[0;32mI (464177) NODE_TX: Send REGISTER seq=131[0m
+[0;33mW (464177) NODE_TX: ACK timeout for seq=131[0m
+[0;32mI (467177) NODE_TX: Send REGISTER seq=132[0m
+[0;33mW (467177) NODE_TX: ACK timeout for seq=132[0m
+[0;32mI (470177) NODE_TX: Send REGISTER seq=133[0m
+[0;33mW (470177) NODE_TX: ACK timeout for seq=133[0m
+[0;32mI (473177) NODE_TX: Send REGISTER seq=134[0m
+[0;33mW (473177) NODE_TX: ACK timeout for seq=134[0m
+[0;32mI (476177) NODE_TX: Send REGISTER seq=135[0m
+[0;33mW (476177) NODE_TX: ACK timeout for seq=135[0m
+[0;32mI (479177) NODE_TX: Send REGISTER seq=136[0m
+[0;33mW (479177) NODE_TX: ACK timeout for seq=136[0m
+[0;32mI (482177) NODE_TX: Send REGISTER seq=137[0m
+[0;33mW (482177) NODE_TX: ACK timeout for seq=137[0m
+[0;32mI (485177) NODE_TX: Send REGISTER seq=138[0m
+[0;33mW (485177) NODE_TX: ACK timeout for seq=138[0m
+[0;32mI (488177) NODE_TX: Send REGISTER seq=139[0m
+[0;33mW (488177) NODE_TX: ACK timeout for seq=139[0m
+[0;32mI (491177) NODE_TX: Send REGISTER seq=140[0m
+[0;33mW (491177) NODE_TX: ACK timeout for seq=140[0m
+[0;32mI (494177) NODE_TX: Send REGISTER seq=141[0m
+[0;33mW (494177) NODE_TX: ACK timeout for seq=141[0m
+[0;32mI (497177) NODE_TX: Send REGISTER seq=142[0m
+[0;33mW (497177) NODE_TX: ACK timeout for seq=142[0m
+[0;32mI (500177) NODE_TX: Send REGISTER seq=143[0m
+[0;33mW (500177) NODE_TX: ACK timeout for seq=143[0m
+[0;32mI (503177) NODE_TX: Send REGISTER seq=144[0m
+[0;33mW (503177) NODE_TX: ACK timeout for seq=144[0m
+[0;32mI (506177) NODE_TX: Send REGISTER seq=145[0m
+[0;33mW (506177) NODE_TX: ACK timeout for seq=145[0m
+[0;32mI (509177) NODE_TX: Send REGISTER seq=146[0m
+[0;33mW (509177) NODE_TX: ACK timeout for seq=146[0m
+[0;32mI (512177) NODE_TX: Send REGISTER seq=147[0m
+[0;33mW (512177) NODE_TX: ACK timeout for seq=147[0m
+[0;32mI (515177) NODE_TX: Send REGISTER seq=148[0m
+[0;33mW (515177) NODE_TX: ACK timeout for seq=148[0m
+[0;32mI (518177) NODE_TX: Send REGISTER seq=149[0m
+[0;33mW (518177) NODE_TX: ACK timeout for seq=149[0m
+[0;32mI (521177) NODE_TX: Send REGISTER seq=150[0m
+[0;33mW (521177) NODE_TX: ACK timeout for seq=150[0m
+[0;32mI (524177) NODE_TX: Send REGISTER seq=151[0m
+[0;33mW (524177) NODE_TX: ACK timeout for seq=151[0m
+[0;32mI (527177) NODE_TX: Send REGISTER seq=152[0m
+[0;33mW (527177) NODE_TX: ACK timeout for seq=152[0m
+[0;32mI (530177) NODE_TX: Send REGISTER seq=153[0m
+[0;33mW (530177) NODE_TX: ACK timeout for seq=153[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b450h ( 46160) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b478 vaddr=3ffb0000 size=022dch (  8924) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d75c vaddr=40080000 size=028bch ( 10428) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16b90h ( 93072) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036bb8 vaddr=400828bc size=0af70h ( 44912) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (206) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (229) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (235) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (240) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (246) cpu_start: ELF file SHA256:  4a520fc59c93f141...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (267) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (272) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFB2B90 len 0002D470 (181 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (312) spi_flash: detected chip: generic[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (319) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (457) NODE_TX: MAC Node: 3C:8A:1F:0B:6D:DC[0m
+[0;32mI (457) NODE_TX: Send REGISTER seq=0[0m
+[0;31mE (5447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (5447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (5447) task_wdt: Tasks currently running:[0m
+[0;31mE (5447) task_wdt: CPU 0: main[0m
+[0;31mE (5447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (5447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C50 0x40088C53:0x3FFB4C60 0x40082484:0x3FFB4C80 0x40083719:0x3FFB4CA0 0x400D8486:0x3FFB4CC0 0x400D85D5:0x3FFB4CE0 0x400D7B46:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (10447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (10447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (10447) task_wdt: Tasks currently running:[0m
+[0;31mE (10447) task_wdt: CPU 0: main[0m
+[0;31mE (10447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (10447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C50 0x40088C53:0x3FFB4C60 0x40082484:0x3FFB4C80 0x40083719:0x3FFB4CA0 0x400D8486:0x3FFB4CC0 0x400D85D5:0x3FFB4CE0 0x400D7B46:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (15447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (15447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (15447) task_wdt: Tasks currently running:[0m
+[0;31mE (15447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (15447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (15447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (20447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (20447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (20447) task_wdt: Tasks currently running:[0m
+[0;31mE (20447) task_wdt: CPU 0: main[0m
+[0;31mE (20447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (20447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (25447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (25447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (25447) task_wdt: Tasks currently running:[0m
+[0;31mE (25447) task_wdt: CPU 0: main[0m
+[0;31mE (25447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (25447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (30447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (30447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (30447) task_wdt: Tasks currently running:[0m
+[0;31mE (30447) task_wdt: CPU 0: main[0m
+[0;31mE (30447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (30447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (35447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (35447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (35447) task_wdt: Tasks currently running:[0m
+[0;31mE (35447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (35447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (35447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (40447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (40447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (40447) task_wdt: Tasks currently running:[0m
+[0;31mE (40447) task_wdt: CPU 0: main[0m
+[0;31mE (40447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (40447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (45447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (45447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (45447) task_wdt: Tasks currently running:[0m
+[0;31mE (45447) task_wdt: CPU 0: main[0m
+[0;31mE (45447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (45447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (50447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (50447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (50447) task_wdt: Tasks currently running:[0m
+[0;31mE (50447) task_wdt: CPU 0: main[0m
+[0;31mE (50447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (50447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (55447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (55447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (55447) task_wdt: Tasks currently running:[0m
+[0;31mE (55447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (55447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (55447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (60447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (60447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (60447) task_wdt: Tasks currently running:[0m
+[0;31mE (60447) task_wdt: CPU 0: main[0m
+[0;31mE (60447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (60447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (65447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (65447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (65447) task_wdt: Tasks currently running:[0m
+[0;31mE (65447) task_wdt: CPU 0: main[0m
+[0;31mE (65447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (65447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (70447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (70447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (70447) task_wdt: Tasks currently running:[0m
+[0;31mE (70447) task_wdt: CPU 0: main[0m
+[0;31mE (70447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (70447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (75447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (75447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (75447) task_wdt: Tasks currently running:[0m
+[0;31mE (75447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (75447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (75447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (80447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (80447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (80447) task_wdt: Tasks currently running:[0m
+[0;31mE (80447) task_wdt: CPU 0: main[0m
+[0;31mE (80447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (80447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (85447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (85447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (85447) task_wdt: Tasks currently running:[0m
+[0;31mE (85447) task_wdt: CPU 0: main[0m
+[0;31mE (85447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (85447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (90447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (90447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (90447) task_wdt: Tasks currently running:[0m
+[0;31mE (90447) task_wdt: CPU 0: main[0m
+[0;31mE (90447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (90447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (95447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (95447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (95447) task_wdt: Tasks currently running:[0m
+[0;31mE (95447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (95447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (95447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (100447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (100447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (100447) task_wdt: Tasks currently running:[0m
+[0;31mE (100447) task_wdt: CPU 0: main[0m
+[0;31mE (100447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (100447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (105447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (105447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (105447) task_wdt: Tasks currently running:[0m
+[0;31mE (105447) task_wdt: CPU 0: main[0m
+[0;31mE (105447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (105447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (110447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (110447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (110447) task_wdt: Tasks currently running:[0m
+[0;31mE (110447) task_wdt: CPU 0: main[0m
+[0;31mE (110447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (110447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (115447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (115447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (115447) task_wdt: Tasks currently running:[0m
+[0;31mE (115447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (115447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (115447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (120447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (120447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (120447) task_wdt: Tasks currently running:[0m
+[0;31mE (120447) task_wdt: CPU 0: main[0m
+[0;31mE (120447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (120447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C50 0x40088C53:0x3FFB4C60 0x40082484:0x3FFB4C80 0x40083719:0x3FFB4CA0 0x400D8486:0x3FFB4CC0 0x400D85D5:0x3FFB4CE0 0x400D7B46:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (125447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (125447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (125447) task_wdt: Tasks currently running:[0m
+[0;31mE (125447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (125447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (125447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (130447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (130447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (130447) task_wdt: Tasks currently running:[0m
+[0;31mE (130447) task_wdt: CPU 0: main[0m
+[0;31mE (130447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (130447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (135447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (135447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (135447) task_wdt: Tasks currently running:[0m
+[0;31mE (135447) task_wdt: CPU 0: main[0m
+[0;31mE (135447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (135447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (140447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (140447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (140447) task_wdt: Tasks currently running:[0m
+[0;31mE (140447) task_wdt: CPU 0: main[0m
+[0;31mE (140447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (140447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (145447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (145447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (145447) task_wdt: Tasks currently running:[0m
+[0;31mE (145447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (145447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (145447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (150447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (150447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (150447) task_wdt: Tasks currently running:[0m
+[0;31mE (150447) task_wdt: CPU 0: main[0m
+[0;31mE (150447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (150447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C50 0x40088C53:0x3FFB4C60 0x40082484:0x3FFB4C80 0x40083719:0x3FFB4CA0 0x400D8486:0x3FFB4CC0 0x400D85D5:0x3FFB4CE0 0x400D7B46:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (155447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (155447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (155447) task_wdt: Tasks currently running:[0m
+[0;31mE (155447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (155447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (155447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (160447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (160447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (160447) task_wdt: Tasks currently running:[0m
+[0;31mE (160447) task_wdt: CPU 0: main[0m
+[0;31mE (160447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (160447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (165447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (165447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (165447) task_wdt: Tasks currently running:[0m
+[0;31mE (165447) task_wdt: CPU 0: main[0m
+[0;31mE (165447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (165447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (170447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (170447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (170447) task_wdt: Tasks currently running:[0m
+[0;31mE (170447) task_wdt: CPU 0: main[0m
+[0;31mE (170447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (170447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (175447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (175447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (175447) task_wdt: Tasks currently running:[0m
+[0;31mE (175447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (175447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (175447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (180447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (180447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (180447) task_wdt: Tasks currently running:[0m
+[0;31mE (180447) task_wdt: CPU 0: main[0m
+[0;31mE (180447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (180447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C50 0x40088C53:0x3FFB4C60 0x40082484:0x3FFB4C80 0x40083719:0x3FFB4CA0 0x400D8486:0x3FFB4CC0 0x400D85D5:0x3FFB4CE0 0x400D7B46:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (185447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (185447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (185447) task_wdt: Tasks currently running:[0m
+[0;31mE (185447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (185447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (185447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (190447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (190447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (190447) task_wdt: Tasks currently running:[0m
+[0;31mE (190447) task_wdt: CPU 0: main[0m
+[0;31mE (190447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (190447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (195447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (195447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (195447) task_wdt: Tasks currently running:[0m
+[0;31mE (195447) task_wdt: CPU 0: main[0m
+[0;31mE (195447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (195447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (200447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (200447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (200447) task_wdt: Tasks currently running:[0m
+[0;31mE (200447) task_wdt: CPU 0: main[0m
+[0;31mE (200447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (200447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (205447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (205447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (205447) task_wdt: Tasks currently running:[0m
+[0;31mE (205447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (205447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (205447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (210447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (210447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (210447) task_wdt: Tasks currently running:[0m
+[0;31mE (210447) task_wdt: CPU 0: main[0m
+[0;31mE (210447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (210447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C50 0x40088C53:0x3FFB4C60 0x40082484:0x3FFB4C80 0x40083719:0x3FFB4CA0 0x400D8486:0x3FFB4CC0 0x400D85D5:0x3FFB4CE0 0x400D7B46:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (215447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (215447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (215447) task_wdt: Tasks currently running:[0m
+[0;31mE (215447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (215447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (215447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (220447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (220447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (220447) task_wdt: Tasks currently running:[0m
+[0;31mE (220447) task_wdt: CPU 0: main[0m
+[0;31mE (220447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (220447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (225447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (225447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (225447) task_wdt: Tasks currently running:[0m
+[0;31mE (225447) task_wdt: CPU 0: main[0m
+[0;31mE (225447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (225447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (230447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (230447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (230447) task_wdt: Tasks currently running:[0m
+[0;31mE (230447) task_wdt: CPU 0: main[0m
+[0;31mE (230447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (230447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (235447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (235447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (235447) task_wdt: Tasks currently running:[0m
+[0;31mE (235447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (235447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (235447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (240447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (240447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (240447) task_wdt: Tasks currently running:[0m
+[0;31mE (240447) task_wdt: CPU 0: main[0m
+[0;31mE (240447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (240447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C50 0x40088C53:0x3FFB4C60 0x40082484:0x3FFB4C80 0x40083719:0x3FFB4CA0 0x400D8486:0x3FFB4CC0 0x400D85D5:0x3FFB4CE0 0x400D7B46:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (245447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (245447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (245447) task_wdt: Tasks currently running:[0m
+[0;31mE (245447) task_wdt: CPU 0: IDLE[0m
+[0;31mE (245447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (245447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4008510F:0x3FFB5460 0x400D20E7:0x3FFB5480 0x4008741A:0x3FFB54A0 0x4008896D:0x3FFB54C0
+
+[0;31mE (250447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (250447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (250447) task_wdt: Tasks currently running:[0m
+[0;31mE (250447) task_wdt: CPU 0: main[0m
+[0;31mE (250447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (250447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (255447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (255447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (255447) task_wdt: Tasks currently running:[0m
+[0;31mE (255447) task_wdt: CPU 0: main[0m
+[0;31mE (255447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (255447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C90 0x40088C53:0x3FFB4CA0 0x40086B81:0x3FFB4CC0 0x400D7BC2:0x3FFB4D00 0x400D7BF2:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+
+[0;31mE (260447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (260447) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (260447) task_wdt: Tasks currently running:[0m
+[0;31mE (260447) task_wdt: CPU 0: main[0m
+[0;31mE (260447) task_wdt: CPU 1: IDLE[0m
+[0;31mE (260447) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D972F:0x3FFB0E00 0x400D98B6:0x3FFB0E20 0x40082A45:0x3FFB0E40 0x4000BFED:0x3FFB4C30 0x40088C53:0x3FFB4C40 0x4008B25B:0x3FFB4C60 0x4008B2A2:0x3FFB4C80 0x40081F75:0x3FFB4CA0 0x40081FCD:0x3FFB4CC0 0x400836A7:0x3FFB4CE0 0x400D7B2F:0x3FFB4D00 0x400D7BE7:0x3FFB4D30 0x400D58F1:0x3FFB4D60 0x400D5940:0x3FFB4DB0 0x400D5B5E:0x3FFB4DE0 0x400E6400:0x3FFB4E90 0x4008896D:0x3FFB4EC0
+

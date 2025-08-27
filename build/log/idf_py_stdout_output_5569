@@ -1,0 +1,784 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2d8h ( 45784) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b300 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d574 vaddr=40080000 size=02aa4h ( 10916) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16734h ( 91956) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=0003675c vaddr=40082aa4 size=0ad88h ( 44424) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (240) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (246) cpu_start: ELF file SHA256:  d2cc9398f3a1c961...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (257) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;31mE (10457) LORA_NODE1: Không phát hiện module LoRa SX1278, version: 0x00[0m
+[0;31mE (10457) LORA_NODE1: Khởi tạo LoRa thất bại[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2d8h ( 45784) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b300 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d574 vaddr=40080000 size=02aa4h ( 10916) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16734h ( 91956) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=0003675c vaddr=40082aa4 size=0ad88h ( 44424) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (240) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (246) cpu_start: ELF file SHA256:  d2cc9398f3a1c961...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (257) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (10457) LORA_NODE1: Khởi tạo LoRa thành công: 470 MHz, SF=7, BW=500 kHz, CR=4/5[0m
+[0;32mI (11677) LORA_NODE1: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (13687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (14887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (16107) LORA_NODE1: Gửi đến Node 0x02, STT: 1, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (18117) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (19317) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (20537) LORA_NODE1: Gửi đến Node 0x02, STT: 2, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (20787) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (20797) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (20797) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (20797) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (22127) LORA_NODE1: Gửi đến Node 0x02, STT: 3, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (23297) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (24307) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (24307) LORA_NODE1: Nhận từ Node 0x02, STT: 1, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (25637) LORA_NODE1: Gửi đến Node 0x02, STT: 4, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (25887) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (25897) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (25897) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (27127) LORA_NODE1: Gửi đến Node 0x02, STT: 5, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (28397) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (29407) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (29407) LORA_NODE1: Nhận từ Node 0x02, STT: 3, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (30737) LORA_NODE1: Gửi đến Node 0x02, STT: 6, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (30987) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (30997) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (30997) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (32227) LORA_NODE1: Gửi đến Node 0x02, STT: 7, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (33497) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (34507) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (34507) LORA_NODE1: Nhận từ Node 0x02, STT: 5, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (35837) LORA_NODE1: Gửi đến Node 0x02, STT: 8, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (36087) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (36097) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (36097) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (37327) LORA_NODE1: Gửi đến Node 0x02, STT: 9, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (38597) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (39607) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (39607) LORA_NODE1: Nhận từ Node 0x02, STT: 7, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (40937) LORA_NODE1: Gửi đến Node 0x02, STT: 10, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (41187) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (41197) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (41197) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (42427) LORA_NODE1: Gửi đến Node 0x02, STT: 11, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (43697) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (44707) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (44707) LORA_NODE1: Nhận từ Node 0x02, STT: 9, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (46037) LORA_NODE1: Gửi đến Node 0x02, STT: 12, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (46287) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (46297) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (46297) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (47527) LORA_NODE1: Gửi đến Node 0x02, STT: 13, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (48797) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (49807) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (49807) LORA_NODE1: Nhận từ Node 0x02, STT: 11, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (51137) LORA_NODE1: Gửi đến Node 0x02, STT: 14, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (51387) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (51397) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (51397) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (52627) LORA_NODE1: Gửi đến Node 0x02, STT: 15, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (53897) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (54907) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (54907) LORA_NODE1: Nhận từ Node 0x02, STT: 13, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (56237) LORA_NODE1: Gửi đến Node 0x02, STT: 16, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (56487) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (56497) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (56497) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (57727) LORA_NODE1: Gửi đến Node 0x02, STT: 17, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (58997) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;32mI (60007) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (60007) LORA_NODE1: Nhận từ Node 0x02, STT: 15, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (61337) LORA_NODE1: Gửi đến Node 0x02, STT: 18, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (61587) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (61597) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (61597) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (62827) LORA_NODE1: Gửi đến Node 0x02, STT: 19, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (64097) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (65107) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (65107) LORA_NODE1: Nhận từ Node 0x02, STT: 17, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (66437) LORA_NODE1: Gửi đến Node 0x02, STT: 20, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (66687) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (66697) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (66697) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (67927) LORA_NODE1: Gửi đến Node 0x02, STT: 21, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (69197) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (70207) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (70207) LORA_NODE1: Nhận từ Node 0x02, STT: 19, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (71537) LORA_NODE1: Gửi đến Node 0x02, STT: 22, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (71787) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (71797) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (71797) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (73027) LORA_NODE1: Gửi đến Node 0x02, STT: 23, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (74297) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (75307) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (75307) LORA_NODE1: Nhận từ Node 0x02, STT: 21, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (76637) LORA_NODE1: Gửi đến Node 0x02, STT: 24, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (76887) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;33mW (76897) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (76897) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (78127) LORA_NODE1: Gửi đến Node 0x02, STT: 25, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (79397) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;32mI (80407) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (80407) LORA_NODE1: Nhận từ Node 0x02, STT: 23, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (81737) LORA_NODE1: Gửi đến Node 0x02, STT: 26, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (81987) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;33mW (81997) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (81997) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (83227) LORA_NODE1: Gửi đến Node 0x02, STT: 27, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (84497) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;32mI (85507) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (85507) LORA_NODE1: Nhận từ Node 0x02, STT: 25, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (86837) LORA_NODE1: Gửi đến Node 0x02, STT: 28, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (87087) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (87097) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (87097) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (88327) LORA_NODE1: Gửi đến Node 0x02, STT: 29, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (89597) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (90607) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (90607) LORA_NODE1: Nhận từ Node 0x02, STT: 27, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (91937) LORA_NODE1: Gửi đến Node 0x02, STT: 30, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (92187) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;33mW (92197) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (92197) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (93427) LORA_NODE1: Gửi đến Node 0x02, STT: 31, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (94697) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;32mI (95707) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (95707) LORA_NODE1: Nhận từ Node 0x02, STT: 29, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (97037) LORA_NODE1: Gửi đến Node 0x02, STT: 32, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (97287) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (97297) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (97297) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (98527) LORA_NODE1: Gửi đến Node 0x02, STT: 33, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (99797) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;32mI (100807) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (100807) LORA_NODE1: Nhận từ Node 0x02, STT: 31, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (102137) LORA_NODE1: Gửi đến Node 0x02, STT: 34, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (102387) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (102397) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (102397) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (103627) LORA_NODE1: Gửi đến Node 0x02, STT: 35, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (104897) LORA_NODE1: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (105907) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (105907) LORA_NODE1: Nhận từ Node 0x02, STT: 33, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (107237) LORA_NODE1: Gửi đến Node 0x02, STT: 36, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (107487) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;33mW (107497) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (107497) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (108727) LORA_NODE1: Gửi đến Node 0x02, STT: 37, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (110007) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;32mI (111017) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (111017) LORA_NODE1: Nhận từ Node 0x02, STT: 35, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (112347) LORA_NODE1: Gửi đến Node 0x02, STT: 38, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (112597) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;33mW (112607) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (112607) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (113837) LORA_NODE1: Gửi đến Node 0x02, STT: 39, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (115117) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (116127) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (116127) LORA_NODE1: Nhận từ Node 0x02, STT: 37, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (117457) LORA_NODE1: Gửi đến Node 0x02, STT: 40, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (117707) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (117717) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (117717) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (118947) LORA_NODE1: Gửi đến Node 0x02, STT: 41, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (120227) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;32mI (121237) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (121237) LORA_NODE1: Nhận từ Node 0x02, STT: 39, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;32mI (122567) LORA_NODE1: Gửi đến Node 0x02, STT: 42, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (122817) LORA_NODE1: RSSI: -67 dBm, SNR: 10 dB[0m
+[0;33mW (122827) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (122827) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (124057) LORA_NODE1: Gửi đến Node 0x02, STT: 43, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (125337) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;32mI (126347) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (126347) LORA_NODE1: Nhận từ Node 0x02, STT: 41, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Dữ liệu bảo toàn: Có[0m
+[0;33mW (128467) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (131667) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (132867) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (134877) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (138077) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (139277) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (141287) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (144487) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (145687) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (145687) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (147797) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (150997) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (152197) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (154207) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (157407) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (158607) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (160617) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (163817) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (165017) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (165017) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (167127) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (170327) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (171527) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (173537) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (176737) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (177937) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (179947) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (183147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (184347) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (184347) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (186457) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (189657) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (190857) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (192867) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (196067) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2d8h ( 45784) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b300 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d574 vaddr=40080000 size=02aa4h ( 10916) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16734h ( 91956) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=0003675c vaddr=40082aa4 size=0ad88h ( 44424) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (240) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (246) cpu_start: ELF file SHA256:  d2cc9398f3a1c961...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (257) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (10457) LORA_NODE1: Khởi tạo LoRa thành công: 470 MHz, SF=7, BW=500 kHz, CR=4/5[0m
+[0;32mI (11677) LORA_NODE1: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (13687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (14887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (16107) LORA_NODE1: Gửi đến Node 0x02, STT: 1, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (16367) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (16377) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (16377) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (17607) LORA_NODE1: Gửi đến Node 0x02, STT: 2, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (19617) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (20817) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (20817) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (22137) LORA_NODE1: Gửi đến Node 0x02, STT: 3, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (24147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (25347) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (26567) LORA_NODE1: Gửi đến Node 0x02, STT: 4, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (28577) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (29777) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (30997) LORA_NODE1: Gửi đến Node 0x02, STT: 5, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (31257) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (31267) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (31267) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (31267) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (32597) LORA_NODE1: Gửi đến Node 0x02, STT: 6, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (34607) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (35807) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (37027) LORA_NODE1: Gửi đến Node 0x02, STT: 7, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (39037) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (40237) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (41457) LORA_NODE1: Gửi đến Node 0x02, STT: 8, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (43467) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (44667) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (44667) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (45987) LORA_NODE1: Gửi đến Node 0x02, STT: 9, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (46247) LORA_NODE1: RSSI: -67 dBm, SNR: 10 dB[0m
+[0;33mW (46257) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (46257) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (47487) LORA_NODE1: Gửi đến Node 0x02, STT: 10, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (49497) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (50697) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (51917) LORA_NODE1: Gửi đến Node 0x02, STT: 11, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (53927) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (55127) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (55127) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (56447) LORA_NODE1: Gửi đến Node 0x02, STT: 12, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (58457) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (59657) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (60877) LORA_NODE1: Gửi đến Node 0x02, STT: 13, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (61137) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;33mW (61147) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (61147) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (62377) LORA_NODE1: Gửi đến Node 0x02, STT: 14, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (64387) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (65587) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (65587) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (66907) LORA_NODE1: Gửi đến Node 0x02, STT: 15, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (68917) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (70117) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (71337) LORA_NODE1: Gửi đến Node 0x02, STT: 16, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (73347) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (74547) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (75767) LORA_NODE1: Gửi đến Node 0x02, STT: 17, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (76027) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (76037) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (76037) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (76037) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (77367) LORA_NODE1: Gửi đến Node 0x02, STT: 18, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (79377) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (80577) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (81797) LORA_NODE1: Gửi đến Node 0x02, STT: 19, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (83807) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (85007) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (86227) LORA_NODE1: Gửi đến Node 0x02, STT: 20, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (88237) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (89437) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (89437) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (90757) LORA_NODE1: Gửi đến Node 0x02, STT: 21, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (91017) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (91027) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (91027) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (92257) LORA_NODE1: Gửi đến Node 0x02, STT: 22, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (94267) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (95467) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (96687) LORA_NODE1: Gửi đến Node 0x02, STT: 23, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (98697) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (99897) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (99897) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (101217) LORA_NODE1: Gửi đến Node 0x02, STT: 24, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (103227) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (104427) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (105647) LORA_NODE1: Gửi đến Node 0x02, STT: 25, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (105907) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;33mW (105917) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (105917) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (107147) LORA_NODE1: Gửi đến Node 0x02, STT: 26, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (109157) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (110357) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (110357) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (111677) LORA_NODE1: Gửi đến Node 0x02, STT: 27, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (113687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (114887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (116107) LORA_NODE1: Gửi đến Node 0x02, STT: 28, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (118117) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (119317) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (120537) LORA_NODE1: Gửi đến Node 0x02, STT: 29, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (120797) LORA_NODE1: RSSI: -67 dBm, SNR: 1 dB[0m
+[0;33mW (120807) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (120807) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (120807) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (122137) LORA_NODE1: Gửi đến Node 0x02, STT: 30, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (124147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (125347) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (126567) LORA_NODE1: Gửi đến Node 0x02, STT: 31, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (128577) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (129777) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (130997) LORA_NODE1: Gửi đến Node 0x02, STT: 32, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (133007) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (134207) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (134207) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (135527) LORA_NODE1: Gửi đến Node 0x02, STT: 33, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (135787) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (135797) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (135797) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (137027) LORA_NODE1: Gửi đến Node 0x02, STT: 34, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (139037) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (140237) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (141457) LORA_NODE1: Gửi đến Node 0x02, STT: 35, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (143467) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (144667) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (144667) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (145987) LORA_NODE1: Gửi đến Node 0x02, STT: 36, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (147997) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (149197) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (150417) LORA_NODE1: Gửi đến Node 0x02, STT: 37, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (150677) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (150687) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (150687) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (151917) LORA_NODE1: Gửi đến Node 0x02, STT: 38, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (153927) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (155127) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (155127) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (156447) LORA_NODE1: Gửi đến Node 0x02, STT: 39, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (158457) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (159657) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (160877) LORA_NODE1: Gửi đến Node 0x02, STT: 40, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (162887) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (164087) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (165307) LORA_NODE1: Gửi đến Node 0x02, STT: 41, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (165557) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;33mW (165567) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (165567) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (165567) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (166897) LORA_NODE1: Gửi đến Node 0x02, STT: 42, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (168907) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (170107) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (171327) LORA_NODE1: Gửi đến Node 0x02, STT: 43, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (173337) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (174537) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (175757) LORA_NODE1: Gửi đến Node 0x02, STT: 44, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (177767) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (178967) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (178967) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (180287) LORA_NODE1: Gửi đến Node 0x02, STT: 45, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (180537) LORA_NODE1: RSSI: -67 dBm, SNR: 10 dB[0m
+[0;33mW (180547) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (180547) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (181777) LORA_NODE1: Gửi đến Node 0x02, STT: 46, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (183787) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (184987) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (186207) LORA_NODE1: Gửi đến Node 0x02, STT: 47, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (188217) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (189417) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (189417) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (190737) LORA_NODE1: Gửi đến Node 0x02, STT: 48, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (192747) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (193947) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (195167) LORA_NODE1: Gửi đến Node 0x02, STT: 49, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (195417) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;33mW (195427) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (195427) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (196657) LORA_NODE1: Gửi đến Node 0x02, STT: 50, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (198667) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (199867) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (199867) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (201187) LORA_NODE1: Gửi đến Node 0x02, STT: 51, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (203197) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (204397) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (205617) LORA_NODE1: Gửi đến Node 0x02, STT: 52, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (207627) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (208827) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (210047) LORA_NODE1: Gửi đến Node 0x02, STT: 53, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (210297) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;33mW (210307) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (210307) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (210307) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (211637) LORA_NODE1: Gửi đến Node 0x02, STT: 54, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (213647) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (214847) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (216067) LORA_NODE1: Gửi đến Node 0x02, STT: 55, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (218077) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (219277) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (220497) LORA_NODE1: Gửi đến Node 0x02, STT: 56, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (222507) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (223707) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (223707) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (225027) LORA_NODE1: Gửi đến Node 0x02, STT: 57, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (225277) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;33mW (225287) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (225287) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (226517) LORA_NODE1: Gửi đến Node 0x02, STT: 58, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (228527) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (229727) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (230947) LORA_NODE1: Gửi đến Node 0x02, STT: 59, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (232957) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (234157) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (234157) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (235477) LORA_NODE1: Gửi đến Node 0x02, STT: 60, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (237487) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (238687) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (239907) LORA_NODE1: Gửi đến Node 0x02, STT: 61, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (240157) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (240167) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (240167) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (241397) LORA_NODE1: Gửi đến Node 0x02, STT: 62, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (243407) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (244607) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (244607) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (245927) LORA_NODE1: Gửi đến Node 0x02, STT: 63, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (247937) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (249137) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (250357) LORA_NODE1: Gửi đến Node 0x02, STT: 64, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (252367) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (253567) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (254787) LORA_NODE1: Gửi đến Node 0x02, STT: 65, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (255037) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;33mW (255047) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (255047) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (255047) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (256377) LORA_NODE1: Gửi đến Node 0x02, STT: 66, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (258387) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (259587) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (260807) LORA_NODE1: Gửi đến Node 0x02, STT: 67, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (262817) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (264017) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (265237) LORA_NODE1: Gửi đến Node 0x02, STT: 68, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (267247) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (268447) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (268447) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (269767) LORA_NODE1: Gửi đến Node 0x02, STT: 69, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (270017) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;33mW (270027) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (270027) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (271257) LORA_NODE1: Gửi đến Node 0x02, STT: 70, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (273267) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (274467) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (275687) LORA_NODE1: Gửi đến Node 0x02, STT: 71, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (277697) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (278897) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (278897) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (280217) LORA_NODE1: Gửi đến Node 0x02, STT: 72, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (282227) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (283427) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (284647) LORA_NODE1: Gửi đến Node 0x02, STT: 73, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (284907) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;33mW (284917) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (284917) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (286147) LORA_NODE1: Gửi đến Node 0x02, STT: 74, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (288157) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (289357) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (289357) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (290677) LORA_NODE1: Gửi đến Node 0x02, STT: 75, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (292687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (293887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (295107) LORA_NODE1: Gửi đến Node 0x02, STT: 76, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (297117) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (298317) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (299537) LORA_NODE1: Gửi đến Node 0x02, STT: 77, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (299797) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;33mW (299807) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (299807) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (299807) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (301137) LORA_NODE1: Gửi đến Node 0x02, STT: 78, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (303147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (304347) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (305567) LORA_NODE1: Gửi đến Node 0x02, STT: 79, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (307577) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (308777) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (309997) LORA_NODE1: Gửi đến Node 0x02, STT: 80, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (312007) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (313207) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (313207) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (314527) LORA_NODE1: Gửi đến Node 0x02, STT: 81, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (314787) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (314797) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (314797) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (316027) LORA_NODE1: Gửi đến Node 0x02, STT: 82, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (318037) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (319237) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (320457) LORA_NODE1: Gửi đến Node 0x02, STT: 83, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (322467) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (323667) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (323667) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (324987) LORA_NODE1: Gửi đến Node 0x02, STT: 84, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (326997) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (328197) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (329417) LORA_NODE1: Gửi đến Node 0x02, STT: 85, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (329677) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (329687) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (329687) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (330917) LORA_NODE1: Gửi đến Node 0x02, STT: 86, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (332927) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (334127) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (334127) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (335447) LORA_NODE1: Gửi đến Node 0x02, STT: 87, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (337457) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (338657) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (339877) LORA_NODE1: Gửi đến Node 0x02, STT: 88, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (341887) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (343087) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (344307) LORA_NODE1: Gửi đến Node 0x02, STT: 89, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (344567) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (344577) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (344577) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (344577) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (345907) LORA_NODE1: Gửi đến Node 0x02, STT: 90, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (347917) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (349117) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (350337) LORA_NODE1: Gửi đến Node 0x02, STT: 91, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (352347) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (353547) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (354767) LORA_NODE1: Gửi đến Node 0x02, STT: 92, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (356777) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (357977) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (357977) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (359297) LORA_NODE1: Gửi đến Node 0x02, STT: 93, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (359557) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (359567) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (359567) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (360797) LORA_NODE1: Gửi đến Node 0x02, STT: 94, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (362807) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (364007) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (365227) LORA_NODE1: Gửi đến Node 0x02, STT: 95, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (367237) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (368437) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (368437) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (369757) LORA_NODE1: Gửi đến Node 0x02, STT: 96, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (371767) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (372967) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (374187) LORA_NODE1: Gửi đến Node 0x02, STT: 97, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (374447) LORA_NODE1: RSSI: -68 dBm, SNR: 10 dB[0m
+[0;33mW (374457) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (374457) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (375687) LORA_NODE1: Gửi đến Node 0x02, STT: 98, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (377697) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (378897) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (378897) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (380217) LORA_NODE1: Gửi đến Node 0x02, STT: 99, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (382227) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (383427) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (384647) LORA_NODE1: Gửi đến Node 0x02, STT: 100, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (386657) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (387857) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (389077) LORA_NODE1: Gửi đến Node 0x02, STT: 101, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (389337) LORA_NODE1: RSSI: -68 dBm, SNR: 9 dB[0m
+[0;33mW (389347) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (389347) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (389347) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (390677) LORA_NODE1: Gửi đến Node 0x02, STT: 102, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (392687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (393887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (395107) LORA_NODE1: Gửi đến Node 0x02, STT: 103, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (397117) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (398317) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (399537) LORA_NODE1: Gửi đến Node 0x02, STT: 104, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (401547) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (402747) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (402747) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (404067) LORA_NODE1: Gửi đến Node 0x02, STT: 105, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (404327) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;33mW (404337) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (404337) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (405567) LORA_NODE1: Gửi đến Node 0x02, STT: 106, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (407577) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (408777) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (409997) LORA_NODE1: Gửi đến Node 0x02, STT: 107, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (412007) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (413207) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (413207) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m

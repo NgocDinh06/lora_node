@@ -1,0 +1,355 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ac90h ( 44176) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001acb8 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cf2c vaddr=40080000 size=030ech ( 12524) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=161c0h ( 90560) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=000361e8 vaddr=400830ec size=0a740h ( 42816) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (204) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (232) cpu_start: App version:      v5.1.2[0m
+[0;32mI (237) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (243) cpu_start: ELF file SHA256:  71aaba3dd4d63291...[0m
+[0;32mI (249) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (254) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (259) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (264) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (269) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (276) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (312) spi_flash: flash io: dio[0m
+[0;33mW (315) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (329) app_start: Starting scheduler on CPU0[0m
+[0;32mI (334) app_start: Starting scheduler on CPU1[0m
+[0;32mI (334) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (454) LORA_TX: Sending to Node 0x01, STT: 0, Data: HELLO[0m
+[0;32mI (2464) LORA_TX: Sending to Node 0x01, STT: 1, Data: HELLO[0m
+[0;32mI (4474) LORA_TX: Sending to Node 0x01, STT: 2, Data: HELLO[0m
+[0;32mI (6484) LORA_TX: Sending to Node 0x01, STT: 3, Data: HELLO[0m
+[0;32mI (8494) LORA_TX: Sending to Node 0x01, STT: 4, Data: HELLO[0m
+[0;32mI (10504) LORA_TX: Sending to Node 0x01, STT: 5, Data: HELLO[0m
+[0;32mI (12514) LORA_TX: Sending to Node 0x01, STT: 6, Data: HELLO[0m
+[0;32mI (14524) LORA_TX: Sending to Node 0x01, STT: 7, Data: HELLO[0m
+[0;32mI (16534) LORA_TX: Sending to Node 0x01, STT: 8, Data: HELLO[0m
+[0;32mI (18544) LORA_TX: Sending to Node 0x01, STT: 9, Data: HELLO[0m
+[0;32mI (20554) LORA_TX: Sending to Node 0x01, STT: 10, Data: HELLO[0m
+[0;32mI (22564) LORA_TX: Sending to Node 0x01, STT: 11, Data: HELLO[0m
+[0;32mI (24574) LORA_TX: Sending to Node 0x01, STT: 12, Data: HELLO[0m
+[0;32mI (26584) LORA_TX: Sending to Node 0x01, STT: 13, Data: HELLO[0m
+[0;32mI (28594) LORA_TX: Sending to Node 0x01, STT: 14, Data: HELLO[0m
+[0;32mI (30604) LORA_TX: Sending to Node 0x01, STT: 15, Data: HELLO[0m
+[0;32mI (32614) LORA_TX: Sending to Node 0x01, STT: 16, Data: HELLO[0m
+[0;32mI (34624) LORA_TX: Sending to Node 0x01, STT: 17, Data: HELLO[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ac90h ( 44176) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001acb8 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cf2c vaddr=40080000 size=030ech ( 12524) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=161c0h ( 90560) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=000361e8 vaddr=400830ec size=0a740h ( 42816) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (204) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (232) cpu_start: App version:      v5.1.2[0m
+[0;32mI (237) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (243) cpu_start: ELF file SHA256:  71aaba3dd4d63291...[0m
+[0;32mI (249) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (254) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (259) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (264) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (269) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (276) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (312) spi_flash: flash io: dio[0m
+[0;33mW (315) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (329) app_start: Starting scheduler on CPU0[0m
+[0;32mI (334) app_start: Starting scheduler on CPU1[0m
+[0;32mI (334) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (454) LORA_TX: Sending to Node 0x01, STT: 0, Data: HELLO[0m
+[0;32mI (3384) LORA_TX: Sending to Node 0x01, STT: 1, Data: HELLO[0m
+[0;32mI (6314) LORA_TX: Sending to Node 0x01, STT: 2, Data: HELLO[0m
+[0;32mI (9244) LORA_TX: Sending to Node 0x01, STT: 3, Data: HELLO[0m
+[0;32mI (12174) LORA_TX: Sending to Node 0x01, STT: 4, Data: HELLO[0m
+[0;32mI (15104) LORA_TX: Sending to Node 0x01, STT: 5, Data: HELLO[0m
+[0;32mI (18034) LORA_TX: Sending to Node 0x01, STT: 6, Data: HELLO[0m
+[0;32mI (20964) LORA_TX: Sending to Node 0x01, STT: 7, Data: HELLO[0m
+[0;32mI (23894) LORA_TX: Sending to Node 0x01, STT: 8, Data: HELLO[0m
+[0;32mI (26824) LORA_TX: Sending to Node 0x01, STT: 9, Data: HELLO[0m
+[0;32mI (29754) LORA_TX: Sending to Node 0x01, STT: 10, Data: HELLO[0m
+[0;32mI (32684) LORA_TX: Sending to Node 0x01, STT: 11, Data: HELLO[0m
+[0;32mI (35614) LORA_TX: Sending to Node 0x01, STT: 12, Data: HELLO[0m
+[0;32mI (38544) LORA_TX: Sending to Node 0x01, STT: 13, Data: HELLO[0m
+[0;32mI (41474) LORA_TX: Sending to Node 0x01, STT: 14, Data: HELLO[0m
+[0;32mI (44404) LORA_TX: Sending to Node 0x01, STT: 15, Data: HELLO[0m
+[0;32mI (47334) LORA_TX: Sending to Node 0x01, STT: 16, Data: HELLO[0m
+[0;32mI (50264) LORA_TX: Sending to Node 0x01, STT: 17, Data: HELLO[0m
+[0;32mI (53194) LORA_TX: Sending to Node 0x01, STT: 18, Data: HELLO[0m
+[0;32mI (56124) LORA_TX: Sending to Node 0x01, STT: 19, Data: HELLO[0m
+[0;32mI (59054) LORA_TX: Sending to Node 0x01, STT: 20, Data: HELLO[0m
+[0;32mI (61984) LORA_TX: Sending to Node 0x01, STT: 21, Data: HELLO[0m
+[0;32mI (64914) LORA_TX: Sending to Node 0x01, STT: 22, Data: HELLO[0m
+[0;32mI (67844) LORA_TX: Sending to Node 0x01, STT: 23, Data: HELLO[0m
+[0;32mI (70774) LORA_TX: Sending to Node 0x01, STT: 24, Data: HELLO[0m
+[0;32mI (73704) LORA_TX: Sending to Node 0x01, STT: 25, Data: HELLO[0m
+[0;32mI (76634) LORA_TX: Sending to Node 0x01, STT: 26, Data: HELLO[0m
+[0;32mI (79564) LORA_TX: Sending to Node 0x01, STT: 27, Data: HELLO[0m
+[0;32mI (82494) LORA_TX: Sending to Node 0x01, STT: 28, Data: HELLO[0m
+[0;32mI (85424) LORA_TX: Sending to Node 0x01, STT: 29, Data: HELLO[0m
+[0;32mI (88354) LORA_TX: Sending to Node 0x01, STT: 30, Data: HELLO[0m
+[0;32mI (91284) LORA_TX: Sending to Node 0x01, STT: 31, Data: HELLO[0m
+[0;32mI (94214) LORA_TX: Sending to Node 0x01, STT: 32, Data: HELLO[0m
+[0;32mI (97144) LORA_TX: Sending to Node 0x01, STT: 33, Data: HELLO[0m
+[0;32mI (100074) LORA_TX: Sending to Node 0x01, STT: 34, Data: HELLO[0m
+[0;32mI (103004) LORA_TX: Sending to Node 0x01, STT: 35, Data: HELLO[0m
+[0;32mI (105934) LORA_TX: Sending to Node 0x01, STT: 36, Data: HELLO[0m
+[0;32mI (108864) LORA_TX: Sending to Node 0x01, STT: 37, Data: HELLO[0m
+[0;32mI (111794) LORA_TX: Sending to Node 0x01, STT: 38, Data: HELLO[0m
+[0;32mI (114724) LORA_TX: Sending to Node 0x01, STT: 39, Data: HELLO[0m
+[0;32mI (117654) LORA_TX: Sending to Node 0x01, STT: 40, Data: HELLO[0m
+[0;32mI (120584) LORA_TX: Sending to Node 0x01, STT: 41, Data: HELLO[0m
+[0;32mI (123514) LORA_TX: Sending to Node 0x01, STT: 42, Data: HELLO[0m
+[0;32mI (126444) LORA_TX: Sending to Node 0x01, STT: 43, Data: HELLO[0m
+[0;32mI (129374) LORA_TX: Sending to Node 0x01, STT: 44, Data: HELLO[0m
+[0;32mI (132304) LORA_TX: Sending to Node 0x01, STT: 45, Data: HELLO[0m
+[0;32mI (135234) LORA_TX: Sending to Node 0x01, STT: 46, Data: HELLO[0m
+[0;32mI (138164) LORA_TX: Sending to Node 0x01, STT: 47, Data: HELLO[0m
+[0;32mI (141094) LORA_TX: Sending to Node 0x01, STT: 48, Data: HELLO[0m
+[0;32mI (144024) LORA_TX: Sending to Node 0x01, STT: 49, Data: HELLO[0m
+[0;32mI (146954) LORA_TX: Sending to Node 0x01, STT: 50, Data: HELLO[0m
+[0;32mI (149884) LORA_TX: Sending to Node 0x01, STT: 51, Data: HELLO[0m
+[0;32mI (152814) LORA_TX: Sending to Node 0x01, STT: 52, Data: HELLO[0m
+[0;32mI (155744) LORA_TX: Sending to Node 0x01, STT: 53, Data: HELLO[0m
+[0;32mI (158674) LORA_TX: Sending to Node 0x01, STT: 54, Data: HELLO[0m
+[0;32mI (161604) LORA_TX: Sending to Node 0x01, STT: 55, Data: HELLO[0m
+[0;32mI (164534) LORA_TX: Sending to Node 0x01, STT: 56, Data: HELLO[0m
+[0;32mI (167464) LORA_TX: Sending to Node 0x01, STT: 57, Data: HELLO[0m
+[0;32mI (170394) LORA_TX: Sending to Node 0x01, STT: 58, Data: HELLO[0m
+[0;32mI (173324) LORA_TX: Sending to Node 0x01, STT: 59, Data: HELLO[0m
+[0;32mI (176254) LORA_TX: Sending to Node 0x01, STT: 60, Data: HELLO[0m
+[0;32mI (179184) LORA_TX: Sending to Node 0x01, STT: 61, Data: HELLO[0m
+[0;32mI (182114) LORA_TX: Sending to Node 0x01, STT: 62, Data: HELLO[0m
+[0;32mI (185044) LORA_TX: Sending to Node 0x01, STT: 63, Data: HELLO[0m
+[0;32mI (187974) LORA_TX: Sending to Node 0x01, STT: 64, Data: HELLO[0m
+[0;32mI (190904) LORA_TX: Sending to Node 0x01, STT: 65, Data: HELLO[0m
+[0;32mI (193834) LORA_TX: Sending to Node 0x01, STT: 66, Data: HELLO[0m
+[0;32mI (196764) LORA_TX: Sending to Node 0x01, STT: 67, Data: HELLO[0m
+[0;32mI (199694) LORA_TX: Sending to Node 0x01, STT: 68, Data: HELLO[0m
+[0;32mI (202624) LORA_TX: Sending to Node 0x01, STT: 69, Data: HELLO[0m
+[0;32mI (205554) LORA_TX: Sending to Node 0x01, STT: 70, Data: HELLO[0m
+[0;32mI (208484) LORA_TX: Sending to Node 0x01, STT: 71, Data: HELLO[0m
+[0;32mI (211414) LORA_TX: Sending to Node 0x01, STT: 72, Data: HELLO[0m
+[0;32mI (214344) LORA_TX: Sending to Node 0x01, STT: 73, Data: HELLO[0m
+[0;32mI (217274) LORA_TX: Sending to Node 0x01, STT: 74, Data: HELLO[0m
+[0;32mI (220204) LORA_TX: Sending to Node 0x01, STT: 75, Data: HELLO[0m
+[0;32mI (223134) LORA_TX: Sending to Node 0x01, STT: 76, Data: HELLO[0m
+[0;32mI (226064) LORA_TX: Sending to Node 0x01, STT: 77, Data: HELLO[0m
+[0;32mI (228994) LORA_TX: Sending to Node 0x01, STT: 78, Data: HELLO[0m
+[0;32mI (231924) LORA_TX: Sending to Node 0x01, STT: 79, Data: HELLO[0m
+[0;32mI (234854) LORA_TX: Sending to Node 0x01, STT: 80, Data: HELLO[0m
+[0;32mI (237784) LORA_TX: Sending to Node 0x01, STT: 81, Data: HELLO[0m
+[0;32mI (240714) LORA_TX: Sending to Node 0x01, STT: 82, Data: HELLO[0m
+[0;32mI (243644) LORA_TX: Sending to Node 0x01, STT: 83, Data: HELLO[0m
+[0;32mI (246574) LORA_TX: Sending to Node 0x01, STT: 84, Data: HELLO[0m
+[0;32mI (249504) LORA_TX: Sending to Node 0x01, STT: 85, Data: HELLO[0m
+[0;32mI (252434) LORA_TX: Sending to Node 0x01, STT: 86, Data: HELLO[0m
+[0;32mI (255364) LORA_TX: Sending to Node 0x01, STT: 87, Data: HELLO[0m
+[0;32mI (258294) LORA_TX: Sending to Node 0x01, STT: 88, Data: HELLO[0m
+[0;32mI (261224) LORA_TX: Sending to Node 0x01, STT: 89, Data: HELLO[0m
+[0;32mI (264154) LORA_TX: Sending to Node 0x01, STT: 90, Data: HELLO[0m
+[0;32mI (267084) LORA_TX: Sending to Node 0x01, STT: 91, Data: HELLO[0m
+[0;32mI (270014) LORA_TX: Sending to Node 0x01, STT: 92, Data: HELLO[0m
+[0;32mI (272944) LORA_TX: Sending to Node 0x01, STT: 93, Data: HELLO[0m
+[0;32mI (275874) LORA_TX: Sending to Node 0x01, STT: 94, Data: HELLO[0m
+[0;32mI (278804) LORA_TX: Sending to Node 0x01, STT: 95, Data: HELLO[0m
+[0;32mI (281734) LORA_TX: Sending to Node 0x01, STT: 96, Data: HELLO[0m
+[0;32mI (284664) LORA_TX: Sending to Node 0x01, STT: 97, Data: HELLO[0m
+[0;32mI (287594) LORA_TX: Sending to Node 0x01, STT: 98, Data: HELLO[0m
+[0;32mI (290524) LORA_TX: Sending to Node 0x01, STT: 99, Data: HELLO[0m
+[0;32mI (293454) LORA_TX: Sending to Node 0x01, STT: 100, Data: HELLO[0m
+[0;32mI (296384) LORA_TX: Sending to Node 0x01, STT: 101, Data: HELLO[0m
+[0;32mI (299314) LORA_TX: Sending to Node 0x01, STT: 102, Data: HELLO[0m
+[0;32mI (302244) LORA_TX: Sending to Node 0x01, STT: 103, Data: HELLO[0m
+[0;32mI (305174) LORA_TX: Sending to Node 0x01, STT: 104, Data: HELLO[0m
+[0;32mI (308104) LORA_TX: Sending to Node 0x01, STT: 105, Data: HELLO[0m
+[0;32mI (311034) LORA_TX: Sending to Node 0x01, STT: 106, Data: HELLO[0m
+[0;32mI (313964) LORA_TX: Sending to Node 0x01, STT: 107, Data: HELLO[0m
+[0;32mI (316894) LORA_TX: Sending to Node 0x01, STT: 108, Data: HELLO[0m
+[0;32mI (319824) LORA_TX: Sending to Node 0x01, STT: 109, Data: HELLO[0m
+[0;32mI (322754) LORA_TX: Sending to Node 0x01, STT: 110, Data: HELLO[0m
+[0;32mI (325684) LORA_TX: Sending to Node 0x01, STT: 111, Data: HELLO[0m
+[0;32mI (328614) LORA_TX: Sending to Node 0x01, STT: 112, Data: HELLO[0m
+[0;32mI (331544) LORA_TX: Sending to Node 0x01, STT: 113, Data: HELLO[0m
+[0;32mI (334474) LORA_TX: Sending to Node 0x01, STT: 114, Data: HELLO[0m
+[0;32mI (337404) LORA_TX: Sending to Node 0x01, STT: 115, Data: HELLO[0m
+[0;32mI (340334) LORA_TX: Sending to Node 0x01, STT: 116, Data: HELLO[0m
+[0;32mI (343264) LORA_TX: Sending to Node 0x01, STT: 117, Data: HELLO[0m
+[0;32mI (346194) LORA_TX: Sending to Node 0x01, STT: 118, Data: HELLO[0m
+[0;32mI (349124) LORA_TX: Sending to Node 0x01, STT: 119, Data: HELLO[0m
+[0;32mI (352054) LORA_TX: Sending to Node 0x01, STT: 120, Data: HELLO[0m
+[0;32mI (354984) LORA_TX: Sending to Node 0x01, STT: 121, Data: HELLO[0m
+[0;32mI (357914) LORA_TX: Sending to Node 0x01, STT: 122, Data: HELLO[0m
+[0;32mI (360844) LORA_TX: Sending to Node 0x01, STT: 123, Data: HELLO[0m
+[0;32mI (363774) LORA_TX: Sending to Node 0x01, STT: 124, Data: HELLO[0m
+[0;32mI (366704) LORA_TX: Sending to Node 0x01, STT: 125, Data: HELLO[0m
+[0;32mI (369634) LORA_TX: Sending to Node 0x01, STT: 126, Data: HELLO[0m
+[0;32mI (372564) LORA_TX: Sending to Node 0x01, STT: 127, Data: HELLO[0m
+[0;32mI (375494) LORA_TX: Sending to Node 0x01, STT: 128, Data: HELLO[0m
+[0;32mI (378424) LORA_TX: Sending to Node 0x01, STT: 129, Data: HELLO[0m
+[0;32mI (381354) LORA_TX: Sending to Node 0x01, STT: 130, Data: HELLO[0m
+[0;32mI (384284) LORA_TX: Sending to Node 0x01, STT: 131, Data: HELLO[0m
+[0;32mI (387214) LORA_TX: Sending to Node 0x01, STT: 132, Data: HELLO[0m
+[0;32mI (390144) LORA_TX: Sending to Node 0x01, STT: 133, Data: HELLO[0m
+[0;32mI (393074) LORA_TX: Sending to Node 0x01, STT: 134, Data: HELLO[0m
+[0;32mI (396004) LORA_TX: Sending to Node 0x01, STT: 135, Data: HELLO[0m
+[0;32mI (398934) LORA_TX: Sending to Node 0x01, STT: 136, Data: HELLO[0m
+[0;32mI (401864) LORA_TX: Sending to Node 0x01, STT: 137, Data: HELLO[0m
+[0;32mI (404794) LORA_TX: Sending to Node 0x01, STT: 138, Data: HELLO[0m
+[0;32mI (407724) LORA_TX: Sending to Node 0x01, STT: 139, Data: HELLO[0m
+[0;32mI (410654) LORA_TX: Sending to Node 0x01, STT: 140, Data: HELLO[0m
+[0;32mI (413584) LORA_TX: Sending to Node 0x01, STT: 141, Data: HELLO[0m
+[0;32mI (416514) LORA_TX: Sending to Node 0x01, STT: 142, Data: HELLO[0m
+[0;32mI (419444) LORA_TX: Sending to Node 0x01, STT: 143, Data: HELLO[0m
+[0;32mI (422374) LORA_TX: Sending to Node 0x01, STT: 144, Data: HELLO[0m
+[0;32mI (425304) LORA_TX: Sending to Node 0x01, STT: 145, Data: HELLO[0m
+[0;32mI (428234) LORA_TX: Sending to Node 0x01, STT: 146, Data: HELLO[0m
+[0;32mI (431164) LORA_TX: Sending to Node 0x01, STT: 147, Data: HELLO[0m
+[0;32mI (434094) LORA_TX: Sending to Node 0x01, STT: 148, Data: HELLO[0m
+[0;32mI (437024) LORA_TX: Sending to Node 0x01, STT: 149, Data: HELLO[0m
+[0;32mI (439954) LORA_TX: Sending to Node 0x01, STT: 150, Data: HELLO[0m
+[0;32mI (442884) LORA_TX: Sending to Node 0x01, STT: 151, Data: HELLO[0m
+[0;32mI (445814) LORA_TX: Sending to Node 0x01, STT: 152, Data: HELLO[0m
+[0;32mI (448744) LORA_TX: Sending to Node 0x01, STT: 153, Data: HELLO[0m
+[0;32mI (451674) LORA_TX: Sending to Node 0x01, STT: 154, Data: HELLO[0m
+[0;32mI (454604) LORA_TX: Sending to Node 0x01, STT: 155, Data: HELLO[0m
+[0;32mI (457534) LORA_TX: Sending to Node 0x01, STT: 156, Data: HELLO[0m
+[0;32mI (460464) LORA_TX: Sending to Node 0x01, STT: 157, Data: HELLO[0m
+[0;32mI (463394) LORA_TX: Sending to Node 0x01, STT: 158, Data: HELLO[0m
+[0;32mI (466324) LORA_TX: Sending to Node 0x01, STT: 159, Data: HELLO[0m
+[0;32mI (469254) LORA_TX: Sending to Node 0x01, STT: 160, Data: HELLO[0m
+[0;32mI (472184) LORA_TX: Sending to Node 0x01, STT: 161, Data: HELLO[0m
+[0;32mI (475114) LORA_TX: Sending to Node 0x01, STT: 162, Data: HELLO[0m
+[0;32mI (478044) LORA_TX: Sending to Node 0x01, STT: 163, Data: HELLO[0m
+[0;32mI (480974) LORA_TX: Sending to Node 0x01, STT: 164, Data: HELLO[0m
+[0;32mI (483904) LORA_TX: Sending to Node 0x01, STT: 165, Data: HELLO[0m
+[0;32mI (486834) LORA_TX: Sending to Node 0x01, STT: 166, Data: HELLO[0m
+[0;32mI (489764) LORA_TX: Sending to Node 0x01, STT: 167, Data: HELLO[0m
+[0;32mI (492694) LORA_TX: Sending to Node 0x01, STT: 168, Data: HELLO[0m
+[0;32mI (495624) LORA_TX: Sending to Node 0x01, STT: 169, Data: HELLO[0m
+[0;32mI (498554) LORA_TX: Sending to Node 0x01, STT: 170, Data: HELLO[0m
+[0;32mI (501484) LORA_TX: Sending to Node 0x01, STT: 171, Data: HELLO[0m
+[0;32mI (504414) LORA_TX: Sending to Node 0x01, STT: 172, Data: HELLO[0m
+[0;32mI (507344) LORA_TX: Sending to Node 0x01, STT: 173, Data: HELLO[0m
+[0;32mI (510274) LORA_TX: Sending to Node 0x01, STT: 174, Data: HELLO[0m
+[0;32mI (513204) LORA_TX: Sending to Node 0x01, STT: 175, Data: HELLO[0m
+[0;32mI (516134) LORA_TX: Sending to Node 0x01, STT: 176, Data: HELLO[0m
+[0;32mI (519064) LORA_TX: Sending to Node 0x01, STT: 177, Data: HELLO[0m
+[0;32mI (521994) LORA_TX: Sending to Node 0x01, STT: 178, Data: HELLO[0m
+[0;32mI (524924) LORA_TX: Sending to Node 0x01, STT: 179, Data: HELLO[0m
+[0;32mI (527854) LORA_TX: Sending to Node 0x01, STT: 180, Data: HELLO[0m
+[0;32mI (530784) LORA_TX: Sending to Node 0x01, STT: 181, Data: HELLO[0m
+[0;32mI (533714) LORA_TX: Sending to Node 0x01, STT: 182, Data: HELLO[0m
+[0;32mI (536644) LORA_TX: Sending to Node 0x01, STT: 183, Data: HELLO[0m
+[0;32mI (539574) LORA_TX: Sending to Node 0x01, STT: 184, Data: HELLO[0m
+[0;32mI (542504) LORA_TX: Sending to Node 0x01, STT: 185, Data: HELLO[0m
+[0;32mI (545434) LORA_TX: Sending to Node 0x01, STT: 186, Data: HELLO[0m
+[0;32mI (548364) LORA_TX: Sending to Node 0x01, STT: 187, Data: HELLO[0m
+[0;32mI (551294) LORA_TX: Sending to Node 0x01, STT: 188, Data: HELLO[0m
+[0;32mI (554224) LORA_TX: Sending to Node 0x01, STT: 189, Data: HELLO[0m
+[0;32mI (557154) LORA_TX: Sending to Node 0x01, STT: 190, Data: HELLO[0m
+[0;32mI (560084) LORA_TX: Sending to Node 0x01, STT: 191, Data: HELLO[0m
+[0;32mI (563014) LORA_TX: Sending to Node 0x01, STT: 192, Data: HELLO[0m
+[0;32mI (565944) LORA_TX: Sending to Node 0x01, STT: 193, Data: HELLO[0m
+[0;32mI (568874) LORA_TX: Sending to Node 0x01, STT: 194, Data: HELLO[0m
+[0;32mI (571804) LORA_TX: Sending to Node 0x01, STT: 195, Data: HELLO[0m
+[0;32mI (574734) LORA_TX: Sending to Node 0x01, STT: 196, Data: HELLO[0m
+[0;32mI (577664) LORA_TX: Sending to Node 0x01, STT: 197, Data: HELLO[0m
+[0;32mI (580594) LORA_TX: Sending to Node 0x01, STT: 198, Data: HELLO[0m
+[0;32mI (583524) LORA_TX: Sending to Node 0x01, STT: 199, Data: HELLO[0m
+[0;32mI (586454) LORA_TX: Sending to Node 0x01, STT: 200, Data: HELLO[0m
+[0;32mI (589384) LORA_TX: Sending to Node 0x01, STT: 201, Data: HELLO[0m
+[0;32mI (592314) LORA_TX: Sending to Node 0x01, STT: 202, Data: HELLO[0m
+[0;32mI (595244) LORA_TX: Sending to Node 0x01, STT: 203, Data: HELLO[0m
+[0;32mI (598174) LORA_TX: Sending to Node 0x01, STT: 204, Data: HELLO[0m
+[0;32mI (601104) LORA_TX: Sending to Node 0x01, STT: 205, Data: HELLO[0m
+[0;32mI (604034) LORA_TX: Sending to Node 0x01, STT: 206, Data: HELLO[0m
+[0;32mI (606964) LORA_TX: Sending to Node 0x01, STT: 207, Data: HELLO[0m
+[0;32mI (609894) LORA_TX: Sending to Node 0x01, STT: 208, Data: HELLO[0m
+[0;32mI (612824) LORA_TX: Sending to Node 0x01, STT: 209, Data: HELLO[0m
+[0;32mI (615754) LORA_TX: Sending to Node 0x01, STT: 210, Data: HELLO[0m
+[0;32mI (618684) LORA_TX: Sending to Node 0x01, STT: 211, Data: HELLO[0m
+[0;32mI (621614) LORA_TX: Sending to Node 0x01, STT: 212, Data: HELLO[0m
+[0;32mI (624544) LORA_TX: Sending to Node 0x01, STT: 213, Data: HELLO[0m
+[0;32mI (627474) LORA_TX: Sending to Node 0x01, STT: 214, Data: HELLO[0m

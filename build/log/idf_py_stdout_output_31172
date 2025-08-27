@@ -1,0 +1,607 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b0a8h ( 45224) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b0d0 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d344 vaddr=40080000 size=02cd4h ( 11476) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=165f0h ( 91632) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036618 vaddr=40082cd4 size=0ab58h ( 43864) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (223) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (239) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (245) cpu_start: ELF file SHA256:  587b6515413c9184...[0m
+[0;32mI (251) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (261) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (278) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (11836) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 0, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (14226) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;33mW (14226) LORA_BIDIRECTIONAL: Bỏ qua gói tin từ chính thiết bị này[0m
+[0;32mI (18606) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 1, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (23606) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (24806) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (29186) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 2, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (34186) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (35386) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (39766) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 3, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (44766) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (45966) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (50346) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 4, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (50766) LORA_BIDIRECTIONAL: RSSI: -64 dBm, SNR: 13 dB[0m
+[0;32mI (51766) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (51766) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 0, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (56156) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 5, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (56576) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 12 dB[0m
+[0;32mI (57576) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (57576) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 1, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (61966) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 6, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (62386) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (63386) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (63386) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 2, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (67776) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 7, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (72776) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (73976) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (78356) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 8, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (83356) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (84556) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (88936) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 9, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (93936) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (95136) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (99516) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 10, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (104516) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (105716) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (110096) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 11, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (115096) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (116296) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (120676) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 12, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (125676) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (126876) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (131256) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 13, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (136256) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (137456) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (141836) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 14, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (142246) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (143246) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (143246) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 0, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (147636) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 15, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (148046) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 12 dB[0m
+[0;32mI (149046) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (149046) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 1, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (153436) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 16, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (153846) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (154846) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (154846) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 2, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (159236) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 17, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (159646) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 13 dB[0m
+[0;32mI (160646) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (160646) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 3, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (165036) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 18, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (165446) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (166446) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (166446) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 4, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (170836) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 19, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (171246) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 13 dB[0m
+[0;32mI (172246) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (172246) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 5, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (176636) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 20, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (177046) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 14 dB[0m
+[0;32mI (178046) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (178046) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 6, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (182436) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 21, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (182846) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 12 dB[0m
+[0;32mI (183846) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (183846) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 7, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (188236) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 22, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (188646) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 12 dB[0m
+[0;32mI (189646) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (189646) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 8, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (194036) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 23, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (194446) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 13 dB[0m
+[0;32mI (195446) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (195446) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 9, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (199836) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 24, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (200256) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 13 dB[0m
+[0;32mI (201256) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (201256) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 10, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (205646) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 25, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (206066) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 12 dB[0m
+[0;32mI (207066) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (207066) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 11, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (11836) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 0, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (12246) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 12 dB[0m
+[0;32mI (13246) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (13246) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 13, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (17636) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 1, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (18046) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 13 dB[0m
+[0;32mI (19046) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (19046) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 14, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (23436) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 2, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (23846) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 12 dB[0m
+[0;32mI (24846) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (24846) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 15, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (29236) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 3, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (29646) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (30646) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (30646) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 16, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (35036) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 4, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (35446) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (36446) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (36446) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 17, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (40836) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 5, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (41246) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 12 dB[0m
+[0;32mI (42246) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (42246) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 18, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (46636) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 6, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (47046) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 12 dB[0m
+[0;32mI (48046) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (48046) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 19, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (52436) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 7, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (52846) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 12 dB[0m
+[0;32mI (53846) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (53846) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 20, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (58236) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 8, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (63236) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (64436) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (68816) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 9, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (73816) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (75016) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (79396) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 10, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (79816) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 12 dB[0m
+[0;32mI (80816) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (80816) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 21, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (85206) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 11, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (85626) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (86626) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (86626) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 22, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (91016) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 12, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (91436) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 12 dB[0m
+[0;32mI (92436) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (92436) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 23, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (96826) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 13, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (97246) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 13 dB[0m
+[0;32mI (98246) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (98246) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 24, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (102636) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 14, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (103056) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (104056) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (104056) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 25, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (108446) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 15, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (108866) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (109866) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (109866) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 26, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (114256) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 16, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (114676) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 14 dB[0m
+[0;32mI (115676) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (115676) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 27, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (120066) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 17, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (120486) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 13 dB[0m
+[0;32mI (121486) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (121486) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 28, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (125876) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 18, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (126296) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 13 dB[0m
+[0;32mI (127296) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (127296) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 29, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (131686) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 19, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (132106) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (133106) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (133106) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 30, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (137496) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 20, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (137916) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 12 dB[0m
+[0;32mI (138916) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (138916) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 31, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (143306) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 21, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (143726) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (144726) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (144726) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 32, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (149116) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 22, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (149536) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 14 dB[0m
+[0;32mI (150536) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (150536) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 33, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (154926) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 23, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;33mW (159926) LORA_BIDIRECTIONAL: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (161126) LORA_BIDIRECTIONAL: LED GPIO4 chớp 3 lần do timeout[0m
+[0;32mI (165506) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 24, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (165926) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (166926) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (166926) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 35, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (171316) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 25, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (171736) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 14 dB[0m
+[0;32mI (172736) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (172736) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 36, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (177126) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 26, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (177546) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 12 dB[0m
+[0;32mI (178546) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (178546) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 37, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (182936) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 27, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (183356) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 14 dB[0m
+[0;32mI (184356) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (184356) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 38, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (188746) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 28, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (189166) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 14 dB[0m
+[0;32mI (190166) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (190166) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 39, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (194556) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 29, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (194976) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (195976) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (195976) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 40, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (200366) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 30, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (200786) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (201786) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (201786) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 41, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (206176) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 31, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (206596) LORA_BIDIRECTIONAL: RSSI: -64 dBm, SNR: 12 dB[0m
+[0;32mI (207596) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (207596) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 42, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (211986) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 32, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (212406) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (213406) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (213406) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 43, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (217796) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 33, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (218216) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (219216) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (219216) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 44, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (223606) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 34, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (224026) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (225026) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (225026) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 45, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (229416) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 35, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (229836) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (230836) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (230836) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 46, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (235226) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 36, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (235646) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (236646) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (236646) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 47, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (241036) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 37, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (241456) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (242456) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (242456) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 48, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (246846) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 38, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (247266) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (248266) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (248266) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 49, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (252656) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 39, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (253076) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (254076) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (254076) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 50, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (258466) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 40, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (258886) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (259886) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (259886) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 51, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (264276) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 41, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (264696) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (265696) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (265696) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 52, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (270086) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 42, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (270506) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (271506) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (271506) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 53, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (275896) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 43, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (276316) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (277316) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (277316) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 54, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (281706) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 44, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (282126) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (283126) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (283126) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 55, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (287516) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 45, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (287936) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (288936) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (288936) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 56, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (293326) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 46, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (293746) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (294746) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (294746) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 57, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (299136) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 47, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (299556) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 12 dB[0m
+[0;32mI (300556) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (300556) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 58, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (304946) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 48, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (305366) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (306366) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (306366) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 59, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (310756) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 49, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (311176) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (312176) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (312176) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 60, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (316566) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 50, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (316986) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 12 dB[0m
+[0;32mI (317986) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (317986) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 61, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (322376) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 51, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (322796) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (323796) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (323796) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 62, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (328186) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 52, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (328606) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (329606) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (329606) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 63, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (333996) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 53, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (334416) LORA_BIDIRECTIONAL: RSSI: -64 dBm, SNR: 14 dB[0m
+[0;32mI (335416) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (335416) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 64, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (339806) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 54, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (340226) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (341226) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (341226) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 65, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (345616) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 55, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (346036) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (347036) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (347036) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 66, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (351426) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 56, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (351846) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (352846) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (352846) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 67, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (357236) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 57, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (357656) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (358656) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (358656) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 68, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (363046) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 58, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (363466) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (364466) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (364466) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 69, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (368856) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 59, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (369276) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (370276) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (370276) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 70, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (374666) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 60, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (375086) LORA_BIDIRECTIONAL: RSSI: -64 dBm, SNR: 13 dB[0m
+[0;32mI (376086) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (376086) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 71, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (380476) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 61, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (380896) LORA_BIDIRECTIONAL: RSSI: -64 dBm, SNR: 13 dB[0m
+[0;32mI (381896) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (381896) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 72, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (386286) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 62, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (386706) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (387706) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (387706) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 73, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (392096) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 63, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (392516) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (393516) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (393516) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 74, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (397906) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 64, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (398326) LORA_BIDIRECTIONAL: RSSI: -64 dBm, SNR: 13 dB[0m
+[0;32mI (399326) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (399326) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 75, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (403716) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 65, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (404136) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (405136) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (405136) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 76, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (409526) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 66, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (409946) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 14 dB[0m
+[0;32mI (410946) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (410946) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 77, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (415336) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 67, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (415756) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 14 dB[0m
+[0;32mI (416756) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (416756) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 78, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (421146) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 68, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (421566) LORA_BIDIRECTIONAL: RSSI: -64 dBm, SNR: 14 dB[0m
+[0;32mI (422566) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (422566) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 79, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (426956) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 69, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (427376) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (428376) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (428376) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 80, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (432766) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 70, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (433186) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (434186) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (434186) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 81, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (438576) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 71, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (438996) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 14 dB[0m
+[0;32mI (439996) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (439996) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 82, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (444386) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 72, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (444806) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (445806) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (445806) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 83, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (450196) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 73, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (450616) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (451616) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (451616) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 84, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (456006) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 74, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (456426) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 13 dB[0m
+[0;32mI (457426) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (457426) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 85, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (461816) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 75, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (462236) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (463236) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (463236) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 86, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (467626) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 76, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (468046) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (469046) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (469046) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 87, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (473436) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 77, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (473856) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 13 dB[0m
+[0;32mI (474856) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (474856) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 88, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (479246) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 78, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (479666) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (480666) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (480666) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 89, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (485056) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 79, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (485476) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (486476) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (486476) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 90, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (490866) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 80, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (491286) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (492286) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (492286) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 91, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (496676) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 81, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (497096) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (498096) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (498096) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 92, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (502486) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 82, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (502906) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 13 dB[0m
+[0;32mI (503906) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (503906) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 93, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (508296) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 83, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (508716) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (509716) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (509716) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 94, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (514106) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 84, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (514526) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (515526) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (515526) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 95, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (519916) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 85, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (520336) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (521336) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (521336) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 96, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (525726) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 86, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (526146) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (527146) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (527146) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 97, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (531536) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 87, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (531956) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 14 dB[0m
+[0;32mI (532956) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (532956) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 98, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (537346) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 88, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (537766) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 13 dB[0m
+[0;32mI (538766) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (538766) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 99, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (543156) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 89, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (543576) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 12 dB[0m
+[0;32mI (544576) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (544576) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 100, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (548966) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 90, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (549386) LORA_BIDIRECTIONAL: RSSI: -67 dBm, SNR: 12 dB[0m
+[0;32mI (550386) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (550386) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 101, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (554776) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 91, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (555196) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 12 dB[0m
+[0;32mI (556196) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (556196) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 102, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (560586) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 92, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (561006) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (562006) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (562006) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 103, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (566396) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 93, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (566816) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (567816) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (567816) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 104, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (572206) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 94, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (572626) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 11 dB[0m
+[0;32mI (573626) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (573626) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 105, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (578016) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 95, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (578436) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 11 dB[0m
+[0;32mI (579436) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (579436) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 106, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (583826) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 96, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (584246) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (585246) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (585246) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 107, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (589636) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 97, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (590056) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (591056) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (591056) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 108, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (595446) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 98, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (595866) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (596866) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (596866) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 109, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (601256) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 99, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (601676) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (602676) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (602676) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 110, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (607066) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 100, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (607486) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (608486) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (608486) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 111, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (612876) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 101, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (613296) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 11 dB[0m
+[0;32mI (614296) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (614296) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 112, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (618686) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 102, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (619106) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (620106) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (620106) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 113, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (624496) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 103, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (624916) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (625916) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (625916) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 114, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (630306) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 104, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (630726) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (631726) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (631726) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 115, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (636116) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 105, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (636536) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (637536) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (637536) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 116, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (641926) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 106, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (642346) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 11 dB[0m
+[0;32mI (643346) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (643346) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 117, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (647736) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 107, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (648156) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (649156) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (649156) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 118, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (653546) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 108, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (653966) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 11 dB[0m
+[0;32mI (654966) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (654966) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 119, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (659356) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 109, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (659776) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (660776) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (660776) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 120, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (665166) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 110, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (665586) LORA_BIDIRECTIONAL: RSSI: -66 dBm, SNR: 10 dB[0m
+[0;32mI (666586) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (666586) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 121, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (670976) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 111, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (671396) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 10 dB[0m
+[0;32mI (672396) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (672396) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 122, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (676786) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 112, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (677206) LORA_BIDIRECTIONAL: RSSI: -64 dBm, SNR: 13 dB[0m
+[0;32mI (678206) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (678206) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 123, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m
+[0;32mI (682596) LORA_BIDIRECTIONAL: Gửi đến Node 0x02, STT: 113, Dữ liệu: Xin chào từ TX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0xB7[0m
+[0;32mI (683016) LORA_BIDIRECTIONAL: RSSI: -65 dBm, SNR: 14 dB[0m
+[0;32mI (684016) LORA_BIDIRECTIONAL: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (684016) LORA_BIDIRECTIONAL: Nhận phản hồi từ Node 0x02, STT: 124, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi...[0m

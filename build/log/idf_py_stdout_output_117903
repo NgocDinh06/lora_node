@@ -1,0 +1,222 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c048h ( 49224) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c070 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001e380 vaddr=40080000 size=01c98h (  7320) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17e28h ( 97832) map[0m
+[0;32mI (172) esp_image: segment 4: paddr=00037e50 vaddr=40081c98 size=0c0f8h ( 49400) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu up.[0m
+[0;32mI (211) cpu_start: Starting app cpu, entry point is 0x40081200[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (229) cpu_start: Pro cpu start user code[0m
+[0;32mI (229) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (229) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (240) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  c69e604f353dd639...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (263) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (267) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (272) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2BC0 len 0002D440 (181 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008DD90 len 00012270 (72 KiB): IRAM[0m
+[0;32mI (317) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (338) app_start: Starting scheduler on CPU0[0m
+[0;32mI (342) app_start: Starting scheduler on CPU1[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (352) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (362) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (372) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (382) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (502) NODE_TX: LoRa init done[0m
+[0;32mI (502) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (502) NODE_TX: Send REGISTER seq=0, attempt=1[0m
+[0;32mI (502) main_task: Returned from app_main()[0m
+[0;33mW (6092) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (6092) NODE_TX: No valid ACK for seq=0, retrying after delay[0m
+[0;32mI (6292) NODE_TX: Send REGISTER seq=0, attempt=2[0m
+[0;33mW (12162) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (12162) NODE_TX: No valid ACK for seq=0, retrying after delay[0m
+[0;32mI (12362) NODE_TX: Send REGISTER seq=0, attempt=3[0m
+[0;33mW (17762) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (17762) NODE_TX: No valid ACK for seq=0, retrying after delay[0m
+[0;32mI (17962) NODE_TX: Send REGISTER seq=0, attempt=4[0m
+[0;33mW (23752) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (23752) NODE_TX: No valid ACK for seq=0, retrying after delay[0m
+[0;32mI (23952) NODE_TX: Send REGISTER seq=0, attempt=5[0m
+[0;33mW (29682) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (29682) NODE_TX: No valid ACK for seq=0, retrying after delay[0m
+[0;31mE (29882) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (29982) NODE_TX: Send REGISTER seq=1, attempt=1[0m
+[0;33mW (35802) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (35802) NODE_TX: No valid ACK for seq=1, retrying after delay[0m
+[0;32mI (36002) NODE_TX: Send REGISTER seq=1, attempt=2[0m
+[0;33mW (41732) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (41732) NODE_TX: No valid ACK for seq=1, retrying after delay[0m
+[0;32mI (41932) NODE_TX: Send REGISTER seq=1, attempt=3[0m
+[0;33mW (47582) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (47582) NODE_TX: No valid ACK for seq=1, retrying after delay[0m
+[0;32mI (47782) NODE_TX: Send REGISTER seq=1, attempt=4[0m
+[0;33mW (53302) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (53302) NODE_TX: No valid ACK for seq=1, retrying after delay[0m
+[0;32mI (53502) NODE_TX: Send REGISTER seq=1, attempt=5[0m
+[0;33mW (59352) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (59352) NODE_TX: No valid ACK for seq=1, retrying after delay[0m
+[0;31mE (59552) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (59652) NODE_TX: Send REGISTER seq=2, attempt=1[0m
+[0;33mW (65102) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (65102) NODE_TX: No valid ACK for seq=2, retrying after delay[0m
+[0;32mI (65302) NODE_TX: Send REGISTER seq=2, attempt=2[0m
+[0;33mW (71082) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (71082) NODE_TX: No valid ACK for seq=2, retrying after delay[0m
+[0;32mI (71282) NODE_TX: Send REGISTER seq=2, attempt=3[0m
+[0;33mW (77132) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (77132) NODE_TX: No valid ACK for seq=2, retrying after delay[0m
+[0;32mI (77332) NODE_TX: Send REGISTER seq=2, attempt=4[0m
+[0;33mW (83002) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (83002) NODE_TX: No valid ACK for seq=2, retrying after delay[0m
+[0;32mI (83202) NODE_TX: Send REGISTER seq=2, attempt=5[0m
+[0;33mW (88702) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (88702) NODE_TX: No valid ACK for seq=2, retrying after delay[0m
+[0;31mE (88902) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (89002) NODE_TX: Send REGISTER seq=3, attempt=1[0m
+[0;32mI (93552) NODE_TX: Send REGISTER seq=3, attempt=2[0m
+[0;33mW (99392) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (99392) NODE_TX: No valid ACK for seq=3, retrying after delay[0m
+[0;32mI (99592) NODE_TX: Send REGISTER seq=3, attempt=3[0m
+[0;33mW (105042) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (105042) NODE_TX: No valid ACK for seq=3, retrying after delay[0m
+[0;32mI (105242) NODE_TX: Send REGISTER seq=3, attempt=4[0m
+[0;33mW (110772) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (110772) NODE_TX: No valid ACK for seq=3, retrying after delay[0m
+[0;32mI (110972) NODE_TX: Send REGISTER seq=3, attempt=5[0m
+[0;33mW (116542) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (116542) NODE_TX: No valid ACK for seq=3, retrying after delay[0m
+[0;31mE (116742) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (116842) NODE_TX: Send REGISTER seq=4, attempt=1[0m
+[0;33mW (122672) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (122672) NODE_TX: No valid ACK for seq=4, retrying after delay[0m
+[0;32mI (122872) NODE_TX: Send REGISTER seq=4, attempt=2[0m
+[0;32mI (127772) NODE_TX: Send REGISTER seq=4, attempt=3[0m
+[0;33mW (133422) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (133422) NODE_TX: No valid ACK for seq=4, retrying after delay[0m
+[0;32mI (133622) NODE_TX: Send REGISTER seq=4, attempt=4[0m
+[0;33mW (139462) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (139462) NODE_TX: No valid ACK for seq=4, retrying after delay[0m
+[0;32mI (139662) NODE_TX: Send REGISTER seq=4, attempt=5[0m
+[0;33mW (145362) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (145362) NODE_TX: No valid ACK for seq=4, retrying after delay[0m
+[0;31mE (145562) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (145662) NODE_TX: Send REGISTER seq=5, attempt=1[0m
+[0;33mW (151282) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (151282) NODE_TX: No valid ACK for seq=5, retrying after delay[0m
+[0;32mI (151482) NODE_TX: Send REGISTER seq=5, attempt=2[0m
+[0;33mW (157052) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (157052) NODE_TX: No valid ACK for seq=5, retrying after delay[0m
+[0;32mI (157252) NODE_TX: Send REGISTER seq=5, attempt=3[0m
+[0;32mI (161232) NODE_TX: Send REGISTER seq=5, attempt=4[0m
+[0;33mW (166812) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (166812) NODE_TX: No valid ACK for seq=5, retrying after delay[0m
+[0;32mI (167012) NODE_TX: Send REGISTER seq=5, attempt=5[0m
+[0;33mW (172662) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (172662) NODE_TX: No valid ACK for seq=5, retrying after delay[0m
+[0;31mE (172862) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (172962) NODE_TX: Send REGISTER seq=6, attempt=1[0m
+[0;33mW (178492) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (178492) NODE_TX: No valid ACK for seq=6, retrying after delay[0m
+[0;32mI (178692) NODE_TX: Send REGISTER seq=6, attempt=2[0m
+[0;33mW (184212) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (184212) NODE_TX: No valid ACK for seq=6, retrying after delay[0m
+[0;32mI (184412) NODE_TX: Send REGISTER seq=6, attempt=3[0m
+[0;33mW (189862) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (189862) NODE_TX: No valid ACK for seq=6, retrying after delay[0m
+[0;32mI (190062) NODE_TX: Send REGISTER seq=6, attempt=4[0m
+[0;33mW (195652) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (195652) NODE_TX: No valid ACK for seq=6, retrying after delay[0m
+[0;32mI (195852) NODE_TX: Send REGISTER seq=6, attempt=5[0m
+[0;33mW (201412) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (201412) NODE_TX: No valid ACK for seq=6, retrying after delay[0m
+[0;31mE (201612) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (201712) NODE_TX: Send REGISTER seq=7, attempt=1[0m
+[0;33mW (207452) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (207452) NODE_TX: No valid ACK for seq=7, retrying after delay[0m
+[0;32mI (207652) NODE_TX: Send REGISTER seq=7, attempt=2[0m
+[0;33mW (213062) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (213062) NODE_TX: No valid ACK for seq=7, retrying after delay[0m
+[0;32mI (213262) NODE_TX: Send REGISTER seq=7, attempt=3[0m
+[0;33mW (218862) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (218862) NODE_TX: No valid ACK for seq=7, retrying after delay[0m
+[0;32mI (219062) NODE_TX: Send REGISTER seq=7, attempt=4[0m
+[0;33mW (224642) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (224642) NODE_TX: No valid ACK for seq=7, retrying after delay[0m
+[0;32mI (224842) NODE_TX: Send REGISTER seq=7, attempt=5[0m
+[0;33mW (230502) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (230502) NODE_TX: No valid ACK for seq=7, retrying after delay[0m
+[0;31mE (230702) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (230802) NODE_TX: Send REGISTER seq=8, attempt=1[0m
+[0;32mI (237302) NODE_TX: Send REGISTER seq=8, attempt=2[0m
+[0;33mW (242722) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (242722) NODE_TX: No valid ACK for seq=8, retrying after delay[0m
+[0;32mI (242922) NODE_TX: Send REGISTER seq=8, attempt=3[0m
+[0;33mW (248592) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (248592) NODE_TX: No valid ACK for seq=8, retrying after delay[0m
+[0;32mI (248792) NODE_TX: Send REGISTER seq=8, attempt=4[0m
+[0;33mW (254242) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (254242) NODE_TX: No valid ACK for seq=8, retrying after delay[0m
+[0;32mI (254442) NODE_TX: Send REGISTER seq=8, attempt=5[0m
+[0;33mW (260262) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (260262) NODE_TX: No valid ACK for seq=8, retrying after delay[0m
+[0;31mE (260462) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (260562) NODE_TX: Send REGISTER seq=9, attempt=1[0m
+[0;33mW (266052) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (266052) NODE_TX: No valid ACK for seq=9, retrying after delay[0m
+[0;32mI (266252) NODE_TX: Send REGISTER seq=9, attempt=2[0m
+[0;32mI (271462) NODE_TX: Send REGISTER seq=9, attempt=3[0m
+[0;33mW (277082) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (277082) NODE_TX: No valid ACK for seq=9, retrying after delay[0m
+[0;32mI (277282) NODE_TX: Send REGISTER seq=9, attempt=4[0m
+[0;33mW (283072) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (283072) NODE_TX: No valid ACK for seq=9, retrying after delay[0m
+[0;32mI (283272) NODE_TX: Send REGISTER seq=9, attempt=5[0m
+[0;33mW (288762) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (288762) NODE_TX: No valid ACK for seq=9, retrying after delay[0m
+[0;31mE (288962) NODE_TX: Failed to register after 5 attempts, resetting sequence[0m
+[0;32mI (289062) NODE_TX: Send REGISTER seq=10, attempt=1[0m
+[0;33mW (294772) NODE_TX: Timeout waiting for packet[0m
+[0;33mW (294772) NODE_TX: No valid ACK for seq=10, retrying after delay[0m
+[0;32mI (294972) NODE_TX: Send REGISTER seq=10, attempt=2[0m

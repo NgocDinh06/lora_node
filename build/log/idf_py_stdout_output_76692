@@ -1,0 +1,408 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b688h ( 46728) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b6b0 vaddr=3ffb0000 size=022dch (  8924) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d994 vaddr=40080000 size=02684h (  9860) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16f04h ( 93956) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036f2c vaddr=40082684 size=0b1f0h ( 45552) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (207) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu up.[0m
+[0;32mI (207) cpu_start: Starting app cpu, entry point is 0x400811bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (225) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (225) cpu_start: Application information:[0m
+[0;32mI (230) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (236) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (241) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (247) cpu_start: ELF file SHA256:  a69d58453eb7d9c0...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2B98 len 0002D468 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008D874 len 0001278C (73 KiB): IRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (334) app_start: Starting scheduler on CPU0[0m
+[0;32mI (338) app_start: Starting scheduler on CPU1[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+[0;32mI (458) NODE_TX: LoRa init done[0m
+[0;32mI (458) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (458) NODE_TX: Send REGISTER seq=0[0m
+[0;32mI (458) main_task: Returned from app_main()[0m
+[0;33mW (7498) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (7498) NODE_TX: No valid ACK for seq=0[0m
+[0;32mI (12498) NODE_TX: Send REGISTER seq=1[0m
+[0;33mW (19438) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (19438) NODE_TX: No valid ACK for seq=1[0m
+[0;32mI (24438) NODE_TX: Send REGISTER seq=2[0m
+[0;33mW (28628) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x86[0m
+[0;33mW (29828) NODE_TX: No valid ACK for seq=2[0m
+[0;32mI (34828) NODE_TX: Send REGISTER seq=3[0m
+[0;33mW (37738) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x87[0m
+[0;33mW (38938) NODE_TX: No valid ACK for seq=3[0m
+[0;32mI (43938) NODE_TX: Send REGISTER seq=4[0m
+[0;33mW (46448) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x80[0m
+[0;33mW (47648) NODE_TX: No valid ACK for seq=4[0m
+[0;32mI (52648) NODE_TX: Send REGISTER seq=5[0m
+[0;33mW (55768) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x81[0m
+[0;33mW (56968) NODE_TX: No valid ACK for seq=5[0m
+[0;32mI (61968) NODE_TX: Send REGISTER seq=6[0m
+[0;33mW (64368) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x82[0m
+[0;33mW (65568) NODE_TX: No valid ACK for seq=6[0m
+[0;32mI (70568) NODE_TX: Send REGISTER seq=7[0m
+[0;33mW (72978) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x83[0m
+[0;33mW (74178) NODE_TX: No valid ACK for seq=7[0m
+[0;32mI (79178) NODE_TX: Send REGISTER seq=8[0m
+[0;33mW (82088) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8C[0m
+[0;33mW (83288) NODE_TX: No valid ACK for seq=8[0m
+[0;32mI (88288) NODE_TX: Send REGISTER seq=9[0m
+[0;33mW (91248) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8D[0m
+[0;33mW (92448) NODE_TX: No valid ACK for seq=9[0m
+[0;32mI (97448) NODE_TX: Send REGISTER seq=10[0m
+[0;33mW (100118) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8E[0m
+[0;33mW (101318) NODE_TX: No valid ACK for seq=10[0m
+[0;32mI (106318) NODE_TX: Send REGISTER seq=11[0m
+[0;33mW (108178) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8F[0m
+[0;33mW (109378) NODE_TX: No valid ACK for seq=11[0m
+[0;32mI (114378) NODE_TX: Send REGISTER seq=12[0m
+[0;33mW (116498) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x88[0m
+[0;33mW (117698) NODE_TX: No valid ACK for seq=12[0m
+[0;32mI (122698) NODE_TX: Send REGISTER seq=13[0m
+[0;33mW (124538) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x89[0m
+[0;33mW (125738) NODE_TX: No valid ACK for seq=13[0m
+[0;32mI (130738) NODE_TX: Send REGISTER seq=14[0m
+[0;33mW (132758) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8A[0m
+[0;33mW (133958) NODE_TX: No valid ACK for seq=14[0m
+[0;32mI (138958) NODE_TX: Send REGISTER seq=15[0m
+[0;33mW (141218) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8B[0m
+[0;33mW (142418) NODE_TX: No valid ACK for seq=15[0m
+[0;32mI (147418) NODE_TX: Send REGISTER seq=16[0m
+[0;33mW (149718) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x94[0m
+[0;33mW (150918) NODE_TX: No valid ACK for seq=16[0m
+[0;32mI (155918) NODE_TX: Send REGISTER seq=17[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b688h ( 46728) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b6b0 vaddr=3ffb0000 size=022dch (  8924) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d994 vaddr=40080000 size=02684h (  9860) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16f04h ( 93956) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036f2c vaddr=40082684 size=0b1f0h ( 45552) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (207) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu up.[0m
+[0;32mI (207) cpu_start: Starting app cpu, entry point is 0x400811bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (225) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (225) cpu_start: Application information:[0m
+[0;32mI (230) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (236) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (241) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (247) cpu_start: ELF file SHA256:  a69d58453eb7d9c0...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2B98 len 0002D468 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008D874 len 0001278C (73 KiB): IRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (334) app_start: Starting scheduler on CPU0[0m
+[0;32mI (338) app_start: Starting scheduler on CPU1[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+[0;32mI (458) NODE_TX: LoRa init done[0m
+[0;32mI (458) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (458) NODE_TX: Send REGISTER seq=0[0m
+[0;32mI (458) main_task: Returned from app_main()[0m
+[0;33mW (7248) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (7248) NODE_TX: No valid ACK for seq=0[0m
+[0;32mI (12248) NODE_TX: Send REGISTER seq=1[0m
+[0;33mW (14478) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x85[0m
+[0;33mW (15678) NODE_TX: No valid ACK for seq=1[0m
+[0;32mI (20678) NODE_TX: Send REGISTER seq=2[0m
+[0;33mW (22628) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x86[0m
+[0;33mW (23828) NODE_TX: No valid ACK for seq=2[0m
+[0;32mI (28828) NODE_TX: Send REGISTER seq=3[0m
+[0;33mW (30698) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x87[0m
+[0;33mW (31898) NODE_TX: No valid ACK for seq=3[0m
+[0;32mI (36898) NODE_TX: Send REGISTER seq=4[0m
+[0;33mW (39198) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x80[0m
+[0;33mW (40398) NODE_TX: No valid ACK for seq=4[0m
+[0;32mI (45398) NODE_TX: Send REGISTER seq=5[0m
+[0;33mW (47348) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x81[0m
+[0;33mW (48548) NODE_TX: No valid ACK for seq=5[0m
+[0;32mI (53548) NODE_TX: Send REGISTER seq=6[0m
+[0;33mW (55398) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x82[0m
+[0;33mW (56598) NODE_TX: No valid ACK for seq=6[0m
+[0;32mI (61598) NODE_TX: Send REGISTER seq=7[0m
+[0;33mW (63898) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x83[0m
+[0;33mW (65098) NODE_TX: No valid ACK for seq=7[0m
+[0;32mI (70098) NODE_TX: Send REGISTER seq=8[0m
+[0;33mW (72138) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8C[0m
+[0;33mW (73338) NODE_TX: No valid ACK for seq=8[0m
+[0;32mI (78338) NODE_TX: Send REGISTER seq=9[0m
+[0;33mW (80248) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8D[0m
+[0;33mW (81448) NODE_TX: No valid ACK for seq=9[0m
+[0;32mI (86448) NODE_TX: Send REGISTER seq=10[0m
+[0;33mW (88828) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8E[0m
+[0;33mW (90028) NODE_TX: No valid ACK for seq=10[0m
+[0;32mI (95028) NODE_TX: Send REGISTER seq=11[0m
+[0;33mW (97278) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8F[0m
+[0;33mW (98478) NODE_TX: No valid ACK for seq=11[0m
+[0;32mI (103478) NODE_TX: Send REGISTER seq=12[0m
+[0;33mW (105658) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x88[0m
+[0;33mW (106858) NODE_TX: No valid ACK for seq=12[0m
+[0;32mI (111858) NODE_TX: Send REGISTER seq=13[0m
+[0;33mW (113878) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x89[0m
+[0;33mW (115078) NODE_TX: No valid ACK for seq=13[0m
+[0;32mI (120078) NODE_TX: Send REGISTER seq=14[0m
+[0;33mW (121978) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8A[0m
+[0;33mW (123178) NODE_TX: No valid ACK for seq=14[0m
+[0;32mI (128178) NODE_TX: Send REGISTER seq=15[0m
+[0;33mW (130238) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8B[0m
+[0;33mW (131438) NODE_TX: No valid ACK for seq=15[0m
+[0;32mI (136438) NODE_TX: Send REGISTER seq=16[0m
+[0;33mW (138108) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x94[0m
+[0;33mW (139308) NODE_TX: No valid ACK for seq=16[0m
+[0;32mI (144308) NODE_TX: Send REGISTER seq=17[0m
+[0;33mW (146368) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x95[0m
+[0;33mW (147568) NODE_TX: No valid ACK for seq=17[0m
+[0;32mI (152568) NODE_TX: Send REGISTER seq=18[0m
+[0;33mW (154578) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x96[0m
+[0;33mW (155778) NODE_TX: No valid ACK for seq=18[0m
+[0;32mI (160778) NODE_TX: Send REGISTER seq=19[0m
+[0;33mW (163098) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x97[0m
+[0;33mW (164298) NODE_TX: No valid ACK for seq=19[0m
+[0;32mI (169298) NODE_TX: Send REGISTER seq=20[0m
+[0;33mW (171778) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x90[0m
+[0;33mW (172978) NODE_TX: No valid ACK for seq=20[0m
+[0;32mI (177978) NODE_TX: Send REGISTER seq=21[0m
+[0;33mW (182968) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x91[0m
+[0;33mW (184168) NODE_TX: No valid ACK for seq=21[0m
+[0;32mI (189168) NODE_TX: Send REGISTER seq=22[0m
+[0;33mW (191018) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x92[0m
+[0;33mW (192218) NODE_TX: No valid ACK for seq=22[0m
+[0;32mI (197218) NODE_TX: Send REGISTER seq=23[0m
+[0;33mW (199398) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x93[0m
+[0;33mW (200598) NODE_TX: No valid ACK for seq=23[0m
+[0;32mI (205598) NODE_TX: Send REGISTER seq=24[0m
+[0;33mW (207298) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9C[0m
+[0;33mW (208498) NODE_TX: No valid ACK for seq=24[0m
+[0;32mI (213498) NODE_TX: Send REGISTER seq=25[0m
+[0;33mW (215838) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9D[0m
+[0;33mW (217038) NODE_TX: No valid ACK for seq=25[0m
+[0;32mI (222038) NODE_TX: Send REGISTER seq=26[0m
+[0;33mW (224348) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9E[0m
+[0;33mW (225548) NODE_TX: No valid ACK for seq=26[0m
+[0;32mI (230548) NODE_TX: Send REGISTER seq=27[0m
+[0;33mW (232738) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9F[0m
+[0;33mW (233938) NODE_TX: No valid ACK for seq=27[0m
+[0;32mI (238938) NODE_TX: Send REGISTER seq=28[0m
+[0;33mW (241368) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x98[0m
+[0;33mW (242568) NODE_TX: No valid ACK for seq=28[0m
+[0;32mI (247568) NODE_TX: Send REGISTER seq=29[0m
+[0;33mW (251578) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x99[0m
+[0;33mW (252778) NODE_TX: No valid ACK for seq=29[0m
+[0;32mI (257778) NODE_TX: Send REGISTER seq=30[0m
+[0;33mW (259478) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9A[0m
+[0;33mW (260678) NODE_TX: No valid ACK for seq=30[0m
+[0;32mI (265678) NODE_TX: Send REGISTER seq=31[0m
+[0;33mW (267448) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9B[0m
+[0;33mW (268648) NODE_TX: No valid ACK for seq=31[0m
+[0;32mI (273648) NODE_TX: Send REGISTER seq=32[0m
+[0;33mW (276128) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA4[0m
+[0;33mW (277328) NODE_TX: No valid ACK for seq=32[0m
+[0;32mI (282328) NODE_TX: Send REGISTER seq=33[0m
+[0;33mW (284488) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA5[0m
+[0;33mW (285688) NODE_TX: No valid ACK for seq=33[0m
+[0;32mI (290688) NODE_TX: Send REGISTER seq=34[0m
+[0;33mW (292638) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA6[0m
+[0;33mW (293838) NODE_TX: No valid ACK for seq=34[0m
+[0;32mI (298838) NODE_TX: Send REGISTER seq=35[0m
+[0;33mW (300748) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA7[0m
+[0;33mW (301948) NODE_TX: No valid ACK for seq=35[0m
+[0;32mI (306948) NODE_TX: Send REGISTER seq=36[0m
+[0;33mW (313018) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA0[0m
+[0;33mW (314218) NODE_TX: No valid ACK for seq=36[0m
+[0;32mI (319218) NODE_TX: Send REGISTER seq=37[0m
+[0;33mW (320908) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA1[0m
+[0;33mW (322108) NODE_TX: No valid ACK for seq=37[0m
+[0;32mI (327108) NODE_TX: Send REGISTER seq=38[0m
+[0;33mW (329218) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA2[0m
+[0;33mW (330418) NODE_TX: No valid ACK for seq=38[0m
+[0;32mI (335418) NODE_TX: Send REGISTER seq=39[0m
+[0;33mW (337548) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA3[0m
+[0;33mW (338748) NODE_TX: No valid ACK for seq=39[0m
+[0;32mI (343748) NODE_TX: Send REGISTER seq=40[0m
+[0;33mW (346358) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAC[0m
+[0;33mW (347558) NODE_TX: No valid ACK for seq=40[0m
+[0;32mI (352558) NODE_TX: Send REGISTER seq=41[0m
+[0;33mW (354978) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAD[0m
+[0;33mW (356178) NODE_TX: No valid ACK for seq=41[0m
+[0;32mI (361178) NODE_TX: Send REGISTER seq=42[0m
+[0;33mW (363368) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAE[0m
+[0;33mW (364568) NODE_TX: No valid ACK for seq=42[0m
+[0;32mI (369568) NODE_TX: Send REGISTER seq=43[0m
+[0;33mW (371788) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAF[0m
+[0;33mW (372988) NODE_TX: No valid ACK for seq=43[0m
+[0;32mI (377988) NODE_TX: Send REGISTER seq=44[0m
+[0;33mW (379988) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA8[0m
+[0;33mW (381188) NODE_TX: No valid ACK for seq=44[0m
+[0;32mI (386188) NODE_TX: Send REGISTER seq=45[0m
+[0;33mW (388668) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA9[0m
+[0;33mW (389868) NODE_TX: No valid ACK for seq=45[0m
+[0;32mI (394868) NODE_TX: Send REGISTER seq=46[0m
+[0;33mW (397528) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAA[0m
+[0;33mW (398728) NODE_TX: No valid ACK for seq=46[0m
+[0;32mI (403728) NODE_TX: Send REGISTER seq=47[0m
+[0;33mW (405778) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAB[0m
+[0;33mW (406978) NODE_TX: No valid ACK for seq=47[0m
+[0;32mI (411978) NODE_TX: Send REGISTER seq=48[0m
+[0;33mW (418588) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (418588) NODE_TX: No valid ACK for seq=48[0m
+[0;32mI (423588) NODE_TX: Send REGISTER seq=49[0m
+[0;33mW (425728) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB5[0m
+[0;33mW (426928) NODE_TX: No valid ACK for seq=49[0m
+[0;32mI (431928) NODE_TX: Send REGISTER seq=50[0m
+[0;33mW (434948) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB6[0m
+[0;33mW (436148) NODE_TX: No valid ACK for seq=50[0m
+[0;32mI (441148) NODE_TX: Send REGISTER seq=51[0m
+[0;33mW (443338) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB7[0m
+[0;33mW (444538) NODE_TX: No valid ACK for seq=51[0m
+[0;32mI (449538) NODE_TX: Send REGISTER seq=52[0m
+[0;33mW (452358) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB0[0m
+[0;33mW (453558) NODE_TX: No valid ACK for seq=52[0m
+[0;32mI (458558) NODE_TX: Send REGISTER seq=53[0m
+[0;33mW (462308) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB1[0m
+[0;33mW (463508) NODE_TX: No valid ACK for seq=53[0m
+[0;32mI (468508) NODE_TX: Send REGISTER seq=54[0m
+[0;33mW (471708) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB2[0m
+[0;33mW (472908) NODE_TX: No valid ACK for seq=54[0m
+[0;32mI (477908) NODE_TX: Send REGISTER seq=55[0m
+[0;33mW (480718) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB3[0m
+[0;33mW (481918) NODE_TX: No valid ACK for seq=55[0m
+[0;32mI (486918) NODE_TX: Send REGISTER seq=56[0m
+[0;33mW (490238) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBC[0m
+[0;33mW (491438) NODE_TX: No valid ACK for seq=56[0m
+[0;32mI (496438) NODE_TX: Send REGISTER seq=57[0m
+[0;33mW (498438) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBD[0m
+[0;33mW (499638) NODE_TX: No valid ACK for seq=57[0m
+[0;32mI (504638) NODE_TX: Send REGISTER seq=58[0m
+[0;33mW (507438) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBE[0m
+[0;33mW (508638) NODE_TX: No valid ACK for seq=58[0m
+[0;32mI (513638) NODE_TX: Send REGISTER seq=59[0m
+[0;33mW (516168) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBF[0m
+[0;33mW (517368) NODE_TX: No valid ACK for seq=59[0m
+[0;32mI (522368) NODE_TX: Send REGISTER seq=60[0m
+[0;33mW (525568) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB8[0m
+[0;33mW (526768) NODE_TX: No valid ACK for seq=60[0m
+[0;32mI (531768) NODE_TX: Send REGISTER seq=61[0m
+[0;33mW (534018) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB9[0m
+[0;33mW (535218) NODE_TX: No valid ACK for seq=61[0m
+[0;32mI (540218) NODE_TX: Send REGISTER seq=62[0m
+[0;33mW (542878) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBA[0m
+[0;33mW (544078) NODE_TX: No valid ACK for seq=62[0m
+[0;32mI (549078) NODE_TX: Send REGISTER seq=63[0m
+[0;33mW (551498) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBB[0m
+[0;33mW (552698) NODE_TX: No valid ACK for seq=63[0m
+[0;32mI (557698) NODE_TX: Send REGISTER seq=64[0m
+[0;33mW (560998) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC4[0m
+[0;33mW (562198) NODE_TX: No valid ACK for seq=64[0m
+[0;32mI (567198) NODE_TX: Send REGISTER seq=65[0m
+[0;33mW (570008) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC5[0m
+[0;33mW (571208) NODE_TX: No valid ACK for seq=65[0m
+[0;32mI (576208) NODE_TX: Send REGISTER seq=66[0m
+[0;33mW (579638) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC6[0m
+[0;33mW (580838) NODE_TX: No valid ACK for seq=66[0m
+[0;32mI (585838) NODE_TX: Send REGISTER seq=67[0m
+[0;33mW (588448) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC7[0m
+[0;33mW (589648) NODE_TX: No valid ACK for seq=67[0m
+[0;32mI (594648) NODE_TX: Send REGISTER seq=68[0m
+[0;33mW (597348) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC0[0m
+[0;33mW (598548) NODE_TX: No valid ACK for seq=68[0m
+[0;32mI (603548) NODE_TX: Send REGISTER seq=69[0m
+[0;33mW (607488) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC1[0m
+[0;33mW (608688) NODE_TX: No valid ACK for seq=69[0m
+[0;32mI (613688) NODE_TX: Send REGISTER seq=70[0m
+[0;33mW (617118) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC2[0m
+[0;33mW (618318) NODE_TX: No valid ACK for seq=70[0m
+[0;32mI (623318) NODE_TX: Send REGISTER seq=71[0m
+[0;33mW (626228) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC3[0m
+[0;33mW (627428) NODE_TX: No valid ACK for seq=71[0m
+[0;32mI (632428) NODE_TX: Send REGISTER seq=72[0m
+[0;33mW (634938) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCC[0m
+[0;33mW (636138) NODE_TX: No valid ACK for seq=72[0m
+[0;32mI (641138) NODE_TX: Send REGISTER seq=73[0m
+[0;33mW (643648) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCD[0m
+[0;33mW (644848) NODE_TX: No valid ACK for seq=73[0m
+[0;32mI (649848) NODE_TX: Send REGISTER seq=74[0m
+[0;33mW (652958) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCE[0m
+[0;33mW (654158) NODE_TX: No valid ACK for seq=74[0m
+[0;32mI (659158) NODE_TX: Send REGISTER seq=75[0m
+[0;33mW (663198) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCF[0m
+[0;33mW (664398) NODE_TX: No valid ACK for seq=7

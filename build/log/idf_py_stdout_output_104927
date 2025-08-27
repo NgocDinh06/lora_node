@@ -1,0 +1,549 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ad28h ( 44328) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001ad50 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cfc4 vaddr=40080000 size=03054h ( 12372) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=161e8h ( 90600) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036210 vaddr=40083054 size=0a7d8h ( 42968) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (204) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (233) cpu_start: App version:      v5.1.2[0m
+[0;32mI (237) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (243) cpu_start: ELF file SHA256:  1bc9dd69c453d57e...[0m
+[0;32mI (249) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (254) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (259) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (264) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (269) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (276) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (309) spi_flash: detected chip: generic[0m
+[0;32mI (312) spi_flash: flash io: dio[0m
+[0;33mW (316) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (329) app_start: Starting scheduler on CPU0[0m
+[0;32mI (334) app_start: Starting scheduler on CPU1[0m
+[0;32mI (334) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (454) LORA_TX: Gửi đến Node 0x01, STT: 0, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (2894) LORA_TX: Gửi đến Node 0x01, STT: 1, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+�����������������������������������������������������������������ến Node 0x01, STT: 2, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (7774) LORA_TX: Gửi đến Node 0x01, STT: 3, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (10214) LORA_TX: Gửi đến Node 0x01, STT: 4, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (12654) LORA_TX: Gửi đến Node 0x01, STT: 5, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (15094) LORA_TX: Gửi đến Node 0x01, STT: 6, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (17534) LORA_TX: Gửi đến Node 0x01, STT: 7, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (19974) LORA_TX: Gửi đến Node 0x01, STT: 8, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (30154) LORA_TX: Gửi đến Node 0x01, STT: 9, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (32214) LORA_TX: Gửi đến Node 0x01, STT: 10, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (34654) LORA_TX: Gửi đến Node 0x01, STT: 11, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (37094) LORA_TX: Gửi đến Node 0x01, STT: 12, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (39534) LORA_TX: Gửi đến Node 0x01, STT: 13, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (41974) LORA_TX: Gửi đến Node 0x01, STT: 14, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (44414) LORA_TX: Gửi đến Node 0x01, STT: 15, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (46854) LORA_TX: Gửi đến Node 0x01, STT: 16, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (49294) LORA_TX: Gửi đến Node 0x01, STT: 17, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+������������������������������������������������������������������ến Node 0x01, STT: 18, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (54174) LORA_TX: Gửi đến Node 0x01, STT: 19, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (56614) LORA_TX: Gửi đến Node 0x01, STT: 20, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (59054) LORA_TX: Gửi đến Node 0x01, STT: 21, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (61494) LORA_TX: Gửi đến Node 0x01, STT: 22, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (63934) LORA_TX: Gửi đến Node 0x01, STT: 23, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (66374) LORA_TX: Gửi đến Node 0x01, STT: 24, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (68814) LORA_TX: Gửi đến Node 0x01, STT: 25, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (71254) LORA_TX: Gửi đến Node 0x01, STT: 26, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (73694) LORA_TX: Gửi đến Node 0x01, STT: 27, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (76134) LORA_TX: Gửi đến Node 0x01, STT: 28, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (78574) LORA_TX: Gửi đến Node 0x01, STT: 29, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (81014) LORA_TX: Gửi đến Node 0x01, STT: 30, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (83454) LORA_TX: Gửi đến Node 0x01, STT: 31, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (85894) LORA_TX: Gửi đến Node 0x01, STT: 32, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (88334) LORA_TX: Gửi đến Node 0x01, STT: 33, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (90774) LORA_TX: Gửi đến Node 0x01, STT: 34, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (93214) LORA_TX: Gửi đến Node 0x01, STT: 35, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (95654) LORA_TX: Gửi đến Node 0x01, STT: 36, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (98094) LORA_TX: Gửi đến Node 0x01, STT: 37, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (100534) LORA_TX: Gửi đến Node 0x01, STT: 38, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (102974) LORA_TX: Gửi đến Node 0x01, STT: 39, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (105414) LORA_TX: Gửi đến Node 0x01, STT: 40, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (107854) LORA_TX: Gửi đến Node 0x01, STT: 41, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (110294) LORA_TX: Gửi đến Node 0x01, STT: 42, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (112734) LORA_TX: Gửi đến Node 0x01, STT: 43, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (115174) LORA_TX: Gửi đến Node 0x01, STT: 44, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (117614) LORA_TX: Gửi đến Node 0x01, STT: 45, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (120054) LORA_TX: Gửi đến Node 0x01, STT: 46, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 47, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (124934) LORA_TX: Gửi đến Node 0x01, STT: 48, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (127374) LORA_TX: Gửi đến Node 0x01, STT: 49, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (129814) LORA_TX: Gửi đến Node 0x01, STT: 50, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (132254) LORA_TX: Gửi đến Node 0x01, STT: 51, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (134694) LORA_TX: Gửi đến Node 0x01, STT: 52, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (137134) LORA_TX: Gửi đến Node 0x01, STT: 53, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (139574) LORA_TX: Gửi đến Node 0x01, STT: 54, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (142014) LORA_TX: Gửi đến Node 0x01, STT: 55, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (144454) LORA_TX: Gửi đến Node 0x01, STT: 56, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (146894) LORA_TX: Gửi đến Node 0x01, STT: 57, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (149334) LORA_TX: Gửi đến Node 0x01, STT: 58, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (151774) LORA_TX: Gửi đến Node 0x01, STT: 59, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (154214) LORA_TX: Gửi đến Node 0x01, STT: 60, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 61, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (159094) LORA_TX: Gửi đến Node 0x01, STT: 62, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (161534) LORA_TX: Gửi đến Node 0x01, STT: 63, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (163974) LORA_TX: Gửi đến Node 0x01, STT: 64, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (166414) LORA_TX: Gửi đến Node 0x01, STT: 65, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (168854) LORA_TX: Gửi đến Node 0x01, STT: 66, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (171294) LORA_TX: Gửi đến Node 0x01, STT: 67, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (173734) LORA_TX: Gửi đến Node 0x01, STT: 68, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (176174) LORA_TX: Gửi đến Node 0x01, STT: 69, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (178614) LORA_TX: Gửi đến Node 0x01, STT: 70, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (181054) LORA_TX: Gửi đến Node 0x01, STT: 71, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (183494) LORA_TX: Gửi đến Node 0x01, STT: 72, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (185934) LORA_TX: Gửi đến Node 0x01, STT: 73, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (188374) LORA_TX: Gửi đến Node 0x01, STT: 74, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (190814) LORA_TX: Gửi đến Node 0x01, STT: 75, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (193254) LORA_TX: Gửi đến Node 0x01, STT: 76, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (195694) LORA_TX: Gửi đến Node 0x01, STT: 77, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (198134) LORA_TX: Gửi đến Node 0x01, STT: 78, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (200574) LORA_TX: Gửi đến Node 0x01, STT: 79, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 80, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 81, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (207894) LORA_TX: Gửi đến Node 0x01, STT: 82, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (210334) LORA_TX: Gửi đến Node 0x01, STT: 83, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (212774) LORA_TX: Gửi đến Node 0x01, STT: 84, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (215214) LORA_TX: Gửi đến Node 0x01, STT: 85, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (217654) LORA_TX: Gửi đến Node 0x01, STT: 86, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (220094) LORA_TX: Gửi đến Node 0x01, STT: 87, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 88, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (224974) LORA_TX: Gửi đến Node 0x01, STT: 89, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (227414) LORA_TX: Gửi đến Node 0x01, STT: 90, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (229854) LORA_TX: Gửi đến Node 0x01, STT: 91, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (232294) LORA_TX: Gửi đến Node 0x01, STT: 92, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (234734) LORA_TX: Gửi đến Node 0x01, STT: 93, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (237174) LORA_TX: Gửi đến Node 0x01, STT: 94, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (239614) LORA_TX: Gửi đến Node 0x01, STT: 95, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (242054) LORA_TX: Gửi đến Node 0x01, STT: 96, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (244494) LORA_TX: Gửi đến Node 0x01, STT: 97, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (246934) LORA_TX: Gửi đến Node 0x01, STT: 98, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (249374) LORA_TX: Gửi đến Node 0x01, STT: 99, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 100, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (254254) LORA_TX: Gửi đến Node 0x01, STT: 101, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (256694) LORA_TX: Gửi đến Node 0x01, STT: 102, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (259134) LORA_TX: Gửi đến Node 0x01, STT: 103, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (261574) LORA_TX: Gửi đến Node 0x01, STT: 104, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (264014) LORA_TX: Gửi đến Node 0x01, STT: 105, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (266454) LORA_TX: Gửi đến Node 0x01, STT: 106, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 107, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (271334) LORA_TX: Gửi đến Node 0x01, STT: 108, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (273774) LORA_TX: Gửi đến Node 0x01, STT: 109, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (276214) LORA_TX: Gửi đến Node 0x01, STT: 110, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (278654) LORA_TX: Gửi đến Node 0x01, STT: 111, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (281094) LORA_TX: Gửi đến Node 0x01, STT: 112, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (283534) LORA_TX: Gửi đến Node 0x01, STT: 113, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 114, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (288414) LORA_TX: Gửi đến Node 0x01, STT: 115, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (290854) LORA_TX: Gửi đến Node 0x01, STT: 116, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (293294) LORA_TX: Gửi đến Node 0x01, STT: 117, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (295734) LORA_TX: Gửi đến Node 0x01, STT: 118, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (298174) LORA_TX: Gửi đến Node 0x01, STT: 119, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (300614) LORA_TX: Gửi đến Node 0x01, STT: 120, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (303054) LORA_TX: Gửi đến Node 0x01, STT: 121, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (305494) LORA_TX: Gửi đến Node 0x01, STT: 122, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (307934) LORA_TX: Gửi đến Node 0x01, STT: 123, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (310374) LORA_TX: Gửi đến Node 0x01, STT: 124, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (312814) LORA_TX: Gửi đến Node 0x01, STT: 125, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (315254) LORA_TX: Gửi đến Node 0x01, STT: 126, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (317694) LORA_TX: Gửi đến Node 0x01, STT: 127, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (320134) LORA_TX: Gửi đến Node 0x01, STT: 128, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (322574) LORA_TX: Gửi đến Node 0x01, STT: 129, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (325014) LORA_TX: Gửi đến Node 0x01, STT: 130, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (327454) LORA_TX: Gửi đến Node 0x01, STT: 131, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (329894) LORA_TX: Gửi đến Node 0x01, STT: 132, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (332334) LORA_TX: Gửi đến Node 0x01, STT: 133, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (334774) LORA_TX: Gửi đến Node 0x01, STT: 134, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (337214) LORA_TX: Gửi đến Node 0x01, STT: 135, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (339654) LORA_TX: Gửi đến Node 0x01, STT: 136, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (342094) LORA_TX: Gửi đến Node 0x01, STT: 137, D�                                 hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (344534) LORA_TX: Gửi đến Node 0x01, STT: 138, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (346974) LORA_TX: Gửi đến Node 0x01, STT: 139, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (349414) LORA_TX: Gửi đến Node 0x01, STT: 140, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (351854) LORA_TX: Gửi đến Node 0x01, STT: 141, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (354294) LORA_TX: Gửi đến Node 0x01, STT: 142, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (356734) LORA_TX: Gửi đến Node 0x01, STT: 143, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 144, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (361614) LORA_TX: Gửi đến Node 0x01, STT: 145, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (364054) LORA_TX: Gửi đến Node 0x01, STT: 146, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 147, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (368934) LORA_TX: Gửi đến Node 0x01, STT: 148, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (371374) LORA_TX: Gửi đến Node 0x01, STT: 149, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (373814) LORA_TX: Gửi đến Node 0x01, STT: 150, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 151, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (378694) LORA_TX: Gửi đến Node 0x01, STT: 152, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (381134) LORA_TX: Gửi đến Node 0x01, STT: 153, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (383574) LORA_TX: Gửi đến Node 0x01, STT: 154, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (386014) LORA_TX: Gửi đến Node 0x01, STT: 155, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (388454) LORA_TX: Gửi đến Node 0x01, STT: 156, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (390894) LORA_TX: Gửi đến Node 0x01, STT: 157, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (393334) LORA_TX: Gửi đến Node 0x01, STT: 158, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (395774) LORA_TX: Gửi đến Node 0x01, STT: 159, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (398214) LORA_TX: Gửi đến Node 0x01, STT: 160, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (400654) LORA_TX: Gửi đến Node 0x01, STT: 161, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (403094) LORA_TX: Gửi đến Node 0x01, STT: 162, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (405534) LORA_TX: Gửi đến Node 0x01, STT: 163, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (407974) LORA_TX: Gửi đến Node 0x01, STT: 164, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (410414) LORA_TX: Gửi đến Node 0x01, STT: 165, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (412854) LORA_TX: Gửi đến Node 0x01, STT: 166, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (415294) LORA_TX: Gửi đến Node 0x01, STT: 167, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (417734) LORA_TX: Gửi đến Node 0x01, STT: 168, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (420174) LORA_TX: Gửi đến Node 0x01, STT: 169, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (422614) LORA_TX: Gửi đến Node 0x01, STT: 170, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (425054) LORA_TX: Gửi đến Node 0x01, STT: 171, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (427494) LORA_TX: Gửi đến Node 0x01, STT: 172, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (429934) LORA_TX: Gửi đến Node 0x01, STT: 173, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (432374) LORA_TX: Gửi đến Node 0x01, STT: 174, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (434814) LORA_TX: Gửi đến Node 0x01, STT: 175, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (437254) LORA_TX: Gửi đến Node 0x01, STT: 176, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (439694) LORA_TX: Gửi đến Node 0x01, STT: 177, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 178, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (444574) LORA_TX: Gửi đến Node 0x01, STT: 179, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (447014) LORA_TX: Gửi đến Node 0x01, STT: 180, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (449454) LORA_TX: Gửi đến Node 0x01, STT: 181, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (451894) LORA_TX: Gửi đến Node 0x01, STT: 182, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (454334) LORA_TX: Gửi đến Node 0x01, STT: 183, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (456774) LORA_TX: Gửi đến Node 0x01, STT: 184, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (459214) LORA_TX: Gửi đến Node 0x01, STT: 185, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (461654) LORA_TX: Gửi đến Node 0x01, STT: 186, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (464094) LORA_TX: Gửi đến Node 0x01, STT: 187, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (466534) LORA_TX: Gửi đến Node 0x01, STT: 188, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (468974) LORA_TX: Gửi đến Node 0x01, STT: 189, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (471414) LORA_TX: Gửi đến Node 0x01, STT: 190, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (473854) LORA_TX: Gửi đến Node 0x01, STT: 191, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (476294) LORA_TX: Gửi đến Node 0x01, STT: 192, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (478734) LORA_TX: Gửi đến Node 0x01, STT: 193, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 194, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (483614) LORA_TX: Gửi đến Node 0x01, STT: 195, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (486054) LORA_TX: Gửi đến Node 0x01, STT: 196, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (488494) LORA_TX: Gửi đến Node 0x01, STT: 197, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (490934) LORA_TX: Gửi đến Node 0x01, STT: 198, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (493374) LORA_TX: Gửi đến Node 0x01, STT: 199, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (495814) LORA_TX: Gửi đến Node 0x01, STT: 200, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (498254) LORA_TX: Gửi đến Node 0x01, STT: 201, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (500694) LORA_TX: Gửi đến Node 0x01, STT: 202, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (503134) LORA_TX: Gửi đến Node 0x01, STT: 203, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (505574) LORA_TX: Gửi đến Node 0x01, STT: 204, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (508014) LORA_TX: Gửi đến Node 0x01, STT: 205, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (510454) LORA_TX: Gửi đến Node 0x01, STT: 206, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (512894) LORA_TX: Gửi đến Node 0x01, STT: 207, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (515334) LORA_TX: Gửi đến Node 0x01, STT: 208, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (517774) LORA_TX: Gửi đến Node 0x01, STT: 209, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (520214) LORA_TX: Gửi đến Node 0x01, STT: 210, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (522654) LORA_TX: Gửi đến Node 0x01, STT: 211, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (525094) LORA_TX: Gửi đến Node 0x01, STT: 212, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (527534) LORA_TX: Gửi đến Node 0x01, STT: 213, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (529974) LORA_TX: Gửi đến Node 0x01, STT: 214, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (532414) LORA_TX: Gửi đến Node 0x01, STT: 215, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (534854) LORA_TX: Gửi đến Node 0x01, STT: 216, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (537294) LORA_TX: Gửi đến Node 0x01, STT: 217, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (539734) LORA_TX: Gửi đến Node 0x01, STT: 218, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (542174) LORA_TX: Gửi đến Node 0x01, STT: 219, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 220, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (547054) LORA_TX: Gửi đến Node 0x01, STT: 221, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (549494) LORA_TX: Gửi đến Node 0x01, STT: 222, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (551934) LORA_TX: Gửi đến Node 0x01, STT: 223, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (554374) LORA_TX: Gửi đến Node 0x01, STT: 224, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (556814) LORA_TX: Gửi đến Node 0x01, STT: 225, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 226, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (561694) LORA_TX: Gửi đến Node 0x01, STT: 227, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (564134) LORA_TX: Gửi đến Node 0x01, STT: 228, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (566574) LORA_TX: Gửi đến Node 0x01, STT: 229, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (569014) LORA_TX: Gửi đến Node 0x01, STT: 230, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (571454) LORA_TX: Gửi đến Node 0x01, STT: 231, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (573894) LORA_TX: Gửi đến Node 0x01, STT: 232, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (576334) LORA_TX: Gửi đến Node 0x01, STT: 233, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (578774) LORA_TX: Gửi đến Node 0x01, STT: 234, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (581214) LORA_TX: Gửi đến Node 0x01, STT: 235, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (583654) LORA_TX: Gửi đến Node 0x01, STT: 236, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (586094) LORA_TX: Gửi đến Node 0x01, STT: 237, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 238, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (590974) LORA_TX: Gửi đến Node 0x01, STT: 239, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (593414) LORA_TX: Gửi đến Node 0x01, STT: 240, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (595854) LORA_TX: Gửi đến Node 0x01, STT: 241, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 242, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (600734) LORA_TX: Gửi đến Node 0x01, STT: 243, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (603174) LORA_TX: Gửi đến Node 0x01, STT: 244, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (605614) LORA_TX: Gửi đến Node 0x01, STT: 245, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (608054) LORA_TX: Gửi đến Node 0x01, STT: 246, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (610494) LORA_TX: Gửi đến Node 0x01, STT: 247, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (612934) LORA_TX: Gửi đến Node 0x01, STT: 248, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (615374) LORA_TX: Gửi đến Node 0x01, STT: 249, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (617814) LORA_TX: Gửi đến Node 0x01, STT: 250, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (620254) LORA_TX: Gửi đến Node 0x01, STT: 251, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (622694) LORA_TX: Gửi đến Node 0x01, STT: 252, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (625134) LORA_TX: Gửi đến Node 0x01, STT: 253, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (627574) LORA_TX: Gửi đến Node 0x01, STT: 254, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (630014) LORA_TX: Gửi đến Node 0x01, STT: 255, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (632454) LORA_TX: Gửi đến Node 0x01, STT: 0, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (634894) LORA_TX: Gửi đến Node 0x01, STT: 1, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (637334) LORA_TX: Gửi đến Node 0x01, STT: 2, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (639774) LORA_TX: Gửi đến Node 0x01, STT: 3, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 4, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (644654) LORA_TX: Gửi đến Node 0x01, STT: 5, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (647094) LORA_TX: Gửi đến Node 0x01, STT: 6, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (649534) LORA_TX: Gửi đến Node 0x01, STT: 7, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 8, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (654414) LORA_TX: Gửi đến Node 0x01, STT: 9, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 10, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (659294) LORA_TX: Gửi đến Node 0x01, STT: 11, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (661734) LORA_TX: Gửi đến Node 0x01, STT: 12, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (664174) LORA_TX: Gửi đến Node 0x01, STT: 13, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (666614) LORA_TX: Gửi đến Node 0x01, STT: 14, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (669054) LORA_TX: Gửi đến Node 0x01, STT: 15, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (671494) LORA_TX: Gửi đến Node 0x01, STT: 16, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (673934) LORA_TX: Gửi đến Node 0x01, STT: 17, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (676374) LORA_TX: Gửi đến Node 0x01, STT: 18, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (678814) LORA_TX: Gửi đến Node 0x01, STT: 19, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (681254) LORA_TX: Gửi đến Node 0x01, STT: 20, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 21, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 22, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (688574) LORA_TX: Gửi đến Node 0x01, STT: 23, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (691014) LORA_TX: Gửi đến Node 0x01, STT: 24, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (693454) LORA_TX: Gửi đến Node 0x01, STT: 25, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (695894) LORA_TX: Gửi đến Node 0x01, STT: 26, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (698334) LORA_TX: Gửi đến Node 0x01, STT: 27, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (700774) LORA_TX: Gửi đến Node 0x01, STT: 28, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (703214) LORA_TX: Gửi đến Node 0x01, STT: 29, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (705654) LORA_TX: Gửi đến Node 0x01, STT: 30, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (708094) LORA_TX: Gửi đến Node 0x01, STT: 31, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (710534) LORA_TX: Gửi đến Node 0x01, STT: 32, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (712974) LORA_TX: Gửi đến Node 0x01, STT: 33, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (715414) LORA_TX: Gửi đến Node 0x01, STT: 34, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (717854) LORA_TX: Gửi đến Node 0x01, STT: 35, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (720294) LORA_TX: Gửi đến Node 0x01, STT: 36, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (722734) LORA_TX: Gửi đến Node 0x01, STT: 37, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (725174) LORA_TX: Gửi đến Node 0x01, STT: 38, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (727614) LORA_TX: Gửi đến Node 0x01, STT: 39, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (730054) LORA_TX: Gửi đến Node 0x01, STT: 40, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (732494) LORA_TX: Gửi đến Node 0x01, STT: 41, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (734934) LORA_TX: Gửi đến Node 0x01, STT: 42, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (737374) LORA_TX: Gửi đến Node 0x01, STT: 43, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (739814) LORA_TX: Gửi đến Node 0x01, STT: 44, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 45, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (744694) LORA_TX: Gửi đến Node 0x01, STT: 46, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 47, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (749574) LORA_TX: Gửi đến Node 0x01, STT: 48, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (752014) LORA_TX: Gửi đến Node 0x01, STT: 49, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 50, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (756894) LORA_TX: Gửi đến Node 0x01, STT: 51, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (759334) LORA_TX: Gửi đến Node 0x01, STT: 52, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (761774) LORA_TX: Gửi đến Node 0x01, STT: 53, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (764214) LORA_TX: Gửi đến Node 0x01, STT: 54, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (766654) LORA_TX: Gửi đến Node 0x01, STT: 55, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (769094) LORA_TX: Gửi đến Node 0x01, STT: 56, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 57, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (773974) LORA_TX: Gửi đến Node 0x01, STT: 58, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (776414) LORA_TX: Gửi đến Node 0x01, STT: 59, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (778854) LORA_TX: Gửi đến Node 0x01, STT: 60, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (781294) LORA_TX: Gửi đến Node 0x01, STT: 61, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (783734) LORA_TX: Gửi đến Node 0x01, STT: 62, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (786174) LORA_TX: Gửi đến Node 0x01, STT: 63, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (788614) LORA_TX: Gửi đến Node 0x01, STT: 64, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (791054) LORA_TX: Gửi đến Node 0x01, STT: 65, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (793494) LORA_TX: Gửi đến Node 0x01, STT: 66, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 67, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (798374) LORA_TX: Gửi đến Node 0x01, STT: 68, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (800814) LORA_TX: Gửi đến Node 0x01, STT: 69, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (803254) LORA_TX: Gửi đến Node 0x01, STT: 70, Dữ                                hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (805694) LORA_TX: Gửi đến Node 0x01, STT: 71, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (808134) LORA_TX: Gửi đến Node 0x01, STT: 72, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (810574) LORA_TX: Gửi đến Node 0x01, STT: 73, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (813014) LORA_TX: Gửi đến Node 0x01, STT: 74, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (815454) LORA_TX: Gửi đến Node 0x01, STT: 75, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (817894) LORA_TX: Gửi đến Node 0x01, STT: 76, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (820334) LORA_TX: Gửi đến Node 0x01, STT: 77, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (822774) LORA_TX: Gửi đến Node 0x01, STT: 78, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (825214) LORA_TX: Gửi đến Node 0x01, STT: 79, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (827654) LORA_TX: Gửi đến Node 0x01, STT: 80, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 81, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (832534) LORA_TX: Gửi đến Node 0x01, STT: 82, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (834974) LORA_TX: Gửi đến Node 0x01, STT: 83, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (837414) LORA_TX: Gửi đến Node 0x01, STT: 84, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (839854) LORA_TX: Gửi đến Node 0x01, STT: 85, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (842294) LORA_TX: Gửi đến Node 0x01, STT: 86, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (844734) LORA_TX: Gửi đến Node 0x01, STT: 87, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (847174) LORA_TX: Gửi đến Node 0x01, STT: 88, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (849614) LORA_TX: Gửi đến Node 0x01, STT: 89, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (852054) LORA_TX: Gửi đến Node 0x01, STT: 90, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (854494) LORA_TX: Gửi đến Node 0x01, STT: 91, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (856934) LORA_TX: Gửi đến Node 0x01, STT: 92, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (859374) LORA_TX: Gửi đến Node 0x01, STT: 93, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (861814) LORA_TX: Gửi đến Node 0x01, STT: 94, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (864254) LORA_TX: Gửi đến Node 0x01, STT: 95, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (866694) LORA_TX: Gửi đến Node 0x01, STT: 96, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (869134) LORA_TX: Gửi đến Node 0x01, STT: 97, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (871574) LORA_TX: Gửi đến Node 0x01, STT: 98, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (874014) LORA_TX: Gửi đến Node 0x01, STT: 99, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (876454) LORA_TX: Gửi đến Node 0x01, STT: 100, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (878894) LORA_TX: Gửi đến Node 0x01, STT: 101, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (881334) LORA_TX: Gửi đến Node 0x01, STT: 102, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (883774) LORA_TX: Gửi đến Node 0x01, STT: 103, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (886214) LORA_TX: Gửi đến Node 0x01, STT: 104, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (888654) LORA_TX: Gửi đến Node 0x01, STT: 105, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (891094) LORA_TX: Gửi đến Node 0x01, STT: 106, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (893534) LORA_TX: Gửi đến Node 0x01, STT: 107, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (895974) LORA_TX: Gửi đến Node 0x01, STT: 108, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (898414) LORA_TX: Gửi đến Node 0x01, STT: 109, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (900854) LORA_TX: Gửi đến Node 0x01, STT: 110, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 111, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (905734) LORA_TX: Gửi đến Node 0x01, STT: 112, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (908174) LORA_TX: Gửi đến Node 0x01, STT: 113, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (910614) LORA_TX: Gửi đến Node 0x01, STT: 114, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (913054) LORA_TX: Gửi đến Node 0x01, STT: 115, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (915494) LORA_TX: Gửi đến Node 0x01, STT: 116, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 117, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (920374) LORA_TX: Gửi đến Node 0x01, STT: 118, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (922814) LORA_TX: Gửi đến Node 0x01, STT: 119, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (925254) LORA_TX: Gửi đến Node 0x01, STT: 120, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (927694) LORA_TX: Gửi đến Node 0x01, STT: 121, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 122, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 123, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (935014) LORA_TX: Gửi đến Node 0x01, STT: 124, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (937454) LORA_TX: Gửi đến Node 0x01, STT: 125, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (939894) LORA_TX: Gửi đến Node 0x01, STT: 126, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (942334) LORA_TX: Gửi đến Node 0x01, STT: 127, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (944774) LORA_TX: Gửi đến Node 0x01, STT: 128, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (947214) LORA_TX: Gửi đến Node 0x01, STT: 129, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (949654) LORA_TX: Gửi đến Node 0x01, STT: 130, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (952094) LORA_TX: Gửi đến Node 0x01, STT: 131, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (954534) LORA_TX: Gửi đến Node 0x01, STT: 132, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (956974) LORA_TX: Gửi đến Node 0x01, STT: 133, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 134, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (961854) LORA_TX: Gửi đến Node 0x01, STT: 135, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (964294) LORA_TX: Gửi đến Node 0x01, STT: 136, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (966734) LORA_TX: Gửi đến Node 0x01, STT: 137, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (969174) LORA_TX: Gửi đến Node 0x01, STT: 138, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (971614) LORA_TX: Gửi đến Node 0x01, STT: 139, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (974054) LORA_TX: Gửi đến Node 0x01, STT: 140, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (976494) LORA_TX: Gửi đến Node 0x01, STT: 141, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (978934) LORA_TX: Gửi đến Node 0x01, STT: 142, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (981374) LORA_TX: Gửi đến Node 0x01, STT: 143, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (983814) LORA_TX: Gửi đến Node 0x01, STT: 144, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (986254) LORA_TX: Gửi đến Node 0x01, STT: 145, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+���������������������������������������������������������������� đến Node 0x01, STT: 146, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (991134) LORA_TX: Gửi đến Node 0x01, STT: 147, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (993574) LORA_TX: Gửi đến Node 0x01, STT: 148, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (996014) LORA_TX: Gửi đến Node 0x01, STT: 149, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (998454) LORA_TX: Gửi đến Node 0x01, STT: 150, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1000894) LORA_TX: Gửi đến Node 0x01, STT: 151, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1003334) LORA_TX: Gửi đến Node 0x01, STT: 152, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1005774) LORA_TX: Gửi đến Node 0x01, STT: 153, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1008214) LORA_TX: Gửi đến Node 0x01, STT: 154, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1010654) LORA_TX: Gửi đến Node 0x01, STT: 155, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+����������������������������������������������������������������i đến Node 0x01, STT: 156, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1015534) LORA_TX: Gửi đến Node 0x01, STT: 157, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1017974) LORA_TX: Gửi đến Node 0x01, STT: 158, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1020414) LORA_TX: Gửi đến Node 0x01, STT: 159, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1022854) LORA_TX: Gửi đến Node 0x01, STT: 160, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1025294) LORA_TX: Gửi đến Node 0x01, STT: 161, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1027734) LORA_TX: Gửi đến Node 0x01, STT: 162, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1030174) LORA_TX: Gửi đến Node 0x01, STT: 163, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1032614) LORA_TX: Gửi đến Node 0x01, STT: 164, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1035054) LORA_TX: Gửi đến Node 0x01, STT: 165, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1037494) LORA_TX: Gửi đến Node 0x01, STT: 166, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+����������������������������������������������������������������i đến Node 0x01, STT: 167, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1042374) LORA_TX: Gửi đến Node 0x01, STT: 168, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1044814) LORA_TX: Gửi đến Node 0x01, STT: 169, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1047254) LORA_TX: Gửi đến Node 0x01, STT: 170, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1049694) LORA_TX: Gửi đến Node 0x01, STT: 171, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1052134) LORA_TX: Gửi đến Node 0x01, STT: 172, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1054574) LORA_TX: Gửi đến Node 0x01, STT: 173, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1057014) LORA_TX: Gửi đến Node 0x01, STT: 174, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1059454) LORA_TX: Gửi đến Node 0x01, STT: 175, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1061894) LORA_TX: Gửi đến Node 0x01, STT: 176, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1064334) LORA_TX: Gửi đến Node 0x01, STT: 177, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1066774) LORA_TX: Gửi đến Node 0x01, STT: 178, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1069214) LORA_TX: Gửi đến Node 0x01, STT: 179, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1071654) LORA_TX: Gửi đến Node 0x01, STT: 180, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1074094) LORA_TX: Gửi đến Node 0x01, STT: 181, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1076534) LORA_TX: Gửi đến Node 0x01, STT: 182, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1078974) LORA_TX: Gửi đến Node 0x01, STT: 183, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1081414) LORA_TX: Gửi đến Node 0x01, STT: 184, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1083854) LORA_TX: Gửi đến Node 0x01, STT: 185, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+����������������������������������������������������������������i đến Node 0x01, STT: 186, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1088734) LORA_TX: Gửi đến Node 0x01, STT: 187, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1091174) LORA_TX: Gửi đến Node 0x01, STT: 188, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1093614) LORA_TX: Gửi đến Node 0x01, STT: 189, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1096054) LORA_TX: Gửi đến Node 0x01, STT: 190, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+����������������������������������������������������������������i đến Node 0x01, STT: 191, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+����������������������������������������������������������������i đến Node 0x01, STT: 192, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1103374) LORA_TX: Gửi đến Node 0x01, STT: 193, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1105814) LORA_TX: Gửi đến Node 0x01, STT: 194, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1108254) LORA_TX: Gửi đến Node 0x01, STT: 195, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1110694) LORA_TX: Gửi đến Node 0x01, STT: 196, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1113134) LORA_TX: Gửi đến Node 0x01, STT: 197, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1115574) LORA_TX: Gửi đến Node 0x01, STT: 198, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1118014) LORA_TX: Gửi đến Node 0x01, STT: 199, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+����������������������������������������������������������������i đến Node 0x01, STT: 200, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1122894) LORA_TX: Gửi đến Node 0x01, STT: 201, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1125334) LORA_TX: Gửi đến Node 0x01, STT: 202, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+����������������������������������������������������������������i đến Node 0x01, STT: 203, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1130214) LORA_TX: Gửi đến Node 0x01, STT: 204, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1132654) LORA_TX: Gửi đến Node 0x01, STT: 205, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1135094) LORA_TX: Gửi đến Node 0x01, STT: 206, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1137534) LORA_TX: Gửi đến Node 0x01, STT: 207, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1139974) LORA_TX: Gửi đến Node 0x01, STT: 208, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1142414) LORA_TX: Gửi đến Node 0x01, STT: 209, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1144854) LORA_TX: Gửi đến Node 0x01, STT: 210, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1147294) LORA_TX: Gửi đến Node 0x01, STT: 211, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1149734) LORA_TX: Gửi đến Node 0x01, STT: 212, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1152174) LORA_TX: Gửi đến Node 0x01, STT: 213, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1154614) LORA_TX: Gửi đến Node 0x01, STT: 214, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+����������������������������������������������������������������i đến Node 0x01, STT: 215, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1159494) LORA_TX: Gửi đến Node 0x01, STT: 216, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1161934) LORA_TX: Gửi đến Node 0x01, STT: 217, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1164374) LORA_TX: Gửi đến Node 0x01, STT: 218, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1166814) LORA_TX: Gửi đến Node 0x01, STT: 219, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1169254) LORA_TX: Gửi đến Node 0x01, STT: 220, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1171694) LORA_TX: Gửi đến Node 0x01, STT: 221, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1174134) LORA_TX: Gửi đến Node 0x01, STT: 222, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1176574) LORA_TX: Gửi đến Node 0x01, STT: 223, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1179014) LORA_TX: Gửi đến Node 0x01, STT: 224, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1181454) LORA_TX: Gửi đến Node 0x01, STT: 225, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1183894) LORA_TX: Gửi đến Node 0x01, STT: 226, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1186334) LORA_TX: Gửi đến Node 0x01, STT: 227, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1188774) LORA_TX: Gửi đến Node 0x01, STT: 228, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1191214) LORA_TX: Gửi đến Node 0x01, STT: 229, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1193654) LORA_TX: Gửi đến Node 0x01, STT: 230, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (1196094) LORA_TX: Gửi đến Node 0x01, STT: 231, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m

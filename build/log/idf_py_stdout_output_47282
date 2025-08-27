@@ -1,0 +1,94 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b0b0h ( 45232) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b0d8 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d34c vaddr=40080000 size=02ccch ( 11468) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=163dch ( 91100) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036404 vaddr=40082ccc size=0ab60h ( 43872) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (223) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (233) cpu_start: App version:      v5.1.2[0m
+[0;32mI (238) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (244) cpu_start: ELF file SHA256:  ca563aa2c75d4acf...[0m
+[0;32mI (250) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (255) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (309) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (316) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (330) app_start: Starting scheduler on CPU0[0m
+[0;32mI (335) app_start: Starting scheduler on CPU1[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (455) LORA_TX: Gửi tới Node 0x01, STT: 0, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (5495) LORA_TX: Gửi tới Node 0x01, STT: 1, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (10875) LORA_TX: Gửi tới Node 0x01, STT: 2, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (32195) LORA_TX: Gửi tới Node 0x01, STT: 3, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (67895) LORA_TX: Gửi tới Node 0x01, STT: 4, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (73055) LORA_TX: Gửi tới Node 0x01, STT: 5, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (78115) LORA_TX: Gửi tới Node 0x01, STT: 6, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (83195) LORA_TX: Gửi tới Node 0x01, STT: 7, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (88275) LORA_TX: Gửi tới Node 0x01, STT: 8, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (98895) LORA_TX: Gửi tới Node 0x01, STT: 9, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (104415) LORA_TX: Gửi tới Node 0x01, STT: 10, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (112465) LORA_TX: Gửi tới Node 0x01, STT: 11, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (117505) LORA_TX: Gửi tới Node 0x01, STT: 12, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (122545) LORA_TX: Gửi tới Node 0x01, STT: 13, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (127585) LORA_TX: Gửi tới Node 0x01, STT: 14, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (132625) LORA_TX: Gửi tới Node 0x01, STT: 15, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (138285) LORA_TX: Gửi tới Node 0x01, STT: 16, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (143905) LORA_TX: Gửi tới Node 0x01, STT: 17, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (149325) LORA_TX: Gửi tới Node 0x01, STT: 18, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (154485) LORA_TX: Gửi tới Node 0x01, STT: 19, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (159525) LORA_TX: Gửi tới Node 0x01, STT: 20, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (164565) LORA_TX: Gửi tới Node 0x01, STT: 21, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (169605) LORA_TX: Gửi tới Node 0x01, STT: 22, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (176575) LORA_TX: Gửi tới Node 0x01, STT: 23, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (181605) LORA_TX: Gửi tới Node 0x01, STT: 24, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (186635) LORA_TX: Gửi tới Node 0x01, STT: 25, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (191665) LORA_TX: Gửi tới Node 0x01, STT: 26, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (196695) LORA_TX: Gửi tới Node 0x01, STT: 27, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (201725) LORA_TX: Gửi tới Node 0x01, STT: 28, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (206755) LORA_TX: Gửi tới Node 0x01, STT: 29, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (211785) LORA_TX: Gửi tới Node 0x01, STT: 30, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (216815) LORA_TX: Gửi tới Node 0x01, STT: 31, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (221845) LORA_TX: Gửi tới Node 0x01, STT: 32, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m

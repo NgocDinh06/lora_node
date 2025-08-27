@@ -1,0 +1,776 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400811b4: call_start_cpu1 at /home/thefee/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400811b4: call_start_cpu1 at /home/thefee/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40082484: vPortExitCriticalSafe at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:604
+---  (inlined by) esp_intr_enable at /home/thefee/esp-idf/components/esp_hw_support/intr_alloc.c:804
+--- 0x40083719: spi_bus_intr_enable at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:576
+--- 0x400d8486: bg_enable at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:324
+---  (inlined by) req_core at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:350
+--- 0x400d85d5: spi_bus_lock_bg_request at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:763
+--- 0x400d7b46: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:922
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40082484: vPortExitCriticalSafe at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:604
+---  (inlined by) esp_intr_enable at /home/thefee/esp-idf/components/esp_hw_support/intr_alloc.c:804
+--- 0x40083719: spi_bus_intr_enable at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:576
+--- 0x400d8486: bg_enable at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:324
+---  (inlined by) req_core at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:350
+--- 0x400d85d5: spi_bus_lock_bg_request at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:763
+--- 0x400d7b46: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:922
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40082484: vPortExitCriticalSafe at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:604
+---  (inlined by) esp_intr_enable at /home/thefee/esp-idf/components/esp_hw_support/intr_alloc.c:804
+--- 0x40083719: spi_bus_intr_enable at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:576
+--- 0x400d8486: bg_enable at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:324
+---  (inlined by) req_core at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:350
+--- 0x400d85d5: spi_bus_lock_bg_request at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:763
+--- 0x400d7b46: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:922
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40082484: vPortExitCriticalSafe at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:604
+---  (inlined by) esp_intr_enable at /home/thefee/esp-idf/components/esp_hw_support/intr_alloc.c:804
+--- 0x40083719: spi_bus_intr_enable at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:576
+--- 0x400d8486: bg_enable at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:324
+---  (inlined by) req_core at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:350
+--- 0x400d85d5: spi_bus_lock_bg_request at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:763
+--- 0x400d7b46: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:922
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40082484: vPortExitCriticalSafe at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:604
+---  (inlined by) esp_intr_enable at /home/thefee/esp-idf/components/esp_hw_support/intr_alloc.c:804
+--- 0x40083719: spi_bus_intr_enable at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:576
+--- 0x400d8486: bg_enable at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:324
+---  (inlined by) req_core at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:350
+--- 0x400d85d5: spi_bus_lock_bg_request at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:763
+--- 0x400d7b46: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:922
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40082484: vPortExitCriticalSafe at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:604
+---  (inlined by) esp_intr_enable at /home/thefee/esp-idf/components/esp_hw_support/intr_alloc.c:804
+--- 0x40083719: spi_bus_intr_enable at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:576
+--- 0x400d8486: bg_enable at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:324
+---  (inlined by) req_core at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:350
+--- 0x400d85d5: spi_bus_lock_bg_request at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:763
+--- 0x400d7b46: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:922
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40082484: vPortExitCriticalSafe at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:604
+---  (inlined by) esp_intr_enable at /home/thefee/esp-idf/components/esp_hw_support/intr_alloc.c:804
+--- 0x40083719: spi_bus_intr_enable at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:576
+--- 0x400d8486: bg_enable at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:324
+---  (inlined by) req_core at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:350
+--- 0x400d85d5: spi_bus_lock_bg_request at /home/thefee/esp-idf/components/driver/spi/spi_bus_lock.c:763
+--- 0x400d7b46: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:922
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4008510f: xt_utils_wait_for_intr at /home/thefee/esp-idf/components/xtensa/include/xt_utils.h:81
+---  (inlined by) esp_cpu_wait_for_intr at /home/thefee/esp-idf/components/esp_hw_support/cpu.c:111
+--- 0x400d20e7: esp_vApplicationIdleHook at /home/thefee/esp-idf/components/esp_system/freertos_hooks.c:59
+--- 0x4008741a: prvIdleTask at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x40086b81: xQueueReceive at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+--- 0x400d7bc2: spi_device_get_trans_result at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:943 (discriminator 2)
+--- 0x400d7bf2: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:966
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400d972f: task_wdt_timeout_handling at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+--- 0x400d98b6: task_wdt_isr at /home/thefee/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+--- 0x40082a45: _xt_lowint1 at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+--- 0x4000bfed: _xtos_set_intlevel in ROM
+--- 0x40088c53: vPortClearInterruptMaskFromISR at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+---  (inlined by) vPortExitCritical at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+--- 0x4008b25b: multi_heap_internal_unlock at /home/thefee/esp-idf/components/heap/multi_heap.c:167 (discriminator 1)
+--- 0x4008b2a2: multi_heap_malloc_impl at /home/thefee/esp-idf/components/heap/multi_heap.c:215
+--- 0x40081f75: heap_caps_malloc_base at /home/thefee/esp-idf/components/heap/heap_caps.c:176
+--- 0x40081fcd: heap_caps_malloc at /home/thefee/esp-idf/components/heap/heap_caps.c:197
+--- 0x400836a7: setup_priv_desc at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:854 (discriminator 15)
+--- 0x400d7b2f: spi_device_queue_trans at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:901
+--- 0x400d7be7: spi_device_transmit at /home/thefee/esp-idf/components/driver/spi/gpspi/spi_master.c:963
+--- 0x400d58f1: lora_read_reg at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2642
+--- 0x400d5940: lora_tx at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2699 (discriminator 1)
+--- 0x400d5b5e: app_main at /home/thefee/esp-idf/esp32-http-relay/main/lora_TX.c:2786 (discriminator 15)
+--- 0x400e6400: main_task at /home/thefee/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+--- 0x4008896d: vPortTaskWrapper at /home/thefee/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0m

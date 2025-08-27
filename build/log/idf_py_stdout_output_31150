@@ -1,0 +1,421 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0af38h ( 44856) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001af60 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d1d4 vaddr=40080000 size=02e44h ( 11844) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=163e8h ( 91112) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036410 vaddr=40082e44 size=0a9e8h ( 43496) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (223) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (233) cpu_start: App version:      v5.1.2[0m
+[0;32mI (238) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (244) cpu_start: ELF file SHA256:  cb732ba15ac2cfcd...[0m
+[0;32mI (250) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (255) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (264) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (269) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (309) spi_flash: detected chip: generic[0m
+[0;32mI (312) spi_flash: flash io: dio[0m
+[0;33mW (316) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (330) app_start: Starting scheduler on CPU0[0m
+[0;32mI (334) app_start: Starting scheduler on CPU1[0m
+[0;32mI (334) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (454) LORA_TX: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (864) LORA_TX: Nhận ACK từ Node 0x01, STT: 0, Dữ liệu: Toàn vẹn[0m
+[0;32mI (864) LORA_TX: Nhận được ACK cho gói tin STT: 0[0m
+[0;32mI (2864) LORA_TX: Gửi đến Node 0x02, STT: 1, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (3274) LORA_TX: Nhận ACK từ Node 0x01, STT: 1, Dữ liệu: Toàn vẹn[0m
+[0;32mI (3274) LORA_TX: Nhận được ACK cho gói tin STT: 1[0m
+[0;32mI (5274) LORA_TX: Gửi đến Node 0x02, STT: 2, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (5684) LORA_TX: Nhận ACK từ Node 0x01, STT: 2, Dữ liệu: Toàn vẹn[0m
+[0;32mI (5684) LORA_TX: Nhận được ACK cho gói tin STT: 2[0m
+[0;32mI (7684) LORA_TX: Gửi đến Node 0x02, STT: 3, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (8094) LORA_TX: Nhận ACK từ Node 0x01, STT: 3, Dữ liệu: Toàn vẹn[0m
+[0;32mI (8094) LORA_TX: Nhận được ACK cho gói tin STT: 3[0m
+[0;32mI (10094) LORA_TX: Gửi đến Node 0x02, STT: 4, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (10504) LORA_TX: Nhận ACK từ Node 0x01, STT: 4, Dữ liệu: Toàn vẹn[0m
+[0;32mI (10504) LORA_TX: Nhận được ACK cho gói tin STT: 4[0m
+[0;32mI (12504) LORA_TX: Gửi đến Node 0x02, STT: 5, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (12914) LORA_TX: Nhận ACK từ Node 0x01, STT: 5, Dữ liệu: Toàn vẹn[0m
+[0;32mI (12914) LORA_TX: Nhận được ACK cho gói tin STT: 5[0m
+[0;32mI (14914) LORA_TX: Gửi đến Node 0x02, STT: 6, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (15324) LORA_TX: Nhận ACK từ Node 0x01, STT: 6, Dữ liệu: Toàn vẹn[0m
+[0;32mI (15324) LORA_TX: Nhận được ACK cho gói tin STT: 6[0m
+[0;32mI (17324) LORA_TX: Gửi đến Node 0x02, STT: 7, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (17734) LORA_TX: Nhận ACK từ Node 0x01, STT: 7, Dữ liệu: Toàn vẹn[0m
+[0;32mI (17734) LORA_TX: Nhận được ACK cho gói tin STT: 7[0m
+[0;32mI (19734) LORA_TX: Gửi đến Node 0x02, STT: 8, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (20144) LORA_TX: Nhận ACK từ Node 0x01, STT: 8, Dữ liệu: Toàn vẹn[0m
+[0;32mI (20144) LORA_TX: Nhận được ACK cho gói tin STT: 8[0m
+[0;32mI (22144) LORA_TX: Gửi đến Node 0x02, STT: 9, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (22554) LORA_TX: Nhận ACK từ Node 0x01, STT: 9, Dữ liệu: Toàn vẹn[0m
+[0;32mI (22554) LORA_TX: Nhận được ACK cho gói tin STT: 9[0m
+[0;32mI (24554) LORA_TX: Gửi đến Node 0x02, STT: 10, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (24964) LORA_TX: Nhận ACK từ Node 0x01, STT: 10, Dữ liệu: Toàn vẹn[0m
+[0;32mI (24964) LORA_TX: Nhận được ACK cho gói tin STT: 10[0m
+[0;32mI (26964) LORA_TX: Gửi đến Node 0x02, STT: 11, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (27374) LORA_TX: Nhận ACK từ Node 0x01, STT: 11, Dữ liệu: Toàn vẹn[0m
+[0;32mI (27374) LORA_TX: Nhận được ACK cho gói tin STT: 11[0m
+[0;32mI (29374) LORA_TX: Gửi đến Node 0x02, STT: 12, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (29784) LORA_TX: Nhận ACK từ Node 0x01, STT: 12, Dữ liệu: Toàn vẹn[0m
+[0;32mI (29784) LORA_TX: Nhận được ACK cho gói tin STT: 12[0m
+[0;32mI (31784) LORA_TX: Gửi đến Node 0x02, STT: 13, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (32194) LORA_TX: Nhận ACK từ Node 0x01, STT: 13, Dữ liệu: Toàn vẹn[0m
+[0;32mI (32194) LORA_TX: Nhận được ACK cho gói tin STT: 13[0m
+[0;32mI (34194) LORA_TX: Gửi đến Node 0x02, STT: 14, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (34604) LORA_TX: Nhận ACK từ Node 0x01, STT: 14, Dữ liệu: Toàn vẹn[0m
+[0;32mI (34604) LORA_TX: Nhận được ACK cho gói tin STT: 14[0m
+[0;32mI (36604) LORA_TX: Gửi đến Node 0x02, STT: 15, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (37014) LORA_TX: Nhận ACK từ Node 0x01, STT: 15, Dữ liệu: Toàn vẹn[0m
+[0;32mI (37014) LORA_TX: Nhận được ACK cho gói tin STT: 15[0m
+[0;32mI (39014) LORA_TX: Gửi đến Node 0x02, STT: 16, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (39424) LORA_TX: Nhận ACK từ Node 0x01, STT: 16, Dữ liệu: Toàn vẹn[0m
+[0;32mI (39424) LORA_TX: Nhận được ACK cho gói tin STT: 16[0m
+[0;32mI (41424) LORA_TX: Gửi đến Node 0x02, STT: 17, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (41834) LORA_TX: Nhận ACK từ Node 0x01, STT: 17, Dữ liệu: Toàn vẹn[0m
+[0;32mI (41834) LORA_TX: Nhận được ACK cho gói tin STT: 17[0m
+[0;32mI (43834) LORA_TX: Gửi đến Node 0x02, STT: 18, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (44244) LORA_TX: Nhận ACK từ Node 0x01, STT: 18, Dữ liệu: Toàn vẹn[0m
+[0;32mI (44244) LORA_TX: Nhận được ACK cho gói tin STT: 18[0m
+[0;32mI (46244) LORA_TX: Gửi đến Node 0x02, STT: 19, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (46654) LORA_TX: Nhận ACK từ Node 0x01, STT: 19, Dữ liệu: Toàn vẹn[0m
+[0;32mI (46654) LORA_TX: Nhận được ACK cho gói tin STT: 19[0m
+[0;32mI (48654) LORA_TX: Gửi đến Node 0x02, STT: 20, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (49064) LORA_TX: Nhận ACK từ Node 0x01, STT: 20, Dữ liệu: Toàn vẹn[0m
+[0;32mI (49064) LORA_TX: Nhận được ACK cho gói tin STT: 20[0m
+[0;32mI (51064) LORA_TX: Gửi đến Node 0x02, STT: 21, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (51474) LORA_TX: Nhận ACK từ Node 0x01, STT: 21, Dữ liệu: Toàn vẹn[0m
+[0;32mI (51474) LORA_TX: Nhận được ACK cho gói tin STT: 21[0m
+[0;32mI (53474) LORA_TX: Gửi đến Node 0x02, STT: 22, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (53884) LORA_TX: Nhận ACK từ Node 0x01, STT: 22, Dữ liệu: Toàn vẹn[0m
+[0;32mI (53884) LORA_TX: Nhận được ACK cho gói tin STT: 22[0m
+[0;32mI (55884) LORA_TX: Gửi đến Node 0x02, STT: 23, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (56294) LORA_TX: Nhận ACK từ Node 0x01, STT: 23, Dữ liệu: Toàn vẹn[0m
+[0;32mI (56294) LORA_TX: Nhận được ACK cho gói tin STT: 23[0m
+[0;32mI (58294) LORA_TX: Gửi đến Node 0x02, STT: 24, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (58704) LORA_TX: Nhận ACK từ Node 0x01, STT: 24, Dữ liệu: Toàn vẹn[0m
+[0;32mI (58704) LORA_TX: Nhận được ACK cho gói tin STT: 24[0m
+[0;32mI (60704) LORA_TX: Gửi đến Node 0x02, STT: 25, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (61114) LORA_TX: Nhận ACK từ Node 0x01, STT: 25, Dữ liệu: Toàn vẹn[0m
+[0;32mI (61114) LORA_TX: Nhận được ACK cho gói tin STT: 25[0m
+[0;32mI (63114) LORA_TX: Gửi đến Node 0x02, STT: 26, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (63554) LORA_TX: Nhận ACK từ Node 0x01, STT: 26, Dữ liệu: Không toàn v[0m
+[0;32mI (63554) LORA_TX: Nhận được ACK cho gói tin STT: 26[0m
+[0;32mI (65554) LORA_TX: Gửi đến Node 0x02, STT: 27, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (65964) LORA_TX: Nhận ACK từ Node 0x01, STT: 27, Dữ liệu: Toàn vẹn[0m
+[0;32mI (65964) LORA_TX: Nhận được ACK cho gói tin STT: 27[0m
+[0;32mI (67964) LORA_TX: Gửi đến Node 0x02, STT: 28, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (68374) LORA_TX: Nhận ACK từ Node 0x01, STT: 28, Dữ liệu: Toàn vẹn[0m
+[0;32mI (68374) LORA_TX: Nhận được ACK cho gói tin STT: 28[0m
+[0;32mI (70374) LORA_TX: Gửi đến Node 0x02, STT: 29, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (70784) LORA_TX: Nhận ACK từ Node 0x01, STT: 29, Dữ liệu: Toàn vẹn[0m
+[0;32mI (70784) LORA_TX: Nhận được ACK cho gói tin STT: 29[0m
+[0;32mI (72784) LORA_TX: Gửi đến Node 0x02, STT: 30, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (73194) LORA_TX: Nhận ACK từ Node 0x01, STT: 30, Dữ liệu: Toàn vẹn[0m
+[0;32mI (73194) LORA_TX: Nhận được ACK cho gói tin STT: 30[0m
+[0;32mI (75194) LORA_TX: Gửi đến Node 0x02, STT: 31, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (75604) LORA_TX: Nhận ACK từ Node 0x01, STT: 31, Dữ liệu: Toàn vẹn[0m
+[0;32mI (75604) LORA_TX: Nhận được ACK cho gói tin STT: 31[0m
+[0;32mI (77604) LORA_TX: Gửi đến Node 0x02, STT: 32, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (78014) LORA_TX: Nhận ACK từ Node 0x01, STT: 32, Dữ liệu: Toàn vẹn[0m
+[0;32mI (78014) LORA_TX: Nhận được ACK cho gói tin STT: 32[0m
+[0;32mI (80014) LORA_TX: Gửi đến Node 0x02, STT: 33, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (80424) LORA_TX: Nhận ACK từ Node 0x01, STT: 33, Dữ liệu: Toàn vẹn[0m
+[0;32mI (80424) LORA_TX: Nhận được ACK cho gói tin STT: 33[0m
+[0;32mI (82424) LORA_TX: Gửi đến Node 0x02, STT: 34, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;33mW (87694) LORA_TX: Hết thời gian chờ ACK cho STT: 34[0m
+[0;31mE (87694) LORA_TX: Không nhận được ACK cho gói tin STT: 34[0m
+[0;32mI (89694) LORA_TX: Gửi đến Node 0x02, STT: 35, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (90104) LORA_TX: Nhận ACK từ Node 0x01, STT: 35, Dữ liệu: Toàn vẹn[0m
+[0;32mI (90104) LORA_TX: Nhận được ACK cho gói tin STT: 35[0m
+[0;32mI (92104) LORA_TX: Gửi đến Node 0x02, STT: 36, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (92514) LORA_TX: Nhận ACK từ Node 0x01, STT: 36, Dữ liệu: Toàn vẹn[0m
+[0;32mI (92514) LORA_TX: Nhận được ACK cho gói tin STT: 36[0m
+[0;32mI (94514) LORA_TX: Gửi đến Node 0x02, STT: 37, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (94924) LORA_TX: Nhận ACK từ Node 0x01, STT: 37, Dữ liệu: Toàn vẹn[0m
+[0;32mI (94924) LORA_TX: Nhận được ACK cho gói tin STT: 37[0m
+[0;32mI (96924) LORA_TX: Gửi đến Node 0x02, STT: 38, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (97334) LORA_TX: Nhận ACK từ Node 0x01, STT: 38, Dữ liệu: Toàn vẹn[0m
+[0;32mI (97334) LORA_TX: Nhận được ACK cho gói tin STT: 38[0m
+[0;32mI (99334) LORA_TX: Gửi đến Node 0x02, STT: 39, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (99744) LORA_TX: Nhận ACK từ Node 0x01, STT: 39, Dữ liệu: Toàn vẹn[0m
+[0;32mI (99744) LORA_TX: Nhận được ACK cho gói tin STT: 39[0m
+[0;32mI (101744) LORA_TX: Gửi đến Node 0x02, STT: 40, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (102154) LORA_TX: Nhận ACK từ Node 0x01, STT: 40, Dữ liệu: Toàn vẹn[0m
+[0;32mI (102154) LORA_TX: Nhận được ACK cho gói tin STT: 40[0m
+[0;32mI (104154) LORA_TX: Gửi đến Node 0x02, STT: 41, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (104564) LORA_TX: Nhận ACK từ Node 0x01, STT: 41, Dữ liệu: Toàn vẹn[0m
+[0;32mI (104564) LORA_TX: Nhận được ACK cho gói tin STT: 41[0m
+[0;32mI (106564) LORA_TX: Gửi đến Node 0x02, STT: 42, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (106974) LORA_TX: Nhận ACK từ Node 0x01, STT: 42, Dữ liệu: Toàn vẹn[0m
+[0;32mI (106974) LORA_TX: Nhận được ACK cho gói tin STT: 42[0m
+[0;32mI (108974) LORA_TX: Gửi đến Node 0x02, STT: 43, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (109384) LORA_TX: Nhận ACK từ Node 0x01, STT: 43, Dữ liệu: Toàn vẹn[0m
+[0;32mI (109384) LORA_TX: Nhận được ACK cho gói tin STT: 43[0m
+[0;32mI (111384) LORA_TX: Gửi đến Node 0x02, STT: 44, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (111794) LORA_TX: Nhận ACK từ Node 0x01, STT: 44, Dữ liệu: Toàn vẹn[0m
+[0;32mI (111794) LORA_TX: Nhận được ACK cho gói tin STT: 44[0m
+[0;32mI (113794) LORA_TX: Gửi đến Node 0x02, STT: 45, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (114204) LORA_TX: Nhận ACK từ Node 0x01, STT: 45, Dữ liệu: Toàn vẹn[0m
+[0;32mI (114204) LORA_TX: Nhận được ACK cho gói tin STT: 45[0m
+[0;32mI (116204) LORA_TX: Gửi đến Node 0x02, STT: 46, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (116614) LORA_TX: Nhận ACK từ Node 0x01, STT: 46, Dữ liệu: Toàn vẹn[0m
+[0;32mI (116614) LORA_TX: Nhận được ACK cho gói tin STT: 46[0m
+[0;32mI (118614) LORA_TX: Gửi đến Node 0x02, STT: 47, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (119024) LORA_TX: Nhận ACK từ Node 0x01, STT: 47, Dữ liệu: Toàn vẹn[0m
+[0;32mI (119024) LORA_TX: Nhận được ACK cho gói tin STT: 47[0m
+[0;32mI (121024) LORA_TX: Gửi đến Node 0x02, STT: 48, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (121434) LORA_TX: Nhận ACK từ Node 0x01, STT: 48, Dữ liệu: Toàn vẹn[0m
+[0;32mI (121434) LORA_TX: Nhận được ACK cho gói tin STT: 48[0m
+[0;32mI (123434) LORA_TX: Gửi đến Node 0x02, STT: 49, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (123844) LORA_TX: Nhận ACK từ Node 0x01, STT: 49, Dữ liệu: Toàn vẹn[0m
+[0;32mI (123844) LORA_TX: Nhận được ACK cho gói tin STT: 49[0m
+[0;32mI (125844) LORA_TX: Gửi đến Node 0x02, STT: 50, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (126254) LORA_TX: Nhận ACK từ Node 0x01, STT: 50, Dữ liệu: Toàn vẹn[0m
+[0;32mI (126254) LORA_TX: Nhận được ACK cho gói tin STT: 50[0m
+[0;32mI (128254) LORA_TX: Gửi đến Node 0x02, STT: 51, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (128664) LORA_TX: Nhận ACK từ Node 0x01, STT: 51, Dữ liệu: Toàn vẹn[0m
+[0;32mI (128664) LORA_TX: Nhận được ACK cho gói tin STT: 51[0m
+[0;32mI (130664) LORA_TX: Gửi đến Node 0x02, STT: 52, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (131074) LORA_TX: Nhận ACK từ Node 0x01, STT: 52, Dữ liệu: Toàn vẹn[0m
+[0;32mI (131074) LORA_TX: Nhận được ACK cho gói tin STT: 52[0m
+[0;32mI (133074) LORA_TX: Gửi đến Node 0x02, STT: 53, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (133484) LORA_TX: Nhận ACK từ Node 0x01, STT: 53, Dữ liệu: Toàn vẹn[0m
+[0;32mI (133484) LORA_TX: Nhận được ACK cho gói tin STT: 53[0m
+[0;32mI (135484) LORA_TX: Gửi đến Node 0x02, STT: 54, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (135894) LORA_TX: Nhận ACK từ Node 0x01, STT: 54, Dữ liệu: Toàn vẹn[0m
+[0;32mI (135894) LORA_TX: Nhận được ACK cho gói tin STT: 54[0m
+[0;32mI (137894) LORA_TX: Gửi đến Node 0x02, STT: 55, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (138304) LORA_TX: Nhận ACK từ Node 0x01, STT: 55, Dữ liệu: Toàn vẹn[0m
+[0;32mI (138304) LORA_TX: Nhận được ACK cho gói tin STT: 55[0m
+[0;32mI (140304) LORA_TX: Gửi đến Node 0x02, STT: 56, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (140714) LORA_TX: Nhận ACK từ Node 0x01, STT: 56, Dữ liệu: Toàn vẹn[0m
+[0;32mI (140714) LORA_TX: Nhận được ACK cho gói tin STT: 56[0m
+[0;32mI (142714) LORA_TX: Gửi đến Node 0x02, STT: 57, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (143124) LORA_TX: Nhận ACK từ Node 0x01, STT: 57, Dữ liệu: Toàn vẹn[0m
+[0;32mI (143124) LORA_TX: Nhận được ACK cho gói tin STT: 57[0m
+[0;32mI (145124) LORA_TX: Gửi đến Node 0x02, STT: 58, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (145534) LORA_TX: Nhận ACK từ Node 0x01, STT: 58, Dữ liệu: Toàn vẹn[0m
+[0;32mI (145534) LORA_TX: Nhận được ACK cho gói tin STT: 58[0m
+[0;32mI (147534) LORA_TX: Gửi đến Node 0x02, STT: 59, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (147944) LORA_TX: Nhận ACK từ Node 0x01, STT: 59, Dữ liệu: Toàn vẹn[0m
+[0;32mI (147944) LORA_TX: Nhận được ACK cho gói tin STT: 59[0m
+[0;32mI (149944) LORA_TX: Gửi đến Node 0x02, STT: 60, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (150354) LORA_TX: Nhận ACK từ Node 0x01, STT: 60, Dữ liệu: Toàn vẹn[0m
+[0;32mI (150354) LORA_TX: Nhận được ACK cho gói tin STT: 60[0m
+[0;32mI (152354) LORA_TX: Gửi đến Node 0x02, STT: 61, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (152764) LORA_TX: Nhận ACK từ Node 0x01, STT: 61, Dữ liệu: Toàn vẹn[0m
+[0;32mI (152764) LORA_TX: Nhận được ACK cho gói tin STT: 61[0m
+[0;32mI (154764) LORA_TX: Gửi đến Node 0x02, STT: 62, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (155174) LORA_TX: Nhận ACK từ Node 0x01, STT: 62, Dữ liệu: Toàn vẹn[0m
+[0;32mI (155174) LORA_TX: Nhận được ACK cho gói tin STT: 62[0m
+[0;32mI (157174) LORA_TX: Gửi đến Node 0x02, STT: 63, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (157584) LORA_TX: Nhận ACK từ Node 0x01, STT: 63, Dữ liệu: Toàn vẹn[0m
+[0;32mI (157584) LORA_TX: Nhận được ACK cho gói tin STT: 63[0m
+[0;32mI (159584) LORA_TX: Gửi đến Node 0x02, STT: 64, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (159994) LORA_TX: Nhận ACK từ Node 0x01, STT: 64, Dữ liệu: Toàn vẹn[0m
+[0;32mI (159994) LORA_TX: Nhận được ACK cho gói tin STT: 64[0m
+[0;32mI (161994) LORA_TX: Gửi đến Node 0x02, STT: 65, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (162404) LORA_TX: Nhận ACK từ Node 0x01, STT: 65, Dữ liệu: Toàn vẹn[0m
+[0;32mI (162404) LORA_TX: Nhận được ACK cho gói tin STT: 65[0m
+[0;32mI (164404) LORA_TX: Gửi đến Node 0x02, STT: 66, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (164814) LORA_TX: Nhận ACK từ Node 0x01, STT: 66, Dữ liệu: Toàn vẹn[0m
+[0;32mI (164814) LORA_TX: Nhận được ACK cho gói tin STT: 66[0m
+[0;32mI (166814) LORA_TX: Gửi đến Node 0x02, STT: 67, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (167224) LORA_TX: Nhận ACK từ Node 0x01, STT: 67, Dữ liệu: Toàn vẹn[0m
+[0;32mI (167224) LORA_TX: Nhận được ACK cho gói tin STT: 67[0m
+[0;32mI (169224) LORA_TX: Gửi đến Node 0x02, STT: 68, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (169634) LORA_TX: Nhận ACK từ Node 0x01, STT: 68, Dữ liệu: Toàn vẹn[0m
+[0;32mI (169634) LORA_TX: Nhận được ACK cho gói tin STT: 68[0m
+[0;32mI (171634) LORA_TX: Gửi đến Node 0x02, STT: 69, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (172044) LORA_TX: Nhận ACK từ Node 0x01, STT: 69, Dữ liệu: Toàn vẹn[0m
+[0;32mI (172044) LORA_TX: Nhận được ACK cho gói tin STT: 69[0m
+[0;32mI (174044) LORA_TX: Gửi đến Node 0x02, STT: 70, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (174454) LORA_TX: Nhận ACK từ Node 0x01, STT: 70, Dữ liệu: Toàn vẹn[0m
+[0;32mI (174454) LORA_TX: Nhận được ACK cho gói tin STT: 70[0m
+[0;32mI (176454) LORA_TX: Gửi đến Node 0x02, STT: 71, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (176864) LORA_TX: Nhận ACK từ Node 0x01, STT: 71, Dữ liệu: Toàn vẹn[0m
+[0;32mI (176864) LORA_TX: Nhận được ACK cho gói tin STT: 71[0m
+[0;32mI (178864) LORA_TX: Gửi đến Node 0x02, STT: 72, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (179274) LORA_TX: Nhận ACK từ Node 0x01, STT: 72, Dữ liệu: Toàn vẹn[0m
+[0;32mI (179274) LORA_TX: Nhận được ACK cho gói tin STT: 72[0m
+[0;32mI (181274) LORA_TX: Gửi đến Node 0x02, STT: 73, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (181684) LORA_TX: Nhận ACK từ Node 0x01, STT: 73, Dữ liệu: Toàn vẹn[0m
+[0;32mI (181684) LORA_TX: Nhận được ACK cho gói tin STT: 73[0m
+[0;32mI (183684) LORA_TX: Gửi đến Node 0x02, STT: 74, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (184094) LORA_TX: Nhận ACK từ Node 0x01, STT: 74, Dữ liệu: Toàn vẹn[0m
+[0;32mI (184094) LORA_TX: Nhận được ACK cho gói tin STT: 74[0m
+[0;32mI (186094) LORA_TX: Gửi đến Node 0x02, STT: 75, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (186504) LORA_TX: Nhận ACK từ Node 0x01, STT: 75, Dữ liệu: Toàn vẹn[0m
+[0;32mI (186504) LORA_TX: Nhận được ACK cho gói tin STT: 75[0m
+[0;32mI (188504) LORA_TX: Gửi đến Node 0x02, STT: 76, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (188914) LORA_TX: Nhận ACK từ Node 0x01, STT: 76, Dữ liệu: Toàn vẹn[0m
+[0;32mI (188914) LORA_TX: Nhận được ACK cho gói tin STT: 76[0m
+[0;32mI (190914) LORA_TX: Gửi đến Node 0x02, STT: 77, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (191324) LORA_TX: Nhận ACK từ Node 0x01, STT: 77, Dữ liệu: Toàn vẹn[0m
+[0;32mI (191324) LORA_TX: Nhận được ACK cho gói tin STT: 77[0m
+[0;32mI (193324) LORA_TX: Gửi đến Node 0x02, STT: 78, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (193734) LORA_TX: Nhận ACK từ Node 0x01, STT: 78, Dữ liệu: Toàn vẹn[0m
+[0;32mI (193734) LORA_TX: Nhận được ACK cho gói tin STT: 78[0m
+[0;32mI (195734) LORA_TX: Gửi đến Node 0x02, STT: 79, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (196144) LORA_TX: Nhận ACK từ Node 0x01, STT: 79, Dữ liệu: Toàn vẹn[0m
+[0;32mI (196144) LORA_TX: Nhận được ACK cho gói tin STT: 79[0m
+[0;32mI (198144) LORA_TX: Gửi đến Node 0x02, STT: 80, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (198554) LORA_TX: Nhận ACK từ Node 0x01, STT: 80, Dữ liệu: Toàn vẹn[0m
+[0;32mI (198554) LORA_TX: Nhận được ACK cho gói tin STT: 80[0m
+[0;32mI (200554) LORA_TX: Gửi đến Node 0x02, STT: 81, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (200964) LORA_TX: Nhận ACK từ Node 0x01, STT: 81, Dữ liệu: Toàn vẹn[0m
+[0;32mI (200964) LORA_TX: Nhận được ACK cho gói tin STT: 81[0m
+[0;32mI (202964) LORA_TX: Gửi đến Node 0x02, STT: 82, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (203374) LORA_TX: Nhận ACK từ Node 0x01, STT: 82, Dữ liệu: Toàn vẹn[0m
+[0;32mI (203374) LORA_TX: Nhận được ACK cho gói tin STT: 82[0m
+[0;32mI (205374) LORA_TX: Gửi đến Node 0x02, STT: 83, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (205784) LORA_TX: Nhận ACK từ Node 0x01, STT: 83, Dữ liệu: Toàn vẹn[0m
+[0;32mI (205784) LORA_TX: Nhận được ACK cho gói tin STT: 83[0m
+[0;32mI (207784) LORA_TX: Gửi đến Node 0x02, STT: 84, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (208194) LORA_TX: Nhận ACK từ Node 0x01, STT: 84, Dữ liệu: Toàn vẹn[0m
+[0;32mI (208194) LORA_TX: Nhận được ACK cho gói tin STT: 84[0m
+[0;32mI (210194) LORA_TX: Gửi đến Node 0x02, STT: 85, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (210604) LORA_TX: Nhận ACK từ Node 0x01, STT: 85, Dữ liệu: Toàn vẹn[0m
+[0;32mI (210604) LORA_TX: Nhận được ACK cho gói tin STT: 85[0m
+[0;32mI (212604) LORA_TX: Gửi đến Node 0x02, STT: 86, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (213014) LORA_TX: Nhận ACK từ Node 0x01, STT: 86, Dữ liệu: Toàn vẹn[0m
+[0;32mI (213014) LORA_TX: Nhận được ACK cho gói tin STT: 86[0m
+[0;32mI (215014) LORA_TX: Gửi đến Node 0x02, STT: 87, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (215424) LORA_TX: Nhận ACK từ Node 0x01, STT: 87, Dữ liệu: Toàn vẹn[0m
+[0;32mI (215424) LORA_TX: Nhận được ACK cho gói tin STT: 87[0m
+[0;32mI (217424) LORA_TX: Gửi đến Node 0x02, STT: 88, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (217834) LORA_TX: Nhận ACK từ Node 0x01, STT: 88, Dữ liệu: Toàn vẹn[0m
+[0;32mI (217834) LORA_TX: Nhận được ACK cho gói tin STT: 88[0m
+[0;32mI (219834) LORA_TX: Gửi đến Node 0x02, STT: 89, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (220244) LORA_TX: Nhận ACK từ Node 0x01, STT: 89, Dữ liệu: Toàn vẹn[0m
+[0;32mI (220244) LORA_TX: Nhận được ACK cho gói tin STT: 89[0m
+[0;32mI (222244) LORA_TX: Gửi đến Node 0x02, STT: 90, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (222654) LORA_TX: Nhận ACK từ Node 0x01, STT: 90, Dữ liệu: Toàn vẹn[0m
+[0;32mI (222654) LORA_TX: Nhận được ACK cho gói tin STT: 90[0m
+[0;32mI (224654) LORA_TX: Gửi đến Node 0x02, STT: 91, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (225064) LORA_TX: Nhận ACK từ Node 0x01, STT: 91, Dữ liệu: Toàn vẹn[0m
+[0;32mI (225064) LORA_TX: Nhận được ACK cho gói tin STT: 91[0m
+[0;32mI (227064) LORA_TX: Gửi đến Node 0x02, STT: 92, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (227474) LORA_TX: Nhận ACK từ Node 0x01, STT: 92, Dữ liệu: Toàn vẹn[0m
+[0;32mI (227474) LORA_TX: Nhận được ACK cho gói tin STT: 92[0m
+[0;32mI (229474) LORA_TX: Gửi đến Node 0x02, STT: 93, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (229884) LORA_TX: Nhận ACK từ Node 0x01, STT: 93, Dữ liệu: Toàn vẹn[0m
+[0;32mI (229884) LORA_TX: Nhận được ACK cho gói tin STT: 93[0m
+[0;32mI (231884) LORA_TX: Gửi đến Node 0x02, STT: 94, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (232294) LORA_TX: Nhận ACK từ Node 0x01, STT: 94, Dữ liệu: Toàn vẹn[0m
+[0;32mI (232294) LORA_TX: Nhận được ACK cho gói tin STT: 94[0m
+[0;32mI (234294) LORA_TX: Gửi đến Node 0x02, STT: 95, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (234704) LORA_TX: Nhận ACK từ Node 0x01, STT: 95, Dữ liệu: Toàn vẹn[0m
+[0;32mI (234704) LORA_TX: Nhận được ACK cho gói tin STT: 95[0m
+[0;32mI (236704) LORA_TX: Gửi đến Node 0x02, STT: 96, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (237114) LORA_TX: Nhận ACK từ Node 0x01, STT: 96, Dữ liệu: Toàn vẹn[0m
+[0;32mI (237114) LORA_TX: Nhận được ACK cho gói tin STT: 96[0m
+[0;32mI (239114) LORA_TX: Gửi đến Node 0x02, STT: 97, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (239524) LORA_TX: Nhận ACK từ Node 0x01, STT: 97, Dữ liệu: Toàn vẹn[0m
+[0;32mI (239524) LORA_TX: Nhận được ACK cho gói tin STT: 97[0m
+[0;32mI (241524) LORA_TX: Gửi đến Node 0x02, STT: 98, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (241934) LORA_TX: Nhận ACK từ Node 0x01, STT: 98, Dữ liệu: Toàn vẹn[0m
+[0;32mI (241934) LORA_TX: Nhận được ACK cho gói tin STT: 98[0m
+[0;32mI (243934) LORA_TX: Gửi đến Node 0x02, STT: 99, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (244344) LORA_TX: Nhận ACK từ Node 0x01, STT: 99, Dữ liệu: Toàn vẹn[0m
+[0;32mI (244344) LORA_TX: Nhận được ACK cho gói tin STT: 99[0m
+[0;32mI (246344) LORA_TX: Gửi đến Node 0x02, STT: 100, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (246754) LORA_TX: Nhận ACK từ Node 0x01, STT: 100, Dữ liệu: Toàn vẹn[0m
+[0;32mI (246754) LORA_TX: Nhận được ACK cho gói tin STT: 100[0m
+[0;32mI (248754) LORA_TX: Gửi đến Node 0x02, STT: 101, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (249164) LORA_TX: Nhận ACK từ Node 0x01, STT: 101, Dữ liệu: Toàn vẹn[0m
+[0;32mI (249164) LORA_TX: Nhận được ACK cho gói tin STT: 101[0m
+[0;32mI (251164) LORA_TX: Gửi đến Node 0x02, STT: 102, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (251574) LORA_TX: Nhận ACK từ Node 0x01, STT: 102, Dữ liệu: Toàn vẹn[0m
+[0;32mI (251574) LORA_TX: Nhận được ACK cho gói tin STT: 102[0m
+[0;32mI (253574) LORA_TX: Gửi đến Node 0x02, STT: 103, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (253984) LORA_TX: Nhận ACK từ Node 0x01, STT: 103, Dữ liệu: Toàn vẹn[0m
+[0;32mI (253984) LORA_TX: Nhận được ACK cho gói tin STT: 103[0m
+[0;32mI (255984) LORA_TX: Gửi đến Node 0x02, STT: 104, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (256394) LORA_TX: Nhận ACK từ Node 0x01, STT: 104, Dữ liệu: Toàn vẹn[0m
+[0;32mI (256394) LORA_TX: Nhận được ACK cho gói tin STT: 104[0m
+[0;32mI (258394) LORA_TX: Gửi đến Node 0x02, STT: 105, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (258804) LORA_TX: Nhận ACK từ Node 0x01, STT: 105, Dữ liệu: Toàn vẹn[0m
+[0;32mI (258804) LORA_TX: Nhận được ACK cho gói tin STT: 105[0m
+[0;32mI (260804) LORA_TX: Gửi đến Node 0x02, STT: 106, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (261214) LORA_TX: Nhận ACK từ Node 0x01, STT: 106, Dữ liệu: Toàn vẹn[0m
+[0;32mI (261214) LORA_TX: Nhận được ACK cho gói tin STT: 106[0m
+[0;32mI (263214) LORA_TX: Gửi đến Node 0x02, STT: 107, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (263624) LORA_TX: Nhận ACK từ Node 0x01, STT: 107, Dữ liệu: Toàn vẹn[0m
+[0;32mI (263624) LORA_TX: Nhận được ACK cho gói tin STT: 107[0m
+[0;32mI (265624) LORA_TX: Gửi đến Node 0x02, STT: 108, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (266034) LORA_TX: Nhận ACK từ Node 0x01, STT: 108, Dữ liệu: Toàn vẹn[0m
+[0;32mI (266034) LORA_TX: Nhận được ACK cho gói tin STT: 108[0m
+[0;32mI (268034) LORA_TX: Gửi đến Node 0x02, STT: 109, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (268444) LORA_TX: Nhận ACK từ Node 0x01, STT: 109, Dữ liệu: Toàn vẹn[0m
+[0;32mI (268444) LORA_TX: Nhận được ACK cho gói tin STT: 109[0m
+[0;32mI (270444) LORA_TX: Gửi đến Node 0x02, STT: 110, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (270854) LORA_TX: Nhận ACK từ Node 0x01, STT: 110, Dữ liệu: Toàn vẹn[0m
+[0;32mI (270854) LORA_TX: Nhận được ACK cho gói tin STT: 110[0m
+[0;32mI (272854) LORA_TX: Gửi đến Node 0x02, STT: 111, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (273264) LORA_TX: Nhận ACK từ Node 0x01, STT: 111, Dữ liệu: Toàn vẹn[0m
+[0;32mI (273264) LORA_TX: Nhận được ACK cho gói tin STT: 111[0m
+[0;32mI (275264) LORA_TX: Gửi đến Node 0x02, STT: 112, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (275674) LORA_TX: Nhận ACK từ Node 0x01, STT: 112, Dữ liệu: Toàn vẹn[0m
+[0;32mI (275674) LORA_TX: Nhận được ACK cho gói tin STT: 112[0m
+[0;32mI (277674) LORA_TX: Gửi đến Node 0x02, STT: 113, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (278084) LORA_TX: Nhận ACK từ Node 0x01, STT: 113, Dữ liệu: Toàn vẹn[0m
+[0;32mI (278084) LORA_TX: Nhận được ACK cho gói tin STT: 113[0m
+[0;32mI (280084) LORA_TX: Gửi đến Node 0x02, STT: 114, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (280494) LORA_TX: Nhận ACK từ Node 0x01, STT: 114, Dữ liệu: Toàn vẹn[0m
+[0;32mI (280494) LORA_TX: Nhận được ACK cho gói tin STT: 114[0m
+[0;32mI (282494) LORA_TX: Gửi đến Node 0x02, STT: 115, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (282904) LORA_TX: Nhận ACK từ Node 0x01, STT: 115, Dữ liệu: Toàn vẹn[0m
+[0;32mI (282904) LORA_TX: Nhận được ACK cho gói tin STT: 115[0m
+[0;32mI (284904) LORA_TX: Gửi đến Node 0x02, STT: 116, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (285314) LORA_TX: Nhận ACK từ Node 0x01, STT: 116, Dữ liệu: Toàn vẹn[0m
+[0;32mI (285314) LORA_TX: Nhận được ACK cho gói tin STT: 116[0m
+[0;32mI (287314) LORA_TX: Gửi đến Node 0x02, STT: 117, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (287724) LORA_TX: Nhận ACK từ Node 0x01, STT: 117, Dữ liệu: Toàn vẹn[0m
+[0;32mI (287724) LORA_TX: Nhận được ACK cho gói tin STT: 117[0m
+[0;32mI (289724) LORA_TX: Gửi đến Node 0x02, STT: 118, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (290134) LORA_TX: Nhận ACK từ Node 0x01, STT: 118, Dữ liệu: Toàn vẹn[0m
+[0;32mI (290134) LORA_TX: Nhận được ACK cho gói tin STT: 118[0m
+[0;32mI (292134) LORA_TX: Gửi đến Node 0x02, STT: 119, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu [0m
+[0;32mI (292544) LORA_TX: Nhận ACK từ Node 0x01, STT: 119, Dữ liệu: Toàn vẹn[0m
+[0;32mI (292544) LORA_TX: Nhận được ACK cho gói tin STT: 119[0m

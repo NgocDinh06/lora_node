@@ -1,0 +1,334 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b190h ( 45456) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b1b8 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d42c vaddr=40080000 size=02bech ( 11244) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=166bch ( 91836) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000366e4 vaddr=40082bec size=0ac40h ( 44096) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (223) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (239) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (245) cpu_start: ELF file SHA256:  1c20276265cdaacb...[0m
+[0;32mI (251) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (257) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (261) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (278) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (10456) LORA_NODE1: Khởi tạo LoRa thành công: 470 MHz, SF=10, BW=125 kHz, CR=4/5[0m
+[0;32mI (11786) LORA_NODE1: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (16786) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (22316) LORA_NODE1: Gửi đến Node 0x02, STT: 1, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (27316) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (32846) LORA_NODE1: Gửi đến Node 0x02, STT: 2, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (33196) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;33mW (33196) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (37526) LORA_NODE1: Gửi đến Node 0x02, STT: 3, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (42526) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (48056) LORA_NODE1: Gửi đến Node 0x02, STT: 4, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (48406) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;33mW (48406) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (52736) LORA_NODE1: Gửi đến Node 0x02, STT: 5, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (57736) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (63266) LORA_NODE1: Gửi đến Node 0x02, STT: 6, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (63616) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;33mW (63616) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (67946) LORA_NODE1: Gửi đến Node 0x02, STT: 7, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (72946) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (78476) LORA_NODE1: Gửi đến Node 0x02, STT: 8, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (78826) LORA_NODE1: RSSI: -64 dBm, SNR: 11 dB[0m
+[0;33mW (78826) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (83156) LORA_NODE1: Gửi đến Node 0x02, STT: 9, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (88156) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (93686) LORA_NODE1: Gửi đến Node 0x02, STT: 10, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (94036) LORA_NODE1: RSSI: -64 dBm, SNR: 11 dB[0m
+[0;33mW (94036) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (98366) LORA_NODE1: Gửi đến Node 0x02, STT: 11, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (103366) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (108896) LORA_NODE1: Gửi đến Node 0x02, STT: 12, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (109246) LORA_NODE1: RSSI: -64 dBm, SNR: 11 dB[0m
+[0;33mW (109246) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (113576) LORA_NODE1: Gửi đến Node 0x02, STT: 13, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (118576) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (124106) LORA_NODE1: Gửi đến Node 0x02, STT: 14, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (124456) LORA_NODE1: RSSI: -63 dBm, SNR: 11 dB[0m
+[0;33mW (124456) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (128786) LORA_NODE1: Gửi đến Node 0x02, STT: 15, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (133786) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (139316) LORA_NODE1: Gửi đến Node 0x02, STT: 16, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (139666) LORA_NODE1: RSSI: -63 dBm, SNR: 10 dB[0m
+[0;33mW (139666) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (143996) LORA_NODE1: Gửi đến Node 0x02, STT: 17, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (148996) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (154526) LORA_NODE1: Gửi đến Node 0x02, STT: 18, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (154876) LORA_NODE1: RSSI: -63 dBm, SNR: 10 dB[0m
+[0;33mW (154876) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (159206) LORA_NODE1: Gửi đến Node 0x02, STT: 19, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (164206) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (169736) LORA_NODE1: Gửi đến Node 0x02, STT: 20, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (170086) LORA_NODE1: RSSI: -64 dBm, SNR: 13 dB[0m
+[0;33mW (170086) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (174416) LORA_NODE1: Gửi đến Node 0x02, STT: 21, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (179416) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (184946) LORA_NODE1: Gửi đến Node 0x02, STT: 22, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (185286) LORA_NODE1: RSSI: -64 dBm, SNR: 12 dB[0m
+[0;33mW (185286) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (189616) LORA_NODE1: Gửi đến Node 0x02, STT: 23, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (194616) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (200146) LORA_NODE1: Gửi đến Node 0x02, STT: 24, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (200496) LORA_NODE1: RSSI: -64 dBm, SNR: 11 dB[0m
+[0;33mW (200496) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (204826) LORA_NODE1: Gửi đến Node 0x02, STT: 25, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (209826) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (215356) LORA_NODE1: Gửi đến Node 0x02, STT: 26, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (215706) LORA_NODE1: RSSI: -63 dBm, SNR: 10 dB[0m
+[0;33mW (215706) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (220036) LORA_NODE1: Gửi đến Node 0x02, STT: 27, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (225036) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (230566) LORA_NODE1: Gửi đến Node 0x02, STT: 28, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (230916) LORA_NODE1: RSSI: -64 dBm, SNR: 11 dB[0m
+[0;33mW (230916) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (235246) LORA_NODE1: Gửi đến Node 0x02, STT: 29, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (240246) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (245776) LORA_NODE1: Gửi đến Node 0x02, STT: 30, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (246126) LORA_NODE1: RSSI: -64 dBm, SNR: 12 dB[0m
+[0;33mW (246126) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (250456) LORA_NODE1: Gửi đến Node 0x02, STT: 31, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (255456) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (260986) LORA_NODE1: Gửi đến Node 0x02, STT: 32, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (261336) LORA_NODE1: RSSI: -64 dBm, SNR: 12 dB[0m
+[0;33mW (261336) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (265666) LORA_NODE1: Gửi đến Node 0x02, STT: 33, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (270666) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (276196) LORA_NODE1: Gửi đến Node 0x02, STT: 34, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (276546) LORA_NODE1: RSSI: -61 dBm, SNR: 12 dB[0m
+[0;33mW (276546) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (280876) LORA_NODE1: Gửi đến Node 0x02, STT: 35, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (285876) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (291406) LORA_NODE1: Gửi đến Node 0x02, STT: 36, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (291756) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;33mW (291756) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (296086) LORA_NODE1: Gửi đến Node 0x02, STT: 37, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (301086) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (306616) LORA_NODE1: Gửi đến Node 0x02, STT: 38, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (306966) LORA_NODE1: Lỗi CRC trong gói tin[0m
+[0;32mI (311296) LORA_NODE1: Gửi đến Node 0x02, STT: 39, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (316296) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (321826) LORA_NODE1: Gửi đến Node 0x02, STT: 40, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (322176) LORA_NODE1: RSSI: -60 dBm, SNR: 10 dB[0m
+[0;33mW (322176) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (326506) LORA_NODE1: Gửi đến Node 0x02, STT: 41, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (331506) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (337036) LORA_NODE1: Gửi đến Node 0x02, STT: 42, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (337386) LORA_NODE1: RSSI: -61 dBm, SNR: 11 dB[0m
+[0;33mW (337386) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (341716) LORA_NODE1: Gửi đến Node 0x02, STT: 43, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (346716) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (352246) LORA_NODE1: Gửi đến Node 0x02, STT: 44, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (352596) LORA_NODE1: RSSI: -62 dBm, SNR: 12 dB[0m
+[0;33mW (352596) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (356926) LORA_NODE1: Gửi đến Node 0x02, STT: 45, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (361926) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (367456) LORA_NODE1: Gửi đến Node 0x02, STT: 46, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (367806) LORA_NODE1: RSSI: -59 dBm, SNR: 1 dB[0m
+[0;33mW (367806) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (372136) LORA_NODE1: Gửi đến Node 0x02, STT: 47, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (377136) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (382666) LORA_NODE1: Gửi đến Node 0x02, STT: 48, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (383016) LORA_NODE1: RSSI: -61 dBm, SNR: 12 dB[0m
+[0;33mW (383016) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (387346) LORA_NODE1: Gửi đến Node 0x02, STT: 49, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (392346) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (397876) LORA_NODE1: Gửi đến Node 0x02, STT: 50, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (398226) LORA_NODE1: RSSI: -60 dBm, SNR: 11 dB[0m
+[0;33mW (398226) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (402556) LORA_NODE1: Gửi đến Node 0x02, STT: 51, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (407556) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (413086) LORA_NODE1: Gửi đến Node 0x02, STT: 52, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (413436) LORA_NODE1: RSSI: -62 dBm, SNR: 13 dB[0m
+[0;33mW (413436) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (417766) LORA_NODE1: Gửi đến Node 0x02, STT: 53, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (422766) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (428296) LORA_NODE1: Gửi đến Node 0x02, STT: 54, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (428646) LORA_NODE1: RSSI: -61 dBm, SNR: 11 dB[0m
+[0;33mW (428646) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (432976) LORA_NODE1: Gửi đến Node 0x02, STT: 55, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (437976) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (443506) LORA_NODE1: Gửi đến Node 0x02, STT: 56, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (443856) LORA_NODE1: RSSI: -61 dBm, SNR: 11 dB[0m
+[0;33mW (443856) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (448186) LORA_NODE1: Gửi đến Node 0x02, STT: 57, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (453186) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (458716) LORA_NODE1: Gửi đến Node 0x02, STT: 58, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (459066) LORA_NODE1: RSSI: -61 dBm, SNR: 12 dB[0m
+[0;33mW (459066) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (463396) LORA_NODE1: Gửi đến Node 0x02, STT: 59, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (468396) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (473926) LORA_NODE1: Gửi đến Node 0x02, STT: 60, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (474276) LORA_NODE1: RSSI: -61 dBm, SNR: 10 dB[0m
+[0;33mW (474276) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (478606) LORA_NODE1: Gửi đến Node 0x02, STT: 61, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (483606) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (489136) LORA_NODE1: Gửi đến Node 0x02, STT: 62, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (489486) LORA_NODE1: RSSI: -60 dBm, SNR: 10 dB[0m
+[0;33mW (489486) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (493816) LORA_NODE1: Gửi đến Node 0x02, STT: 63, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (498816) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (504346) LORA_NODE1: Gửi đến Node 0x02, STT: 64, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (504696) LORA_NODE1: RSSI: -61 dBm, SNR: 11 dB[0m
+[0;33mW (504696) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (509026) LORA_NODE1: Gửi đến Node 0x02, STT: 65, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (514026) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (519556) LORA_NODE1: Gửi đến Node 0x02, STT: 66, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (519906) LORA_NODE1: RSSI: -62 dBm, SNR: 13 dB[0m
+[0;33mW (519906) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (524236) LORA_NODE1: Gửi đến Node 0x02, STT: 67, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (529236) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (534766) LORA_NODE1: Gửi đến Node 0x02, STT: 68, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (535116) LORA_NODE1: RSSI: -62 dBm, SNR: 13 dB[0m
+[0;33mW (535116) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (539446) LORA_NODE1: Gửi đến Node 0x02, STT: 69, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (544446) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (549976) LORA_NODE1: Gửi đến Node 0x02, STT: 70, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (550326) LORA_NODE1: RSSI: -63 dBm, SNR: 13 dB[0m
+[0;33mW (550326) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (554656) LORA_NODE1: Gửi đến Node 0x02, STT: 71, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (559656) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (565186) LORA_NODE1: Gửi đến Node 0x02, STT: 72, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (565536) LORA_NODE1: RSSI: -61 dBm, SNR: 12 dB[0m
+[0;33mW (565536) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (569866) LORA_NODE1: Gửi đến Node 0x02, STT: 73, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (574866) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (580396) LORA_NODE1: Gửi đến Node 0x02, STT: 74, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (580746) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;33mW (580746) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (585076) LORA_NODE1: Gửi đến Node 0x02, STT: 75, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (590076) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (595606) LORA_NODE1: Gửi đến Node 0x02, STT: 76, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (595956) LORA_NODE1: RSSI: -60 dBm, SNR: 11 dB[0m
+[0;33mW (595956) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (600286) LORA_NODE1: Gửi đến Node 0x02, STT: 77, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (605286) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (610816) LORA_NODE1: Gửi đến Node 0x02, STT: 78, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (611166) LORA_NODE1: RSSI: -59 dBm, SNR: 14 dB[0m
+[0;33mW (611166) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (615496) LORA_NODE1: Gửi đến Node 0x02, STT: 79, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (620496) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (626026) LORA_NODE1: Gửi đến Node 0x02, STT: 80, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (626376) LORA_NODE1: RSSI: -63 dBm, SNR: 13 dB[0m
+[0;33mW (626376) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (630706) LORA_NODE1: Gửi đến Node 0x02, STT: 81, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (635706) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (641236) LORA_NODE1: Gửi đến Node 0x02, STT: 82, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (641586) LORA_NODE1: RSSI: -62 dBm, SNR: 12 dB[0m
+[0;33mW (641586) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (645916) LORA_NODE1: Gửi đến Node 0x02, STT: 83, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (650916) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (656446) LORA_NODE1: Gửi đến Node 0x02, STT: 84, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (656796) LORA_NODE1: RSSI: -63 dBm, SNR: 14 dB[0m
+[0;33mW (656796) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (661126) LORA_NODE1: Gửi đến Node 0x02, STT: 85, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (666126) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (671656) LORA_NODE1: Gửi đến Node 0x02, STT: 86, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (672006) LORA_NODE1: RSSI: -60 dBm, SNR: 4 dB[0m
+[0;33mW (672006) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (676336) LORA_NODE1: Gửi đến Node 0x02, STT: 87, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (681336) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (686866) LORA_NODE1: Gửi đến Node 0x02, STT: 88, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (687216) LORA_NODE1: RSSI: -60 dBm, SNR: 10 dB[0m
+[0;33mW (687216) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (691546) LORA_NODE1: Gửi đến Node 0x02, STT: 89, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (696546) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (702076) LORA_NODE1: Gửi đến Node 0x02, STT: 90, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (702426) LORA_NODE1: RSSI: -62 dBm, SNR: 12 dB[0m
+[0;33mW (702426) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (706756) LORA_NODE1: Gửi đến Node 0x02, STT: 91, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (711756) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (717286) LORA_NODE1: Gửi đến Node 0x02, STT: 92, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (717636) LORA_NODE1: RSSI: -61 dBm, SNR: 12 dB[0m
+[0;33mW (717636) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (721966) LORA_NODE1: Gửi đến Node 0x02, STT: 93, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (726966) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (732496) LORA_NODE1: Gửi đến Node 0x02, STT: 94, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (732846) LORA_NODE1: RSSI: -59 dBm, SNR: 2 dB[0m
+[0;33mW (732846) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (737176) LORA_NODE1: Gửi đến Node 0x02, STT: 95, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (742176) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (747706) LORA_NODE1: Gửi đến Node 0x02, STT: 96, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (748056) LORA_NODE1: RSSI: -63 dBm, SNR: 14 dB[0m
+[0;33mW (748056) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (752386) LORA_NODE1: Gửi đến Node 0x02, STT: 97, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (757386) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (762916) LORA_NODE1: Gửi đến Node 0x02, STT: 98, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (763266) LORA_NODE1: RSSI: -63 dBm, SNR: 10 dB[0m
+[0;33mW (763266) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (767596) LORA_NODE1: Gửi đến Node 0x02, STT: 99, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (772596) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (778126) LORA_NODE1: Gửi đến Node 0x02, STT: 100, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (778476) LORA_NODE1: RSSI: -63 dBm, SNR: 10 dB[0m
+[0;33mW (778476) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (782806) LORA_NODE1: Gửi đến Node 0x02, STT: 101, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (787806) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (793336) LORA_NODE1: Gửi đến Node 0x02, STT: 102, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (793686) LORA_NODE1: RSSI: -63 dBm, SNR: 10 dB[0m
+[0;33mW (793686) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (798016) LORA_NODE1: Gửi đến Node 0x02, STT: 103, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (803016) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (808546) LORA_NODE1: Gửi đến Node 0x02, STT: 104, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (808896) LORA_NODE1: RSSI: -63 dBm, SNR: 13 dB[0m
+[0;33mW (808896) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (813226) LORA_NODE1: Gửi đến Node 0x02, STT: 105, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (818226) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (823756) LORA_NODE1: Gửi đến Node 0x02, STT: 106, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (824106) LORA_NODE1: RSSI: -63 dBm, SNR: 10 dB[0m
+[0;33mW (824106) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (828436) LORA_NODE1: Gửi đến Node 0x02, STT: 107, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (833436) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (838966) LORA_NODE1: Gửi đến Node 0x02, STT: 108, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (839316) LORA_NODE1: RSSI: -63 dBm, SNR: 12 dB[0m
+[0;33mW (839316) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;32mI (843646) LORA_NODE1: Gửi đến Node 0x02, STT: 109, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m

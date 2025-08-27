@@ -1,0 +1,101 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b688h ( 46728) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b6b0 vaddr=3ffb0000 size=022dch (  8924) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d994 vaddr=40080000 size=02684h (  9860) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16f04h ( 93956) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036f2c vaddr=40082684 size=0b1f0h ( 45552) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (207) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu up.[0m
+[0;32mI (207) cpu_start: Starting app cpu, entry point is 0x400811bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (225) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (225) cpu_start: Application information:[0m
+[0;32mI (230) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (236) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (241) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (247) cpu_start: ELF file SHA256:  a69d58453eb7d9c0...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2B98 len 0002D468 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008D874 len 0001278C (73 KiB): IRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (334) app_start: Starting scheduler on CPU0[0m
+[0;32mI (338) app_start: Starting scheduler on CPU1[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+[0;32mI (458) NODE_TX: LoRa init done[0m
+[0;32mI (458) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (458) NODE_TX: Send REGISTER seq=0[0m
+[0;32mI (458) main_task: Returned from app_main()[0m
+[0;33mW (2458) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x84[0m
+[0;33mW (3658) NODE_TX: No valid ACK for seq=0[0m
+[0;32mI (8658) NODE_TX: Send REGISTER seq=1[0m
+[0;33mW (11288) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x85[0m
+[0;33mW (12488) NODE_TX: No valid ACK for seq=1[0m
+[0;32mI (17488) NODE_TX: Send REGISTER seq=2[0m
+[0;33mW (19428) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x86[0m
+[0;33mW (20628) NODE_TX: No valid ACK for seq=2[0m
+[0;32mI (25628) NODE_TX: Send REGISTER seq=3[0m
+[0;33mW (27658) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x87[0m
+[0;33mW (28858) NODE_TX: No valid ACK for seq=3[0m
+[0;32mI (33858) NODE_TX: Send REGISTER seq=4[0m
+[0;33mW (36458) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x80[0m
+[0;33mW (37658) NODE_TX: No valid ACK for seq=4[0m
+[0;32mI (42658) NODE_TX: Send REGISTER seq=5[0m
+[0;33mW (44688) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x81[0m
+[0;33mW (45888) NODE_TX: No valid ACK for seq=5[0m
+[0;32mI (50888) NODE_TX: Send REGISTER seq=6[0m
+[0;33mW (53108) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x82[0m
+[0;33mW (54308) NODE_TX: No valid ACK for seq=6[0m
+[0;32mI (59308) NODE_TX: Send REGISTER seq=7[0m
+[0;33mW (61018) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x83[0m
+[0;33mW (62218) NODE_TX: No valid ACK for seq=7[0m
+[0;32mI (67218) NODE_TX: Send REGISTER seq=8[0m
+[0;33mW (69708) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8C[0m
+[0;33mW (70908) NODE_TX: No valid ACK for seq=8[0m
+[0;32mI (75908) NODE_TX: Send REGISTER seq=9[0m
+[0;33mW (78238) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8D[0m
+[0;33mW (79438) NODE_TX: No valid ACK for seq=9[0m
+[0;32mI (84438) NODE_TX: Send REGISTER seq=10[0m
+[0;33mW (86828) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8E[0m
+[0;33mW (88028) NODE_TX: No valid ACK for seq=10[0m
+[0;32mI (93028) NODE_TX: Send REGISTER seq=11[0m
+[0;33mW (95438) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8F[0m
+[0;33mW (96638) NODE_TX: No valid ACK for seq=11[0m
+[0;32mI (101638) NODE_TX: Send REGISTER seq=12[0m

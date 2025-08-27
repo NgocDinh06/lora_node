@@ -1,0 +1,2016 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b688h ( 46728) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b6b0 vaddr=3ffb0000 size=022dch (  8924) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d994 vaddr=40080000 size=02684h (  9860) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16f04h ( 93956) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036f2c vaddr=40082684 size=0b1f0h ( 45552) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (207) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu up.[0m
+[0;32mI (207) cpu_start: Starting app cpu, entry point is 0x400811bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (225) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (225) cpu_start: Application information:[0m
+[0;32mI (230) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (236) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (241) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (247) cpu_start: ELF file SHA256:  a69d58453eb7d9c0...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2B98 len 0002D468 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008D874 len 0001278C (73 KiB): IRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (334) app_start: Starting scheduler on CPU0[0m
+[0;32mI (338) app_start: Starting scheduler on CPU1[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+[0;32mI (458) NODE_TX: LoRa init done[0m
+[0;32mI (458) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (458) NODE_TX: Send REGISTER seq=0[0m
+[0;32mI (458) main_task: Returned from app_main()[0m
+[0;33mW (7318) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (7318) NODE_TX: No valid ACK for seq=0[0m
+[0;32mI (12318) NODE_TX: Send REGISTER seq=1[0m
+[0;33mW (19278) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (19278) NODE_TX: No valid ACK for seq=1[0m
+[0;32mI (24278) NODE_TX: Send REGISTER seq=2[0m
+[0;33mW (31218) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (31218) NODE_TX: No valid ACK for seq=2[0m
+[0;32mI (36218) NODE_TX: Send REGISTER seq=3[0m
+[0;33mW (43328) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (43328) NODE_TX: No valid ACK for seq=3[0m
+[0;32mI (48328) NODE_TX: Send REGISTER seq=4[0m
+[0;33mW (48328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (49328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (50328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (51328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (52328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (53328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (54328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (55328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (56328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (57328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (58328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (59328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (60328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (61328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (62328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (63328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (64328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (65328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (66328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (67328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (68328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (69328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (70328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (71328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (72328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (73328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (74328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (75328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (76328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (77328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (78328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (79328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (80328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (81328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (82328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (83328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (84328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (85328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (86328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (87328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (88328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (89328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (90328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (91328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (92328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (93328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (94328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (95328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (96328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (97328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (98328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (99328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (100328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (101328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (102328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (103328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (104328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (105328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (106328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (107328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (108328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (109328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (110328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (111328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (112328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (113328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (114328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (115328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (116328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (117328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (118328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (119328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (120328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (121328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (122328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (123328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (124328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (125328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (126328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (127328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (128328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (129328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (130328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (131328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (132328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (133328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (134328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (135328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (136328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (137328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (138328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (139328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (140328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (141328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (142328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (143328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (144328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (145328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (146328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (147328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (148328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (149328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (150328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (151328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (152328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (153328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (154328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (155328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (156328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (157328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (158328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (159328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (160328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (161328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (162328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (163328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (164328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (165328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (166328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (167328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (168328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (169328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (170328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (171328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (172328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (173328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (174328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (175328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (176328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (177328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (178328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (179328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (180328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (181328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (182328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (183328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (184328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (185328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (186328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (187328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (188328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (189328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (190328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (191328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (192328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (193328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (194328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (195328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (196328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (197328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (198328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (199328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (200328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (201328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (202328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (203328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (204328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (205328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (206328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (207328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (208328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (209328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (210328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (211328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (212328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (213328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (214328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (215328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (216328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (217328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (218328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (219328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (220328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (221328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (222328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (223328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (224328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (225328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (226328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (227328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (228328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (229328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (230328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (231328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (232328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (233328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (234328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (235328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (236328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (237328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (238328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (239328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (240328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (241328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (242328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (243328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (244328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (245328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (246328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (247328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (248328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (249328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (250328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (251328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (252328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (253328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (254328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (255328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (256328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (257328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (258328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (259328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (260328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (261328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (262328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (263328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (264328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (265328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (266328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (267328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (268328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (269328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (270328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (271328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (272328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (273328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (274328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (275328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (276328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (277328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (278328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (279328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (280328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (281328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (282328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (283328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (284328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (285328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (286328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (287328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (288328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (289328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (290328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (291328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (292328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (293328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (294328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (295328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (296328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (297328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (298328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (299328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (300328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (301328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (302328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (303328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (304328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (305328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (306328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (307328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (308328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (309328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (310328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (311328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (312328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (313328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (314328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (315328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0
+3[0;33mW (318328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (319328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (320328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (321328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (322328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (323328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (324328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (325328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (326328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (327328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (328328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (329328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (330328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (331328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (332328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (333328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (334328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (335328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (336328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (337328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (338328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (339328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (340328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (341328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (342328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (343328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (344328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (345328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (346328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (347328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (348328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (349328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (350328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (351328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (352328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (353328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (354328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (355328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (356328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (357328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (358328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (359328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (360328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (361328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (362328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (363328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (364328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (365328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (366328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (367328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (368328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (369328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (370328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (371328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (372328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (373328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (374328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (375328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (376328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (377328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (378328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (379328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (380328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (381328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (382328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (383328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (384328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (385328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (386328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (387328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (388328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (389328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (390328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33
+W[0;33mW (392328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (393328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (394328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (395328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (396328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (397328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (398328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (399328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (400328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (401328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (402328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (403328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (404328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (405328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (406328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (407328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (408328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (409328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (410328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (411328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (412328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (413328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (414328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (415328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (416328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (417328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (418328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (419328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (420328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (421328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (422328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (423328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (424328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (425328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (426328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (427328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (428328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (429328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (430328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (431328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (432328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (433328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (434328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (435328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (436328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (437328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (438328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (439328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (440328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (441328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (452328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (453328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (454328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (455328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (456328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (457328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (458328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (459328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (460328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (461328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (462328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (463328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (464328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (465328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (466328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (467328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (468328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (469328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (470328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (471328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (472328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (473328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (474328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (475328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (476328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (477328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (478328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (479328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (480328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (481328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (482328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (483328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (484328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (485328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (486328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (487328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (488328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (489328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (490328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (491328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (492328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (493328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (494328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (495328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (496328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (497328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (498328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (499328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (500328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (501328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (502328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (503328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (504328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (505328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (506328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (507328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (508328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (509328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (510328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (511328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (512328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (513328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (514328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (515328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (516328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (517328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (518328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (519328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (520328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (521328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (522328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (523328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (524328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (525328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (526328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (527328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (528328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (529328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (530328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (531328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (532328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (533328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (534328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (535328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (536328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (537328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (538328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (539328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (540328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (541328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (542328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (543328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (544328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (545328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (546328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (547328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (548328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (549328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (550328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (551328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (552328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (553328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (554328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (555328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (556328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (557328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (558328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (559328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (560328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (561328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (562328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (563328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (564328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (565328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (566328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (567328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (568328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (569328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (570328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (571328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (572328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (573328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (574328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (575328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (576328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (577328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (578328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (579328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (580328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (581328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (582328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (583328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (584328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (585328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (586328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (587328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (588328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (589328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (590328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (591328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (592328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (593328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (594328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (595328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (596328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (597328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (598328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (599328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (600328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (601328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (602328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (603328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (604328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (605328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (606328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (607328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (608328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (609328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (610328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (611328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (612328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (613328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (614328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (615328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (616328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (617328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (618328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (619328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (620328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (621328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (622328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (623328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (624328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (625328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (626328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (627328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (628328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (629328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (630328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (631328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (632328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (633328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (634328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (635328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (636328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (637328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (638328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (639328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (640328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (641328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (642328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (643328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (644328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (645328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (646328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (647328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (648328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (649328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (650328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (651328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (652328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (653328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (654328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (655328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (656328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (657328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (658328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (659328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (660328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (661328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (662328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (663328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (664328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (665328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (666328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (667328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (668328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (669328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (670328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (671328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (672328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (673328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (674328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (675328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (676328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (677328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (678328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (679328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (680328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (681328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (682328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (683328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (684328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (685328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (686328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (687328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (688328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (689328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (690328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (691328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (692328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (693328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (694328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (695328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (696328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (697328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (698328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (699328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (700328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (701328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (702328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (703328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (704328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (705328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (706328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (707328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (708328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (709328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (710328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (711328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (712328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (7
+3[0;33mW (719328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (720328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (721328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (722328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (723328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (724328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (725328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (726328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (727328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (728328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (729328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (730328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (731328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (732328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (733328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (734328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (735328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (736328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (737328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (738328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (739328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (740328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (741328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (742328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (743328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (744328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (745328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (746328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (747328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (748328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (749328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (750328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (751328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (752328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (753328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (754328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (755328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (756328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (757328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (758328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (759328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (760328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (761328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (762328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (763328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (764328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (765328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (766328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (767328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (768328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (769328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (770328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (771328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (772328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (773328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (774328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (775328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (776328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (777328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (778328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (779328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (780328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (781328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (782328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (783328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (784328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (785328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (786328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (787328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (788328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (789328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (790328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (791328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (792328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (793328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (794328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (795328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (796328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (797328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (798328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (799328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (800328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (801328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (802328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (803328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (804328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (805328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (806328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (807328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (808328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (809328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (810328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (811328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (812328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (813328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (814328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (815328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (816328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (817328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (818328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (819328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (820328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (821328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (822328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (823328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (824328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (825328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (826328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (827328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (828328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (829328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (830328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (831328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (832328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (833328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (834328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (835328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (836328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (837328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (838328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (839328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (840328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (841328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (842328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (843328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (844328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (845328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (846328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (847328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (848328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (849328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (850328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (851328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (852328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (853328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (854328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (855328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (856328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (857328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (858328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (859328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (860328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (861328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (862328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (863328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (864328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (865328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (866328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (867328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (868328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33m
+ [0;33mW (877328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (878328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (879328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (880328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (881328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (882328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (883328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (884328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (885328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (886328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (887328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (888328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (889328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (890328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (891328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (892328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (893328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (894328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (895328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (896328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (897328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (898328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (899328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (900328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (901328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (902328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (903328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (904328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (905328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (906328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (907328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (908328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (909328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (910328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (911328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (912328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (913328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (914328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (915328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (916328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (917328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (918328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (919328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (920328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (921328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (922328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (923328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (924328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (925328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (926328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (927328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (928328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (929328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (930328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (931328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (932328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (933328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (934328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (935328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (936328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (937328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (938328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (939328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (940328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (941328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (942328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (943328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (944328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (945328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (946328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (947328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (948328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (949328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (950328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (951328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (952328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (953328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (954328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (955328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (956328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (957328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (958328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (959328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (960328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (961328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (962328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (963328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (964328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (965328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (966328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (967328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (968328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (969328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (970328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (971328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (972328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (973328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (974328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (975328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (976328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (977328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (978328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (979328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (980328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (981328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (982328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (983328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (984328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (985328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (986328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (987328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (988328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (989328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (990328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (991328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (992328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (993328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (994328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (995328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (996328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (997328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (998328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (999328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1000328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1001328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1002328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1003328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1004328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1005328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1006328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1007328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1008328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1009328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1010328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1011328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1012328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1013328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1014328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1015328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1016328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1017328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1018328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1019328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1020328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1021328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1022328) NODE_TX: Kênh bận, RSSI=138, chờ 
+s[0;33mW (1028328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1029328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1030328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1031328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1032328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1033328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1034328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1035328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1036328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1037328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1038328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1039328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1040328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1041328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1042328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1043328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1044328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1045328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1046328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1047328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1048328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1049328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1050328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1051328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1052328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1053328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1054328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1055328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1056328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1057328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1058328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1059328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1060328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1061328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1062328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1063328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1064328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1065328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1066328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1067328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1068328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1069328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1070328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1071328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1072328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1073328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1074328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1075328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1076328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1077328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1078328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1079328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1080328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1081328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1082328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1083328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1084328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1085328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1086328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1087328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1088328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1089328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1090328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1091328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1092328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1093328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+[0;33mW (1094328) NODE_TX: Kênh bận, RSSI=138, chờ 1s[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b688h ( 46728) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b6b0 vaddr=3ffb0000 size=022dch (  8924) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d994 vaddr=40080000 size=02684h (  9860) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16f04h ( 93956) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036f2c vaddr=40082684 size=0b1f0h ( 45552) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (207) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu up.[0m
+[0;32mI (207) cpu_start: Starting app cpu, entry point is 0x400811bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (225) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (225) cpu_start: Application information:[0m
+[0;32mI (230) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (236) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (241) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (247) cpu_start: ELF file SHA256:  a69d58453eb7d9c0...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2B98 len 0002D468 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008D874 len 0001278C (73 KiB): IRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (334) app_start: Starting scheduler on CPU0[0m
+[0;32mI (338) app_start: Starting scheduler on CPU1[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+[0;32mI (458) NODE_TX: LoRa init done[0m
+[0;32mI (458) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (458) NODE_TX: Send REGISTER seq=0[0m
+[0;32mI (458) main_task: Returned from app_main()[0m
+[0;33mW (7008) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (7008) NODE_TX: No valid ACK for seq=0[0m
+[0;32mI (12008) NODE_TX: Send REGISTER seq=1[0m
+[0;33mW (18608) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (18608) NODE_TX: No valid ACK for seq=1[0m
+[0;32mI (23608) NODE_TX: Send REGISTER seq=2[0m
+[0;33mW (30668) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (30668) NODE_TX: No valid ACK for seq=2[0m
+[0;32mI (35668) NODE_TX: Send REGISTER seq=3[0m
+[0;33mW (37468) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x87[0m
+[0;33mW (38668) NODE_TX: No valid ACK for seq=3[0m
+[0;32mI (43668) NODE_TX: Send REGISTER seq=4[0m
+[0;33mW (49158) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x80[0m
+[0;33mW (50358) NODE_TX: No valid ACK for seq=4[0m
+[0;32mI (55358) NODE_TX: Send REGISTER seq=5[0m
+[0;33mW (62388) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (62388) NODE_TX: No valid ACK for seq=5[0m
+[0;32mI (67388) NODE_TX: Send REGISTER seq=6[0m
+[0;33mW (73988) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (73988) NODE_TX: No valid ACK for seq=6[0m
+[0;32mI (78988) NODE_TX: Send REGISTER seq=7[0m
+[0;33mW (85998) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (85998) NODE_TX: No valid ACK for seq=7[0m
+[0;32mI (90998) NODE_TX: Send REGISTER seq=8[0m
+[0;33mW (98228) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (98228) NODE_TX: No valid ACK for seq=8[0m
+[0;32mI (103228) NODE_TX: Send REGISTER seq=9[0m
+[0;33mW (110028) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (110028) NODE_TX: No valid ACK for seq=9[0m
+[0;32mI (115028) NODE_TX: Send REGISTER seq=10[0m
+[0;33mW (121748) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (121748) NODE_TX: No valid ACK for seq=10[0m
+[0;32mI (126748) NODE_TX: Send REGISTER seq=11[0m
+[0;33mW (133228) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (133228) NODE_TX: No valid ACK for seq=11[0m
+[0;32mI (138228) NODE_TX: Send REGISTER seq=12[0m
+[0;33mW (145048) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (145048) NODE_TX: No valid ACK for seq=12[0m
+[0;32mI (150048) NODE_TX: Send REGISTER seq=13[0m
+[0;33mW (150048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (151048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (152048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (153048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (154048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (155048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (156048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (157048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (158048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (159048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (160048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33m[0;33mW (161048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m[0m
+[0;33mW (162048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (163048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (164048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (165048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (166048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (167048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (168048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (169048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (170048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (171048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (172048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (173048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (174048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (175048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (176048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (177048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (178048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (179048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (180048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (181048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (182048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (183048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (184048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (185048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (186048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (187048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (188048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (189048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (190048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (191048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (192048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (193048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (194048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (195048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (196048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (197048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (198048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (199048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (200048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (201048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (202048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (203048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (204048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (205048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (206048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (207048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (208048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (209048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (210048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (211048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (212048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (213048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (214048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (215048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (216048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (217048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (218048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (219048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (220048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (221048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (222048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (223048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (224048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (225048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (226048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (227048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (228048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (229048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (230048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (231048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (232048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (233048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (234048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (235048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (236048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (237048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (238048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (239048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (240048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (241048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;3
+m[0;33mW (244048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (245048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (246048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (247048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (248048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (249048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (250048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (251048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (252048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (253048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (254048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (255048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (256048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (257048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (258048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (259048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (260048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (261048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (262048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (263048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (264048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (265048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (266048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (267048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (268048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (269048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (270048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (271048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (272048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (273048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (274048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (275048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (276048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (277048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (278048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (279048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (280048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (281048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (282048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (283048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (284048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (285048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (286048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (287048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (288048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (289048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (290048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (291048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (292048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (293048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (294048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (295048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (296048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (297048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (298048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (299048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (300048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (301048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (302048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (303048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (304048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (305048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (306048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (307048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (308048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (309048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (310048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (311048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (312048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (313048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (314048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (315048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (316048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (317048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (318048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (319048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (320048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (321048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (322048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (323048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (324048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (325048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (326048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (327048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (328048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (329048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (330048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (331048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (332048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (333048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (334048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (335048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (336048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (337048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (338048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (339048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (340048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (341048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (342048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (343048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (344048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (345048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (346048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (347048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (348048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (349048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (350048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (351048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (352048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (353048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (354048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (355048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (356048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (357048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (358048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (359048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (360048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (361048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (362048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (363048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (364048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (365048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (366048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (367048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (368048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (369048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (370048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (371048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (372048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (373048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (374048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (375048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (376048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (377048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (378048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (379048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (380048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (381048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (382048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (383048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (384048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (385048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (386048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (387048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (388048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (389048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (390048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (391048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (392048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (393048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (394048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (395048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (396048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (397048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (398048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (399048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (400048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (401048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (402048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (403048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (404048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (405048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (406048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (407048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (408048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (409048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (410048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (411048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (412048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (413048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (414048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (415048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (416048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (417048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (418048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (419048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (420048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (421048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (422048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (423048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (424048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (425048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (426048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (427048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (428048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (429048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (430048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (431048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (432048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (433048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (434048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (435048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (436048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (437048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (438048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (439048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (440048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (441048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (442048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (443048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (444048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (445048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (446048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (447048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (448048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (449048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (450048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (451048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (452048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (453048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (454048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (455048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (456048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (457048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (458048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (459048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (460048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (461048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (462048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (463048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (464048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (465048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (466048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (467048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33m[0;33mW (468048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m[0m
+[0;33mW (469048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (470048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (471048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (472048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (473048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (474048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (475048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (476048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (477048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (478048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (479048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (480048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (481048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (482048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (483048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (484048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (485048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (486048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (487048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (488048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (489048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (490048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (491048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (492048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (493048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (494048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (495048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (496048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (497048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (498048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (499048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (500048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (501048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (502048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (503048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (504048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (505048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (506048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (507048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (508048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (509048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (510048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (511048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (512048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (513048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (514048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (515048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (516048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (517048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (518048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (519048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (520048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (521048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (522048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (523048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (524048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (525048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (526048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (527048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (528048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (529048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (530048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (531048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (532048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (533048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (534048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (535048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (536048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (537048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (538048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (539048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (540048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (541048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+[0;33mW (542048) NODE_TX: Kênh bận, RSSI=141, chờ 1s[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b688h ( 46728) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b6b0 vaddr=3ffb0000 size=022dch (  8924) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d994 vaddr=40080000 size=02684h (  9860) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16f04h ( 93956) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036f2c vaddr=40082684 size=0b1f0h ( 45552) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (207) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu up.[0m
+[0;32mI (207) cpu_start: Starting app cpu, entry point is 0x400811bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (225) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (225) cpu_start: Application information:[0m
+[0;32mI (230) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (236) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (241) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (247) cpu_start: ELF file SHA256:  a69d58453eb7d9c0...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2B98 len 0002D468 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008D874 len 0001278C (73 KiB): IRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (334) app_start: Starting scheduler on CPU0[0m
+[0;32mI (338) app_start: Starting scheduler on CPU1[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+[0;32mI (458) NODE_TX: LoRa init done[0m
+[0;32mI (458) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (458) NODE_TX: Send REGISTER seq=0[0m
+[0;32mI (458) main_task: Returned from app_main()[0m
+[0;33mW (4408) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x84[0m
+[0;33mW (5608) NODE_TX: No valid ACK for seq=0[0m
+[0;32mI (10608) NODE_TX: Send REGISTER seq=1[0m
+[0;33mW (12448) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x85[0m
+[0;33mW (13648) NODE_TX: No valid ACK for seq=1[0m
+[0;32mI (18648) NODE_TX: Send REGISTER seq=2[0m
+[0;33mW (23468) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x86[0m
+[0;33mW (24668) NODE_TX: No valid ACK for seq=2[0m
+[0;32mI (29668) NODE_TX: Send REGISTER seq=3[0m
+[0;33mW (32078) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x87[0m
+[0;33mW (33278) NODE_TX: No valid ACK for seq=3[0m
+[0;32mI (38278) NODE_TX: Send REGISTER seq=4[0m
+[0;33mW (40048) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x80[0m
+[0;33mW (41248) NODE_TX: No valid ACK for seq=4[0m
+[0;32mI (46248) NODE_TX: Send REGISTER seq=5[0m
+[0;33mW (49408) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x81[0m
+[0;33mW (50608) NODE_TX: No valid ACK for seq=5[0m
+[0;32mI (55608) NODE_TX: Send REGISTER seq=6[0m
+[0;33mW (57488) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x82[0m
+[0;33mW (58688) NODE_TX: No valid ACK for seq=6[0m
+[0;32mI (63688) NODE_TX: Send REGISTER seq=7[0m
+[0;33mW (65818) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x83[0m
+[0;33mW (67018) NODE_TX: No valid ACK for seq=7[0m
+[0;32mI (72018) NODE_TX: Send REGISTER seq=8[0m
+[0;33mW (74418) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8C[0m
+[0;33mW (75618) NODE_TX: No valid ACK for seq=8[0m
+[0;32mI (80618) NODE_TX: Send REGISTER seq=9[0m
+[0;33mW (82908) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8D[0m
+[0;33mW (84108) NODE_TX: No valid ACK for seq=9[0m
+[0;32mI (89108) NODE_TX: Send REGISTER seq=10[0m
+[0;33mW (95138) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8E[0m
+[0;33mW (96338) NODE_TX: No valid ACK for seq=10[0m
+[0;32mI (101338) NODE_TX: Send REGISTER seq=11[0m
+[0;33mW (103868) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8F[0m
+[0;33mW (105068) NODE_TX: No valid ACK for seq=11[0m
+[0;32mI (110068) NODE_TX: Send REGISTER seq=12[0m
+[0;33mW (112008) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x88[0m
+[0;33mW (113208) NODE_TX: No valid ACK for seq=12[0m
+[0;32mI (118208) NODE_TX: Send REGISTER seq=13[0m
+[0;33mW (123168) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x89[0m
+[0;33mW (124368) NODE_TX: No valid ACK for seq=13[0m
+[0;32mI (129368) NODE_TX: Send REGISTER seq=14[0m
+[0;33mW (131208) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8A[0m
+[0;33mW (132408) NODE_TX: No valid ACK for seq=14[0m
+[0;32mI (137408) NODE_TX: Send REGISTER seq=15[0m
+[0;33mW (139848) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x8B[0m
+[0;33mW (141048) NODE_TX: No valid ACK for seq=15[0m
+[0;32mI (146048) NODE_TX: Send REGISTER seq=16[0m
+[0;33mW (148318) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x94[0m
+[0;33mW (149518) NODE_TX: No valid ACK for seq=16[0m
+[0;32mI (154518) NODE_TX: Send REGISTER seq=17[0m
+[0;33mW (160988) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (160988) NODE_TX: No valid ACK for seq=17[0m
+[0;32mI (165988) NODE_TX: Send REGISTER seq=18[0m
+[0;33mW (172498) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (172498) NODE_TX: No valid ACK for seq=18[0m
+[0;32mI (177498) NODE_TX: Send REGISTER seq=19[0m
+[0;33mW (179198) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x97[0m
+[0;33mW (180398) NODE_TX: No valid ACK for seq=19[0m
+[0;32mI (185398) NODE_TX: Send REGISTER seq=20[0m
+[0;33mW (192508) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x90[0m
+[0;33mW (193708) NODE_TX: No valid ACK for seq=20[0m
+[0;32mI (198708) NODE_TX: Send REGISTER seq=21[0m
+[0;33mW (205138) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (205138) NODE_TX: No valid ACK for seq=21[0m
+[0;32mI (210138) NODE_TX: Send REGISTER seq=22[0m
+[0;33mW (213388) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x92[0m
+[0;33mW (214588) NODE_TX: No valid ACK for seq=22[0m
+[0;32mI (219588) NODE_TX: Send REGISTER seq=23[0m
+[0;33mW (221848) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x93[0m
+[0;33mW (223048) NODE_TX: No valid ACK for seq=23[0m
+[0;32mI (228048) NODE_TX: Send REGISTER seq=24[0m
+[0;33mW (230038) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9C[0m
+[0;33mW (231238) NODE_TX: No valid ACK for seq=24[0m
+[0;32mI (236238) NODE_TX: Send REGISTER seq=25[0m
+[0;33mW (237928) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9D[0m
+[0;33mW (239128) NODE_TX: No valid ACK for seq=25[0m
+[0;32mI (244128) NODE_TX: Send REGISTER seq=26[0m
+[0;33mW (246418) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9E[0m
+[0;33mW (247618) NODE_TX: No valid ACK for seq=26[0m
+[0;32mI (252618) NODE_TX: Send REGISTER seq=27[0m
+[0;33mW (254948) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9F[0m
+[0;33mW (256148) NODE_TX: No valid ACK for seq=27[0m
+[0;32mI (261148) NODE_TX: Send REGISTER seq=28[0m
+[0;33mW (267878) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (267878) NODE_TX: No valid ACK for seq=28[0m
+[0;32mI (272878) NODE_TX: Send REGISTER seq=29[0m
+[0;33mW (279678) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (279678) NODE_TX: No valid ACK for seq=29[0m
+[0;32mI (284678) NODE_TX: Send REGISTER seq=30[0m
+[0;33mW (289358) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9A[0m
+[0;33mW (290558) NODE_TX: No valid ACK for seq=30[0m
+[0;32mI (295558) NODE_TX: Send REGISTER seq=31[0m
+[0;33mW (297938) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0x9B[0m
+[0;33mW (299138) NODE_TX: No valid ACK for seq=31[0m
+[0;32mI (304138) NODE_TX: Send REGISTER seq=32[0m
+[0;33mW (310948) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (310948) NODE_TX: No valid ACK for seq=32[0m
+[0;32mI (315948) NODE_TX: Send REGISTER seq=33[0m
+[0;33mW (322768) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (322768) NODE_TX: No valid ACK for seq=33[0m
+[0;32mI (327768) NODE_TX: Send REGISTER seq=34[0m
+[0;33mW (331448) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA6[0m
+[0;33mW (332648) NODE_TX: No valid ACK for seq=34[0m
+[0;32mI (337648) NODE_TX: Send REGISTER seq=35[0m
+[0;33mW (339868) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA7[0m
+[0;33mW (341068) NODE_TX: No valid ACK for seq=35[0m
+[0;32mI (346068) NODE_TX: Send REGISTER seq=36[0m
+[0;33mW (347848) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA0[0m
+[0;33mW (349048) NODE_TX: No valid ACK for seq=36[0m
+[0;32mI (354048) NODE_TX: Send REGISTER seq=37[0m
+[0;33mW (356328) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA1[0m
+[0;33mW (357528) NODE_TX: No valid ACK for seq=37[0m
+[0;32mI (362528) NODE_TX: Send REGISTER seq=38[0m
+[0;33mW (364828) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA2[0m
+[0;33mW (366028) NODE_TX: No valid ACK for seq=38[0m
+[0;32mI (371028) NODE_TX: Send REGISTER seq=39[0m
+[0;33mW (372698) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA3[0m
+[0;33mW (373898) NODE_TX: No valid ACK for seq=39[0m
+[0;32mI (378898) NODE_TX: Send REGISTER seq=40[0m
+[0;33mW (381858) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAC[0m
+[0;33mW (383058) NODE_TX: No valid ACK for seq=40[0m
+[0;32mI (388058) NODE_TX: Send REGISTER seq=41[0m
+[0;33mW (394398) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (394398) NODE_TX: No valid ACK for seq=41[0m
+[0;32mI (399398) NODE_TX: Send REGISTER seq=42[0m
+[0;33mW (402928) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAE[0m
+[0;33mW (404128) NODE_TX: No valid ACK for seq=42[0m
+[0;32mI (409128) NODE_TX: Send REGISTER seq=43[0m
+[0;33mW (410868) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAF[0m
+[0;33mW (412068) NODE_TX: No valid ACK for seq=43[0m
+[0;32mI (417068) NODE_TX: Send REGISTER seq=44[0m
+[0;33mW (419088) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA8[0m
+[0;33mW (420288) NODE_TX: No valid ACK for seq=44[0m
+[0;32mI (425288) NODE_TX: Send REGISTER seq=45[0m
+[0;33mW (427848) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xA9[0m
+[0;33mW (429048) NODE_TX: No valid ACK for seq=45[0m
+[0;32mI (434048) NODE_TX: Send REGISTER seq=46[0m
+[0;33mW (436568) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAA[0m
+[0;33mW (437768) NODE_TX: No valid ACK for seq=46[0m
+[0;32mI (442768) NODE_TX: Send REGISTER seq=47[0m
+[0;33mW (445318) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xAB[0m
+[0;33mW (446518) NODE_TX: No valid ACK for seq=47[0m
+[0;32mI (451518) NODE_TX: Send REGISTER seq=48[0m
+[0;33mW (454148) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB4[0m
+[0;33mW (455348) NODE_TX: No valid ACK for seq=48[0m
+[0;32mI (460348) NODE_TX: Send REGISTER seq=49[0m
+[0;33mW (462968) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB5[0m
+[0;33mW (464168) NODE_TX: No valid ACK for seq=49[0m
+[0;32mI (469168) NODE_TX: Send REGISTER seq=50[0m
+[0;33mW (471028) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB6[0m
+[0;33mW (472228) NODE_TX: No valid ACK for seq=50[0m
+[0;32mI (477228) NODE_TX: Send REGISTER seq=51[0m
+[0;33mW (479758) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB7[0m
+[0;33mW (480958) NODE_TX: No valid ACK for seq=51[0m
+[0;32mI (485958) NODE_TX: Send REGISTER seq=52[0m
+[0;33mW (487878) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB0[0m
+[0;33mW (489078) NODE_TX: No valid ACK for seq=52[0m
+[0;32mI (494078) NODE_TX: Send REGISTER seq=53[0m
+[0;33mW (496218) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB1[0m
+[0;33mW (497418) NODE_TX: No valid ACK for seq=53[0m
+[0;32mI (502418) NODE_TX: Send REGISTER seq=54[0m
+[0;33mW (504398) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB2[0m
+[0;33mW (505598) NODE_TX: No valid ACK for seq=54[0m
+[0;32mI (510598) NODE_TX: Send REGISTER seq=55[0m
+[0;33mW (514388) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB3[0m
+[0;33mW (515588) NODE_TX: No valid ACK for seq=55[0m
+[0;32mI (520588) NODE_TX: Send REGISTER seq=56[0m
+[0;33mW (522568) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBC[0m
+[0;33mW (523768) NODE_TX: No valid ACK for seq=56[0m
+[0;32mI (528768) NODE_TX: Send REGISTER seq=57[0m
+[0;33mW (535198) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (535198) NODE_TX: No valid ACK for seq=57[0m
+[0;32mI (540198) NODE_TX: Send REGISTER seq=58[0m
+[0;33mW (542188) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBE[0m
+[0;33mW (543388) NODE_TX: No valid ACK for seq=58[0m
+[0;32mI (548388) NODE_TX: Send REGISTER seq=59[0m
+[0;33mW (553938) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBF[0m
+[0;33mW (555138) NODE_TX: No valid ACK for seq=59[0m
+[0;32mI (560138) NODE_TX: Send REGISTER seq=60[0m
+[0;33mW (564158) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB8[0m
+[0;33mW (565358) NODE_TX: No valid ACK for seq=60[0m
+[0;32mI (570358) NODE_TX: Send REGISTER seq=61[0m
+[0;33mW (572928) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xB9[0m
+[0;33mW (574128) NODE_TX: No valid ACK for seq=61[0m
+[0;32mI (579128) NODE_TX: Send REGISTER seq=62[0m
+[0;33mW (580918) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBA[0m
+[0;33mW (582118) NODE_TX: No valid ACK for seq=62[0m
+[0;32mI (587118) NODE_TX: Send REGISTER seq=63[0m
+[0;33mW (589358) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xBB[0m
+[0;33mW (590558) NODE_TX: No valid ACK for seq=63[0m
+[0;32mI (595558) NODE_TX: Send REGISTER seq=64[0m
+[0;33mW (597828) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC4[0m
+[0;33mW (599028) NODE_TX: No valid ACK for seq=64[0m
+[0;32mI (604028) NODE_TX: Send REGISTER seq=65[0m
+[0;33mW (606518) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC5[0m
+[0;33mW (607718) NODE_TX: No valid ACK for seq=65[0m
+[0;32mI (612718) NODE_TX: Send REGISTER seq=66[0m
+[0;33mW (618168) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC6[0m
+[0;33mW (619368) NODE_TX: No valid ACK for seq=66[0m
+[0;32mI (624368) NODE_TX: Send REGISTER seq=67[0m
+[0;33mW (626508) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC7[0m
+[0;33mW (627708) NODE_TX: No valid ACK for seq=67[0m
+[0;32mI (632708) NODE_TX: Send REGISTER seq=68[0m
+[0;33mW (635098) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC0[0m
+[0;33mW (636298) NODE_TX: No valid ACK for seq=68[0m
+[0;32mI (641298) NODE_TX: Send REGISTER seq=69[0m
+[0;33mW (643958) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC1[0m
+[0;33mW (645158) NODE_TX: No valid ACK for seq=69[0m
+[0;32mI (650158) NODE_TX: Send REGISTER seq=70[0m
+[0;33mW (652368) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC2[0m
+[0;33mW (653568) NODE_TX: No valid ACK for seq=70[0m
+[0;32mI (658568) NODE_TX: Send REGISTER seq=71[0m
+[0;33mW (661128) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC3[0m
+[0;33mW (662328) NODE_TX: No valid ACK for seq=71[0m
+[0;32mI (667328) NODE_TX: Send REGISTER seq=72[0m
+[0;33mW (669108) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCC[0m
+[0;33mW (670308) NODE_TX: No valid ACK for seq=72[0m
+[0;32mI (675308) NODE_TX: Send REGISTER seq=73[0m
+[0;33mW (677608) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCD[0m
+[0;33mW (678808) NODE_TX: No valid ACK for seq=73[0m
+[0;32mI (683808) NODE_TX: Send REGISTER seq=74[0m
+[0;33mW (685968) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCE[0m
+[0;33mW (687168) NODE_TX: No valid ACK for seq=74[0m
+[0;32mI (692168) NODE_TX: Send REGISTER seq=75[0m
+[0;33mW (693888) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCF[0m
+[0;33mW (695088) NODE_TX: No valid ACK for seq=75[0m
+[0;32mI (700088) NODE_TX: Send REGISTER seq=76[0m
+[0;33mW (702038) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC8[0m
+[0;33mW (703238) NODE_TX: No valid ACK for seq=76[0m
+[0;32mI (708238) NODE_TX: Send REGISTER seq=77[0m
+[0;33mW (710248) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xC9[0m
+[0;33mW (711448) NODE_TX: No valid ACK for seq=77[0m
+[0;32mI (716448) NODE_TX: Send REGISTER seq=78[0m
+[0;33mW (718478) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCA[0m
+[0;33mW (719678) NODE_TX: No valid ACK for seq=78[0m
+[0;32mI (724678) NODE_TX: Send REGISTER seq=79[0m
+[0;33mW (726928) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xCB[0m
+[0;33mW (728128) NODE_TX: No valid ACK for seq=79[0m
+[0;32mI (733128) NODE_TX: Send REGISTER seq=80[0m
+[0;33mW (734918) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD4[0m
+[0;33mW (736118) NODE_TX: No valid ACK for seq=80[0m
+[0;32mI (741118) NODE_TX: Send REGISTER seq=81[0m
+[0;33mW (743618) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD5[0m
+[0;33mW (744818) NODE_TX: No valid ACK for seq=81[0m
+[0;32mI (749818) NODE_TX: Send REGISTER seq=82[0m
+[0;33mW (751728) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD6[0m
+[0;33mW (752928) NODE_TX: No valid ACK for seq=82[0m
+[0;32mI (757928) NODE_TX: Send REGISTER seq=83[0m
+[0;33mW (759928) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD7[0m
+[0;33mW (761128) NODE_TX: No valid ACK for seq=83[0m
+[0;32mI (766128) NODE_TX: Send REGISTER seq=84[0m
+[0;33mW (768588) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD0[0m
+[0;33mW (769788) NODE_TX: No valid ACK for seq=84[0m
+[0;32mI (774788) NODE_TX: Send REGISTER seq=85[0m
+[0;33mW (777058) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD1[0m
+[0;33mW (778258) NODE_TX: No valid ACK for seq=85[0m
+[0;32mI (783258) NODE_TX: Send REGISTER seq=86[0m
+[0;33mW (785148) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD2[0m
+[0;33mW (786348) NODE_TX: No valid ACK for seq=86[0m
+[0;32mI (791348) NODE_TX: Send REGISTER seq=87[0m
+[0;33mW (793968) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD3[0m
+[0;33mW (795168) NODE_TX: No valid ACK for seq=87[0m
+[0;32mI (800168) NODE_TX: Send REGISTER seq=88[0m
+[0;33mW (802698) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xDC[0m
+[0;33mW (803898) NODE_TX: No valid ACK for seq=88[0m
+[0;32mI (808898) NODE_TX: Send REGISTER seq=89[0m
+[0;33mW (811378) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xDD[0m
+[0;33mW (812578) NODE_TX: No valid ACK for seq=89[0m
+[0;32mI (817578) NODE_TX: Send REGISTER seq=90[0m
+[0;33mW (819498) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xDE[0m
+[0;33mW (820698) NODE_TX: No valid ACK for seq=90[0m
+[0;32mI (825698) NODE_TX: Send REGISTER seq=91[0m
+[0;33mW (827678) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xDF[0m
+[0;33mW (828878) NODE_TX: No valid ACK for seq=91[0m
+[0;32mI (833878) NODE_TX: Send REGISTER seq=92[0m
+[0;33mW (836028) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD8[0m
+[0;33mW (837228) NODE_TX: No valid ACK for seq=92[0m
+[0;32mI (842228) NODE_TX: Send REGISTER seq=93[0m
+[0;33mW (844478) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xD9[0m
+[0;33mW (845678) NODE_TX: No valid ACK for seq=93[0m
+[0;32mI (850678) NODE_TX: Send REGISTER seq=94[0m
+[0;33mW (855458) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xDA[0m
+[0;33mW (856658) NODE_TX: No valid ACK for seq=94[0m
+[0;32mI (861658) NODE_TX: Send REGISTER seq=95[0m
+[0;33mW (868628) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xDB[0m
+[0;33mW (869828) NODE_TX: No valid ACK for seq=95[0m
+[0;32mI (874828) NODE_TX: Send REGISTER seq=96[0m
+[0;33mW (876508) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xE4[0m
+[0;33mW (877708) NODE_TX: No valid ACK for seq=96[0m
+[0;32mI (882708) NODE_TX: Send REGISTER seq=97[0m
+[0;33mW (886348) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xE5[0m
+[0;33mW (887548) NODE_TX: No valid ACK for seq=97[0m
+[0;32mI (892548) NODE_TX: Send REGISTER seq=98[0m
+[0;33mW (899088) NODE_TX: Timeout khi chờ ACK_REG[0m
+[0;33mW (899088) NODE_TX: No valid ACK for seq=98[0m
+[0;32mI (904088) NODE_TX: Send REGISTER seq=99[0m
+[0;33mW (907518) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xE7[0m
+[0;33mW (908718) NODE_TX: No valid ACK for seq=99[0m
+[0;32mI (913718) NODE_TX: Send REGISTER seq=100[0m
+[0;33mW (916508) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xE0[0m
+[0;33mW (917708) NODE_TX: No valid ACK for seq=100[0m
+[0;32mI (922708) NODE_TX: Send REGISTER seq=101[0m
+[0;33mW (925578) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xE1[0m
+[0;33mW (926778) NODE_TX: No valid ACK for seq=101[0m
+[0;32mI (931778) NODE_TX: Send REGISTER seq=102[0m
+[0;33mW (934818) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xE2[0m
+[0;33mW (936018) NODE_TX: No valid ACK for seq=102[0m
+[0;32mI (941018) NODE_TX: Send REGISTER seq=103[0m
+[0;33mW (943748) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xE3[0m
+[0;33mW (944948) NODE_TX: No valid ACK for seq=103[0m
+[0;32mI (949948) NODE_TX: Send REGISTER seq=104[0m
+[0;33mW (952508) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xEC[0m
+[0;33mW (953708) NODE_TX: No valid ACK for seq=104[0m
+[0;32mI (958708) NODE_TX: Send REGISTER seq=105[0m
+[0;33mW (964688) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xED[0m
+[0;33mW (965888) NODE_TX: No valid ACK for seq=105[0m
+[0;32mI (970888) NODE_TX: Send REGISTER seq=106[0m
+[0;33mW (974018) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xEE[0m
+[0;33mW (975218) NODE_TX: No valid ACK for seq=106[0m
+[0;32mI (980218) NODE_TX: Send REGISTER seq=107[0m
+[0;33mW (982238) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xEF[0m
+[0;33mW (983438) NODE_TX: No valid ACK for seq=107[0m
+[0;32mI (988438) NODE_TX: Send REGISTER seq=108[0m
+[0;33mW (991458) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xE8[0m
+[0;33mW (992658) NODE_TX: No valid ACK for seq=108[0m
+[0;32mI (997658) NODE_TX: Send REGISTER seq=109[0m
+[0;33mW (999878) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xE9[0m
+[0;33mW (1001078) NODE_TX: No valid ACK for seq=109[0m
+[0;32mI (1006078) NODE_TX: Send REGISTER seq=110[0m
+[0;33mW (1008278) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xEA[0m
+[0;33mW (1009478) NODE_TX: No valid ACK for seq=110[0m
+[0;32mI (1014478) NODE_TX: Send REGISTER seq=111[0m
+[0;33mW (1016468) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xEB[0m
+[0;33mW (1017668) NODE_TX: No valid ACK for seq=111[0m
+[0;32mI (1022668) NODE_TX: Send REGISTER seq=112[0m
+[0;33mW (1025738) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xF4[0m
+[0;33mW (1026938) NODE_TX: No valid ACK for seq=112[0m
+[0;32mI (1031938) NODE_TX: Send REGISTER seq=113[0m
+[0;33mW (1034808) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xF5[0m
+[0;33mW (1036008) NODE_TX: No valid ACK for seq=113[0m
+[0;32mI (1041008) NODE_TX: Send REGISTER seq=114[0m
+[0;33mW (1042808) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xF6[0m
+[0;33mW (1044008) NODE_TX: No valid ACK for seq=114[0m
+[0;32mI (1049008) NODE_TX: Send REGISTER seq=115[0m
+[0;33mW (1051778) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xF7[0m
+[0;33mW (1052978) NODE_TX: No valid ACK for seq=115[0m
+[0;32mI (1057978) NODE_TX: Send REGISTER seq=116[0m
+[0;33mW (1059968) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xF0[0m
+[0;33mW (1061168) NODE_TX: No valid ACK for seq=116[0m
+[0;32mI (1066168) NODE_TX: Send REGISTER seq=117[0m
+[0;33mW (1072328) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xF1[0m
+[0;33mW (1073528) NODE_TX: No valid ACK for seq=117[0m
+[0;32mI (1078528) NODE_TX: Send REGISTER seq=118[0m
+[0;33mW (1082548) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xF2[0m
+[0;33mW (1083748) NODE_TX: No valid ACK for seq=118[0m
+[0;32mI (1088748) NODE_TX: Send REGISTER seq=119[0m
+[0;33mW (1090758) NODE_TX: Checksum sai: Nhận 0x00, Tính toán 0xF3[0m
+[0;33mW (1091958) NODE_TX: No valid ACK for seq=119[0m

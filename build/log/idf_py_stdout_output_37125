@@ -1,0 +1,1714 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2d8h ( 45784) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b300 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d574 vaddr=40080000 size=02aa4h ( 10916) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16734h ( 91956) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=0003675c vaddr=40082aa4 size=0ad88h ( 44424) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (240) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (246) cpu_start: ELF file SHA256:  239cdff2853269c1...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (257) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (267) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (10457) LORA_NODE1: Khởi tạo LoRa thành công: 470 MHz, SF=7, BW=500 kHz, CR=4/5[0m
+[0;32mI (11677) LORA_NODE1: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (15687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (16887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (18107) LORA_NODE1: Gửi đến Node 0x02, STT: 1, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (18367) LORA_NODE1: RSSI: -63 dBm, SNR: 9 dB[0m
+[0;33mW (18377) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (18377) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (19607) LORA_NODE1: Gửi đến Node 0x02, STT: 2, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (23617) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (24817) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (24817) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (26137) LORA_NODE1: Gửi đến Node 0x02, STT: 3, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (30147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (31347) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (32567) LORA_NODE1: Gửi đến Node 0x02, STT: 4, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (36577) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (37777) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (38997) LORA_NODE1: Gửi đến Node 0x02, STT: 5, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (39257) LORA_NODE1: RSSI: -71 dBm, SNR: 9 dB[0m
+[0;33mW (39267) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (39267) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (39267) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (40597) LORA_NODE1: Gửi đến Node 0x02, STT: 6, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (44607) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (45807) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (47027) LORA_NODE1: Gửi đến Node 0x02, STT: 7, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (51037) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (52237) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (53457) LORA_NODE1: Gửi đến Node 0x02, STT: 8, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (57467) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (58667) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (58667) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (59987) LORA_NODE1: Gửi đến Node 0x02, STT: 9, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (60247) LORA_NODE1: RSSI: -70 dBm, SNR: 9 dB[0m
+[0;33mW (60257) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (60257) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (61487) LORA_NODE1: Gửi đến Node 0x02, STT: 10, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (65497) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (66697) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (67917) LORA_NODE1: Gửi đến Node 0x02, STT: 11, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (71927) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (73127) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (73127) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (74447) LORA_NODE1: Gửi đến Node 0x02, STT: 12, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (78457) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (79657) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (80877) LORA_NODE1: Gửi đến Node 0x02, STT: 13, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (81127) LORA_NODE1: RSSI: -70 dBm, SNR: 10 dB[0m
+[0;33mW (81137) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (81137) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (82367) LORA_NODE1: Gửi đến Node 0x02, STT: 14, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (86377) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (87577) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (87577) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (88897) LORA_NODE1: Gửi đến Node 0x02, STT: 15, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (92907) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (94107) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (95327) LORA_NODE1: Gửi đến Node 0x02, STT: 16, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (99337) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (100537) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (101757) LORA_NODE1: Gửi đến Node 0x02, STT: 17, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (105767) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (106967) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (106967) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (108287) LORA_NODE1: Gửi đến Node 0x02, STT: 18, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (112297) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (113497) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (114717) LORA_NODE1: Gửi đến Node 0x02, STT: 19, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (118727) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (119927) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (121147) LORA_NODE1: Gửi đến Node 0x02, STT: 20, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (125157) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (126357) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (126357) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (127677) LORA_NODE1: Gửi đến Node 0x02, STT: 21, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (131687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (132887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (134107) LORA_NODE1: Gửi đến Node 0x02, STT: 22, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (138117) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (139317) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (140537) LORA_NODE1: Gửi đến Node 0x02, STT: 23, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (144547) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (145747) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (145747) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (147067) LORA_NODE1: Gửi đến Node 0x02, STT: 24, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (151077) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (152277) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (153497) LORA_NODE1: Gửi đến Node 0x02, STT: 25, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (157507) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (158707) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (159927) LORA_NODE1: Gửi đến Node 0x02, STT: 26, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (163937) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (165137) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (165137) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (166457) LORA_NODE1: Gửi đến Node 0x02, STT: 27, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (170467) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (171667) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (172887) LORA_NODE1: Gửi đến Node 0x02, STT: 28, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (176897) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (178097) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (179317) LORA_NODE1: Gửi đến Node 0x02, STT: 29, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (183327) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (184527) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (184527) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (185847) LORA_NODE1: Gửi đến Node 0x02, STT: 30, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (189857) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (191057) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (192277) LORA_NODE1: Gửi đến Node 0x02, STT: 31, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (196287) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (197487) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (198707) LORA_NODE1: Gửi đến Node 0x02, STT: 32, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (202717) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (203917) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (203917) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (205237) LORA_NODE1: Gửi đến Node 0x02, STT: 33, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (209247) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (210447) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (211667) LORA_NODE1: Gửi đến Node 0x02, STT: 34, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (215677) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (216877) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (218097) LORA_NODE1: Gửi đến Node 0x02, STT: 35, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (222107) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (223307) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (223307) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (224627) LORA_NODE1: Gửi đến Node 0x02, STT: 36, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (228637) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (229837) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (231057) LORA_NODE1: Gửi đến Node 0x02, STT: 37, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (235067) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (236267) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (237487) LORA_NODE1: Gửi đến Node 0x02, STT: 38, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (241497) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (242697) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (242697) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (244017) LORA_NODE1: Gửi đến Node 0x02, STT: 39, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (248027) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (249227) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (250447) LORA_NODE1: Gửi đến Node 0x02, STT: 40, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (254457) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (255657) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (256877) LORA_NODE1: Gửi đến Node 0x02, STT: 41, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (260887) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (262087) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (262087) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (263407) LORA_NODE1: Gửi đến Node 0x02, STT: 42, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (267417) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (268617) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (269837) LORA_NODE1: Gửi đến Node 0x02, STT: 43, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (273847) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (275047) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (276267) LORA_NODE1: Gửi đến Node 0x02, STT: 44, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (280277) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (281477) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (281477) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (282797) LORA_NODE1: Gửi đến Node 0x02, STT: 45, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (286807) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (288007) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (289227) LORA_NODE1: Gửi đến Node 0x02, STT: 46, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (293237) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (294437) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (295657) LORA_NODE1: Gửi đến Node 0x02, STT: 47, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (299667) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (300867) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (300867) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (302187) LORA_NODE1: Gửi đến Node 0x02, STT: 48, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (306197) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (307397) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (308617) LORA_NODE1: Gửi đến Node 0x02, STT: 49, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (312627) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (313827) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (315047) LORA_NODE1: Gửi đến Node 0x02, STT: 50, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (319057) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (320257) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (320257) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (321577) LORA_NODE1: Gửi đến Node 0x02, STT: 51, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (325587) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (326787) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (328007) LORA_NODE1: Gửi đến Node 0x02, STT: 52, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (332017) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (333217) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (334437) LORA_NODE1: Gửi đến Node 0x02, STT: 53, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (338447) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (339647) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (339647) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (340967) LORA_NODE1: Gửi đến Node 0x02, STT: 54, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (344977) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (346177) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (347397) LORA_NODE1: Gửi đến Node 0x02, STT: 55, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (351407) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (352607) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (353827) LORA_NODE1: Gửi đến Node 0x02, STT: 56, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (357837) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (359037) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (359037) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (360357) LORA_NODE1: Gửi đến Node 0x02, STT: 57, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (364367) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (365567) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (366787) LORA_NODE1: Gửi đến Node 0x02, STT: 58, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (370797) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (371997) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (373217) LORA_NODE1: Gửi đến Node 0x02, STT: 59, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (377227) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (378427) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (378427) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (379747) LORA_NODE1: Gửi đến Node 0x02, STT: 60, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (383757) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (384957) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (386177) LORA_NODE1: Gửi đến Node 0x02, STT: 61, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (390187) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (391387) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (392607) LORA_NODE1: Gửi đến Node 0x02, STT: 62, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (396617) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (397817) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (397817) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (399137) LORA_NODE1: Gửi đến Node 0x02, STT: 63, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (403147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (404347) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (405567) LORA_NODE1: Gửi đến Node 0x02, STT: 64, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (409577) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (410777) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (411997) LORA_NODE1: Gửi đến Node 0x02, STT: 65, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (416007) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (417207) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (417207) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (418527) LORA_NODE1: Gửi đến Node 0x02, STT: 66, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (422537) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (423737) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (424957) LORA_NODE1: Gửi đến Node 0x02, STT: 67, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (428967) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (430167) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (431387) LORA_NODE1: Gửi đến Node 0x02, STT: 68, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (435397) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (436597) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (436597) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (437917) LORA_NODE1: Gửi đến Node 0x02, STT: 69, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (441927) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (443127) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (444347) LORA_NODE1: Gửi đến Node 0x02, STT: 70, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (448357) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (449557) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (450777) LORA_NODE1: Gửi đến Node 0x02, STT: 71, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (454787) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (455987) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (455987) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (457307) LORA_NODE1: Gửi đến Node 0x02, STT: 72, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (461317) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (462517) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (463737) LORA_NODE1: Gửi đến Node 0x02, STT: 73, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (467747) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (468947) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (472957) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (478157) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (479357) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (479357) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (483467) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (488667) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (489867) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (493877) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (499077) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (500277) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (504287) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (509487) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (510687) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (510687) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (514797) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (519997) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (521197) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (522417) LORA_NODE1: Gửi đến Node 0x02, STT: 74, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (526427) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (527627) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (528847) LORA_NODE1: Gửi đến Node 0x02, STT: 75, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (532857) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (534057) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (534057) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (538167) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (543367) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (544567) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (548577) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (553777) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (554977) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (558987) LORA_NODE1: Timeout khi gửi gói tin[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2d8h ( 45784) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b300 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d574 vaddr=40080000 size=02aa4h ( 10916) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16734h ( 91956) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=0003675c vaddr=40082aa4 size=0ad88h ( 44424) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (240) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (246) cpu_start: ELF file SHA256:  239cdff2853269c1...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (257) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (10457) LORA_NODE1: Khởi tạo LoRa thành công: 470 MHz, SF=7, BW=500 kHz, CR=4/5[0m
+[0;32mI (11677) LORA_NODE1: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (15687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (16887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (18107) LORA_NODE1: Gửi đến Node 0x02, STT: 1, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (22117) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (23317) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (24537) LORA_NODE1: Gửi đến Node 0x02, STT: 2, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (28547) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (29747) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (29747) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (31067) LORA_NODE1: Gửi đến Node 0x02, STT: 3, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (35077) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (36277) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (40287) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (45487) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (46687) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (50697) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (55897) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (57097) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (57097) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (61207) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (66407) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (67607) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (71617) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (76817) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (78017) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (82027) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (87227) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (88427) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (88427) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (92537) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (97737) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (98937) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (102947) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (108147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (109347) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (113357) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (118557) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (119757) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (119757) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (123867) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (129067) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (130267) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (134277) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (139477) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (140677) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (144687) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (149887) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (151087) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (151087) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (155197) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (160397) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (161597) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (165607) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (170807) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (172007) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (176017) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (181217) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (182417) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (182417) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (186527) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (191727) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (192927) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (196937) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (202137) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (203337) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (207347) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (212547) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (213747) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (213747) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (217857) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (223057) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (224257) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (228267) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (233467) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (234667) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (238677) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (243877) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (245077) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (245077) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2d8h ( 45784) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b300 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d574 vaddr=40080000 size=02aa4h ( 10916) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16734h ( 91956) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=0003675c vaddr=40082aa4 size=0ad88h ( 44424) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (240) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (246) cpu_start: ELF file SHA256:  239cdff2853269c1...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (257) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (10457) LORA_NODE1: Khởi tạo LoRa thành công: 470 MHz, SF=7, BW=500 kHz, CR=4/5[0m
+[0;32mI (11677) LORA_NODE1: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (15687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (16887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (18107) LORA_NODE1: Gửi đến Node 0x02, STT: 1, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (19647) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (19657) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (19657) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (20887) LORA_NODE1: Gửi đến Node 0x02, STT: 2, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (24897) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (26097) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (26097) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (27417) LORA_NODE1: Gửi đến Node 0x02, STT: 3, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (31427) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (32627) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (33847) LORA_NODE1: Gửi đến Node 0x02, STT: 4, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (37857) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (39057) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (40277) LORA_NODE1: Gửi đến Node 0x02, STT: 5, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (40527) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (40537) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (40537) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (40537) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (41867) LORA_NODE1: Gửi đến Node 0x02, STT: 6, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (45877) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (47077) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (48297) LORA_NODE1: Gửi đến Node 0x02, STT: 7, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (52307) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (53507) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (54727) LORA_NODE1: Gửi đến Node 0x02, STT: 8, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (58737) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (59937) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (59937) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (61257) LORA_NODE1: Gửi đến Node 0x02, STT: 9, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (61507) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (61517) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (61517) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (62747) LORA_NODE1: Gửi đến Node 0x02, STT: 10, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (66757) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (67957) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (69177) LORA_NODE1: Gửi đến Node 0x02, STT: 11, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (73187) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (74387) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (74387) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (75707) LORA_NODE1: Gửi đến Node 0x02, STT: 12, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (79717) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (80917) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (82137) LORA_NODE1: Gửi đến Node 0x02, STT: 13, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (82397) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (82407) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (82407) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (83637) LORA_NODE1: Gửi đến Node 0x02, STT: 14, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (87647) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (88847) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (88847) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (90167) LORA_NODE1: Gửi đến Node 0x02, STT: 15, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (94177) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (95377) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (96597) LORA_NODE1: Gửi đến Node 0x02, STT: 16, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (100607) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (101807) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (103027) LORA_NODE1: Gửi đến Node 0x02, STT: 17, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (103287) LORA_NODE1: RSSI: -70 dBm, SNR: 10 dB[0m
+[0;33mW (103297) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (103297) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (103297) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (104627) LORA_NODE1: Gửi đến Node 0x02, STT: 18, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (108637) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (109837) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (111057) LORA_NODE1: Gửi đến Node 0x02, STT: 19, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (115067) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (116267) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (117487) LORA_NODE1: Gửi đến Node 0x02, STT: 20, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (121497) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (122697) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (122697) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (124017) LORA_NODE1: Gửi đến Node 0x02, STT: 21, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (124277) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (124287) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (124287) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (125517) LORA_NODE1: Gửi đến Node 0x02, STT: 22, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (129527) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (130727) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (131947) LORA_NODE1: Gửi đến Node 0x02, STT: 23, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (135957) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (137157) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (137157) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (138477) LORA_NODE1: Gửi đến Node 0x02, STT: 24, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (142487) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (143687) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (144907) LORA_NODE1: Gửi đến Node 0x02, STT: 25, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (145167) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (145177) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (145177) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (146407) LORA_NODE1: Gửi đến Node 0x02, STT: 26, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (150417) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (151617) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (151617) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (152937) LORA_NODE1: Gửi đến Node 0x02, STT: 27, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (156947) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (158147) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (159367) LORA_NODE1: Gửi đến Node 0x02, STT: 28, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (163377) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (164577) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (165797) LORA_NODE1: Gửi đến Node 0x02, STT: 29, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (166057) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (166067) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (166067) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (166067) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (167397) LORA_NODE1: Gửi đến Node 0x02, STT: 30, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (171407) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (172607) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (173827) LORA_NODE1: Gửi đến Node 0x02, STT: 31, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (177837) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (179037) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (180257) LORA_NODE1: Gửi đến Node 0x02, STT: 32, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (184267) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (185467) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (185467) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (186787) LORA_NODE1: Gửi đến Node 0x02, STT: 33, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (187047) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (187057) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (187057) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (188287) LORA_NODE1: Gửi đến Node 0x02, STT: 34, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (192297) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (193497) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (194717) LORA_NODE1: Gửi đến Node 0x02, STT: 35, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (198727) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (199927) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (199927) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (201247) LORA_NODE1: Gửi đến Node 0x02, STT: 36, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (205257) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (206457) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (207677) LORA_NODE1: Gửi đến Node 0x02, STT: 37, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (207937) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (207947) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (207947) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (209177) LORA_NODE1: Gửi đến Node 0x02, STT: 38, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (213187) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (214387) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (214387) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (215707) LORA_NODE1: Gửi đến Node 0x02, STT: 39, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (219717) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (220917) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (222137) LORA_NODE1: Gửi đến Node 0x02, STT: 40, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (226147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (227347) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (228567) LORA_NODE1: Gửi đến Node 0x02, STT: 41, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (228827) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (228837) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (228837) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (228837) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (230167) LORA_NODE1: Gửi đến Node 0x02, STT: 42, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (234177) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (235377) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (236597) LORA_NODE1: Gửi đến Node 0x02, STT: 43, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (240607) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (241807) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (243027) LORA_NODE1: Gửi đến Node 0x02, STT: 44, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (247037) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (248237) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (248237) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (249557) LORA_NODE1: Gửi đến Node 0x02, STT: 45, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (249817) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (249827) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (249827) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (251057) LORA_NODE1: Gửi đến Node 0x02, STT: 46, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (255067) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (256267) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (257487) LORA_NODE1: Gửi đến Node 0x02, STT: 47, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (261497) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (262697) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (262697) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (264017) LORA_NODE1: Gửi đến Node 0x02, STT: 48, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (268027) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (269227) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (270447) LORA_NODE1: Gửi đến Node 0x02, STT: 49, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (270707) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (270717) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (270717) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (271947) LORA_NODE1: Gửi đến Node 0x02, STT: 50, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (275957) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (277157) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (277157) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (278477) LORA_NODE1: Gửi đến Node 0x02, STT: 51, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (282487) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (283687) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (284907) LORA_NODE1: Gửi đến Node 0x02, STT: 52, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (288917) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (290117) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (291337) LORA_NODE1: Gửi đến Node 0x02, STT: 53, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (291597) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (291607) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (291607) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (291607) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (292937) LORA_NODE1: Gửi đến Node 0x02, STT: 54, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (296947) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (298147) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (299367) LORA_NODE1: Gửi đến Node 0x02, STT: 55, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (303377) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (304577) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (305797) LORA_NODE1: Gửi đến Node 0x02, STT: 56, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (309807) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (311007) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (311007) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (312327) LORA_NODE1: Gửi đến Node 0x02, STT: 57, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (312577) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (312587) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (312587) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (313817) LORA_NODE1: Gửi đến Node 0x02, STT: 58, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (317827) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (319027) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (320247) LORA_NODE1: Gửi đến Node 0x02, STT: 59, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (324257) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (325457) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (325457) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (326777) LORA_NODE1: Gửi đến Node 0x02, STT: 60, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (330787) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (331987) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (333207) LORA_NODE1: Gửi đến Node 0x02, STT: 61, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (333457) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (333467) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (333467) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (334697) LORA_NODE1: Gửi đến Node 0x02, STT: 62, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (338707) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (339907) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (339907) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (341227) LORA_NODE1: Gửi đến Node 0x02, STT: 63, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (345237) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (346437) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (347657) LORA_NODE1: Gửi đến Node 0x02, STT: 64, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (351667) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (352867) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (354087) LORA_NODE1: Gửi đến Node 0x02, STT: 65, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (354337) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (354347) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (354347) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (354347) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (355677) LORA_NODE1: Gửi đến Node 0x02, STT: 66, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (359687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (360887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (362107) LORA_NODE1: Gửi đến Node 0x02, STT: 67, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (366117) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (367317) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (368537) LORA_NODE1: Gửi đến Node 0x02, STT: 68, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (372547) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (373747) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (373747) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (375067) LORA_NODE1: Gửi đến Node 0x02, STT: 69, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (375317) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (375327) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (375327) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (376557) LORA_NODE1: Gửi đến Node 0x02, STT: 70, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (380567) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (381767) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (382987) LORA_NODE1: Gửi đến Node 0x02, STT: 71, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (386997) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (388197) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (388197) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (389517) LORA_NODE1: Gửi đến Node 0x02, STT: 72, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (393527) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (394727) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (395947) LORA_NODE1: Gửi đến Node 0x02, STT: 73, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (396197) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (396207) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (396207) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (397437) LORA_NODE1: Gửi đến Node 0x02, STT: 74, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (401447) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (402647) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (402647) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (403967) LORA_NODE1: Gửi đến Node 0x02, STT: 75, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (407977) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (409177) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (410397) LORA_NODE1: Gửi đến Node 0x02, STT: 76, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (414407) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (415607) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (416827) LORA_NODE1: Gửi đến Node 0x02, STT: 77, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (417087) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (417097) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (417097) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (417097) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (418427) LORA_NODE1: Gửi đến Node 0x02, STT: 78, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (422437) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (423637) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (424857) LORA_NODE1: Gửi đến Node 0x02, STT: 79, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (428867) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (430067) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (431287) LORA_NODE1: Gửi đến Node 0x02, STT: 80, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (435297) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (436497) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (436497) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (437817) LORA_NODE1: Gửi đến Node 0x02, STT: 81, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (438077) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (438087) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (438087) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (439317) LORA_NODE1: Gửi đến Node 0x02, STT: 82, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (443327) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (444527) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (445747) LORA_NODE1: Gửi đến Node 0x02, STT: 83, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (449757) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (450957) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (450957) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (452277) LORA_NODE1: Gửi đến Node 0x02, STT: 84, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (456287) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (457487) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (458707) LORA_NODE1: Gửi đến Node 0x02, STT: 85, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (458967) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (458977) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (458977) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (460207) LORA_NODE1: Gửi đến Node 0x02, STT: 86, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (464217) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (465417) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (465417) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (466737) LORA_NODE1: Gửi đến Node 0x02, STT: 87, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (470747) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (471947) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (473167) LORA_NODE1: Gửi đến Node 0x02, STT: 88, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (477177) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (478377) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (479597) LORA_NODE1: Gửi đến Node 0x02, STT: 89, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (479857) LORA_NODE1: RSSI: -69 dBm, SNR: 9 dB[0m
+[0;33mW (479867) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (479867) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (479867) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (481197) LORA_NODE1: Gửi đến Node 0x02, STT: 90, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (485207) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (486407) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (487627) LORA_NODE1: Gửi đến Node 0x02, STT: 91, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (491637) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (492837) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (494057) LORA_NODE1: Gửi đến Node 0x02, STT: 92, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (498067) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (499267) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (499267) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (500587) LORA_NODE1: Gửi đến Node 0x02, STT: 93, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (500847) LORA_NODE1: RSSI: -69 dBm, SNR: 10 dB[0m
+[0;33mW (500857) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (500857) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (502087) LORA_NODE1: Gửi đến Node 0x02, STT: 94, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (506097) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (507297) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (508517) LORA_NODE1: Gửi đến Node 0x02, STT: 95, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (512527) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (513727) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (513727) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (515047) LORA_NODE1: Gửi đến Node 0x02, STT: 96, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (519057) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (520257) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (521477) LORA_NODE1: Gửi đến Node 0x02, STT: 97, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;32mI (521737) LORA_NODE1: RSSI: -67 dBm, SNR: 9 dB[0m
+[0;33mW (521747) LORA_NODE1: Gói tin không dành cho thiết bị này (dest: 0x03)[0m
+[0;33mW (521747) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (522977) LORA_NODE1: Gửi đến Node 0x02, STT: 98, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (526987) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (528187) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (528187) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;32mI (529507) LORA_NODE1: Gửi đến Node 0x02, STT: 99, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (533517) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (534717) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;32mI (535937) LORA_NODE1: Gửi đến Node 0x02, STT: 100, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi. Dẫu biết yêu là đau, là khổ, nhưng lòng anh vẫn mãi khắc ghi em trong tim., Checksum: 0x8C[0m
+[0;33mW (539947) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (541147) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (545157) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (550357) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (551557) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (551557) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (555667) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (560867) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (562067) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (566077) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (571277) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (572477) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (576487) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (581687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (582887) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (582887) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (586997) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (592197) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (593397) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (597407) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (602607) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (603807) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (607817) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (613017) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (614217) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (614217) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (618327) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (623527) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (624727) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (628737) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (633937) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (635137) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (639147) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (644347) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (645547) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (645547) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (649657) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (654857) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (656057) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (660067) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (665267) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (666467) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (670477) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (675677) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (676877) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (676877) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (680987) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (686187) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (687387) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (691397) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (696597) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (697797) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (701807) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (707007) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (708207) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (708207) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (712317) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (717517) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (718717) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (722727) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (727927) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (729127) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (733137) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (738337) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (739537) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (739537) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (743647) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (748847) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (750047) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (754057) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (759257) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (760457) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (764467) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (769667) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (770867) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (770867) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (774977) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (780177) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (781377) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (785387) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (790587) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (791787) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (795797) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (800997) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (802197) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (802197) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (806307) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (811507) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (812707) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (816717) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (821917) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (823117) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (827127) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (832327) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (833527) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (833527) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (837637) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (842837) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (844037) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (848047) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (853247) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (854447) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (858457) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (863657) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (864857) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (864857) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (868967) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (874167) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (875367) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (879377) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (884577) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (885777) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (889787) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (894987) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (896187) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (896187) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (900297) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (905497) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (906697) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (910707) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (915907) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (917107) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (921117) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (926317) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (927517) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (927517) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (931627) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (936827) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (938027) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (942037) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (947237) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (948437) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (952447) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (957647) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (958847) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (958847) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (962957) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (968157) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (969357) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (973367) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (978567) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (979767) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (983777) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (988977) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (990177) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (990177) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (994287) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (999487) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1000687) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1004697) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1009897) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1011097) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1015107) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1020307) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1021507) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1021507) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1025617) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1030817) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1032017) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1036027) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1041227) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1042427) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1046437) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1051637) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1052837) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1052837) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1056947) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1062147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1063347) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1067357) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1072557) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1073757) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1077767) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1082967) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1084167) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1084167) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1088277) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1093477) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1094677) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1098687) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1103887) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1105087) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1109097) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1114297) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1115497) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1115497) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1119607) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1124807) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1126007) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1130017) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1135217) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1136417) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1140427) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1145627) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1146827) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1146827) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1150937) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1156137) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1157337) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1161347) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1166547) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1167747) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1171757) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1176957) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1178157) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1178157) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1182267) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1187467) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1188667) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1192677) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1197877) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1199077) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1203087) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1208287) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1209487) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1209487) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1213597) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1218797) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1219997) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1224007) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1229207) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1230407) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1234417) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1239617) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1240817) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1240817) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1244927) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1250127) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1251327) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1255337) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1260537) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1261737) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1265747) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1270947) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1272147) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1272147) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1276257) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1281457) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1282657) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1286667) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1291867) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1293067) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1297077) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1302277) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1303477) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1303477) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1307587) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1312787) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1313987) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1317997) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1761817) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1763017) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1767027) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1772227) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1773427) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1773427) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1777537) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1782737) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1783937) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1787947) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1793147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1794347) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1798357) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1803557) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1804757) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1804757) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1808867) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1814067) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1815267) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1819277) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1824477) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1825677) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1829687) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1834887) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1836087) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1836087) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1840197) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1845397) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1846597) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1850607) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1855807) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1857007) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1861017) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1866217) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1867417) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1867417) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1871527) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1876727) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1877927) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1881937) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1887137) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1888337) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1892347) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1897547) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1898747) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1898747) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1902857) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1908057) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1909257) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1913267) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1918467) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1919667) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1923677) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1928877) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1930077) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1930077) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1934187) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1939387) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1940587) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1944597) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1949797) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1950997) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1955007) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1960207) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1961407) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1961407) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1965517) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1970717) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1971917) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1975927) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1981127) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1982327) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1986337) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (1991537) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (1992737) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (1992737) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (1996847) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2002047) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2003247) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2007257) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2012457) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2013657) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2017667) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2022867) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2024067) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2024067) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2028177) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2033377) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2034577) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2038587) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2043787) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2044987) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2048997) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2054197) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2055397) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2055397) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2059507) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2064707) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2065907) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2069917) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2075117) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2076317) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2080327) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2085527) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2086727) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2086727) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2090837) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2096037) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2097237) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2101247) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2106447) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2107647) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2111657) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2116857) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2118057) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2118057) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2122167) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2127367) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2128567) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2132577) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2137777) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2138977) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2142987) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2148187) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2149387) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2149387) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2153497) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2158697) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2159897) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2163907) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2169107) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2170307) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2174317) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2179517) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2180717) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2180717) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2184827) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2190027) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2191227) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2195237) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2200437) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2201637) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2205647) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2210847) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2212047) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2212047) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2216157) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2221357) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2222557) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2226567) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2231767) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2232967) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2236977) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2242177) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2243377) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2243377) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2247487) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2252687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2253887) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2257897) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2263097) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2264297) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2268307) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2273507) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2274707) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2274707) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2278817) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2284017) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2285217) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2289227) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2294427) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2295627) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2299637) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2304837) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2306037) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2306037) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2310147) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2315347) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2316547) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2320557) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2325757) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2326957) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2330967) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2336167) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2337367) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2337367) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2341477) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2346677) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2347877) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2351887) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2357087) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2358287) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2362297) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2367497) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2368697) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2368697) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2372807) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2378007) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2379207) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2383217) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2388417) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2389617) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2393627) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2398827) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2400027) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2400027) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2404137) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2409337) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2410537) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2414547) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2419747) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2420947) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2424957) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2430157) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2431357) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2431357) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2435467) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2440667) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2441867) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2445877) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2451077) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2452277) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2456287) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2461487) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2462687) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2462687) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2466797) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2471997) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2473197) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2477207) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2482407) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2483607) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2487617) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2492817) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2494017) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2494017) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2498127) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2503327) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2504527) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2508537) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2513737) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2514937) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2518947) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2524147) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2525347) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2525347) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2529457) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2534657) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2535857) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2539867) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2545067) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2546267) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2550277) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2555477) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2556677) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2556677) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2560787) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2565987) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2567187) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2571197) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2576397) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2577597) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2581607) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2586807) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2588007) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2588007) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2592117) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2597317) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2598517) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2602527) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2607727) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2608927) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2612937) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2618137) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2619337) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2619337) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2623447) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2628647) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2629847) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2633857) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2639057) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2640257) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2644267) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2649467) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2650667) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2650667) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2654777) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2659977) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2661177) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2665187) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2670387) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2671587) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2675597) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2680797) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2681997) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2681997) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2686107) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2691307) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2692507) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2696517) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2701717) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2702917) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2706927) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2712127) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2713327) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2713327) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2717437) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2722637) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2723837) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2727847) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2733047) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2734247) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2738257) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2743457) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2744657) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2744657) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2748767) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2753967) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2755167) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2759177) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2764377) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2765577) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2769587) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2774787) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2775987) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2775987) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2780097) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2785297) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2786497) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2790507) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2795707) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2796907) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2800917) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2806117) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2807317) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2807317) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2811427) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2816627) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2817827) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2821837) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2827037) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2828237) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2832247) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2837447) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2838647) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2838647) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2842757) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2847957) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2849157) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2853167) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2858367) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2859567) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2863577) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2868777) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2869977) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2869977) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2874087) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2879287) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2880487) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2884497) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2889697) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2890897) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2894907) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2900107) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2901307) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2901307) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2905417) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2910617) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2911817) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2915827) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2921027) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2922227) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2926237) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2931437) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2932637) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2932637) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2936747) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2941947) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2943147) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2947157) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2952357) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2953557) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2957567) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2962767) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2963967) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2963967) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2968077) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2973277) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2974477) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2978487) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2983687) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2984887) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2988897) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (2994097) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (2995297) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (2995297) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (2999407) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3004607) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3005807) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3009817) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3015017) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3016217) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3020227) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3025427) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3026627) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3026627) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3030737) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3035937) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3037137) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3041147) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3046347) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3047547) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3051557) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3056757) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3057957) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3057957) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3062067) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3067267) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3068467) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3072477) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3077677) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3078877) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3082887) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3088087) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3089287) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3089287) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3093397) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3098597) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3099797) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3103807) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3109007) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3110207) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3114217) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3119417) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3120617) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3120617) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3124727) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3129927) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3131127) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3135137) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3140337) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3141537) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3145547) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3150747) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3151947) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3151947) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3156057) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3161257) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3162457) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3166467) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3171667) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3172867) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3176877) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3182077) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3183277) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3183277) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3187387) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3192587) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3193787) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3197797) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3202997) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3204197) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3208207) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3213407) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3214607) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3214607) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3218717) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3223917) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3225117) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3229127) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3234327) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3235527) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3239537) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3244737) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3245937) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3245937) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3250047) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3255247) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3256447) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3260457) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3265657) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3266857) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3270867) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3276067) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3277267) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3277267) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3281377) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3286577) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3287777) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3291787) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3296987) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3298187) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3302197) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3307397) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3308597) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3308597) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3312707) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3317907) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3319107) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3323117) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3328317) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3329517) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3333527) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3338727) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3339927) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3339927) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3344037) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3349237) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3350437) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3354447) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3359647) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3360847) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3364857) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3370057) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3371257) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3371257) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3375367) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3380567) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3381767) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3385777) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3390977) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3392177) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3396187) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3401387) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3402587) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3402587) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3406697) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3411897) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3413097) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3417107) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3422307) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3423507) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3427517) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3432717) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3433917) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3433917) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3438027) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3443227) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3444427) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3448437) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3453637) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3454837) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3458847) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3464047) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3465247) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3465247) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3469357) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3474557) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3475757) LORA_NODE1: Retry 1/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3479767) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3484967) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3486167) LORA_NODE1: Retry 2/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3490177) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3495377) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;33mW (3496577) LORA_NODE1: Retry 3/3 khi chờ phản hồi từ Node 0x02[0m
+[0;33mW (3496577) LORA_NODE1: Hết lượt thử, không nhận được phản hồi từ Node 0x02[0m
+[0;33mW (3500687) LORA_NODE1: Timeout khi gửi gói tin[0m
+[0;33mW (3505887) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m

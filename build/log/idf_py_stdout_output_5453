@@ -1,0 +1,494 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ba50h ( 47696) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ba78 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001dd88 vaddr=40080000 size=02290h (  8848) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17640h ( 95808) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=00037668 vaddr=40082290 size=0b91ch ( 47388) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (209) cpu_start: Multicore app[0m
+[0;32mI (209) cpu_start: Pro cpu up.[0m
+[0;32mI (209) cpu_start: Starting app cpu, entry point is 0x400811f4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (227) cpu_start: Pro cpu start user code[0m
+[0;32mI (227) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (227) cpu_start: Application information:[0m
+[0;32mI (232) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (238) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (243) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (249) cpu_start: ELF file SHA256:  dad7b7e132a141d1...[0m
+[0;32mI (255) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (260) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (265) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (270) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (275) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 3FFB2BB8 len 0002D448 (181 KiB): DRAM[0m
+[0;32mI (294) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (300) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (307) heap_init: At 4008DBAC len 00012454 (73 KiB): IRAM[0m
+[0;32mI (315) spi_flash: detected chip: generic[0m
+[0;32mI (318) spi_flash: flash io: dio[0m
+[0;33mW (322) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (335) app_start: Starting scheduler on CPU0[0m
+[0;32mI (340) app_start: Starting scheduler on CPU1[0m
+[0;32mI (340) main_task: Started on CPU0[0m
+[0;32mI (350) main_task: Calling app_main()[0m
+[0;32mI (350) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (470) NODE_TX: MAC Node: FC:B4:67:78:BE:CC[0m
+[0;32mI (470) NODE_TX: Send REGISTER seq=0[0m
+[0;33mW (3770) NODE_TX: ACK timeout for seq=0[0m
+[0;32mI (3770) main_task: Returned from app_main()[0m
+[0;32mI (6770) NODE_TX: Send REGISTER seq=1[0m
+[0;32mI (7360) NODE_TX: Got ACK for seq=1[0m
+[0;32mI (10360) NODE_TX: Send REGISTER seq=2[0m
+[0;33mW (13650) NODE_TX: ACK timeout for seq=2[0m
+[0;32mI (16650) NODE_TX: Send REGISTER seq=3[0m
+[0;33mW (19940) NODE_TX: ACK timeout for seq=3[0m
+[0;32mI (22940) NODE_TX: Send REGISTER seq=4[0m
+[0;33mW (26230) NODE_TX: ACK timeout for seq=4[0m
+[0;32mI (29230) NODE_TX: Send REGISTER seq=5[0m
+[0;33mW (32520) NODE_TX: ACK timeout for seq=5[0m
+[0;32mI (35520) NODE_TX: Send REGISTER seq=6[0m
+[0;32mI (36110) NODE_TX: Got ACK for seq=6[0m
+[0;32mI (39110) NODE_TX: Send REGISTER seq=7[0m
+[0;33mW (42400) NODE_TX: ACK timeout for seq=7[0m
+[0;32mI (45400) NODE_TX: Send REGISTER seq=8[0m
+[0;32mI (45990) NODE_TX: Got ACK for seq=8[0m
+[0;32mI (48990) NODE_TX: Send REGISTER seq=9[0m
+[0;33mW (52280) NODE_TX: ACK timeout for seq=9[0m
+[0;32mI (55280) NODE_TX: Send REGISTER seq=10[0m
+[0;32mI (55870) NODE_TX: Got ACK for seq=10[0m
+[0;32mI (58870) NODE_TX: Send REGISTER seq=11[0m
+[0;33mW (62160) NODE_TX: ACK timeout for seq=11[0m
+[0;32mI (65160) NODE_TX: Send REGISTER seq=12[0m
+[0;32mI (65750) NODE_TX: Got ACK for seq=12[0m
+[0;32mI (68750) NODE_TX: Send REGISTER seq=13[0m
+[0;33mW (72040) NODE_TX: ACK timeout for seq=13[0m
+[0;32mI (75040) NODE_TX: Send REGISTER seq=14[0m
+[0;32mI (75630) NODE_TX: Got ACK for seq=14[0m
+[0;32mI (78630) NODE_TX: Send REGISTER seq=15[0m
+[0;32mI (79220) NODE_TX: Got ACK for seq=15[0m
+[0;32mI (82220) NODE_TX: Send REGISTER seq=16[0m
+[0;33mW (85510) NODE_TX: ACK timeout for seq=16[0m
+[0;32mI (88510) NODE_TX: Send REGISTER seq=17[0m
+[0;32mI (89100) NODE_TX: Got ACK for seq=17[0m
+[0;32mI (92100) NODE_TX: Send REGISTER seq=18[0m
+[0;33mW (95390) NODE_TX: ACK timeout for seq=18[0m
+[0;32mI (98390) NODE_TX: Send REGISTER seq=19[0m
+[0;32mI (98980) NODE_TX: Got ACK for seq=19[0m
+[0;32mI (101980) NODE_TX: Send REGISTER seq=20[0m
+[0;33mW (105270) NODE_TX: ACK timeout for seq=20[0m
+[0;32mI (108270) NODE_TX: Send REGISTER seq=21[0m
+[0;32mI (108860) NODE_TX: Got ACK for seq=21[0m
+[0;32mI (111860) NODE_TX: Send REGISTER seq=22[0m
+[0;33mW (115150) NODE_TX: ACK timeout for seq=22[0m
+[0;32mI (118150) NODE_TX: Send REGISTER seq=23[0m
+[0;32mI (118740) NODE_TX: Got ACK for seq=23[0m
+[0;32mI (121740) NODE_TX: Send REGISTER seq=24[0m
+[0;33mW (125030) NODE_TX: ACK timeout for seq=24[0m
+[0;32mI (128030) NODE_TX: Send REGISTER seq=25[0m
+[0;32mI (128620) NODE_TX: Got ACK for seq=25[0m
+[0;32mI (131620) NODE_TX: Send REGISTER seq=26[0m
+[0;33mW (134910) NODE_TX: ACK timeout for seq=26[0m
+[0;32mI (137910) NODE_TX: Send REGISTER seq=27[0m
+[0;32mI (138500) NODE_TX: Got ACK for seq=27[0m
+[0;32mI (141500) NODE_TX: Send REGISTER seq=28[0m
+[0;33mW (144790) NODE_TX: ACK timeout for seq=28[0m
+[0;32mI (147790) NODE_TX: Send REGISTER seq=29[0m
+[0;32mI (148380) NODE_TX: Got ACK for seq=29[0m
+[0;32mI (151380) NODE_TX: Send REGISTER seq=30[0m
+[0;33mW (154670) NODE_TX: ACK timeout for seq=30[0m
+[0;32mI (157670) NODE_TX: Send REGISTER seq=31[0m
+[0;32mI (158260) NODE_TX: Got ACK for seq=31[0m
+[0;32mI (161260) NODE_TX: Send REGISTER seq=32[0m
+[0;33mW (164550) NODE_TX: ACK timeout for seq=32[0m
+[0;32mI (167550) NODE_TX: Send REGISTER seq=33[0m
+[0;32mI (168140) NODE_TX: Got ACK for seq=33[0m
+[0;32mI (171140) NODE_TX: Send REGISTER seq=34[0m
+[0;33mW (174430) NODE_TX: ACK timeout for seq=34[0m
+[0;32mI (177430) NODE_TX: Send REGISTER seq=35[0m
+[0;32mI (178020) NODE_TX: Got ACK for seq=35[0m
+[0;32mI (181020) NODE_TX: Send REGISTER seq=36[0m
+[0;33mW (184310) NODE_TX: ACK timeout for seq=36[0m
+[0;32mI (187310) NODE_TX: Send REGISTER seq=37[0m
+[0;32mI (187900) NODE_TX: Got ACK for seq=37[0m
+[0;32mI (190900) NODE_TX: Send REGISTER seq=38[0m
+[0;33mW (194190) NODE_TX: ACK timeout for seq=38[0m
+[0;32mI (197190) NODE_TX: Send REGISTER seq=39[0m
+[0;32mI (197780) NODE_TX: Got ACK for seq=39[0m
+[0;32mI (200780) NODE_TX: Send REGISTER seq=40[0m
+[0;33mW (204070) NODE_TX: ACK timeout for seq=40[0m
+[0;32mI (207070) NODE_TX: Send REGISTER seq=41[0m
+[0;32mI (207660) NODE_TX: Got ACK for seq=41[0m
+[0;32mI (210660) NODE_TX: Send REGISTER seq=42[0m
+[0;33mW (213950) NODE_TX: ACK timeout for seq=42[0m
+[0;32mI (216950) NODE_TX: Send REGISTER seq=43[0m
+[0;32mI (217540) NODE_TX: Got ACK for seq=43[0m
+[0;32mI (220540) NODE_TX: Send REGISTER seq=44[0m
+[0;32mI (221130) NODE_TX: Got ACK for seq=44[0m
+[0;32mI (224130) NODE_TX: Send REGISTER seq=45[0m
+[0;33mW (227420) NODE_TX: ACK timeout for seq=45[0m
+[0;32mI (230420) NODE_TX: Send REGISTER seq=46[0m
+[0;32mI (231010) NODE_TX: Got ACK for seq=46[0m
+[0;32mI (234010) NODE_TX: Send REGISTER seq=47[0m
+[0;33mW (237300) NODE_TX: ACK timeout for seq=47[0m
+[0;32mI (240300) NODE_TX: Send REGISTER seq=48[0m
+[0;32mI (240890) NODE_TX: Got ACK for seq=48[0m
+[0;32mI (243890) NODE_TX: Send REGISTER seq=49[0m
+[0;33mW (247180) NODE_TX: ACK timeout for seq=49[0m
+[0;32mI (250180) NODE_TX: Send REGISTER seq=50[0m
+[0;32mI (250770) NODE_TX: Got ACK for seq=50[0m
+[0;32mI (253770) NODE_TX: Send REGISTER seq=51[0m
+[0;33mW (257060) NODE_TX: ACK timeout for seq=51[0m
+[0;32mI (260060) NODE_TX: Send REGISTER seq=52[0m
+[0;32mI (260650) NODE_TX: Got ACK for seq=52[0m
+[0;32mI (263650) NODE_TX: Send REGISTER seq=53[0m
+[0;33mW (266940) NODE_TX: ACK timeout for seq=53[0m
+[0;32mI (269940) NODE_TX: Send REGISTER seq=54[0m
+[0;32mI (270530) NODE_TX: Got ACK for seq=54[0m
+[0;32mI (273530) NODE_TX: Send REGISTER seq=55[0m
+[0;33mW (276820) NODE_TX: ACK timeout for seq=55[0m
+[0;32mI (279820) NODE_TX: Send REGISTER seq=56[0m
+[0;32mI (280410) NODE_TX: Got ACK for seq=56[0m
+[0;32mI (283410) NODE_TX: Send REGISTER seq=57[0m
+[0;33mW (286700) NODE_TX: ACK timeout for seq=57[0m
+[0;32mI (289700) NODE_TX: Send REGISTER seq=58[0m
+[0;32mI (290290) NODE_TX: Got ACK for seq=58[0m
+[0;32mI (293290) NODE_TX: Send REGISTER seq=59[0m
+[0;33mW (296580) NODE_TX: ACK timeout for seq=59[0m
+[0;32mI (299580) NODE_TX: Send REGISTER seq=60[0m
+[0;32mI (300170) NODE_TX: Got ACK for seq=60[0m
+[0;32mI (303170) NODE_TX: Send REGISTER seq=61[0m
+[0;33mW (306460) NODE_TX: ACK timeout for seq=61[0m
+[0;32mI (309460) NODE_TX: Send REGISTER seq=62[0m
+[0;32mI (310050) NODE_TX: Got ACK for seq=62[0m
+[0;32mI (313050) NODE_TX: Send REGISTER seq=63[0m
+[0;33mW (316340) NODE_TX: ACK timeout for seq=63[0m
+[0;32mI (319340) NODE_TX: Send REGISTER seq=64[0m
+[0;32mI (319930) NODE_TX: Got ACK for seq=64[0m
+[0;32mI (322930) NODE_TX: Send REGISTER seq=65[0m
+[0;33mW (326220) NODE_TX: ACK timeout for seq=65[0m
+[0;32mI (329220) NODE_TX: Send REGISTER seq=66[0m
+[0;32mI (329810) NODE_TX: Got ACK for seq=66[0m
+[0;32mI (332810) NODE_TX: Send REGISTER seq=67[0m
+[0;33mW (336100) NODE_TX: ACK timeout for seq=67[0m
+[0;32mI (339100) NODE_TX: Send REGISTER seq=68[0m
+[0;32mI (339690) NODE_TX: Got ACK for seq=68[0m
+[0;32mI (342690) NODE_TX: Send REGISTER seq=69[0m
+[0;33mW (345980) NODE_TX: ACK timeout for seq=69[0m
+[0;32mI (348980) NODE_TX: Send REGISTER seq=70[0m
+[0;32mI (349570) NODE_TX: Got ACK for seq=70[0m
+[0;32mI (352570) NODE_TX: Send REGISTER seq=71[0m
+[0;33mW (355860) NODE_TX: ACK timeout for seq=71[0m
+[0;32mI (358860) NODE_TX: Send REGISTER seq=72[0m
+[0;32mI (359450) NODE_TX: Got ACK for seq=72[0m
+[0;32mI (362450) NODE_TX: Send REGISTER seq=73[0m
+[0;33mW (365740) NODE_TX: ACK timeout for seq=73[0m
+[0;32mI (368740) NODE_TX: Send REGISTER seq=74[0m
+[0;32mI (369330) NODE_TX: Got ACK for seq=74[0m
+[0;32mI (372330) NODE_TX: Send REGISTER seq=75[0m
+[0;32mI (372920) NODE_TX: Got ACK for seq=75[0m
+[0;32mI (375920) NODE_TX: Send REGISTER seq=76[0m
+[0;33mW (379210) NODE_TX: ACK timeout for seq=76[0m
+[0;32mI (382210) NODE_TX: Send REGISTER seq=77[0m
+[0;32mI (382800) NODE_TX: Got ACK for seq=77[0m
+[0;32mI (385800) NODE_TX: Send REGISTER seq=78[0m
+[0;33mW (389090) NODE_TX: ACK timeout for seq=78[0m
+[0;32mI (392090) NODE_TX: Send REGISTER seq=79[0m
+[0;32mI (392680) NODE_TX: Got ACK for seq=79[0m
+[0;32mI (395680) NODE_TX: Send REGISTER seq=80[0m
+[0;33mW (398970) NODE_TX: ACK timeout for seq=80[0m
+[0;32mI (401970) NODE_TX: Send REGISTER seq=81[0m
+[0;32mI (402560) NODE_TX: Got ACK for seq=81[0m
+[0;32mI (405560) NODE_TX: Send REGISTER seq=82[0m
+[0;33mW (408850) NODE_TX: ACK timeout for seq=82[0m
+[0;32mI (411850) NODE_TX: Send REGISTER seq=83[0m
+[0;32mI (412440) NODE_TX: Got ACK for seq=83[0m
+[0;32mI (415440) NODE_TX: Send REGISTER seq=84[0m
+[0;33mW (418730) NODE_TX: ACK timeout for seq=84[0m
+[0;32mI (421730) NODE_TX: Send REGISTER seq=85[0m
+[0;32mI (422320) NODE_TX: Got ACK for seq=85[0m
+[0;32mI (425320) NODE_TX: Send REGISTER seq=86[0m
+[0;33mW (428610) NODE_TX: ACK timeout for seq=86[0m
+[0;32mI (431610) NODE_TX: Send REGISTER seq=87[0m
+[0;32mI (432200) NODE_TX: Got ACK for seq=87[0m
+[0;32mI (435200) NODE_TX: Send REGISTER seq=88[0m
+[0;33mW (438490) NODE_TX: ACK timeout for seq=88[0m
+[0;32mI (441490) NODE_TX: Send REGISTER seq=89[0m
+[0;32mI (442080) NODE_TX: Got ACK for seq=89[0m
+[0;32mI (445080) NODE_TX: Send REGISTER seq=90[0m
+[0;33mW (448370) NODE_TX: ACK timeout for seq=90[0m
+[0;32mI (451370) NODE_TX: Send REGISTER seq=91[0m
+[0;32mI (451960) NODE_TX: Got ACK for seq=91[0m
+[0;32mI (454960) NODE_TX: Send REGISTER seq=92[0m
+[0;33mW (458250) NODE_TX: ACK timeout for seq=92[0m
+[0;32mI (461250) NODE_TX: Send REGISTER seq=93[0m
+[0;32mI (461840) NODE_TX: Got ACK for seq=93[0m
+[0;32mI (464840) NODE_TX: Send REGISTER seq=94[0m
+[0;32mI (465430) NODE_TX: Got ACK for seq=94[0m
+[0;32mI (468430) NODE_TX: Send REGISTER seq=95[0m
+[0;33mW (471720) NODE_TX: ACK timeout for seq=95[0m
+[0;32mI (474720) NODE_TX: Send REGISTER seq=96[0m
+[0;32mI (475310) NODE_TX: Got ACK for seq=96[0m
+[0;32mI (478310) NODE_TX: Send REGISTER seq=97[0m
+[0;32mI (478900) NODE_TX: Got ACK for seq=97[0m
+[0;32mI (481900) NODE_TX: Send REGISTER seq=98[0m
+[0;33mW (485190) NODE_TX: ACK timeout for seq=98[0m
+[0;32mI (488190) NODE_TX: Send REGISTER seq=99[0m
+[0;32mI (488780) NODE_TX: Got ACK for seq=99[0m
+[0;32mI (491780) NODE_TX: Send REGISTER seq=100[0m
+[0;32mI (492370) NODE_TX: Got ACK for seq=100[0m
+[0;32mI (495370) NODE_TX: Send REGISTER seq=101[0m
+[0;32mI (495960) NODE_TX: Got ACK for seq=101[0m
+[0;32mI (498960) NODE_TX: Send REGISTER seq=102[0m
+[0;33mW (502250) NODE_TX: ACK timeout for seq=102[0m
+[0;32mI (505250) NODE_TX: Send REGISTER seq=103[0m
+[0;32mI (505840) NODE_TX: Got ACK for seq=103[0m
+[0;32mI (508840) NODE_TX: Send REGISTER seq=104[0m
+[0;33mW (512130) NODE_TX: ACK timeout for seq=104[0m
+[0;32mI (515130) NODE_TX: Send REGISTER seq=105[0m
+[0;32mI (515720) NODE_TX: Got ACK for seq=105[0m
+[0;32mI (518720) NODE_TX: Send REGISTER seq=106[0m
+[0;33mW (522010) NODE_TX: ACK timeout for seq=106[0m
+[0;32mI (525010) NODE_TX: Send REGISTER seq=107[0m
+[0;32mI (525600) NODE_TX: Got ACK for seq=107[0m
+[0;32mI (528600) NODE_TX: Send REGISTER seq=108[0m
+[0;33mW (531890) NODE_TX: ACK timeout for seq=108[0m
+[0;32mI (534890) NODE_TX: Send REGISTER seq=109[0m
+[0;32mI (535480) NODE_TX: Got ACK for seq=109[0m
+[0;32mI (538480) NODE_TX: Send REGISTER seq=110[0m
+[0;33mW (541770) NODE_TX: ACK timeout for seq=110[0m
+[0;32mI (544770) NODE_TX: Send REGISTER seq=111[0m
+[0;32mI (545360) NODE_TX: Got ACK for seq=111[0m
+[0;32mI (548360) NODE_TX: Send REGISTER seq=112[0m
+[0;32mI (548950) NODE_TX: Got ACK for seq=112[0m
+[0;32mI (551950) NODE_TX: Send REGISTER seq=113[0m
+[0;33mW (555240) NODE_TX: ACK timeout for seq=113[0m
+[0;32mI (558240) NODE_TX: Send REGISTER seq=114[0m
+[0;33mW (561530) NODE_TX: ACK timeout for seq=114[0m
+[0;32mI (564530) NODE_TX: Send REGISTER seq=115[0m
+[0;32mI (565120) NODE_TX: Got ACK for seq=115[0m
+[0;32mI (568120) NODE_TX: Send REGISTER seq=116[0m
+[0;33mW (571410) NODE_TX: ACK timeout for seq=116[0m
+[0;32mI (574410) NODE_TX: Send REGISTER seq=117[0m
+[0;32mI (575000) NODE_TX: Got ACK for seq=117[0m
+[0;32mI (578000) NODE_TX: Send REGISTER seq=118[0m
+[0;33mW (581290) NODE_TX: ACK timeout for seq=118[0m
+[0;32mI (584290) NODE_TX: Send REGISTER seq=119[0m
+[0;32mI (584880) NODE_TX: Got ACK for seq=119[0m
+[0;32mI (587880) NODE_TX: Send REGISTER seq=120[0m
+[0;33mW (591170) NODE_TX: ACK timeout for seq=120[0m
+[0;32mI (594170) NODE_TX: Send REGISTER seq=121[0m
+[0;32mI (594760) NODE_TX: Got ACK for seq=121[0m
+[0;32mI (597760) NODE_TX: Send REGISTER seq=122[0m
+[0;33mW (601050) NODE_TX: ACK timeout for seq=122[0m
+[0;32mI (604050) NODE_TX: Send REGISTER seq=123[0m
+[0;32mI (604640) NODE_TX: Got ACK for seq=123[0m
+[0;32mI (607640) NODE_TX: Send REGISTER seq=124[0m
+[0;33mW (610930) NODE_TX: ACK timeout for seq=124[0m
+[0;32mI (613930) NODE_TX: Send REGISTER seq=125[0m
+[0;32mI (614520) NODE_TX: Got ACK for seq=125[0m
+[0;32mI (617520) NODE_TX: Send REGISTER seq=126[0m
+[0;33mW (620810) NODE_TX: ACK timeout for seq=126[0m
+[0;32mI (623810) NODE_TX: Send REGISTER seq=127[0m
+[0;32mI (624400) NODE_TX: Got ACK for seq=127[0m
+[0;32mI (627400) NODE_TX: Send REGISTER seq=128[0m
+[0;33mW (630690) NODE_TX: ACK timeout for seq=128[0m
+[0;32mI (633690) NODE_TX: Send REGISTER seq=129[0m
+[0;32mI (634280) NODE_TX: Got ACK for seq=129[0m
+[0;32mI (637280) NODE_TX: Send REGISTER seq=130[0m
+[0;33mW (640570) NODE_TX: ACK timeout for seq=130[0m
+[0;32mI (643570) NODE_TX: Send REGISTER seq=131[0m
+[0;32mI (644160) NODE_TX: Got ACK for seq=131[0m
+[0;32mI (647160) NODE_TX: Send REGISTER seq=132[0m
+[0;33mW (650450) NODE_TX: ACK timeout for seq=132[0m
+[0;32mI (653450) NODE_TX: Send REGISTER seq=133[0m
+[0;32mI (654040) NODE_TX: Got ACK for seq=133[0m
+[0;32mI (657040) NODE_TX: Send REGISTER seq=134[0m
+[0;33mW (660330) NODE_TX: ACK timeout for seq=134[0m
+[0;32mI (663330) NODE_TX: Send REGISTER seq=135[0m
+[0;32mI (663920) NODE_TX: Got ACK for seq=135[0m
+[0;32mI (666920) NODE_TX: Send REGISTER seq=136[0m
+[0;33mW (670210) NODE_TX: ACK timeout for seq=136[0m
+[0;32mI (673210) NODE_TX: Send REGISTER seq=137[0m
+[0;32mI (673800) NODE_TX: Got ACK for seq=137[0m
+[0;32mI (676800) NODE_TX: Send REGISTER seq=138[0m
+[0;33mW (680090) NODE_TX: ACK timeout for seq=138[0m
+[0;32mI (683090) NODE_TX: Send REGISTER seq=139[0m
+[0;32mI (683680) NODE_TX: Got ACK for seq=139[0m
+[0;32mI (686680) NODE_TX: Send REGISTER seq=140[0m
+[0;33mW (689970) NODE_TX: ACK timeout for seq=140[0m
+[0;32mI (692970) NODE_TX: Send REGISTER seq=141[0m
+[0;32mI (693560) NODE_TX: Got ACK for seq=141[0m
+[0;32mI (696560) NODE_TX: Send REGISTER seq=142[0m
+[0;33mW (699850) NODE_TX: ACK timeout for seq=142[0m
+[0;32mI (702850) NODE_TX: Send REGISTER seq=143[0m
+[0;32mI (703440) NODE_TX: Got ACK for seq=143[0m
+[0;32mI (706440) NODE_TX: Send REGISTER seq=144[0m
+[0;33mW (709730) NODE_TX: ACK timeout for seq=144[0m
+[0;32mI (712730) NODE_TX: Send REGISTER seq=145[0m
+[0;32mI (713320) NODE_TX: Got ACK for seq=145[0m
+[0;32mI (716320) NODE_TX: Send REGISTER seq=146[0m
+[0;33mW (719610) NODE_TX: ACK timeout for seq=146[0m
+[0;32mI (722610) NODE_TX: Send REGISTER seq=147[0m
+[0;32mI (723200) NODE_TX: Got ACK for seq=147[0m
+[0;32mI (726200) NODE_TX: Send REGISTER seq=148[0m
+[0;33mW (729490) NODE_TX: ACK timeout for seq=148[0m
+[0;32mI (732490) NODE_TX: Send REGISTER seq=149[0m
+[0;32mI (733080) NODE_TX: Got ACK for seq=149[0m
+[0;32mI (736080) NODE_TX: Send REGISTER seq=150[0m
+[0;33mW (739370) NODE_TX: ACK timeout for seq=150[0m
+[0;32mI (742370) NODE_TX: Send REGISTER seq=151[0m
+[0;32mI (742960) NODE_TX: Got ACK for seq=151[0m
+[0;32mI (745960) NODE_TX: Send REGISTER seq=152[0m
+[0;33mW (749250) NODE_TX: ACK timeout for seq=152[0m
+[0;32mI (752250) NODE_TX: Send REGISTER seq=153[0m
+[0;32mI (752840) NODE_TX: Got ACK for seq=153[0m
+[0;32mI (755840) NODE_TX: Send REGISTER seq=154[0m
+[0;33mW (759130) NODE_TX: ACK timeout for seq=154[0m
+[0;32mI (762130) NODE_TX: Send REGISTER seq=155[0m
+[0;32mI (762720) NODE_TX: Got ACK for seq=155[0m
+[0;32mI (765720) NODE_TX: Send REGISTER seq=156[0m
+[0;33mW (769010) NODE_TX: ACK timeout for seq=156[0m
+[0;32mI (772010) NODE_TX: Send REGISTER seq=157[0m
+[0;32mI (772600) NODE_TX: Got ACK for seq=157[0m
+[0;32mI (775600) NODE_TX: Send REGISTER seq=158[0m
+[0;33mW (778890) NODE_TX: ACK timeout for seq=158[0m
+[0;32mI (781890) NODE_TX: Send REGISTER seq=159[0m
+[0;32mI (782480) NODE_TX: Got ACK for seq=159[0m
+[0;32mI (785480) NODE_TX: Send REGISTER seq=160[0m
+[0;33mW (788770) NODE_TX: ACK timeout for seq=160[0m
+[0;32mI (791770) NODE_TX: Send REGISTER seq=161[0m
+[0;32mI (792360) NODE_TX: Got ACK for seq=161[0m
+[0;32mI (795360) NODE_TX: Send REGISTER seq=162[0m
+[0;33mW (798650) NODE_TX: ACK timeout for seq=162[0m
+[0;32mI (801650) NODE_TX: Send REGISTER seq=163[0m
+[0;32mI (802240) NODE_TX: Got ACK for seq=163[0m
+[0;32mI (805240) NODE_TX: Send REGISTER seq=164[0m
+[0;33mW (808530) NODE_TX: ACK timeout for seq=164[0m
+[0;32mI (811530) NODE_TX: Send REGISTER seq=165[0m
+[0;32mI (812120) NODE_TX: Got ACK for seq=165[0m
+[0;32mI (815120) NODE_TX: Send REGISTER seq=166[0m
+[0;33mW (818410) NODE_TX: ACK timeout for seq=166[0m
+[0;32mI (821410) NODE_TX: Send REGISTER seq=167[0m
+[0;32mI (822000) NODE_TX: Got ACK for seq=167[0m
+[0;32mI (825000) NODE_TX: Send REGISTER seq=168[0m
+[0;33mW (828290) NODE_TX: ACK timeout for seq=168[0m
+[0;32mI (831290) NODE_TX: Send REGISTER seq=169[0m
+[0;32mI (831880) NODE_TX: Got ACK for seq=169[0m
+[0;32mI (834880) NODE_TX: Send REGISTER seq=170[0m
+[0;33mW (838170) NODE_TX: ACK timeout for seq=170[0m
+[0;32mI (841170) NODE_TX: Send REGISTER seq=171[0m
+[0;32mI (841760) NODE_TX: Got ACK for seq=171[0m
+[0;32mI (844760) NODE_TX: Send REGISTER seq=172[0m
+[0;33mW (848050) NODE_TX: ACK timeout for seq=172[0m
+[0;32mI (851050) NODE_TX: Send REGISTER seq=173[0m
+[0;32mI (851640) NODE_TX: Got ACK for seq=173[0m
+[0;32mI (854640) NODE_TX: Send REGISTER seq=174[0m
+[0;33mW (857930) NODE_TX: ACK timeout for seq=174[0m
+[0;32mI (860930) NODE_TX: Send REGISTER seq=175[0m
+[0;32mI (861520) NODE_TX: Got ACK for seq=175[0m
+[0;32mI (864520) NODE_TX: Send REGISTER seq=176[0m
+[0;33mW (867810) NODE_TX: ACK timeout for seq=176[0m
+[0;32mI (870810) NODE_TX: Send REGISTER seq=177[0m
+[0;32mI (871400) NODE_TX: Got ACK for seq=177[0m
+[0;32mI (874400) NODE_TX: Send REGISTER seq=178[0m
+[0;32mI (874990) NODE_TX: Got ACK for seq=178[0m
+[0;32mI (877990) NODE_TX: Send REGISTER seq=179[0m
+[0;33mW (881280) NODE_TX: ACK timeout for seq=179[0m
+[0;32mI (884280) NODE_TX: Send REGISTER seq=180[0m
+[0;32mI (884870) NODE_TX: Got ACK for seq=180[0m
+[0;32mI (887870) NODE_TX: Send REGISTER seq=181[0m
+[0;33mW (891160) NODE_TX: ACK timeout for seq=181[0m
+[0;32mI (894160) NODE_TX: Send REGISTER seq=182[0m
+[0;32mI (894750) NODE_TX: Got ACK for seq=182[0m
+[0;32mI (897750) NODE_TX: Send REGISTER seq=183[0m
+[0;33mW (901040) NODE_TX: ACK timeout for seq=183[0m
+[0;32mI (904040) NODE_TX: Send REGISTER seq=184[0m
+[0;32mI (904630) NODE_TX: Got ACK for seq=184[0m
+[0;32mI (907630) NODE_TX: Send REGISTER seq=185[0m
+[0;33mW (910920) NODE_TX: ACK timeout for seq=185[0m
+[0;32mI (913920) NODE_TX: Send REGISTER seq=186[0m
+[0;32mI (914510) NODE_TX: Got ACK for seq=186[0m
+[0;32mI (917510) NODE_TX: Send REGISTER seq=187[0m
+[0;33mW (920800) NODE_TX: ACK timeout for seq=187[0m
+[0;32mI (923800) NODE_TX: Send REGISTER seq=188[0m
+[0;32mI (924390) NODE_TX: Got ACK for seq=188[0m
+[0;32mI (927390) NODE_TX: Send REGISTER seq=189[0m
+[0;33mW (930680) NODE_TX: ACK timeout for seq=189[0m
+[0;32mI (933680) NODE_TX: Send REGISTER seq=190[0m
+[0;32mI (934270) NODE_TX: Got ACK for seq=190[0m
+[0;32mI (937270) NODE_TX: Send REGISTER seq=191[0m
+[0;33mW (940560) NODE_TX: ACK timeout for seq=191[0m
+[0;32mI (943560) NODE_TX: Send REGISTER seq=192[0m
+[0;32mI (944150) NODE_TX: Got ACK for seq=192[0m
+[0;32mI (947150) NODE_TX: Send REGISTER seq=193[0m
+[0;33mW (950440) NODE_TX: ACK timeout for seq=193[0m
+[0;32mI (953440) NODE_TX: Send REGISTER seq=194[0m
+[0;32mI (954030) NODE_TX: Got ACK for seq=194[0m
+[0;32mI (957030) NODE_TX: Send REGISTER seq=195[0m
+[0;32mI (957620) NODE_TX: Got ACK for seq=195[0m
+[0;32mI (960620) NODE_TX: Send REGISTER seq=196[0m
+[0;33mW (963910) NODE_TX: ACK timeout for seq=196[0m
+[0;32mI (966910) NODE_TX: Send REGISTER seq=197[0m
+[0;32mI (967500) NODE_TX: Got ACK for seq=197[0m
+[0;32mI (970500) NODE_TX: Send REGISTER seq=198[0m
+[0;33mW (973790) NODE_TX: ACK timeout for seq=198[0m
+[0;32mI (976790) NODE_TX: Send REGISTER seq=199[0m
+[0;32mI (977380) NODE_TX: Got ACK for seq=199[0m
+[0;32mI (980380) NODE_TX: Send REGISTER seq=200[0m
+[0;33mW (983670) NODE_TX: ACK timeout for seq=200[0m
+[0;32mI (986670) NODE_TX: Send REGISTER seq=201[0m
+[0;32mI (987260) NODE_TX: Got ACK for seq=201[0m
+[0;32mI (990260) NODE_TX: Send REGISTER seq=202[0m
+[0;33mW (993550) NODE_TX: ACK timeout for seq=202[0m
+[0;32mI (996550) NODE_TX: Send REGISTER seq=203[0m
+[0;32mI (997140) NODE_TX: Got ACK for seq=203[0m
+[0;32mI (1000140) NODE_TX: Send REGISTER seq=204[0m
+[0;33mW (1003430) NODE_TX: ACK timeout for seq=204[0m
+[0;32mI (1006430) NODE_TX: Send REGISTER seq=205[0m
+[0;32mI (1007020) NODE_TX: Got ACK for seq=205[0m
+[0;32mI (1010020) NODE_TX: Send REGISTER seq=206[0m
+[0;33mW (1013310) NODE_TX: ACK timeout for seq=206[0m
+[0;32mI (1016310) NODE_TX: Send REGISTER seq=207[0m
+[0;32mI (1016900) NODE_TX: Got ACK for seq=207[0m
+[0;32mI (1019900) NODE_TX: Send REGISTER seq=208[0m
+[0;33mW (1023190) NODE_TX: ACK timeout for seq=208[0m
+[0;32mI (1026190) NODE_TX: Send REGISTER seq=209[0m
+[0;32mI (1026780) NODE_TX: Got ACK for seq=209[0m
+[0;32mI (1029780) NODE_TX: Send REGISTER seq=210[0m
+[0;33mW (1033070) NODE_TX: ACK timeout for seq=210[0m
+[0;32mI (1036070) NODE_TX: Send REGISTER seq=211[0m
+[0;32mI (1036660) NODE_TX: Got ACK for seq=211[0m
+[0;32mI (1039660) NODE_TX: Send REGISTER seq=212[0m
+[0;33mW (1042950) NODE_TX: ACK timeout for seq=212[0m
+[0;32mI (1045950) NODE_TX: Send REGISTER seq=213[0m
+[0;32mI (1046540) NODE_TX: Got ACK for seq=213[0m
+[0;32mI (1049540) NODE_TX: Send REGISTER seq=214[0m
+[0;33mW (1052830) NODE_TX: ACK timeout for seq=214[0m

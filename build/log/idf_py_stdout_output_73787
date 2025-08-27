@@ -1,0 +1,451 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b340h ( 45888) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b368 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d5dc vaddr=40080000 size=02a3ch ( 10812) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16504h ( 91396) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=0003652c vaddr=40082a3c size=0adf0h ( 44528) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2[0m
+[0;32mI (239) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (245) cpu_start: ELF file SHA256:  ed8d82f1bd6240bf...[0m
+[0;32mI (251) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (335) app_start: Starting scheduler on CPU1[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) LORA_TX: Bắt đầu app_main[0m
+[0;32mI (345) LORA_TX: Bắt đầu khởi tạo LoRa[0m
+[0;32mI (465) LORA_TX: Đặt tần số 470 MHz[0m
+[0;32mI (465) LORA_TX: Đặt BW=62.5 kHz, SF=12, Preamble=24, CRC tắt[0m
+[0;32mI (465) LORA_TX: Hoàn tất khởi tạo LoRa, vào chế độ Standby[0m
+[0;32mI (465) LORA_TX: Chế độ hiện tại: 0x81[0m
+[0;32mI (475) LORA_TX: Độ dài chuỗi gửi: 206 byte[0m
+[0;32mI (475) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 0, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (505) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=0)[0m
+[0;32mI (5525) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 1, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (5535) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=1)[0m
+[0;32mI (10555) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 2, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (10565) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=2)[0m
+[0;32mI (15585) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 3, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (15595) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=3)[0m
+[0;32mI (20615) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 4, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (20625) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=4)[0m
+[0;32mI (25645) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 5, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (25655) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=5)[0m
+[0;32mI (30675) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 6, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (30685) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=6)[0m
+[0;32mI (35705) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 7, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (35715) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=7)[0m
+[0;32mI (40735) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 8, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (40745) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=8)[0m
+[0;32mI (45765) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 9, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (45775) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=9)[0m
+[0;32mI (50795) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 10, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (50805) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=10)[0m
+[0;32mI (55825) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 11, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (55835) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=11)[0m
+[0;32mI (60855) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 12, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (60865) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=12)[0m
+[0;32mI (65885) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 13, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (65895) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=13)[0m
+[0;32mI (70915) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 14, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (70925) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=14)[0m
+[0;32mI (75945) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 15, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (75955) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=15)[0m
+[0;32mI (80975) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 16, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (80985) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=16)[0m
+[0;32mI (86005) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 17, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (86015) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=17)[0m
+[0;32mI (91035) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 18, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (91045) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=18)[0m
+[0;32mI (96065) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 19, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (96075) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=19)[0m
+[0;32mI (101095) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 20, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (101105) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=20)[0m
+[0;32mI (106125) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 21, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (106135) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=21)[0m
+[0;32mI (111155) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 22, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (111165) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=22)[0m
+[0;32mI (116185) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 23, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (116195) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=23)[0m
+[0;32mI (121215) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 24, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (121225) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=24)[0m
+[0;32mI (126245) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 25, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (126255) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=25)[0m
+[0;32mI (131275) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 26, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (131285) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=26)[0m
+[0;32mI (136305) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 27, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (136315) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=27)[0m
+[0;32mI (141335) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 28, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (141345) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=28)[0m
+[0;32mI (146365) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 29, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (146375) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=29)[0m
+[0;32mI (151395) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 30, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (151405) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=30)[0m
+[0;32mI (156425) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 31, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (156435) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=31)[0m
+[0;32mI (161455) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 32, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (161465) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=32)[0m
+[0;32mI (166485) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 33, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (166495) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=33)[0m
+[0;32mI (171515) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 34, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (171525) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=34)[0m
+[0;32mI (176545) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 35, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (176555) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=35)[0m
+[0;32mI (181575) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 36, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (181585) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=36)[0m
+[0;32mI (186605) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 37, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (186615) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=37)[0m
+[0;32mI (191635) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 38, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (191645) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=38)[0m
+[0;32mI (196665) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 39, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (196675) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=39)[0m
+[0;32mI (201695) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 40, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (201705) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=40)[0m
+[0;32mI (206725) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 41, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (206735) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=41)[0m
+[0;32mI (211755) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 42, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (211765) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=42)[0m
+[0;32mI (216785) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 43, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (216795) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=43)[0m
+[0;32mI (221815) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 44, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (221825) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=44)[0m
+[0;32mI (226845) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 45, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (226855) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=45)[0m
+[0;32mI (231875) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 46, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (231885) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=46)[0m
+[0;32mI (236905) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 47, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (236915) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=47)[0m
+[0;32mI (241935) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 48, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (241945) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=48)[0m
+[0;32mI (246965) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 49, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (246975) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=49)[0m
+[0;32mI (251995) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 50, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (252005) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=50)[0m
+[0;32mI (257025) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 51, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (257035) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=51)[0m
+[0;32mI (262055) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 52, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (262065) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=52)[0m
+[0;32mI (267085) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 53, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (267095) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=53)[0m
+[0;32mI (272115) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 54, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (272125) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=54)[0m
+[0;32mI (277145) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 55, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (277155) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=55)[0m
+[0;32mI (282175) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 56, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (282185) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=56)[0m
+[0;32mI (287205) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 57, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (287215) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=57)[0m
+[0;32mI (292235) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 58, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (292245) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=58)[0m
+[0;32mI (297265) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 59, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (297275) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=59)[0m
+[0;32mI (302295) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 60, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (302305) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=60)[0m
+[0;32mI (307325) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 61, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (307335) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=61)[0m
+[0;32mI (312355) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 62, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (312365) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=62)[0m
+[0;32mI (317385) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 63, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (317395) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=63)[0m
+[0;32mI (322415) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 64, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (322425) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=64)[0m
+[0;32mI (327445) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 65, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (327455) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=65)[0m
+[0;32mI (332475) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 66, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (332485) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=66)[0m
+[0;32mI (337505) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 67, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (337515) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=67)[0m
+[0;32mI (342535) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 68, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (342545) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=68)[0m
+[0;32mI (347565) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 69, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (347575) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=69)[0m
+[0;32mI (352595) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 70, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (352605) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=70)[0m
+[0;32mI (357625) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 71, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (357635) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=71)[0m
+[0;32mI (362655) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 72, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (362665) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=72)[0m
+[0;32mI (367685) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 73, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (367695) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=73)[0m
+[0;32mI (372715) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 74, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (372725) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=74)[0m
+[0;32mI (377745) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 75, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (377755) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=75)[0m
+[0;32mI (382775) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 76, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (382785) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=76)[0m
+[0;32mI (387805) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 77, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (387815) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=77)[0m
+[0;32mI (392835) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 78, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (392845) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=78)[0m
+[0;32mI (397865) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 79, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (397875) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=79)[0m
+[0;32mI (402895) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 80, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (402905) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=80)[0m
+[0;32mI (407925) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 81, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (407935) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=81)[0m
+[0;32mI (412955) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 82, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (412965) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=82)[0m
+[0;32mI (417985) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 83, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (417995) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=83)[0m
+[0;32mI (423015) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 84, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (423025) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=84)[0m
+[0;32mI (428045) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 85, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (428055) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=85)[0m
+[0;32mI (433075) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 86, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (433085) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=86)[0m
+[0;32mI (438105) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 87, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (438115) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=87)[0m
+[0;32mI (443135) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 88, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (443145) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=88)[0m
+[0;32mI (448165) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 89, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (448175) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=89)[0m
+[0;32mI (453195) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 90, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (453205) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=90)[0m
+[0;32mI (458225) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 91, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (458235) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=91)[0m
+[0;32mI (463255) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 92, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (463265) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=92)[0m
+[0;32mI (468285) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 93, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (468295) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=93)[0m
+[0;32mI (473315) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 94, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (473325) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=94)[0m
+[0;32mI (478345) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 95, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (478355) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=95)[0m
+[0;32mI (483375) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 96, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (483385) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=96)[0m
+[0;32mI (488405) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 97, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (488415) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=97)[0m
+[0;32mI (493435) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 98, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (493445) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=98)[0m
+[0;32mI (498465) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 99, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (498475) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=99)[0m
+[0;32mI (503495) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 100, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (503505) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=100)[0m
+[0;32mI (508525) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 101, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (508535) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=101)[0m
+[0;32mI (513555) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 102, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (513565) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=102)[0m
+[0;32mI (518585) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 103, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (518595) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=103)[0m
+[0;32mI (523615) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 104, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (523625) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=104)[0m
+[0;32mI (528645) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 105, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (528655) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=105)[0m
+[0;32mI (533675) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 106, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (533685) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=106)[0m
+[0;32mI (538705) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 107, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (538715) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=107)[0m
+[0;32mI (543735) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 108, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (543745) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=108)[0m
+[0;32mI (548765) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 109, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (548775) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=109)[0m
+[0;32mI (553795) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 110, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (553805) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=110)[0m
+[0;32mI (558825) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 111, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (558835) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=111)[0m
+[0;32mI (563855) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 112, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (563865) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=112)[0m
+[0;32mI (568885) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 113, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (568895) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=113)[0m
+[0;32mI (573915) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 114, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (573925) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=114)[0m
+[0;32mI (578945) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 115, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (578955) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=115)[0m
+[0;32mI (583975) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 116, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (583985) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=116)[0m
+[0;32mI (589005) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 117, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (589015) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=117)[0m
+[0;32mI (594035) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 118, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (594045) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=118)[0m
+[0;32mI (599065) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 119, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (599075) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=119)[0m
+[0;32mI (604095) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 120, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (604105) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=120)[0m
+[0;32mI (609125) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 121, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (609135) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=121)[0m
+[0;32mI (614155) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 122, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (614165) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=122)[0m
+[0;32mI (619185) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 123, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (619195) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=123)[0m
+[0;32mI (624215) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 124, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (624225) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=124)[0m
+[0;32mI (629245) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 125, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (629255) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=125)[0m
+[0;32mI (634275) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 126, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (634285) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=126)[0m
+[0;32mI (639305) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 127, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (639315) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=127)[0m
+[0;32mI (644335) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 128, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (644345) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=128)[0m
+[0;32mI (649365) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 129, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (649375) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=129)[0m
+[0;32mI (654395) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 130, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (654405) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=130)[0m
+[0;32mI (659425) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 131, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (659435) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=131)[0m
+[0;32mI (664455) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 132, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (664465) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=132)[0m
+[0;32mI (669485) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 133, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (669495) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=133)[0m
+[0;32mI (674515) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 134, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (674525) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=134)[0m
+[0;32mI (679545) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 135, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (679555) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=135)[0m
+[0;32mI (684575) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 136, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (684585) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=136)[0m
+[0;32mI (689605) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 137, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (689615) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=137)[0m
+[0;32mI (694635) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 138, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (694645) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=138)[0m
+[0;32mI (699665) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 139, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (699675) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=139)[0m
+[0;32mI (704695) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 140, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (704705) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=140)[0m
+[0;32mI (709725) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 141, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (709735) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=141)[0m
+[0;32mI (714755) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 142, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (714765) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=142)[0m
+[0;32mI (719785) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 143, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (719795) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=143)[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b340h ( 45888) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b368 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d5dc vaddr=40080000 size=02a3ch ( 10812) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16504h ( 91396) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=0003652c vaddr=40082a3c size=0adf0h ( 44528) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2[0m
+[0;32mI (239) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (245) cpu_start: ELF file SHA256:  ed8d82f1bd6240bf...[0m
+[0;32mI (251) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (335) app_start: Starting scheduler on CPU1[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) LORA_TX: Bắt đầu app_main[0m
+[0;32mI (345) LORA_TX: Bắt đầu khởi tạo LoRa[0m
+[0;32mI (465) LORA_TX: Đặt tần số 470 MHz[0m
+[0;32mI (465) LORA_TX: Đặt BW=62.5 kHz, SF=12, Preamble=24, CRC tắt[0m
+[0;32mI (465) LORA_TX: Hoàn tất khởi tạo LoRa, vào chế độ Standby[0m
+[0;32mI (465) LORA_TX: Chế độ hiện tại: 0x81[0m
+[0;32mI (475) LORA_TX: Độ dài chuỗi gửi: 206 byte[0m
+[0;32mI (475) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 0, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (505) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=0)[0m
+[0;33mW (5525) LORA_TX: Timeout khi chờ TX Done[0m
+[0;32mI (10525) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 1, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (10535) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=1)[0m
+[0;32mI (15555) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 2, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (15565) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=2)[0m
+[0;32mI (20585) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 3, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (20595) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=3)[0m
+[0;32mI (25615) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 4, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (25625) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=4)[0m
+[0;32mI (30645) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 5, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (30655) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=5)[0m
+[0;32mI (35675) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 6, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (35685) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=6)[0m
+[0;32mI (40705) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 7, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (40715) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=7)[0m
+[0;32mI (45735) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 8, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (45745) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=8)[0m
+[0;32mI (50765) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 9, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (50775) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=9)[0m
+[0;32mI (55795) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 10, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (55805) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=10)[0m
+[0;32mI (60825) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 11, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (60835) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=11)[0m
+[0;32mI (65855) LORA_TX: Gửi tới Node 0x02 từ Node 0x01, STT: 12, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (65865) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=12)[0m

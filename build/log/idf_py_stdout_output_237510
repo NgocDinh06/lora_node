@@ -1,0 +1,1247 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf60h ( 48992) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001bf88 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001e298 vaddr=40080000 size=01d80h (  7552) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17c7ch ( 97404) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00037ca4 vaddr=40081d80 size=0bfc8h ( 49096) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu up.[0m
+[0;32mI (211) cpu_start: Starting app cpu, entry point is 0x400811f8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (229) cpu_start: Pro cpu start user code[0m
+[0;32mI (229) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (229) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (239) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  3656e3e4e3a3acfc...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (267) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (272) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2BC0 len 0002D440 (181 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008DD48 len 000122B8 (72 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (323) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (337) app_start: Starting scheduler on CPU0[0m
+[0;32mI (342) app_start: Starting scheduler on CPU1[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (352) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (362) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (372) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (382) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (502) NODE_TX: LoRa init done[0m
+[0;32mI (502) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (502) NODE_TX: Send REGISTER[0m
+[0;32mI (502) main_task: Returned from app_main()[0m
+[0;33mW (21512) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (21512) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (22512) NODE_TX: Send REGISTER[0m
+[0;33mW (43522) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (43522) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (44522) NODE_TX: Send REGISTER[0m
+[0;33mW (65532) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (65532) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (66532) NODE_TX: Send REGISTER[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf60h ( 48992) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001bf88 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001e298 vaddr=40080000 size=01d80h (  7552) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17c7ch ( 97404) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00037ca4 vaddr=40081d80 size=0bfc8h ( 49096) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu up.[0m
+[0;32mI (211) cpu_start: Starting app cpu, entry point is 0x400811f8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (229) cpu_start: Pro cpu start user code[0m
+[0;32mI (229) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (229) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (239) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (245) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  3656e3e4e3a3acfc...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (267) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (272) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2BC0 len 0002D440 (181 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008DD48 len 000122B8 (72 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (323) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (337) app_start: Starting scheduler on CPU0[0m
+[0;32mI (342) app_start: Starting scheduler on CPU1[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (352) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (362) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (372) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (382) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (502) NODE_TX: LoRa init done[0m
+[0;32mI (502) NODE_TX: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (502) NODE_TX: Send REGISTER[0m
+[0;32mI (502) main_task: Returned from app_main()[0m
+[0;33mW (20802) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (20802) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (21802) NODE_TX: Send REGISTER[0m
+[0;32mI (24762) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (24762) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (24762) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (25772) NODE_TX: Send REGISTER[0m
+[0;33mW (46062) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (46062) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (47062) NODE_TX: Send REGISTER[0m
+[0;32mI (49782) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (49782) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (49782) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (50792) NODE_TX: Send REGISTER[0m
+[0;33mW (71082) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (71082) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (72082) NODE_TX: Send REGISTER[0m
+[0;32mI (74932) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (74932) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (74932) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (75942) NODE_TX: Send REGISTER[0m
+[0;33mW (96232) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (96232) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (97232) NODE_TX: Send REGISTER[0m
+[0;32mI (99882) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (99882) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (99882) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (100892) NODE_TX: Send REGISTER[0m
+[0;33mW (121182) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (121182) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (122182) NODE_TX: Send REGISTER[0m
+[0;32mI (124862) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (124862) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (124862) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (125872) NODE_TX: Send REGISTER[0m
+[0;33mW (146162) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (146162) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (147162) NODE_TX: Send REGISTER[0m
+[0;32mI (150002) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (150002) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (150002) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (151012) NODE_TX: Send REGISTER[0m
+[0;33mW (171302) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (171302) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (172302) NODE_TX: Send REGISTER[0m
+[0;32mI (176912) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (176912) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (176912) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (177922) NODE_TX: Send REGISTER[0m
+[0;33mW (198212) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (198212) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (199212) NODE_TX: Send REGISTER[0m
+[0;32mI (201852) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (201852) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (201852) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (202862) NODE_TX: Send REGISTER[0m
+[0;33mW (223152) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (223152) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (224152) NODE_TX: Send REGISTER[0m
+[0;32mI (226782) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (226782) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (226782) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (227792) NODE_TX: Send REGISTER[0m
+[0;33mW (248082) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (248082) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (249082) NODE_TX: Send REGISTER[0m
+[0;32mI (251802) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (251802) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (251802) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (252812) NODE_TX: Send REGISTER[0m
+[0;33mW (273102) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (273102) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (274102) NODE_TX: Send REGISTER[0m
+[0;32mI (277012) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (277012) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (277012) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (278022) NODE_TX: Send REGISTER[0m
+[0;33mW (298312) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (298312) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (299312) NODE_TX: Send REGISTER[0m
+[0;32mI (307222) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (307222) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (307222) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (308232) NODE_TX: Send REGISTER[0m
+[0;33mW (328522) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (328522) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (329522) NODE_TX: Send REGISTER[0m
+[0;32mI (344132) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (344132) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (344132) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (345142) NODE_TX: Send REGISTER[0m
+[0;33mW (365432) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (365432) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (366432) NODE_TX: Send REGISTER[0m
+[0;32mI (375922) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (375922) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (375922) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (376932) NODE_TX: Send REGISTER[0m
+[0;33mW (397222) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (397222) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (398222) NODE_TX: Send REGISTER[0m
+[0;32mI (411352) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (411352) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (411352) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (412362) NODE_TX: Send REGISTER[0m
+[0;33mW (432652) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (432652) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (433652) NODE_TX: Send REGISTER[0m
+[0;32mI (448012) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (448012) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (448012) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (449022) NODE_TX: Send REGISTER[0m
+[0;33mW (469312) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (469312) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (470312) NODE_TX: Send REGISTER[0m
+[0;32mI (474592) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (474592) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (474592) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (475602) NODE_TX: Send REGISTER[0m
+[0;33mW (495892) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (495892) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (496892) NODE_TX: Send REGISTER[0m
+[0;32mI (500712) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (500712) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (500712) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (501722) NODE_TX: Send REGISTER[0m
+[0;33mW (522012) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (522012) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (523012) NODE_TX: Send REGISTER[0m
+[0;32mI (527402) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (527402) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (527402) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (528412) NODE_TX: Send REGISTER[0m
+[0;33mW (548702) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (548702) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (549702) NODE_TX: Send REGISTER[0m
+[0;32mI (552342) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (552342) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (552342) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (553352) NODE_TX: Send REGISTER[0m
+[0;33mW (573642) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (573642) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (574642) NODE_TX: Send REGISTER[0m
+[0;32mI (578412) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (578412) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (578412) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (579422) NODE_TX: Send REGISTER[0m
+[0;33mW (599712) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (599712) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (600712) NODE_TX: Send REGISTER[0m
+[0;32mI (603512) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (603512) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (603512) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (604522) NODE_TX: Send REGISTER[0m
+[0;33mW (624812) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (624812) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (625812) NODE_TX: Send REGISTER[0m
+[0;32mI (628912) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (628912) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (628912) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (629922) NODE_TX: Send REGISTER[0m
+[0;33mW (650212) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (650212) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (651212) NODE_TX: Send REGISTER[0m
+[0;32mI (655602) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (655602) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (655602) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (656612) NODE_TX: Send REGISTER[0m
+[0;33mW (676902) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (676902) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (677902) NODE_TX: Send REGISTER[0m
+[0;32mI (680832) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (680832) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (680832) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (681842) NODE_TX: Send REGISTER[0m
+[0;33mW (702132) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (702132) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (703132) NODE_TX: Send REGISTER[0m
+[0;32mI (707832) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (707832) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (707832) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (708842) NODE_TX: Send REGISTER[0m
+[0;33mW (729132) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (729132) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (730132) NODE_TX: Send REGISTER[0m
+[0;32mI (733082) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (733082) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (733082) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (734092) NODE_TX: Send REGISTER[0m
+[0;33mW (754382) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (754382) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (755382) NODE_TX: Send REGISTER[0m
+[0;32mI (758572) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (758572) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (758572) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (759582) NODE_TX: Send REGISTER[0m
+[0;33mW (779872) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (779872) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (780872) NODE_TX: Send REGISTER[0m
+[0;32mI (786172) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (786172) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (786172) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (787182) NODE_TX: Send REGISTER[0m
+[0;33mW (807472) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (807472) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (808472) NODE_TX: Send REGISTER[0m
+[0;32mI (812182) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (812182) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (812182) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (813192) NODE_TX: Send REGISTER[0m
+[0;33mW (833482) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (833482) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (834482) NODE_TX: Send REGISTER[0m
+[0;32mI (837612) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (837612) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (837612) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (838622) NODE_TX: Send REGISTER[0m
+[0;33mW (858912) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (858912) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (859912) NODE_TX: Send REGISTER[0m
+[0;32mI (863432) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (863432) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (863432) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (864442) NODE_TX: Send REGISTER[0m
+[0;33mW (884732) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (884732) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (885732) NODE_TX: Send REGISTER[0m
+[0;32mI (888872) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (888872) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (888872) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (889882) NODE_TX: Send REGISTER[0m
+[0;33mW (910172) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (910172) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (911172) NODE_TX: Send REGISTER[0m
+[0;32mI (918292) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (918292) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (918292) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (919302) NODE_TX: Send REGISTER[0m
+[0;33mW (939592) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (939592) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (940592) NODE_TX: Send REGISTER[0m
+[0;32mI (944822) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (944822) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (944822) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (945832) NODE_TX: Send REGISTER[0m
+[0;33mW (966122) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (966122) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (967122) NODE_TX: Send REGISTER[0m
+[0;32mI (969872) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (969872) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (969872) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (970882) NODE_TX: Send REGISTER[0m
+[0;33mW (991172) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (991172) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (992172) NODE_TX: Send REGISTER[0m
+[0;32mI (995222) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (995222) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (995222) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (996232) NODE_TX: Send REGISTER[0m
+[0;33mW (1016522) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1016522) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1017522) NODE_TX: Send REGISTER[0m
+[0;32mI (1020212) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1020212) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1020212) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1021222) NODE_TX: Send REGISTER[0m
+[0;33mW (1041512) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1041512) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1042512) NODE_TX: Send REGISTER[0m
+[0;32mI (1045192) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1045192) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1045192) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1046202) NODE_TX: Send REGISTER[0m
+[0;33mW (1066492) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1066492) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1067492) NODE_TX: Send REGISTER[0m
+[0;32mI (1074712) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1074712) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1074712) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1075722) NODE_TX: Send REGISTER[0m
+[0;33mW (1096012) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1096012) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1097012) NODE_TX: Send REGISTER[0m
+[0;32mI (1100142) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1100142) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1100142) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1101152) NODE_TX: Send REGISTER[0m
+[0;33mW (1121442) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1121442) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1122442) NODE_TX: Send REGISTER[0m
+[0;32mI (1125232) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1125232) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1125232) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1126242) NODE_TX: Send REGISTER[0m
+[0;33mW (1146532) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1146532) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1147532) NODE_TX: Send REGISTER[0m
+[0;32mI (1150432) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1150432) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1150432) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1151442) NODE_TX: Send REGISTER[0m
+[0;33mW (1171732) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1171732) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1172732) NODE_TX: Send REGISTER[0m
+[0;32mI (1175412) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1175412) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1175412) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1176422) NODE_TX: Send REGISTER[0m
+[0;33mW (1196712) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1196712) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1197712) NODE_TX: Send REGISTER[0m
+[0;32mI (1200652) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1200652) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1200652) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1201662) NODE_TX: Send REGISTER[0m
+[0;33mW (1221952) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1221952) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1222952) NODE_TX: Send REGISTER[0m
+[0;32mI (1225732) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1225732) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1225732) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1226742) NODE_TX: Send REGISTER[0m
+[0;33mW (1247032) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1247032) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1248032) NODE_TX: Send REGISTER[0m
+[0;32mI (1251352) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1251352) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1251352) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1252362) NODE_TX: Send REGISTER[0m
+[0;33mW (1272652) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1272652) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1273652) NODE_TX: Send REGISTER[0m
+[0;32mI (1278292) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1278292) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1278292) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1279302) NODE_TX: Send REGISTER[0m
+[0;33mW (1299592) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1299592) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1300592) NODE_TX: Send REGISTER[0m
+[0;32mI (1304962) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1304962) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1304962) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1305972) NODE_TX: Send REGISTER[0m
+[0;33mW (1326262) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1326262) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1327262) NODE_TX: Send REGISTER[0m
+[0;32mI (1338092) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1338092) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1338092) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1339102) NODE_TX: Send REGISTER[0m
+[0;33mW (1359392) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1359392) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1360392) NODE_TX: Send REGISTER[0m
+[0;32mI (1364122) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1364122) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1364122) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1365132) NODE_TX: Send REGISTER[0m
+[0;33mW (1385422) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1385422) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1386422) NODE_TX: Send REGISTER[0m
+[0;32mI (1389652) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1389652) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1389652) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1390662) NODE_TX: Send REGISTER[0m
+[0;33mW (1410952) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1410952) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1411952) NODE_TX: Send REGISTER[0m
+[0;32mI (1414932) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1414932) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1414932) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1415942) NODE_TX: Send REGISTER[0m
+[0;33mW (1436232) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1436232) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1437232) NODE_TX: Send REGISTER[0m
+[0;32mI (1439902) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1439902) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1439902) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1440912) NODE_TX: Send REGISTER[0m
+[0;33mW (1461202) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1461202) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1462202) NODE_TX: Send REGISTER[0m
+[0;32mI (1464902) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1464902) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1464902) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1465912) NODE_TX: Send REGISTER[0m
+[0;33mW (1486202) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1486202) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1487202) NODE_TX: Send REGISTER[0m
+[0;32mI (1490032) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1490032) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1490032) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1491042) NODE_TX: Send REGISTER[0m
+[0;33mW (1511332) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1511332) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1512332) NODE_TX: Send REGISTER[0m
+[0;32mI (1514982) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1514982) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1514982) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1515992) NODE_TX: Send REGISTER[0m
+[0;33mW (1536282) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1536282) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1537282) NODE_TX: Send REGISTER[0m
+[0;32mI (1540002) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1540002) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1540002) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1541012) NODE_TX: Send REGISTER[0m
+[0;33mW (1561302) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1561302) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1562302) NODE_TX: Send REGISTER[0m
+[0;32mI (1565082) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1565082) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1565082) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1566092) NODE_TX: Send REGISTER[0m
+[0;33mW (1586382) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1586382) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1587382) NODE_TX: Send REGISTER[0m
+[0;32mI (1590032) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1590032) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1590032) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1591042) NODE_TX: Send REGISTER[0m
+[0;33mW (1611332) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1611332) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1612332) NODE_TX: Send REGISTER[0m
+[0;32mI (1615062) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1615062) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1615062) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1616072) NODE_TX: Send REGISTER[0m
+[0;33mW (1636362) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1636362) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1637362) NODE_TX: Send REGISTER[0m
+[0;32mI (1640322) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1640322) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1640322) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1641332) NODE_TX: Send REGISTER[0m
+[0;33mW (1661622) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1661622) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1662622) NODE_TX: Send REGISTER[0m
+[0;32mI (1665432) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1665432) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1665432) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1666442) NODE_TX: Send REGISTER[0m
+[0;33mW (1686732) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1686732) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1687732) NODE_TX: Send REGISTER[0m
+[0;32mI (1691612) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1691612) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1691612) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1692622) NODE_TX: Send REGISTER[0m
+[0;33mW (1712912) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1712912) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1713912) NODE_TX: Send REGISTER[0m
+[0;32mI (1716762) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1716762) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1716762) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1717772) NODE_TX: Send REGISTER[0m
+[0;33mW (1738062) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1738062) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1739062) NODE_TX: Send REGISTER[0m
+[0;32mI (1741992) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1741992) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1741992) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1743002) NODE_TX: Send REGISTER[0m
+[0;33mW (1763292) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1763292) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1764292) NODE_TX: Send REGISTER[0m
+[0;32mI (1766922) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1766922) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1766922) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1767932) NODE_TX: Send REGISTER[0m
+[0;33mW (1788222) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1788222) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1789222) NODE_TX: Send REGISTER[0m
+[0;32mI (1791962) NODE_TX: Received packet: type=0xA1, is_assigned=0[0m
+[0;32mI (1791962) NODE_TX: Got ACK, isAssigned=0[0m
+[0;32mI (1791962) NODE_TX: Not assigned yet, retrying in 1s[0m
+[0;32mI (1792972) NODE_TX: Send REGISTER[0m
+[0;33mW (1813262) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1813262) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1814262) NODE_TX: Send REGISTER[0m
+[0;33mW (1834552) NODE_TX: Timeout waiting for packet (20000ms)[0m
+[0;33mW (1834552) NODE_TX: No ACK received, retrying in 1s[0m
+[0;32mI (1835552) NODE_TX: Send REGISTER[0m
+[0;32mI (1836422) NODE_TX: Received packet: type=0xA1, is_assigned=1[0m
+[0;32mI (1836422) NODE_TX: Got ACK, isAssigned=1[0m
+[0;32mI (1836422) NODE_TX: Device assigned, switching to control mode[0m
+[0;33mW (1837432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1838532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1839632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1840732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1841832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1842932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1844032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1845132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1846232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1847332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1848432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1849532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1850632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1851732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1852832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1853932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1855032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1856132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1857232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1858332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1859432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1860532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1861632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1862732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1863832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1864932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1866032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1867132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1868232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1869332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1870432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1871532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1872632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1873732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1874832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1875932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1877032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1878132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1879232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1880332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1881432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1882532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1883632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1884732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1885832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1886932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1888032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1889132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1890232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1891332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1892432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1893532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1894632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1895732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1896832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1897932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1899032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1900132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1901232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1902332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1903432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1904532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1905632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1906732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1907832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1908932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1910032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1911132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1912232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1913332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1914432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1915532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1916632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1917732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1918832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1919932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1921032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1922132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1923232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1924332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1925432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1926532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1927632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1928732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1929832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1930932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1932032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1933132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1934232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1935332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1936432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1937532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1938632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1939732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1940832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1941932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1943032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1944132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1945232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1946332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1947432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1948532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1949632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1950732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1951832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1952932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1954032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1955132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1956232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1957332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1958432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1959532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1960632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1961732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1962832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1963932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1965032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1966132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1967232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1968332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1969432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1970532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1971632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1972732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1973832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1974932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1976032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1977132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1978232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1979332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1980432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1981532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1982632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1983732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1984832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1985932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1987032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1988132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1989232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1990332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1991432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1992532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1993632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1994732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1995832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1996932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1998032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (1999132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2000232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2001332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2002432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2003532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2004632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2005732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2006832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2007932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2009032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2010132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2011232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2012332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2013432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2014532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2015632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2016732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2017832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2018932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2020032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2021132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2022232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2023332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2024432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2025532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2026632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2027732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2028832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2029932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2031032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2032132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2033232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2034332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2035432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2036532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2037632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2038732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2039832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2040932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2042032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2043132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2044232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2045332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2046432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2047532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2048632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2049732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2050832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2051932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2053032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2054132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2055232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2056332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2057432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2058532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2059632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2060732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2061832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2062932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2064032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2065132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2066232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2067332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2068432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2069532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2070632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2071732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2072832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2073932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2075032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2076132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2077232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2078332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2079432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2080532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2081632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2082732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2083832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2084932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2086032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2087132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2088232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2089332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2090432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2091532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2092632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2093732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2094832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2095932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2097032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2098132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2099232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2100332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2101432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2102532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2103632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2104732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2105832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2106932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2108032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2109132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2110232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2111332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2112432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2113532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2114632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2115732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2116832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2117932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2119032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2120132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2121232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2122332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2123432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2124532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2125632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2126732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2127832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2128932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2130032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2131132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2132232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2133332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2134432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2135532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2136632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2137732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2138832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2139932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2141032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2142132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2143232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2144332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2145432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2146532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2147632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2148732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2149832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2150932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2152032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2153132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2154232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2155332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2156432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2157532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2158632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2159732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2160832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2161932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2163032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2164132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2165232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2166332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2167432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2168532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2169632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2170732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2171832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2172932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2174032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2175132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2176232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2177332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2178432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2179532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2180632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2181732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2182832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2183932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2185032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2186132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2187232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2188332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2189432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2190532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2191632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2192732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2193832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2194932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2196032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2197132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2198232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2199332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2200432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2201532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2202632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2203732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2204832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2205932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2207032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2208132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2209232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2210332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2211432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2212532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2213632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2214732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2215832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2216932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2218032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2219132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2220232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2221332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2222432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2223532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2224632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2225732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2226832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2227932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2229032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2230132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2231232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2232332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2233432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2234532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2235632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2236732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2237832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2238932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2240032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2241132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2242232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2243332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2244432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2245532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2246632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2247732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2248832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2249932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2251032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2252132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2253232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2254332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2255432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2256532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2257632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2258732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2259832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2260932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2262032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2263132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2264232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2265332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2266432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2267532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2268632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2269732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2270832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2271932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2273032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2274132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2275232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2276332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2277432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2278532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2279632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2280732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2281832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2282932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2284032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2285132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2286232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2287332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2288432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2289532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2290632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2291732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2292832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2293932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2295032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2296132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2297232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2298332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2299432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2300532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2301632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2302732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2303832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2304932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2306032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2307132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2308232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2309332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2310432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2311532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2312632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2313732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2314832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2315932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2317032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2318132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2319232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2320332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2321432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2322532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2323632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2324732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2325832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2326932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2328032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2329132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2330232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2331332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2332432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2333532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2334632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2335732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2336832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2337932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2339032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2340132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2341232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2342332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2343432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2344532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2345632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2346732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2347832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2348932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2350032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2351132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2352232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2353332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2354432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2355532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2356632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2357732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2358832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2359932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2361032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2362132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2363232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2364332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2365432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2366532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2367632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2368732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2369832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2370932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2372032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2373132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2374232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2375332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2376432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2377532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2378632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2379732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2380832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2381932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2383032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2384132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2385232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2386332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2387432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2388532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2389632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2390732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2391832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2392932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2394032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2395132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2396232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2397332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2398432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2399532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2400632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2401732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2402832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2403932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2405032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2406132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2407232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2408332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2409432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2410532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2411632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2412732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2413832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2414932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2416032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2417132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2418232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2419332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2420432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2421532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2422632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2423732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2424832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2425932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2427032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2428132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2429232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2430332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2431432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2432532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2433632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2434732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2435832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2436932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2438032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2439132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2440232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2441332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2442432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2443532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2444632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2445732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2446832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2447932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2449032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2450132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2451232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2452332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2453432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2454532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2455632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2456732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2457832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2458932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2460032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2461132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2462232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2463332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2464432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2465532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2466632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2467732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2468832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2469932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2471032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2472132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2473232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2474332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2475432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2476532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2477632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2478732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2479832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2480932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2482032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2483132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2484232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2485332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2486432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2487532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2488632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2489732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2490832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2491932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2493032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2494132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2495232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2496332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2497432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2498532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2499632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2500732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2501832) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2502932) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2504032) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2505132) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2506232) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2507332) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2508432) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2509532) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2510632) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2511732) NODE_TX: Timeout waiting for packet (1000ms)[0m
+[0;33mW (2512832) NODE_TX: Timeout waiting for packet (1000ms)[0m

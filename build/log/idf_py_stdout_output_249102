@@ -1,0 +1,157 @@
+6) LORA_TX: Byte 17: 145[0m
+[0;32mI (516) LORA_�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0af88h ( 44936) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001afb0 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d224 vaddr=40080000 size=02df4h ( 11764) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16420h ( 91168) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036448 vaddr=40082df4 size=0aa38h ( 43576) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (223) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (233) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (239) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (245) cpu_start: ELF file SHA256:  78eb62991b1b5f9e...[0m
+[0;32mI (251) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (261) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (278) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (456) LORA_TX: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (456) LORA_TX: Byte 0: 66[0m
+[0;32mI (456) LORA_TX: Byte 1: 195[0m
+[0;32mI (466) LORA_TX: Byte 2: 168[0m
+[0;32mI (466) LORA_TX: Byte 3: 111[0m
+[0;32mI (466) LORA_TX: Byte 4: 32[0m
+[0;32mI (476) LORA_TX: Byte 5: 100[0m
+[0;32mI (476) LORA_TX: Byte 6: 225[0m
+[0;32mI (476) LORA_TX: Byte 7: 186[0m
+[0;32mI (486) LORA_TX: Byte 8: 161[0m
+[0;32mI (486) LORA_TX: Byte 9: 116[0m
+[0;32mI (496) LORA_TX: Byte 10: 32[0m
+[0;32mI (496) LORA_TX: Byte 11: 118[0m
+[0;32mI (496) LORA_TX: Byte 12: 225[0m
+[0;32mI (506) LORA_TX: Byte 13: 187[0m
+[0;32mI (506) LORA_TX: Byte 14: 129[0m
+[0;32mI (506) LORA_TX: Byte 15: 32[0m
+[0;32mI (516) LORA_TX: Byte 16: 196[0m
+[0;32mI (516) LORA_TX: Byte 17: 145[0m
+[0;32mI (516) LORA_TX: Byte 18: 195[0m
+[0;32mI (526) LORA_TX: Byte 19: 162[0m
+[0;32mI (526) LORA_TX: Byte 20: 117[0m
+[0;32mI (536) LORA_TX: Byte 21: 44[0m
+[0;32mI (536) LORA_TX: Byte 22: 32[0m
+[0;32mI (536) LORA_TX: Byte 23: 104[0m
+[0;32mI (546) LORA_TX: Byte 24: 195[0m
+[0;32mI (546) LORA_TX: Byte 25: 160[0m
+[0;32mI (546) LORA_TX: Byte 26: 110[0m
+[0;32mI (556) LORA_TX: Byte 27: 103[0m
+[0;32mI (556) LORA_TX: Byte 28: 32[0m
+[0;32mI (556) LORA_TX: Byte 29: 110[0m
+[0;32mI (566) LORA_TX: Byte 30: 225[0m
+[0;32mI (566) LORA_TX: Byte 31: 187[0m
+[0;32mI (576) LORA_TX: Byte 32: 145[0m
+[0;32mI (576) LORA_TX: Byte 33: 105[0m
+[0;32mI (576) LORA_TX: Byte 34: 32[0m
+[0;32mI (586) LORA_TX: Byte 35: 104[0m
+[0;32mI (586) LORA_TX: Byte 36: 195[0m
+[0;32mI (586) LORA_TX: Byte 37: 160[0m
+[0;32mI (596) LORA_TX: Byte 38: 110[0m
+[0;32mI (596) LORA_TX: Byte 39: 103[0m
+[0;32mI (596) LORA_TX: Byte 40: 59[0m
+[0;32mI (606) LORA_TX: Byte 41: 32[0m
+[0;32mI (606) LORA_TX: Byte 42: 72[0m
+[0;32mI (606) LORA_TX: Byte 43: 105[0m
+[0;32mI (616) LORA_TX: Byte 44: 117[0m
+[0;32mI (616) LORA_TX: Byte 45: 32[0m
+[0;32mI (626) LORA_TX: Byte 46: 104[0m
+[0;32mI (626) LORA_TX: Byte 47: 105[0m
+[0;32mI (626) LORA_TX: Byte 48: 117[0m
+[0;32mI (636) LORA_TX: Byte 49: 32[0m
+[0;32mI (636) LORA_TX: Byte 50: 103[0m
+[0;32mI (636) LORA_TX: Byte 51: 105[0m
+[0;32mI (646) LORA_TX: Byte 52: 195[0m
+[0;32mI (646) LORA_TX: Byte 53: 179[0m
+[0;32mI (646) LORA_TX: Byte 54: 32[0m
+[0;32mI (656) LORA_TX: Byte 55: 116[0m
+[0;32mI (656) LORA_TX: Byte 56: 104[0m
+[0;32mI (666) LORA_TX: Byte 57: 225[0m
+[0;32mI (666) LORA_TX: Byte 58: 187[0m
+[0;32mI (666) LORA_TX: Byte 59: 149[0m
+[0;32mI (676) LORA_TX: Byte 60: 105[0m
+[0;32mI (676) LORA_TX: Byte 61: 44[0m
+[0;32mI (676) LORA_TX: Byte 62: 32[0m
+[0;32mI (686) LORA_TX: Byte 63: 99[0m
+[0;32mI (686) LORA_TX: Byte 64: 104[0m
+[0;32mI (686) LORA_TX: Byte 65: 105[0m
+[0;32mI (696) LORA_TX: Byte 66: 225[0m
+[0;32mI (696) LORA_TX: Byte 67: 187[0m
+[0;32mI (706) LORA_TX: Byte 68: 129[0m
+[0;32mI (706) LORA_TX: Byte 69: 117[0m
+[0;32mI (706) LORA_TX: Byte 70: 32[0m
+[0;32mI (716) LORA_TX: Byte 71: 116[0m
+[0;32mI (716) LORA_TX: Byte 72: 195[0m
+[0;32mI (716) LORA_TX: Byte 73: 160[0m
+[0;32mI (726) LORA_TX: Byte 74: 32[0m
+[0;32mI (726) LORA_TX: Byte 75: 116[0m
+[0;32mI (726) LORA_TX: Byte 76: 195[0m
+[0;32mI (736) LORA_TX: Byte 77: 160[0m
+[0;32mI (736) LORA_TX: Byte 78: 46[0m
+[0;32mI (746) LORA_TX: Byte 79: 32[0m
+[0;32mI (746) LORA_TX: Byte 80: 84[0m
+[0;32mI (746) LORA_TX: Byte 81: 114[0m
+[0;32mI (756) LORA_TX: Byte 82: 195[0m
+[0;32mI (756) LORA_TX: Byte 83: 180[0m
+[0;32mI (756) LORA_TX: Byte 84: 105[0m
+[0;32mI (766) LORA_TX: Byte 85: 32[0m
+[0;32mI (766) LORA_TX: Byte 86: 109[0m
+[0;32mI (766) LORA_TX: Byte 87: 195[0m
+[0;32mI (776) LORA_TX: Byte 88: 163[0m
+[0;32mI (776) LORA_TX: Byte 89: 105[0m
+[0;32mI (786) LORA_TX: Byte 90: 46[0m
+[0;32mI (786) LORA_TX: Checksum tính: 131[0m
+[0;32mI (2256) LORA_TX: Nhận ACK từ Node 0x01, STT: 0, Dữ liệu: Toàn vẹn[0m
+[0;32mI (2256) LORA_TX: Nhận được ACK cho gói tin STT: 0[0m

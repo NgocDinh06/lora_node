@@ -1,0 +1,549 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bb30h ( 47920) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001bb58 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001de68 vaddr=40080000 size=021b0h (  8624) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=177ach ( 96172) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=000377d4 vaddr=400821b0 size=0b9fch ( 47612) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (198) boot: Disabling RNG early entropy source...[0m
+[0;32mI (209) cpu_start: Multicore app[0m
+[0;32mI (209) cpu_start: Pro cpu up.[0m
+[0;32mI (209) cpu_start: Starting app cpu, entry point is 0x400811f4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (227) cpu_start: Pro cpu start user code[0m
+[0;32mI (227) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (227) cpu_start: Application information:[0m
+[0;32mI (232) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (238) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (243) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (249) cpu_start: ELF file SHA256:  30f0b9d70b752f68...[0m
+[0;32mI (255) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (265) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (270) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (275) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 3FFB2BB8 len 0002D448 (181 KiB): DRAM[0m
+[0;32mI (294) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (307) heap_init: At 4008DBAC len 00012454 (73 KiB): IRAM[0m
+[0;32mI (315) spi_flash: detected chip: generic[0m
+[0;32mI (318) spi_flash: flash io: dio[0m
+[0;33mW (322) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (336) app_start: Starting scheduler on CPU0[0m
+[0;32mI (340) app_start: Starting scheduler on CPU1[0m
+[0;32mI (340) main_task: Started on CPU0[0m
+[0;32mI (350) main_task: Calling app_main()[0m
+[0;32mI (350) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (470) NODE_TX: MAC Node: FC:B4:67:78:BE:CC[0m
+[0;32mI (470) NODE_TX: Send REGISTER seq=0[0m
+[0;33mW (3770) NODE_TX: ACK timeout for seq=0[0m
+[0;32mI (3770) main_task: Returned from app_main()[0m
+[0;32mI (6770) NODE_TX: Send REGISTER seq=1[0m
+[0;33mW (10060) NODE_TX: ACK timeout for seq=1[0m
+[0;32mI (13060) NODE_TX: Send REGISTER seq=2[0m
+[0;33mW (16350) NODE_TX: ACK timeout for seq=2[0m
+[0;32mI (19350) NODE_TX: Send REGISTER seq=3[0m
+[0;32mI (20440) NODE_TX: Got ACK for seq=3, isAssigned=0[0m
+[0;32mI (23440) NODE_TX: Send REGISTER seq=4[0m
+[0;32mI (24240) NODE_TX: Got ACK for seq=4, isAssigned=0[0m
+[0;32mI (27240) NODE_TX: Send REGISTER seq=5[0m
+[0;32mI (27880) NODE_TX: Got ACK for seq=5, isAssigned=0[0m
+[0;32mI (30880) NODE_TX: Send REGISTER seq=6[0m
+[0;32mI (31520) NODE_TX: Got ACK for seq=6, isAssigned=0[0m
+[0;32mI (34520) NODE_TX: Send REGISTER seq=7[0m
+[0;32mI (35170) NODE_TX: Got ACK for seq=7, isAssigned=0[0m
+[0;32mI (38170) NODE_TX: Send REGISTER seq=8[0m
+[0;32mI (38800) NODE_TX: Got ACK for seq=8, isAssigned=0[0m
+[0;32mI (41800) NODE_TX: Send REGISTER seq=9[0m
+[0;32mI (42450) NODE_TX: Got ACK for seq=9, isAssigned=0[0m
+[0;32mI (45450) NODE_TX: Send REGISTER seq=10[0m
+[0;32mI (46240) NODE_TX: Got ACK for seq=10, isAssigned=0[0m
+[0;32mI (49240) NODE_TX: Send REGISTER seq=11[0m
+[0;32mI (49870) NODE_TX: Got ACK for seq=11, isAssigned=0[0m
+[0;32mI (52870) NODE_TX: Send REGISTER seq=12[0m
+[0;32mI (54720) NODE_TX: Got ACK for seq=12, isAssigned=0[0m
+[0;32mI (57720) NODE_TX: Send REGISTER seq=13[0m
+[0;32mI (58380) NODE_TX: Got ACK for seq=13, isAssigned=0[0m
+[0;32mI (61380) NODE_TX: Send REGISTER seq=14[0m
+[0;32mI (62150) NODE_TX: Got ACK for seq=14, isAssigned=0[0m
+[0;32mI (65150) NODE_TX: Send REGISTER seq=15[0m
+[0;32mI (65780) NODE_TX: Got ACK for seq=15, isAssigned=0[0m
+[0;32mI (68780) NODE_TX: Send REGISTER seq=16[0m
+[0;32mI (69420) NODE_TX: Got ACK for seq=16, isAssigned=0[0m
+[0;32mI (72420) NODE_TX: Send REGISTER seq=17[0m
+[0;32mI (73410) NODE_TX: Got ACK for seq=17, isAssigned=0[0m
+[0;32mI (76410) NODE_TX: Send REGISTER seq=18[0m
+[0;32mI (77190) NODE_TX: Got ACK for seq=18, isAssigned=0[0m
+[0;32mI (80190) NODE_TX: Send REGISTER seq=19[0m
+[0;32mI (80820) NODE_TX: Got ACK for seq=19, isAssigned=0[0m
+[0;32mI (83820) NODE_TX: Send REGISTER seq=20[0m
+[0;32mI (84480) NODE_TX: Got ACK for seq=20, isAssigned=0[0m
+[0;32mI (87480) NODE_TX: Send REGISTER seq=21[0m
+[0;32mI (88120) NODE_TX: Got ACK for seq=21, isAssigned=0[0m
+[0;32mI (91120) NODE_TX: Send REGISTER seq=22[0m
+[0;32mI (91760) NODE_TX: Got ACK for seq=22, isAssigned=0[0m
+[0;32mI (94760) NODE_TX: Send REGISTER seq=23[0m
+[0;32mI (95390) NODE_TX: Got ACK for seq=23, isAssigned=0[0m
+[0;32mI (98390) NODE_TX: Send REGISTER seq=24[0m
+[0;32mI (100230) NODE_TX: Got ACK for seq=24, isAssigned=0[0m
+[0;32mI (103230) NODE_TX: Send REGISTER seq=25[0m
+[0;32mI (103850) NODE_TX: Got ACK for seq=25, isAssigned=0[0m
+[0;32mI (106850) NODE_TX: Send REGISTER seq=26[0m
+[0;32mI (107470) NODE_TX: Got ACK for seq=26, isAssigned=0[0m
+[0;32mI (110470) NODE_TX: Send REGISTER seq=27[0m
+[0;32mI (111090) NODE_TX: Got ACK for seq=27, isAssigned=0[0m
+[0;32mI (114090) NODE_TX: Send REGISTER seq=28[0m
+[0;32mI (114720) NODE_TX: Got ACK for seq=28, isAssigned=0[0m
+[0;32mI (117720) NODE_TX: Send REGISTER seq=29[0m
+[0;32mI (118470) NODE_TX: Got ACK for seq=29, isAssigned=0[0m
+[0;32mI (121470) NODE_TX: Send REGISTER seq=30[0m
+[0;32mI (122150) NODE_TX: Got ACK for seq=30, isAssigned=0[0m
+[0;32mI (125150) NODE_TX: Send REGISTER seq=31[0m
+[0;32mI (125790) NODE_TX: Got ACK for seq=31, isAssigned=0[0m
+[0;32mI (128790) NODE_TX: Send REGISTER seq=32[0m
+[0;32mI (129420) NODE_TX: Got ACK for seq=32, isAssigned=0[0m
+[0;32mI (132420) NODE_TX: Send REGISTER seq=33[0m
+[0;32mI (133100) NODE_TX: Got ACK for seq=33, isAssigned=0[0m
+[0;32mI (136100) NODE_TX: Send REGISTER seq=34[0m
+[0;32mI (136780) NODE_TX: Got ACK for seq=34, isAssigned=0[0m
+[0;32mI (139780) NODE_TX: Send REGISTER seq=35[0m
+[0;32mI (140400) NODE_TX: Got ACK for seq=35, isAssigned=0[0m
+[0;32mI (143400) NODE_TX: Send REGISTER seq=36[0m
+[0;32mI (144060) NODE_TX: Got ACK for seq=36, isAssigned=0[0m
+[0;32mI (147060) NODE_TX: Send REGISTER seq=37[0m
+[0;32mI (147680) NODE_TX: Got ACK for seq=37, isAssigned=0[0m
+[0;32mI (150690) NODE_TX: Send REGISTER seq=38[0m
+[0;32mI (151360) NODE_TX: Got ACK for seq=38, isAssigned=0[0m
+[0;32mI (154360) NODE_TX: Send REGISTER seq=39[0m
+[0;32mI (154990) NODE_TX: Got ACK for seq=39, isAssigned=0[0m
+[0;32mI (157990) NODE_TX: Send REGISTER seq=40[0m
+[0;32mI (158620) NODE_TX: Got ACK for seq=40, isAssigned=0[0m
+[0;32mI (161620) NODE_TX: Send REGISTER seq=41[0m
+[0;32mI (162240) NODE_TX: Got ACK for seq=41, isAssigned=0[0m
+[0;32mI (165250) NODE_TX: Send REGISTER seq=42[0m
+[0;32mI (165880) NODE_TX: Got ACK for seq=42, isAssigned=0[0m
+[0;32mI (168880) NODE_TX: Send REGISTER seq=43[0m
+[0;32mI (169510) NODE_TX: Got ACK for seq=43, isAssigned=0[0m
+[0;32mI (172510) NODE_TX: Send REGISTER seq=44[0m
+[0;32mI (174760) NODE_TX: Got ACK for seq=44, isAssigned=0[0m
+[0;32mI (177760) NODE_TX: Send REGISTER seq=45[0m
+[0;32mI (178380) NODE_TX: Got ACK for seq=45, isAssigned=0[0m
+[0;32mI (181380) NODE_TX: Send REGISTER seq=46[0m
+[0;32mI (182010) NODE_TX: Got ACK for seq=46, isAssigned=0[0m
+[0;32mI (185010) NODE_TX: Send REGISTER seq=47[0m
+[0;32mI (185640) NODE_TX: Got ACK for seq=47, isAssigned=0[0m
+[0;32mI (188640) NODE_TX: Send REGISTER seq=48[0m
+[0;32mI (189410) NODE_TX: Got ACK for seq=48, isAssigned=0[0m
+[0;32mI (192410) NODE_TX: Send REGISTER seq=49[0m
+[0;32mI (193040) NODE_TX: Got ACK for seq=49, isAssigned=0[0m
+[0;32mI (196040) NODE_TX: Send REGISTER seq=50[0m
+[0;32mI (197810) NODE_TX: Got ACK for seq=50, isAssigned=0[0m
+[0;32mI (200810) NODE_TX: Send REGISTER seq=51[0m
+[0;32mI (201440) NODE_TX: Got ACK for seq=51, isAssigned=0[0m
+[0;32mI (204440) NODE_TX: Send REGISTER seq=52[0m
+[0;32mI (205090) NODE_TX: Got ACK for seq=52, isAssigned=0[0m
+[0;32mI (208090) NODE_TX: Send REGISTER seq=53[0m
+[0;32mI (208710) NODE_TX: Got ACK for seq=53, isAssigned=0[0m
+[0;32mI (211710) NODE_TX: Send REGISTER seq=54[0m
+[0;32mI (212880) NODE_TX: Got ACK for seq=54, isAssigned=0[0m
+[0;32mI (215880) NODE_TX: Send REGISTER seq=55[0m
+[0;33mW (219170) NODE_TX: ACK timeout for seq=55[0m
+[0;32mI (222170) NODE_TX: Send REGISTER seq=56[0m
+[0;32mI (222810) NODE_TX: Got ACK for seq=56, isAssigned=0[0m
+[0;32mI (225810) NODE_TX: Send REGISTER seq=57[0m
+[0;32mI (226430) NODE_TX: Got ACK for seq=57, isAssigned=0[0m
+[0;32mI (229430) NODE_TX: Send REGISTER seq=58[0m
+[0;32mI (230080) NODE_TX: Got ACK for seq=58, isAssigned=0[0m
+[0;32mI (233080) NODE_TX: Send REGISTER seq=59[0m
+[0;32mI (233700) NODE_TX: Got ACK for seq=59, isAssigned=0[0m
+[0;32mI (236700) NODE_TX: Send REGISTER seq=60[0m
+[0;32mI (237340) NODE_TX: Got ACK for seq=60, isAssigned=0[0m
+[0;32mI (240340) NODE_TX: Send REGISTER seq=61[0m
+[0;32mI (240970) NODE_TX: Got ACK for seq=61, isAssigned=0[0m
+[0;32mI (243970) NODE_TX: Send REGISTER seq=62[0m
+[0;32mI (244600) NODE_TX: Got ACK for seq=62, isAssigned=0[0m
+[0;32mI (247600) NODE_TX: Send REGISTER seq=63[0m
+[0;32mI (248230) NODE_TX: Got ACK for seq=63, isAssigned=0[0m
+[0;32mI (251230) NODE_TX: Send REGISTER seq=64[0m
+[0;32mI (251860) NODE_TX: Got ACK for seq=64, isAssigned=0[0m
+[0;32mI (254860) NODE_TX: Send REGISTER seq=65[0m
+[0;32mI (255610) NODE_TX: Got ACK for seq=65, isAssigned=0[0m
+[0;32mI (258610) NODE_TX: Send REGISTER seq=66[0m
+[0;32mI (259230) NODE_TX: Got ACK for seq=66, isAssigned=0[0m
+[0;32mI (262230) NODE_TX: Send REGISTER seq=67[0m
+[0;32mI (262870) NODE_TX: Got ACK for seq=67, isAssigned=0[0m
+[0;32mI (265870) NODE_TX: Send REGISTER seq=68[0m
+[0;32mI (266510) NODE_TX: Got ACK for seq=68, isAssigned=0[0m
+[0;32mI (269510) NODE_TX: Send REGISTER seq=69[0m
+[0;32mI (270130) NODE_TX: Got ACK for seq=69, isAssigned=0[0m
+[0;32mI (273130) NODE_TX: Send REGISTER seq=70[0m
+[0;32mI (273800) NODE_TX: Got ACK for seq=70, isAssigned=0[0m
+[0;32mI (276800) NODE_TX: Send REGISTER seq=71[0m
+[0;32mI (277540) NODE_TX: Got ACK for seq=71, isAssigned=0[0m
+[0;32mI (280540) NODE_TX: Send REGISTER seq=72[0m
+[0;32mI (281220) NODE_TX: Got ACK for seq=72, isAssigned=0[0m
+[0;32mI (284220) NODE_TX: Send REGISTER seq=73[0m
+[0;32mI (284860) NODE_TX: Got ACK for seq=73, isAssigned=0[0m
+[0;32mI (287860) NODE_TX: Send REGISTER seq=74[0m
+[0;32mI (288640) NODE_TX: Got ACK for seq=74, isAssigned=0[0m
+[0;32mI (291640) NODE_TX: Send REGISTER seq=75[0m
+[0;32mI (292370) NODE_TX: Got ACK for seq=75, isAssigned=0[0m
+[0;32mI (295370) NODE_TX: Send REGISTER seq=76[0m
+[0;32mI (296070) NODE_TX: Got ACK for seq=76, isAssigned=0[0m
+[0;32mI (299070) NODE_TX: Send REGISTER seq=77[0m
+[0;32mI (299710) NODE_TX: Got ACK for seq=77, isAssigned=0[0m
+[0;32mI (302710) NODE_TX: Send REGISTER seq=78[0m
+[0;32mI (303360) NODE_TX: Got ACK for seq=78, isAssigned=0[0m
+[0;32mI (306360) NODE_TX: Send REGISTER seq=79[0m
+[0;32mI (307000) NODE_TX: Got ACK for seq=79, isAssigned=0[0m
+[0;32mI (310000) NODE_TX: Send REGISTER seq=80[0m
+[0;32mI (310660) NODE_TX: Got ACK for seq=80, isAssigned=0[0m
+[0;32mI (313660) NODE_TX: Send REGISTER seq=81[0m
+[0;32mI (314290) NODE_TX: Got ACK for seq=81, isAssigned=0[0m
+[0;32mI (317290) NODE_TX: Send REGISTER seq=82[0m
+[0;32mI (318110) NODE_TX: Got ACK for seq=82, isAssigned=0[0m
+[0;32mI (321110) NODE_TX: Send REGISTER seq=83[0m
+[0;32mI (321750) NODE_TX: Got ACK for seq=83, isAssigned=0[0m
+[0;32mI (324750) NODE_TX: Send REGISTER seq=84[0m
+[0;32mI (325450) NODE_TX: Got ACK for seq=84, isAssigned=0[0m
+[0;32mI (328450) NODE_TX: Send REGISTER seq=85[0m
+[0;32mI (329130) NODE_TX: Got ACK for seq=85, isAssigned=0[0m
+[0;32mI (332130) NODE_TX: Send REGISTER seq=86[0m
+[0;32mI (332780) NODE_TX: Got ACK for seq=86, isAssigned=0[0m
+[0;32mI (335780) NODE_TX: Send REGISTER seq=87[0m
+[0;32mI (336470) NODE_TX: Got ACK for seq=87, isAssigned=0[0m
+[0;32mI (339470) NODE_TX: Send REGISTER seq=88[0m
+[0;32mI (340110) NODE_TX: Got ACK for seq=88, isAssigned=0[0m
+[0;32mI (343110) NODE_TX: Send REGISTER seq=89[0m
+[0;32mI (345260) NODE_TX: Got ACK for seq=89, isAssigned=0[0m
+[0;32mI (348260) NODE_TX: Send REGISTER seq=90[0m
+[0;32mI (350250) NODE_TX: Got ACK for seq=90, isAssigned=0[0m
+[0;32mI (353250) NODE_TX: Send REGISTER seq=91[0m
+[0;32mI (353880) NODE_TX: Got ACK for seq=91, isAssigned=0[0m
+[0;32mI (356880) NODE_TX: Send REGISTER seq=92[0m
+[0;32mI (357530) NODE_TX: Got ACK for seq=92, isAssigned=0[0m
+[0;32mI (360530) NODE_TX: Send REGISTER seq=93[0m
+[0;32mI (361170) NODE_TX: Got ACK for seq=93, isAssigned=0[0m
+[0;32mI (364170) NODE_TX: Send REGISTER seq=94[0m
+[0;33mW (367460) NODE_TX: ACK timeout for seq=94[0m
+[0;32mI (370460) NODE_TX: Send REGISTER seq=95[0m
+[0;32mI (371080) NODE_TX: Got ACK for seq=95, isAssigned=0[0m
+[0;32mI (374080) NODE_TX: Send REGISTER seq=96[0m
+[0;32mI (374700) NODE_TX: Got ACK for seq=96, isAssigned=0[0m
+[0;32mI (377700) NODE_TX: Send REGISTER seq=97[0m
+[0;32mI (378350) NODE_TX: Got ACK for seq=97, isAssigned=0[0m
+[0;32mI (381350) NODE_TX: Send REGISTER seq=98[0m
+[0;32mI (382060) NODE_TX: Got ACK for seq=98, isAssigned=0[0m
+[0;32mI (385060) NODE_TX: Send REGISTER seq=99[0m
+[0;32mI (385670) NODE_TX: Got ACK for seq=99, isAssigned=0[0m
+[0;32mI (388670) NODE_TX: Send REGISTER seq=100[0m
+[0;32mI (389290) NODE_TX: Got ACK for seq=100, isAssigned=0[0m
+[0;32mI (392290) NODE_TX: Send REGISTER seq=101[0m
+[0;32mI (392910) NODE_TX: Got ACK for seq=101, isAssigned=0[0m
+[0;32mI (395910) NODE_TX: Send REGISTER seq=102[0m
+[0;32mI (396530) NODE_TX: Got ACK for seq=102, isAssigned=0[0m
+[0;32mI (399530) NODE_TX: Send REGISTER seq=103[0m
+[0;32mI (400270) NODE_TX: Got ACK for seq=103, isAssigned=0[0m
+[0;32mI (403270) NODE_TX: Send REGISTER seq=104[0m
+[0;32mI (403900) NODE_TX: Got ACK for seq=104, isAssigned=0[0m
+[0;32mI (406900) NODE_TX: Send REGISTER seq=105[0m
+[0;32mI (407520) NODE_TX: Got ACK for seq=105, isAssigned=0[0m
+[0;32mI (410520) NODE_TX: Send REGISTER seq=106[0m
+[0;32mI (411130) NODE_TX: Got ACK for seq=106, isAssigned=0[0m
+[0;32mI (414130) NODE_TX: Send REGISTER seq=107[0m
+[0;32mI (415210) NODE_TX: Got ACK for seq=107, isAssigned=0[0m
+[0;32mI (418210) NODE_TX: Send REGISTER seq=108[0m
+[0;32mI (418830) NODE_TX: Got ACK for seq=108, isAssigned=0[0m
+[0;32mI (421830) NODE_TX: Send REGISTER seq=109[0m
+[0;32mI (422480) NODE_TX: Got ACK for seq=109, isAssigned=0[0m
+[0;32mI (425480) NODE_TX: Send REGISTER seq=110[0m
+[0;32mI (426090) NODE_TX: Got ACK for seq=110, isAssigned=0[0m
+[0;32mI (429090) NODE_TX: Send REGISTER seq=111[0m
+[0;32mI (429710) NODE_TX: Got ACK for seq=111, isAssigned=0[0m
+[0;32mI (432710) NODE_TX: Send REGISTER seq=112[0m
+[0;32mI (433330) NODE_TX: Got ACK for seq=112, isAssigned=0[0m
+[0;32mI (436330) NODE_TX: Send REGISTER seq=113[0m
+[0;33mW (439620) NODE_TX: ACK timeout for seq=113[0m
+[0;32mI (442620) NODE_TX: Send REGISTER seq=114[0m
+[0;32mI (443400) NODE_TX: Got ACK for seq=114, isAssigned=0[0m
+[0;32mI (446400) NODE_TX: Send REGISTER seq=115[0m
+[0;32mI (447020) NODE_TX: Got ACK for seq=115, isAssigned=0[0m
+[0;32mI (450020) NODE_TX: Send REGISTER seq=116[0m
+[0;32mI (450630) NODE_TX: Got ACK for seq=116, isAssigned=0[0m
+[0;32mI (453630) NODE_TX: Send REGISTER seq=117[0m
+[0;32mI (454240) NODE_TX: Got ACK for seq=117, isAssigned=0[0m
+[0;32mI (457240) NODE_TX: Send REGISTER seq=118[0m
+[0;32mI (457850) NODE_TX: Got ACK for seq=118, isAssigned=0[0m
+[0;32mI (460860) NODE_TX: Send REGISTER seq=119[0m
+[0;32mI (461500) NODE_TX: Got ACK for seq=119, isAssigned=0[0m
+[0;32mI (464500) NODE_TX: Send REGISTER seq=120[0m
+[0;32mI (465120) NODE_TX: Got ACK for seq=120, isAssigned=0[0m
+[0;32mI (468120) NODE_TX: Send REGISTER seq=121[0m
+[0;32mI (468730) NODE_TX: Got ACK for seq=121, isAssigned=0[0m
+[0;32mI (471740) NODE_TX: Send REGISTER seq=122[0m
+[0;32mI (472370) NODE_TX: Got ACK for seq=122, isAssigned=0[0m
+[0;32mI (475370) NODE_TX: Send REGISTER seq=123[0m
+[0;32mI (475990) NODE_TX: Got ACK for seq=123, isAssigned=0[0m
+[0;32mI (478990) NODE_TX: Send REGISTER seq=124[0m
+[0;32mI (479610) NODE_TX: Got ACK for seq=124, isAssigned=0[0m
+[0;32mI (482610) NODE_TX: Send REGISTER seq=125[0m
+[0;32mI (483220) NODE_TX: Got ACK for seq=125, isAssigned=0[0m
+[0;32mI (486220) NODE_TX: Send REGISTER seq=126[0m
+[0;32mI (486840) NODE_TX: Got ACK for seq=126, isAssigned=0[0m
+[0;32mI (489840) NODE_TX: Send REGISTER seq=127[0m
+[0;32mI (490460) NODE_TX: Got ACK for seq=127, isAssigned=0[0m
+[0;32mI (493460) NODE_TX: Send REGISTER seq=128[0m
+[0;32mI (494080) NODE_TX: Got ACK for seq=128, isAssigned=0[0m
+[0;32mI (497080) NODE_TX: Send REGISTER seq=129[0m
+[0;32mI (497700) NODE_TX: Got ACK for seq=129, isAssigned=0[0m
+[0;32mI (500700) NODE_TX: Send REGISTER seq=130[0m
+[0;32mI (501320) NODE_TX: Got ACK for seq=130, isAssigned=0[0m
+[0;32mI (504320) NODE_TX: Send REGISTER seq=131[0m
+[0;32mI (504940) NODE_TX: Got ACK for seq=131, isAssigned=0[0m
+[0;32mI (507940) NODE_TX: Send REGISTER seq=132[0m
+[0;32mI (508560) NODE_TX: Got ACK for seq=132, isAssigned=0[0m
+[0;32mI (511560) NODE_TX: Send REGISTER seq=133[0m
+[0;32mI (512180) NODE_TX: Got ACK for seq=133, isAssigned=0[0m
+[0;32mI (515180) NODE_TX: Send REGISTER seq=134[0m
+[0;32mI (515790) NODE_TX: Got ACK for seq=134, isAssigned=0[0m
+[0;32mI (518790) NODE_TX: Send REGISTER seq=135[0m
+[0;32mI (519410) NODE_TX: Got ACK for seq=135, isAssigned=0[0m
+[0;32mI (522410) NODE_TX: Send REGISTER seq=136[0m
+[0;32mI (523030) NODE_TX: Got ACK for seq=136, isAssigned=0[0m
+[0;32mI (526030) NODE_TX: Send REGISTER seq=137[0m
+[0;32mI (526760) NODE_TX: Got ACK for seq=137, isAssigned=0[0m
+[0;32mI (529760) NODE_TX: Send REGISTER seq=138[0m
+[0;32mI (530380) NODE_TX: Got ACK for seq=138, isAssigned=0[0m
+[0;32mI (533380) NODE_TX: Send REGISTER seq=139[0m
+[0;32mI (535490) NODE_TX: Got ACK for seq=139, isAssigned=0[0m
+[0;32mI (538490) NODE_TX: Send REGISTER seq=140[0m
+[0;32mI (539130) NODE_TX: Got ACK for seq=140, isAssigned=0[0m
+[0;32mI (542130) NODE_TX: Send REGISTER seq=141[0m
+[0;32mI (542740) NODE_TX: Got ACK for seq=141, isAssigned=0[0m
+[0;32mI (545750) NODE_TX: Send REGISTER seq=142[0m
+[0;32mI (546370) NODE_TX: Got ACK for seq=142, isAssigned=0[0m
+[0;32mI (549370) NODE_TX: Send REGISTER seq=143[0m
+[0;32mI (550080) NODE_TX: Got ACK for seq=143, isAssigned=0[0m
+[0;32mI (553080) NODE_TX: Send REGISTER seq=144[0m
+[0;32mI (553690) NODE_TX: Got ACK for seq=144, isAssigned=0[0m
+[0;32mI (556690) NODE_TX: Send REGISTER seq=145[0m
+[0;32mI (557310) NODE_TX: Got ACK for seq=145, isAssigned=0[0m
+[0;32mI (560310) NODE_TX: Send REGISTER seq=146[0m
+[0;32mI (560940) NODE_TX: Got ACK for seq=146, isAssigned=0[0m
+[0;32mI (563940) NODE_TX: Send REGISTER seq=147[0m
+[0;32mI (564560) NODE_TX: Got ACK for seq=147, isAssigned=0[0m
+[0;32mI (567560) NODE_TX: Send REGISTER seq=148[0m
+[0;32mI (568210) NODE_TX: Got ACK for seq=148, isAssigned=0[0m
+[0;32mI (571210) NODE_TX: Send REGISTER seq=149[0m
+[0;32mI (571820) NODE_TX: Got ACK for seq=149, isAssigned=0[0m
+[0;32mI (574820) NODE_TX: Send REGISTER seq=150[0m
+[0;32mI (575440) NODE_TX: Got ACK for seq=150, isAssigned=0[0m
+[0;32mI (578440) NODE_TX: Send REGISTER seq=151[0m
+[0;32mI (579060) NODE_TX: Got ACK for seq=151, isAssigned=0[0m
+[0;32mI (582060) NODE_TX: Send REGISTER seq=152[0m
+[0;32mI (582670) NODE_TX: Got ACK for seq=152, isAssigned=0[0m
+[0;32mI (585680) NODE_TX: Send REGISTER seq=153[0m
+[0;32mI (586330) NODE_TX: Got ACK for seq=153, isAssigned=0[0m
+[0;32mI (589330) NODE_TX: Send REGISTER seq=154[0m
+[0;32mI (589960) NODE_TX: Got ACK for seq=154, isAssigned=0[0m
+[0;32mI (592960) NODE_TX: Send REGISTER seq=155[0m
+[0;32mI (593610) NODE_TX: Got ACK for seq=155, isAssigned=0[0m
+[0;32mI (596610) NODE_TX: Send REGISTER seq=156[0m
+[0;32mI (597230) NODE_TX: Got ACK for seq=156, isAssigned=0[0m
+[0;32mI (600230) NODE_TX: Send REGISTER seq=157[0m
+[0;32mI (601150) NODE_TX: Got ACK for seq=157, isAssigned=0[0m
+[0;32mI (604150) NODE_TX: Send REGISTER seq=158[0m
+[0;32mI (604770) NODE_TX: Got ACK for seq=158, isAssigned=0[0m
+[0;32mI (607770) NODE_TX: Send REGISTER seq=159[0m
+[0;32mI (608390) NODE_TX: Got ACK for seq=159, isAssigned=0[0m
+[0;32mI (611390) NODE_TX: Send REGISTER seq=160[0m
+[0;32mI (612030) NODE_TX: Got ACK for seq=160, isAssigned=0[0m
+[0;32mI (615030) NODE_TX: Send REGISTER seq=161[0m
+[0;32mI (615650) NODE_TX: Got ACK for seq=161, isAssigned=0[0m
+[0;32mI (618650) NODE_TX: Send REGISTER seq=162[0m
+[0;32mI (619260) NODE_TX: Got ACK for seq=162, isAssigned=0[0m
+[0;32mI (622260) NODE_TX: Send REGISTER seq=163[0m
+[0;32mI (622880) NODE_TX: Got ACK for seq=163, isAssigned=0[0m
+[0;32mI (625880) NODE_TX: Send REGISTER seq=164[0m
+[0;32mI (626530) NODE_TX: Got ACK for seq=164, isAssigned=0[0m
+[0;32mI (629530) NODE_TX: Send REGISTER seq=165[0m
+[0;32mI (630160) NODE_TX: Got ACK for seq=165, isAssigned=0[0m
+[0;32mI (633160) NODE_TX: Send REGISTER seq=166[0m
+[0;32mI (633780) NODE_TX: Got ACK for seq=166, isAssigned=0[0m
+[0;32mI (636780) NODE_TX: Send REGISTER seq=167[0m
+[0;32mI (637400) NODE_TX: Got ACK for seq=167, isAssigned=0[0m
+[0;32mI (640400) NODE_TX: Send REGISTER seq=168[0m
+[0;32mI (641460) NODE_TX: Got ACK for seq=168, isAssigned=0[0m
+[0;32mI (644460) NODE_TX: Send REGISTER seq=169[0m
+[0;32mI (645070) NODE_TX: Got ACK for seq=169, isAssigned=0[0m
+[0;32mI (648070) NODE_TX: Send REGISTER seq=170[0m
+[0;32mI (648690) NODE_TX: Got ACK for seq=170, isAssigned=0[0m
+[0;32mI (651690) NODE_TX: Send REGISTER seq=171[0m
+[0;32mI (652300) NODE_TX: Got ACK for seq=171, isAssigned=0[0m
+[0;32mI (655300) NODE_TX: Send REGISTER seq=172[0m
+[0;32mI (655920) NODE_TX: Got ACK for seq=172, isAssigned=0[0m
+[0;32mI (658920) NODE_TX: Send REGISTER seq=173[0m
+[0;32mI (659630) NODE_TX: Got ACK for seq=173, isAssigned=0[0m
+[0;32mI (662630) NODE_TX: Send REGISTER seq=174[0m
+[0;32mI (663250) NODE_TX: Got ACK for seq=174, isAssigned=0[0m
+[0;32mI (666250) NODE_TX: Send REGISTER seq=175[0m
+[0;32mI (666870) NODE_TX: Got ACK for seq=175, isAssigned=0[0m
+[0;32mI (669870) NODE_TX: Send REGISTER seq=176[0m
+[0;32mI (670570) NODE_TX: Got ACK for seq=176, isAssigned=0[0m
+[0;32mI (673570) NODE_TX: Send REGISTER seq=177[0m
+[0;32mI (674190) NODE_TX: Got ACK for seq=177, isAssigned=0[0m
+[0;32mI (677190) NODE_TX: Send REGISTER seq=178[0m
+[0;32mI (677810) NODE_TX: Got ACK for seq=178, isAssigned=0[0m
+[0;32mI (680810) NODE_TX: Send REGISTER seq=179[0m
+[0;32mI (681430) NODE_TX: Got ACK for seq=179, isAssigned=0[0m
+[0;32mI (684430) NODE_TX: Send REGISTER seq=180[0m
+[0;32mI (685040) NODE_TX: Got ACK for seq=180, isAssigned=0[0m
+[0;32mI (688040) NODE_TX: Send REGISTER seq=181[0m
+[0;32mI (688720) NODE_TX: Got ACK for seq=181, isAssigned=0[0m
+[0;32mI (691720) NODE_TX: Send REGISTER seq=182[0m
+[0;32mI (692330) NODE_TX: Got ACK for seq=182, isAssigned=0[0m
+[0;32mI (695330) NODE_TX: Send REGISTER seq=183[0m
+[0;32mI (695950) NODE_TX: Got ACK for seq=183, isAssigned=0[0m
+[0;32mI (698950) NODE_TX: Send REGISTER seq=184[0m
+[0;32mI (699570) NODE_TX: Got ACK for seq=184, isAssigned=0[0m
+[0;32mI (702570) NODE_TX: Send REGISTER seq=185[0m
+[0;32mI (703200) NODE_TX: Got ACK for seq=185, isAssigned=0[0m
+[0;32mI (706200) NODE_TX: Send REGISTER seq=186[0m
+[0;32mI (706980) NODE_TX: Got ACK for seq=186, isAssigned=0[0m
+[0;32mI (709980) NODE_TX: Send REGISTER seq=187[0m
+[0;32mI (710590) NODE_TX: Got ACK for seq=187, isAssigned=0[0m
+[0;32mI (713590) NODE_TX: Send REGISTER seq=188[0m
+[0;32mI (714240) NODE_TX: Got ACK for seq=188, isAssigned=0[0m
+[0;32mI (717240) NODE_TX: Send REGISTER seq=189[0m
+[0;32mI (717850) NODE_TX: Got ACK for seq=189, isAssigned=0[0m
+[0;32mI (720850) NODE_TX: Send REGISTER seq=190[0m
+[0;32mI (721470) NODE_TX: Got ACK for seq=190, isAssigned=0[0m
+[0;32mI (724470) NODE_TX: Send REGISTER seq=191[0m
+[0;32mI (725090) NODE_TX: Got ACK for seq=191, isAssigned=0[0m
+[0;32mI (728090) NODE_TX: Send REGISTER seq=192[0m
+[0;32mI (728710) NODE_TX: Got ACK for seq=192, isAssigned=0[0m
+[0;32mI (731710) NODE_TX: Send REGISTER seq=193[0m
+[0;32mI (733820) NODE_TX: Got ACK for seq=193, isAssigned=0[0m
+[0;32mI (736820) NODE_TX: Send REGISTER seq=194[0m
+[0;32mI (737580) NODE_TX: Got ACK for seq=194, isAssigned=0[0m
+[0;32mI (740580) NODE_TX: Send REGISTER seq=195[0m
+[0;32mI (741650) NODE_TX: Got ACK for seq=195, isAssigned=0[0m
+[0;32mI (744650) NODE_TX: Send REGISTER seq=196[0m
+[0;32mI (745560) NODE_TX: Got ACK for seq=196, isAssigned=0[0m
+[0;32mI (748560) NODE_TX: Send REGISTER seq=197[0m
+[0;32mI (749180) NODE_TX: Got ACK for seq=197, isAssigned=0[0m
+[0;32mI (752180) NODE_TX: Send REGISTER seq=198[0m
+[0;32mI (752810) NODE_TX: Got ACK for seq=198, isAssigned=0[0m
+[0;32mI (755810) NODE_TX: Send REGISTER seq=199[0m
+[0;32mI (756420) NODE_TX: Got ACK for seq=199, isAssigned=0[0m
+[0;32mI (759420) NODE_TX: Send REGISTER seq=200[0m
+[0;32mI (760030) NODE_TX: Got ACK for seq=200, isAssigned=0[0m
+[0;32mI (763040) NODE_TX: Send REGISTER seq=201[0m
+[0;32mI (763780) NODE_TX: Got ACK for seq=201, isAssigned=0[0m
+[0;32mI (766780) NODE_TX: Send REGISTER seq=202[0m
+[0;32mI (767390) NODE_TX: Got ACK for seq=202, isAssigned=0[0m
+[0;32mI (770400) NODE_TX: Send REGISTER seq=203[0m
+[0;32mI (771020) NODE_TX: Got ACK for seq=203, isAssigned=0[0m
+[0;32mI (774020) NODE_TX: Send REGISTER seq=204[0m
+[0;32mI (774640) NODE_TX: Got ACK for seq=204, isAssigned=0[0m
+[0;32mI (777640) NODE_TX: Send REGISTER seq=205[0m
+[0;32mI (778260) NODE_TX: Got ACK for seq=205, isAssigned=0[0m
+[0;32mI (781260) NODE_TX: Send REGISTER seq=206[0m
+[0;32mI (781870) NODE_TX: Got ACK for seq=206, isAssigned=0[0m
+[0;32mI (784870) NODE_TX: Send REGISTER seq=207[0m
+[0;33mW (788160) NODE_TX: ACK timeout for seq=207[0m
+[0;32mI (791160) NODE_TX: Send REGISTER seq=208[0m
+[0;32mI (793020) NODE_TX: Got ACK for seq=208, isAssigned=0[0m
+[0;32mI (796020) NODE_TX: Send REGISTER seq=209[0m
+[0;32mI (796640) NODE_TX: Got ACK for seq=209, isAssigned=0[0m
+[0;32mI (799640) NODE_TX: Send REGISTER seq=210[0m
+[0;32mI (800260) NODE_TX: Got ACK for seq=210, isAssigned=0[0m
+[0;32mI (803260) NODE_TX: Send REGISTER seq=211[0m
+[0;32mI (804120) NODE_TX: Got ACK for seq=211, isAssigned=0[0m
+[0;32mI (807120) NODE_TX: Send REGISTER seq=212[0m
+[0;33mW (810410) NODE_TX: ACK timeout for seq=212[0m
+[0;32mI (813410) NODE_TX: Send REGISTER seq=213[0m
+[0;33mW (816700) NODE_TX: ACK timeout for seq=213[0m
+[0;32mI (819700) NODE_TX: Send REGISTER seq=214[0m
+[0;32mI (821560) NODE_TX: Got ACK for seq=214, isAssigned=0[0m
+[0;32mI (824560) NODE_TX: Send REGISTER seq=215[0m
+[0;32mI (825180) NODE_TX: Got ACK for seq=215, isAssigned=0[0m
+[0;32mI (828180) NODE_TX: Send REGISTER seq=216[0m
+[0;32mI (828800) NODE_TX: Got ACK for seq=216, isAssigned=0[0m
+[0;32mI (831800) NODE_TX: Send REGISTER seq=217[0m
+[0;32mI (832420) NODE_TX: Got ACK for seq=217, isAssigned=0[0m
+[0;32mI (835420) NODE_TX: Send REGISTER seq=218[0m
+[0;32mI (836030) NODE_TX: Got ACK for seq=218, isAssigned=0[0m
+[0;32mI (839030) NODE_TX: Send REGISTER seq=219[0m
+[0;32mI (839660) NODE_TX: Got ACK for seq=219, isAssigned=0[0m
+[0;32mI (842660) NODE_TX: Send REGISTER seq=220[0m
+[0;32mI (843390) NODE_TX: Got ACK for seq=220, isAssigned=0[0m
+[0;32mI (846390) NODE_TX: Send REGISTER seq=221[0m
+[0;32mI (847000) NODE_TX: Got ACK for seq=221, isAssigned=0[0m
+[0;32mI (850000) NODE_TX: Send REGISTER seq=222[0m
+[0;32mI (850620) NODE_TX: Got ACK for seq=222, isAssigned=0[0m
+[0;32mI (853620) NODE_TX: Send REGISTER seq=223[0m
+[0;32mI (854240) NODE_TX: Got ACK for seq=223, isAssigned=0[0m
+[0;32mI (857240) NODE_TX: Send REGISTER seq=224[0m
+[0;32mI (857860) NODE_TX: Got ACK for seq=224, isAssigned=0[0m
+[0;32mI (860860) NODE_TX: Send REGISTER seq=225[0m
+[0;32mI (861490) NODE_TX: Got ACK for seq=225, isAssigned=0[0m
+[0;32mI (864490) NODE_TX: Send REGISTER seq=226[0m
+[0;32mI (865230) NODE_TX: Got ACK for seq=226, isAssigned=0[0m
+[0;32mI (868230) NODE_TX: Send REGISTER seq=227[0m
+[0;32mI (868850) NODE_TX: Got ACK for seq=227, isAssigned=0[0m
+[0;32mI (871850) NODE_TX: Send REGISTER seq=228[0m
+[0;32mI (872470) NODE_TX: Got ACK for seq=228, isAssigned=0[0m
+[0;32mI (875470) NODE_TX: Send REGISTER seq=229[0m
+[0;32mI (876120) NODE_TX: Got ACK for seq=229, isAssigned=0[0m
+[0;32mI (879120) NODE_TX: Send REGISTER seq=230[0m
+[0;32mI (879740) NODE_TX: Got ACK for seq=230, isAssigned=0[0m
+[0;32mI (882740) NODE_TX: Send REGISTER seq=231[0m
+[0;32mI (883360) NODE_TX: Got ACK for seq=231, isAssigned=0[0m
+[0;32mI (886360) NODE_TX: Send REGISTER seq=232[0m
+[0;32mI (887570) NODE_TX: Got ACK for seq=232, isAssigned=0[0m
+[0;32mI (890570) NODE_TX: Send REGISTER seq=233[0m
+[0;32mI (891180) NODE_TX: Got ACK for seq=233, isAssigned=0[0m
+[0;32mI (894180) NODE_TX: Send REGISTER seq=234[0m
+[0;32mI (894800) NODE_TX: Got ACK for seq=234, isAssigned=0[0m
+[0;32mI (897800) NODE_TX: Send REGISTER seq=235[0m
+[0;32mI (898430) NODE_TX: Got ACK for seq=235, isAssigned=0[0m
+[0;32mI (901430) NODE_TX: Send REGISTER seq=236[0m
+[0;33mW (904720) NODE_TX: ACK timeout for seq=236[0m
+[0;32mI (907720) NODE_TX: Send REGISTER seq=237[0m
+[0;32mI (908390) NODE_TX: Got ACK for seq=237, isAssigned=0[0m
+[0;32mI (911390) NODE_TX: Send REGISTER seq=238[0m
+[0;32mI (912030) NODE_TX: Got ACK for seq=238, isAssigned=0[0m
+[0;32mI (915030) NODE_TX: Send REGISTER seq=239[0m
+[0;32mI (915690) NODE_TX: Got ACK for seq=239, isAssigned=0[0m
+[0;32mI (918690) NODE_TX: Send REGISTER seq=240[0m
+[0;32mI (919350) NODE_TX: Got ACK for seq=240, isAssigned=0[0m
+[0;32mI (922350) NODE_TX: Send REGISTER seq=241[0m
+[0;32mI (922970) NODE_TX: Got ACK for seq=241, isAssigned=0[0m
+[0;32mI (925970) NODE_TX: Send REGISTER seq=242[0m

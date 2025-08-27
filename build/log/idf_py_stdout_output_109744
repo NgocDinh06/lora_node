@@ -1,0 +1,589 @@
+ 0x6C (l)[0m
+[0;32mI (606) LORA_TX: Byte 32: 0x�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b420h ( 46112) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b448 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d6bc vaddr=40080000 size=0295ch ( 10588) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=165bch ( 91580) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000365e4 vaddr=4008295c size=0aed0h ( 44752) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (229) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2[0m
+[0;32mI (239) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (245) cpu_start: ELF file SHA256:  af8039bf1a8b4b90...[0m
+[0;32mI (251) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (261) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (278) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (346) LORA_TX: Bắt đầu app_main[0m
+[0;32mI (346) LORA_TX: Bắt đầu khởi tạo LoRa[0m
+[0;32mI (466) LORA_TX: Đặt tần số 470 MHz[0m
+[0;32mI (466) LORA_TX: Đặt BW=125 kHz, SF=12, Preamble=32, CRC tắt[0m
+[0;32mI (466) LORA_TX: Hoàn tất khởi tạo LoRa, vào chế độ Standby[0m
+[0;32mI (466) LORA_TX: Chế độ hiện tại: 0x00[0m
+[0;32mI (476) LORA_TX: Độ dài chuỗi gửi: 206 byte[0m
+[0;32mI (476) LORA_TX: Byte 0: 0x58 (X)[0m
+[0;32mI (486) LORA_TX: Byte 1: 0x69 (i)[0m
+[0;32mI (486) LORA_TX: Byte 2: 0x6E (n)[0m
+[0;32mI (496) LORA_TX: Byte 3: 0x20 ( )[0m
+[0;32mI (496) LORA_TX: Byte 4: 0x63 (c)[0m
+[0;32mI (496) LORA_TX: Byte 5: 0x68 (h)[0m
+[0;32mI (506) LORA_TX: Byte 6: 0xC3 (.)[0m
+[0;32mI (506) LORA_TX: Byte 7: 0xA0 (.)[0m
+[0;32mI (516) LORA_TX: Byte 8: 0x6F (o)[0m
+[0;32mI (516) LORA_TX: Byte 9: 0x20 ( )[0m
+[0;32mI (516) LORA_TX: Byte 10: 0x6D (m)[0m
+[0;32mI (526) LORA_TX: Byte 11: 0xE1 (.)[0m
+[0;32mI (526) LORA_TX: Byte 12: 0xBB (.)[0m
+[0;32mI (536) LORA_TX: Byte 13: 0x8D (.)[0m
+[0;32mI (536) LORA_TX: Byte 14: 0x69 (i)[0m
+[0;32mI (536) LORA_TX: Byte 15: 0x20 ( )[0m
+[0;32mI (546) LORA_TX: Byte 16: 0x6E (n)[0m
+[0;32mI (546) LORA_TX: Byte 17: 0x67 (g)[0m
+[0;32mI (556) LORA_TX: Byte 18: 0xC6 (.)[0m
+[0;32mI (556) LORA_TX: Byte 19: 0xB0 (.)[0m
+[0;32mI (556) LORA_TX: Byte 20: 0xE1 (.)[0m
+[0;32mI (566) LORA_TX: Byte 21: 0xBB (.)[0m
+[0;32mI (566) LORA_TX: Byte 22: 0x9D (.)[0m
+[0;32mI (576) LORA_TX: Byte 23: 0x69 (i)[0m
+[0;32mI (576) LORA_TX: Byte 24: 0x2C (,)[0m
+[0;32mI (586) LORA_TX: Byte 25: 0x20 ( )[0m
+[0;32mI (586) LORA_TX: Byte 26: 0x74 (t)[0m
+[0;32mI (586) LORA_TX: Byte 27: 0xC3 (.)[0m
+[0;32mI (596) LORA_TX: Byte 28: 0xB4 (.)[0m
+[0;32mI (596) LORA_TX: Byte 29: 0x69 (i)[0m
+[0;32mI (606) LORA_TX: Byte 30: 0x20 ( )[0m
+[0;32mI (606) LORA_TX: Byte 31: 0x6C (l)[0m
+[0;32mI (606) LORA_TX: Byte 32: 0xC3 (.)[0m
+[0;32mI (616) LORA_TX: Byte 33: 0xA0 (.)[0m
+[0;32mI (616) LORA_TX: Byte 34: 0x20 ( )[0m
+[0;32mI (626) LORA_TX: Byte 35: 0x4E (N)[0m
+[0;32mI (626) LORA_TX: Byte 36: 0x67 (g)[0m
+[0;32mI (626) LORA_TX: Byte 37: 0x75 (u)[0m
+[0;32mI (636) LORA_TX: Byte 38: 0x79 (y)[0m
+[0;32mI (636) LORA_TX: Byte 39: 0xE1 (.)[0m
+[0;32mI (646) LORA_TX: Byte 40: 0xBB (.)[0m
+[0;32mI (646) LORA_TX: Byte 41: 0x85 (.)[0m
+[0;32mI (646) LORA_TX: Byte 42: 0x6E (n)[0m
+[0;32mI (656) LORA_TX: Byte 43: 0x20 ( )[0m
+[0;32mI (656) LORA_TX: Byte 44: 0x4E (N)[0m
+[0;32mI (666) LORA_TX: Byte 45: 0x67 (g)[0m
+[0;32mI (666) LORA_TX: Byte 46: 0xE1 (.)[0m
+[0;32mI (666) LORA_TX: Byte 47: 0xBB (.)[0m
+[0;32mI (676) LORA_TX: Byte 48: 0x8D (.)[0m
+[0;32mI (676) LORA_TX: Byte 49: 0x63 (c)[0m
+[0;32mI (686) LORA_TX: Byte 50: 0x20 ( )[0m
+[0;32mI (686) LORA_TX: Byte 51: 0xC4 (.)[0m
+[0;32mI (696) LORA_TX: Byte 52: 0x90 (.)[0m
+[0;32mI (696) LORA_TX: Byte 53: 0xC3 (.)[0m
+[0;32mI (696) LORA_TX: Byte 54: 0xAD (.)[0m
+[0;32mI (706) LORA_TX: Byte 55: 0x6E (n)[0m
+[0;32mI (706) LORA_TX: Byte 56: 0x68 (h)[0m
+[0;32mI (716) LORA_TX: Byte 57: 0x20 ( )[0m
+[0;32mI (716) LORA_TX: Byte 58: 0xC4 (.)[0m
+[0;32mI (716) LORA_TX: Byte 59: 0x91 (.)[0m
+[0;32mI (726) LORA_TX: Byte 60: 0xE1 (.)[0m
+[0;32mI (726) LORA_TX: Byte 61: 0xBA (.)[0m
+[0;32mI (736) LORA_TX: Byte 62: 0xB9 (.)[0m
+[0;32mI (736) LORA_TX: Byte 63: 0x70 (p)[0m
+[0;32mI (736) LORA_TX: Byte 64: 0x20 ( )[0m
+[0;32mI (746) LORA_TX: Byte 65: 0x74 (t)[0m
+[0;32mI (746) LORA_TX: Byte 66: 0x72 (r)[0m
+[0;32mI (756) LORA_TX: Byte 67: 0x61 (a)[0m
+[0;32mI (756) LORA_TX: Byte 68: 0x69 (i)[0m
+[0;32mI (756) LORA_TX: Byte 69: 0x20 ( )[0m
+[0;32mI (766) LORA_TX: Byte 70: 0x73 (s)[0m
+[0;32mI (766) LORA_TX: Byte 71: 0xE1 (.)[0m
+[0;32mI (776) LORA_TX: Byte 72: 0xBB (.)[0m
+[0;32mI (776) LORA_TX: Byte 73: 0x91 (.)[0m
+[0;32mI (786) LORA_TX: Byte 74: 0x20 ( )[0m
+[0;32mI (786) LORA_TX: Byte 75: 0x31 (1)[0m
+[0;32mI (786) LORA_TX: Byte 76: 0x20 ( )[0m
+[0;32mI (796) LORA_TX: Byte 77: 0x74 (t)[0m
+[0;32mI (796) LORA_TX: Byte 78: 0x68 (h)[0m
+[0;32mI (806) LORA_TX: Byte 79: 0xE1 (.)[0m
+[0;32mI (806) LORA_TX: Byte 80: 0xBA (.)[0m
+[0;32mI (806) LORA_TX: Byte 81: 0xBF (.)[0m
+[0;32mI (816) LORA_TX: Byte 82: 0x20 ( )[0m
+[0;32mI (816) LORA_TX: Byte 83: 0x67 (g)[0m
+[0;32mI (826) LORA_TX: Byte 84: 0x69 (i)[0m
+[0;32mI (826) LORA_TX: Byte 85: 0xE1 (.)[0m
+[0;32mI (826) LORA_TX: Byte 86: 0xBB (.)[0m
+[0;32mI (836) LORA_TX: Byte 87: 0x9B (.)[0m
+[0;32mI (836) LORA_TX: Byte 88: 0x69 (i)[0m
+[0;32mI (846) LORA_TX: Byte 89: 0x2C (,)[0m
+[0;32mI (846) LORA_TX: Byte 90: 0x20 ( )[0m
+[0;32mI (846) LORA_TX: Byte 91: 0x74 (t)[0m
+[0;32mI (856) LORA_TX: Byte 92: 0xC3 (.)[0m
+[0;32mI (856) LORA_TX: Byte 93: 0xB4 (.)[0m
+[0;32mI (866) LORA_TX: Byte 94: 0x69 (i)[0m
+[0;32mI (866) LORA_TX: Byte 95: 0x20 ( )[0m
+[0;32mI (866) LORA_TX: Byte 96: 0xC4 (.)[0m
+[0;32mI (876) LORA_TX: Byte 97: 0x91 (.)[0m
+[0;32mI (876) LORA_TX: Byte 98: 0x61 (a)[0m
+[0;32mI (886) LORA_TX: Byte 99: 0x6E (n)[0m
+[0;32mI (886) LORA_TX: Byte 100: 0x67 (g)[0m
+[0;32mI (896) LORA_TX: Byte 101: 0x20 ( )[0m
+[0;32mI (896) LORA_TX: Byte 102: 0x68 (h)[0m
+[0;32mI (896) LORA_TX: Byte 103: 0xE1 (.)[0m
+[0;32mI (906) LORA_TX: Byte 104: 0xBB (.)[0m
+[0;32mI (906) LORA_TX: Byte 105: 0x8D (.)[0m
+[0;32mI (916) LORA_TX: Byte 106: 0x63 (c)[0m
+[0;32mI (916) LORA_TX: Byte 107: 0x20 ( )[0m
+[0;32mI (916) LORA_TX: Byte 108: 0x74 (t)[0m
+[0;32mI (926) LORA_TX: Byte 109: 0xE1 (.)[0m
+[0;32mI (926) LORA_TX: Byte 110: 0xBA (.)[0m
+[0;32mI (936) LORA_TX: Byte 111: 0xA1 (.)[0m
+[0;32mI (936) LORA_TX: Byte 112: 0x69 (i)[0m
+[0;32mI (946) LORA_TX: Byte 113: 0x20 ( )[0m
+[0;32mI (946) LORA_TX: Byte 114: 0xC4 (.)[0m
+[0;32mI (946) LORA_TX: Byte 115: 0x90 (.)[0m
+[0;32mI (956) LORA_TX: Byte 116: 0xE1 (.)[0m
+[0;32mI (956) LORA_TX: Byte 117: 0xBA (.)[0m
+[0;32mI (966) LORA_TX: Byte 118: 0xA1 (.)[0m
+[0;32mI (966) LORA_TX: Byte 119: 0x69 (i)[0m
+[0;32mI (966) LORA_TX: Byte 120: 0x20 ( )[0m
+[0;32mI (976) LORA_TX: Byte 121: 0x68 (h)[0m
+[0;32mI (976) LORA_TX: Byte 122: 0xE1 (.)[0m
+[0;32mI (986) LORA_TX: Byte 123: 0xBB (.)[0m
+[0;32mI (986) LORA_TX: Byte 124: 0x8D (.)[0m
+[0;32mI (996) LORA_TX: Byte 125: 0x63 (c)[0m
+[0;32mI (996) LORA_TX: Byte 126: 0x20 ( )[0m
+[0;32mI (996) LORA_TX: Byte 127: 0x43 (C)[0m
+[0;32mI (1006) LORA_TX: Byte 128: 0xC3 (.)[0m
+[0;32mI (1006) LORA_TX: Byte 129: 0xB4 (.)[0m
+[0;32mI (1016) LORA_TX: Byte 130: 0x6E (n)[0m
+[0;32mI (1016) LORA_TX: Byte 131: 0x67 (g)[0m
+[0;32mI (1016) LORA_TX: Byte 132: 0x20 ( )[0m
+[0;32mI (1026) LORA_TX: Byte 133: 0x4E (N)[0m
+[0;32mI (1026) LORA_TX: Byte 134: 0x67 (g)[0m
+[0;32mI (1036) LORA_TX: Byte 135: 0x68 (h)[0m
+[0;32mI (1036) LORA_TX: Byte 136: 0x69 (i)[0m
+[0;32mI (1046) LORA_TX: Byte 137: 0xE1 (.)[0m
+[0;32mI (1046) LORA_TX: Byte 138: 0xBB (.)[0m
+[0;32mI (1046) LORA_TX: Byte 139: 0x87 (.)[0m
+[0;32mI (1056) LORA_TX: Byte 140: 0x70 (p)[0m
+[0;32mI (1056) LORA_TX: Byte 141: 0x20 ( )[0m
+[0;32mI (1066) LORA_TX: Byte 142: 0x54 (T)[0m
+[0;32mI (1066) LORA_TX: Byte 143: 0x68 (h)[0m
+[0;32mI (1076) LORA_TX: Byte 144: 0xC3 (.)[0m
+[0;32mI (1076) LORA_TX: Byte 145: 0xA0 (.)[0m
+[0;32mI (1076) LORA_TX: Byte 146: 0x6E (n)[0m
+[0;32mI (1086) LORA_TX: Byte 147: 0x68 (h)[0m
+[0;32mI (1086) LORA_TX: Byte 148: 0x20 ( )[0m
+[0;32mI (1096) LORA_TX: Byte 149: 0x70 (p)[0m
+[0;32mI (1096) LORA_TX: Byte 150: 0x68 (h)[0m
+[0;32mI (1106) LORA_TX: Byte 151: 0xE1 (.)[0m
+[0;32mI (1106) LORA_TX: Byte 152: 0xBB (.)[0m
+[0;32mI (1106) LORA_TX: Byte 153: 0x91 (.)[0m
+[0;32mI (1116) LORA_TX: Byte 154: 0x20 ( )[0m
+[0;32mI (1116) LORA_TX: Byte 155: 0x48 (H)[0m
+[0;32mI (1126) LORA_TX: Byte 156: 0xE1 (.)[0m
+[0;32mI (1126) LORA_TX: Byte 157: 0xBB (.)[0m
+[0;32mI (1136) LORA_TX: Byte 158: 0x93 (.)[0m
+[0;32mI (1136) LORA_TX: Byte 159: 0x20 ( )[0m
+[0;32mI (1136) LORA_TX: Byte 160: 0x43 (C)[0m
+[0;32mI (1146) LORA_TX: Byte 161: 0x68 (h)[0m
+[0;32mI (1146) LORA_TX: Byte 162: 0xC3 (.)[0m
+[0;32mI (1156) LORA_TX: Byte 163: 0xAD (.)[0m
+[0;32mI (1156) LORA_TX: Byte 164: 0x20 ( )[0m
+[0;32mI (1166) LORA_TX: Byte 165: 0x4D (M)[0m
+[0;32mI (1166) LORA_TX: Byte 166: 0x69 (i)[0m
+[0;32mI (1166) LORA_TX: Byte 167: 0x6E (n)[0m
+[0;32mI (1176) LORA_TX: Byte 168: 0x68 (h)[0m
+[0;32mI (1176) LORA_TX: Byte 169: 0x20 ( )[0m
+[0;32mI (1186) LORA_TX: Byte 170: 0x76 (v)[0m
+[0;32mI (1186) LORA_TX: Byte 171: 0xC3 (.)[0m
+[0;32mI (1196) LORA_TX: Byte 172: 0xA0 (.)[0m
+[0;32mI (1196) LORA_TX: Byte 173: 0x20 ( )[0m
+[0;32mI (1196) LORA_TX: Byte 174: 0x74 (t)[0m
+[0;32mI (1206) LORA_TX: Byte 175: 0xE1 (.)[0m
+[0;32mI (1206) LORA_TX: Byte 176: 0xBA (.)[0m
+[0;32mI (1216) LORA_TX: Byte 177: 0xA5 (.)[0m
+[0;32mI (1216) LORA_TX: Byte 178: 0x74 (t)[0m
+[0;32mI (1216) LORA_TX: Byte 179: 0x20 ( )[0m
+[0;32mI (1226) LORA_TX: Byte 180: 0x6E (n)[0m
+[0;32mI (1226) LORA_TX: Byte 181: 0x68 (h)[0m
+[0;32mI (1236) LORA_TX: Byte 182: 0x69 (i)[0m
+[0;32mI (1236) LORA_TX: Byte 183: 0xC3 (.)[0m
+[0;32mI (1246) LORA_TX: Byte 184: 0xAA (.)[0m
+[0;32mI (1246) LORA_TX: Byte 185: 0x6E (n)[0m
+[0;32mI (1246) LORA_TX: Byte 186: 0x20 ( )[0m
+[0;32mI (1256) LORA_TX: Byte 187: 0x74 (t)[0m
+[0;32mI (1256) LORA_TX: Byte 188: 0xC3 (.)[0m
+[0;32mI (1266) LORA_TX: Byte 189: 0xB4 (.)[0m
+[0;32mI (1266) LORA_TX: Byte 190: 0x69 (i)[0m
+[0;32mI (1276) LORA_TX: Byte 191: 0x20 ( )[0m
+[0;32mI (1276) LORA_TX: Byte 192: 0x76 (v)[0m
+[0;32mI (1276) LORA_TX: Byte 193: 0xE1 (.)[0m
+[0;32mI (1286) LORA_TX: Byte 194: 0xBA (.)[0m
+[0;32mI (1286) LORA_TX: Byte 195: 0xAB (.)[0m
+[0;32mI (1296) LORA_TX: Byte 196: 0x6E (n)[0m
+[0;32mI (1296) LORA_TX: Byte 197: 0x20 ( )[0m
+[0;32mI (1306) LORA_TX: Byte 198: 0x63 (c)[0m
+[0;32mI (1306) LORA_TX: Byte 199: 0xC3 (.)[0m
+[0;32mI (1306) LORA_TX: Byte 200: 0xB2 (.)[0m
+[0;32mI (1316) LORA_TX: Byte 201: 0x6E (n)[0m
+[0;32mI (1316) LORA_TX: Byte 202: 0x20 ( )[0m
+[0;32mI (1326) LORA_TX: Byte 203: 0xE1 (.)[0m
+[0;32mI (1326) LORA_TX: Byte 204: 0xBA (.)[0m
+[0;32mI (1336) LORA_TX: Byte 205: 0xBF (.)[0m
+[0;32mI (1336) LORA_TX: Gửi tới Node 0x02 từ Node 0x1, STT: 0, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (1366) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=0)[0m
+[0;32mI (1386) LORA_TX: Ghi độ dài thanh ghi 0x22: 209[0m
+[0;32mI (1386) LORA_TX: Thanh ghi 0x22 sau khi ghi: 0[0m
+[0;32mI (1386) LORA_TX: Chế độ sau khi gửi: 0x00[0m
+[0;33mW (6386) LORA_TX: Timeout khi chờ TX Done[0m
+[0;32mI (11386) LORA_TX: Gửi tới Node 0x02 từ Node 0x1, STT: 1, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (11396) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=1)[0m
+[0;32mI (11416) LORA_TX: Ghi độ dài thanh ghi 0x22: 209[0m
+[0;32mI (11416) LORA_TX: Thanh ghi 0x22 sau khi ghi: 0[0m
+[0;32mI (11416) LORA_TX: Chế độ sau khi gửi: 0x00[0m
+[0;33mW (16426) LORA_TX: Timeout khi chờ TX Done[0m
+[0;32mI (21426) LORA_TX: Gửi tới Node 0x02 từ Node 0x1, STT: 2, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (21436) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=2)[0m
+[0;32mI (21456) LORA_TX: Ghi độ dài thanh ghi 0x22: 209[0m
+[0;32mI (21456) LORA_TX: Thanh ghi 0x22 sau khi ghi: 0[0m
+[0;32mI (21456) LORA_TX: Chế độ sau khi gửi: 0x00[0m
+[0;33mW (26466) LORA_TX: Timeout khi chờ TX Done[0m
+[0;32mI (31466) LORA_TX: Gửi tới Node 0x02 từ Node 0x1, STT: 3, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (31476) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=3)[0m
+[0;32mI (31496) LORA_TX: Ghi độ dài thanh ghi 0x22: 209[0m
+[0;32mI (31496) LORA_TX: Thanh ghi 0x22 sau khi ghi: 0[0m
+[0;32mI (31496) LORA_TX: Chế độ sau khi gửi: 0x00[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b420h ( 46112) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b448 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d6bc vaddr=40080000 size=0295ch ( 10588) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=165bch ( 91580) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000365e4 vaddr=4008295c size=0aed0h ( 44752) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (229) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2[0m
+[0;32mI (239) cpu_start: Compile time:     Jun 29 2025 17:42:00[0m
+[0;32mI (245) cpu_start: ELF file SHA256:  af8039bf1a8b4b90...[0m
+[0;32mI (251) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (261) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (278) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (346) LORA_TX: Bắt đầu app_main[0m
+[0;32mI (346) LORA_TX: Bắt đầu khởi tạo LoRa[0m
+[0;32mI (466) LORA_TX: Đặt tần số 470 MHz[0m
+[0;32mI (466) LORA_TX: Đặt BW=125 kHz, SF=12, Preamble=32, CRC tắt[0m
+[0;32mI (466) LORA_TX: Hoàn tất khởi tạo LoRa, vào chế độ Standby[0m
+[0;32mI (466) LORA_TX: Chế độ hiện tại: 0x00[0m
+[0;32mI (476) LORA_TX: Độ dài chuỗi gửi: 206 byte[0m
+[0;32mI (476) LORA_TX: Byte 0: 0x58 (X)[0m
+[0;32mI (486) LORA_TX: Byte 1: 0x69 (i)[0m
+[0;32mI (486) LORA_TX: Byte 2: 0x6E (n)[0m
+[0;32mI (496) LORA_TX: Byte 3: 0x20 ( )[0m
+[0;32mI (496) LORA_TX: Byte 4: 0x63 (c)[0m
+[0;32mI (496) LORA_TX: Byte 5: 0x68 (h)[0m
+[0;32mI (506) LORA_TX: Byte 6: 0xC3 (.)[0m
+[0;32mI (506) LORA_TX: Byte 7: 0xA0 (.)[0m
+[0;32mI (516) LORA_TX: Byte 8: 0x6F (o)[0m
+[0;32mI (516) LORA_TX: Byte 9: 0x20 ( )[0m
+[0;32mI (516) LORA_TX: Byte 10: 0x6D (m)[0m
+[0;32mI (526) LORA_TX: Byte 11: 0xE1 (.)[0m
+[0;32mI (526) LORA_TX: Byte 12: 0xBB (.)[0m
+[0;32mI (536) LORA_TX: Byte 13: 0x8D (.)[0m
+[0;32mI (536) LORA_TX: Byte 14: 0x69 (i)[0m
+[0;32mI (536) LORA_TX: Byte 15: 0x20 ( )[0m
+[0;32mI (546) LORA_TX: Byte 16: 0x6E (n)[0m
+[0;32mI (546) LORA_TX: Byte 17: 0x67 (g)[0m
+[0;32mI (556) LORA_TX: Byte 18: 0xC6 (.)[0m
+[0;32mI (556) LORA_TX: Byte 19: 0xB0 (.)[0m
+[0;32mI (556) LORA_TX: Byte 20: 0xE1 (.)[0m
+[0;32mI (566) LORA_TX: Byte 21: 0xBB (.)[0m
+[0;32mI (566) LORA_TX: Byte 22: 0x9D (.)[0m
+[0;32mI (576) LORA_TX: Byte 23: 0x69 (i)[0m
+[0;32mI (576) LORA_TX: Byte 24: 0x2C (,)[0m
+[0;32mI (586) LORA_TX: Byte 25: 0x20 ( )[0m
+[0;32mI (586) LORA_TX: Byte 26: 0x74 (t)[0m
+[0;32mI (586) LORA_TX: Byte 27: 0xC3 (.)[0m
+[0;32mI (596) LORA_TX: Byte 28: 0xB4 (.)[0m
+[0;32mI (596) LORA_TX: Byte 29: 0x69 (i)[0m
+[0;32mI (606) LORA_TX: Byte 30: 0x20 ( )[0m
+[0;32mI (606) LORA_TX: Byte 31: 0x6C (l)[0m
+[0;32mI (606) LORA_TX: Byte 32: 0xC3 (.)[0m
+[0;32mI (616) LORA_TX: Byte 33: 0xA0 (.)[0m
+[0;32mI (616) LORA_TX: Byte 34: 0x20 ( )[0m
+[0;32mI (626) LORA_TX: Byte 35: 0x4E (N)[0m
+[0;32mI (626) LORA_TX: Byte 36: 0x67 (g)[0m
+[0;32mI (626) LORA_TX: Byte 37: 0x75 (u)[0m
+[0;32mI (636) LORA_TX: Byte 38: 0x79 (y)[0m
+[0;32mI (636) LORA_TX: Byte 39: 0xE1 (.)[0m
+[0;32mI (646) LORA_TX: Byte 40: 0xBB (.)[0m
+[0;32mI (646) LORA_TX: Byte 41: 0x85 (.)[0m
+[0;32mI (646) LORA_TX: Byte 42: 0x6E (n)[0m
+[0;32mI (656) LORA_TX: Byte 43: 0x20 ( )[0m
+[0;32mI (656) LORA_TX: Byte 44: 0x4E (N)[0m
+[0;32mI (666) LORA_TX: Byte 45: 0x67 (g)[0m
+[0;32mI (666) LORA_TX: Byte 46: 0xE1 (.)[0m
+[0;32mI (666) LORA_TX: Byte 47: 0xBB (.)[0m
+[0;32mI (676) LORA_TX: Byte 48: 0x8D (.)[0m
+[0;32mI (676) LORA_TX: Byte 49: 0x63 (c)[0m
+[0;32mI (686) LORA_TX: Byte 50: 0x20 ( )[0m
+[0;32mI (686) LORA_TX: Byte 51: 0xC4 (.)[0m
+[0;32mI (696) LORA_TX: Byte 52: 0x90 (.)[0m
+[0;32mI (696) LORA_TX: Byte 53: 0xC3 (.)[0m
+[0;32mI (696) LORA_TX: Byte 54: 0xAD (.)[0m
+[0;32mI (706) LORA_TX: Byte 55: 0x6E (n)[0m
+[0;32mI (706) LORA_TX: Byte 56: 0x68 (h)[0m
+[0;32mI (716) LORA_TX: Byte 57: 0x20 ( )[0m
+[0;32mI (716) LORA_TX: Byte 58: 0xC4 (.)[0m
+[0;32mI (716) LORA_TX: Byte 59: 0x91 (.)[0m
+[0;32mI (726) LORA_TX: Byte 60: 0xE1 (.)[0m
+[0;32mI (726) LORA_TX: Byte 61: 0xBA (.)[0m
+[0;32mI (736) LORA_TX: Byte 62: 0xB9 (.)[0m
+[0;32mI (736) LORA_TX: Byte 63: 0x70 (p)[0m
+[0;32mI (736) LORA_TX: Byte 64: 0x20 ( )[0m
+[0;32mI (746) LORA_TX: Byte 65: 0x74 (t)[0m
+[0;32mI (746) LORA_TX: Byte 66: 0x72 (r)[0m
+[0;32mI (756) LORA_TX: Byte 67: 0x61 (a)[0m
+[0;32mI (756) LORA_TX: Byte 68: 0x69 (i)[0m
+[0;32mI (756) LORA_TX: Byte 69: 0x20 ( )[0m
+[0;32mI (766) LORA_TX: Byte 70: 0x73 (s)[0m
+[0;32mI (766) LORA_TX: Byte 71: 0xE1 (.)[0m
+[0;32mI (776) LORA_TX: Byte 72: 0xBB (.)[0m
+[0;32mI (776) LORA_TX: Byte 73: 0x91 (.)[0m
+[0;32mI (786) LORA_TX: Byte 74: 0x20 ( )[0m
+[0;32mI (786) LORA_TX: Byte 75: 0x31 (1)[0m
+[0;32mI (786) LORA_TX: Byte 76: 0x20 ( )[0m
+[0;32mI (796) LORA_TX: Byte 77: 0x74 (t)[0m
+[0;32mI (796) LORA_TX: Byte 78: 0x68 (h)[0m
+[0;32mI (806) LORA_TX: Byte 79: 0xE1 (.)[0m
+[0;32mI (806) LORA_TX: Byte 80: 0xBA (.)[0m
+[0;32mI (806) LORA_TX: Byte 81: 0xBF (.)[0m
+[0;32mI (816) LORA_TX: Byte 82: 0x20 ( )[0m
+[0;32mI (816) LORA_TX: Byte 83: 0x67 (g)[0m
+[0;32mI (826) LORA_TX: Byte 84: 0x69 (i)[0m
+[0;32mI (826) LORA_TX: Byte 85: 0xE1 (.)[0m
+[0;32mI (826) LORA_TX: Byte 86: 0xBB (.)[0m
+[0;32mI (836) LORA_TX: Byte 87: 0x9B (.)[0m
+[0;32mI (836) LORA_TX: Byte 88: 0x69 (i)[0m
+[0;32mI (846) LORA_TX: Byte 89: 0x2C (,)[0m
+[0;32mI (846) LORA_TX: Byte 90: 0x20 ( )[0m
+[0;32mI (846) LORA_TX: Byte 91: 0x74 (t)[0m
+[0;32mI (856) LORA_TX: Byte 92: 0xC3 (.)[0m
+[0;32mI (856) LORA_TX: Byte 93: 0xB4 (.)[0m
+[0;32mI (866) LORA_TX: Byte 94: 0x69 (i)[0m
+[0;32mI (866) LORA_TX: Byte 95: 0x20 ( )[0m
+[0;32mI (866) LORA_TX: Byte 96: 0xC4 (.)[0m
+[0;32mI (876) LORA_TX: Byte 97: 0x91 (.)[0m
+[0;32mI (876) LORA_TX: Byte 98: 0x61 (a)[0m
+[0;32mI (886) LORA_TX: Byte 99: 0x6E (n)[0m
+[0;32mI (886) LORA_TX: Byte 100: 0x67 (g)[0m
+[0;32mI (896) LORA_TX: Byte 101: 0x20 ( )[0m
+[0;32mI (896) LORA_TX: Byte 102: 0x68 (h)[0m
+[0;32mI (896) LORA_TX: Byte 103: 0xE1 (.)[0m
+[0;32mI (906) LORA_TX: Byte 104: 0xBB (.)[0m
+[0;32mI (906) LORA_TX: Byte 105: 0x8D (.)[0m
+[0;32mI (916) LORA_TX: Byte 106: 0x63 (c)[0m
+[0;32mI (916) LORA_TX: Byte 107: 0x20 ( )[0m
+[0;32mI (916) LORA_TX: Byte 108: 0x74 (t)[0m
+[0;32mI (926) LORA_TX: Byte 109: 0xE1 (.)[0m
+[0;32mI (926) LORA_TX: Byte 110: 0xBA (.)[0m
+[0;32mI (936) LORA_TX: Byte 111: 0xA1 (.)[0m
+[0;32mI (936) LORA_TX: Byte 112: 0x69 (i)[0m
+[0;32mI (946) LORA_TX: Byte 113: 0x20 ( )[0m
+[0;32mI (946) LORA_TX: Byte 114: 0xC4 (.)[0m
+[0;32mI (946) LORA_TX: Byte 115: 0x90 (.)[0m
+[0;32mI (956) LORA_TX: Byte 116: 0xE1 (.)[0m
+[0;32mI (956) LORA_TX: Byte 117: 0xBA (.)[0m
+[0;32mI (966) LORA_TX: Byte 118: 0xA1 (.)[0m
+[0;32mI (966) LORA_TX: Byte 119: 0x69 (i)[0m
+[0;32mI (966) LORA_TX: Byte 120: 0x20 ( )[0m
+[0;32mI (976) LORA_TX: Byte 121: 0x68 (h)[0m
+[0;32mI (976) LORA_TX: Byte 122: 0xE1 (.)[0m
+[0;32mI (986) LORA_TX: Byte 123: 0xBB (.)[0m
+[0;32mI (986) LORA_TX: Byte 124: 0x8D (.)[0m
+[0;32mI (996) LORA_TX: Byte 125: 0x63 (c)[0m
+[0;32mI (996) LORA_TX: Byte 126: 0x20 ( )[0m
+[0;32mI (996) LORA_TX: Byte 127: 0x43 (C)[0m
+[0;32mI (1006) LORA_TX: Byte 128: 0xC3 (.)[0m
+[0;32mI (1006) LORA_TX: Byte 129: 0xB4 (.)[0m
+[0;32mI (1016) LORA_TX: Byte 130: 0x6E (n)[0m
+[0;32mI (1016) LORA_TX: Byte 131: 0x67 (g)[0m
+[0;32mI (1016) LORA_TX: Byte 132: 0x20 ( )[0m
+[0;32mI (1026) LORA_TX: Byte 133: 0x4E (N)[0m
+[0;32mI (1026) LORA_TX: Byte 134: 0x67 (g)[0m
+[0;32mI (1036) LORA_TX: Byte 135: 0x68 (h)[0m
+[0;32mI (1036) LORA_TX: Byte 136: 0x69 (i)[0m
+[0;32mI (1046) LORA_TX: Byte 137: 0xE1 (.)[0m
+[0;32mI (1046) LORA_TX: Byte 138: 0xBB (.)[0m
+[0;32mI (1046) LORA_TX: Byte 139: 0x87 (.)[0m
+[0;32mI (1056) LORA_TX: Byte 140: 0x70 (p)[0m
+[0;32mI (1056) LORA_TX: Byte 141: 0x20 ( )[0m
+[0;32mI (1066) LORA_TX: Byte 142: 0x54 (T)[0m
+[0;32mI (1066) LORA_TX: Byte 143: 0x68 (h)[0m
+[0;32mI (1076) LORA_TX: Byte 144: 0xC3 (.)[0m
+[0;32mI (1076) LORA_TX: Byte 145: 0xA0 (.)[0m
+[0;32mI (1076) LORA_TX: Byte 146: 0x6E (n)[0m
+[0;32mI (1086) LORA_TX: Byte 147: 0x68 (h)[0m
+[0;32mI (1086) LORA_TX: Byte 148: 0x20 ( )[0m
+[0;32mI (1096) LORA_TX: Byte 149: 0x70 (p)[0m
+[0;32mI (1096) LORA_TX: Byte 150: 0x68 (h)[0m
+[0;32mI (1106) LORA_TX: Byte 151: 0xE1 (.)[0m
+[0;32mI (1106) LORA_TX: Byte 152: 0xBB (.)[0m
+[0;32mI (1106) LORA_TX: Byte 153: 0x91 (.)[0m
+[0;32mI (1116) LORA_TX: Byte 154: 0x20 ( )[0m
+[0;32mI (1116) LORA_TX: Byte 155: 0x48 (H)[0m
+[0;32mI (1126) LORA_TX: Byte 156: 0xE1 (.)[0m
+[0;32mI (1126) LORA_TX: Byte 157: 0xBB (.)[0m
+[0;32mI (1136) LORA_TX: Byte 158: 0x93 (.)[0m
+[0;32mI (1136) LORA_TX: Byte 159: 0x20 ( )[0m
+[0;32mI (1136) LORA_TX: Byte 160: 0x43 (C)[0m
+[0;32mI (1146) LORA_TX: Byte 161: 0x68 (h)[0m
+[0;32mI (1146) LORA_TX: Byte 162: 0xC3 (.)[0m
+[0;32mI (1156) LORA_TX: Byte 163: 0xAD (.)[0m
+[0;32mI (1156) LORA_TX: Byte 164: 0x20 ( )[0m
+[0;32mI (1166) LORA_TX: Byte 165: 0x4D (M)[0m
+[0;32mI (1166) LORA_TX: Byte 166: 0x69 (i)[0m
+[0;32mI (1166) LORA_TX: Byte 167: 0x6E (n)[0m
+[0;32mI (1176) LORA_TX: Byte 168: 0x68 (h)[0m
+[0;32mI (1176) LORA_TX: Byte 169: 0x20 ( )[0m
+[0;32mI (1186) LORA_TX: Byte 170: 0x76 (v)[0m
+[0;32mI (1186) LORA_TX: Byte 171: 0xC3 (.)[0m
+[0;32mI (1196) LORA_TX: Byte 172: 0xA0 (.)[0m
+[0;32mI (1196) LORA_TX: Byte 173: 0x20 ( )[0m
+[0;32mI (1196) LORA_TX: Byte 174: 0x74 (t)[0m
+[0;32mI (1206) LORA_TX: Byte 175: 0xE1 (.)[0m
+[0;32mI (1206) LORA_TX: Byte 176: 0xBA (.)[0m
+[0;32mI (1216) LORA_TX: Byte 177: 0xA5 (.)[0m
+[0;32mI (1216) LORA_TX: Byte 178: 0x74 (t)[0m
+[0;32mI (1216) LORA_TX: Byte 179: 0x20 ( )[0m
+[0;32mI (1226) LORA_TX: Byte 180: 0x6E (n)[0m
+[0;32mI (1226) LORA_TX: Byte 181: 0x68 (h)[0m
+[0;32mI (1236) LORA_TX: Byte 182: 0x69 (i)[0m
+[0;32mI (1236) LORA_TX: Byte 183: 0xC3 (.)[0m
+[0;32mI (1246) LORA_TX: Byte 184: 0xAA (.)[0m
+[0;32mI (1246) LORA_TX: Byte 185: 0x6E (n)[0m
+[0;32mI (1246) LORA_TX: Byte 186: 0x20 ( )[0m
+[0;32mI (1256) LORA_TX: Byte 187: 0x74 (t)[0m
+[0;32mI (1256) LORA_TX: Byte 188: 0xC3 (.)[0m
+[0;32mI (1266) LORA_TX: Byte 189: 0xB4 (.)[0m
+[0;32mI (1266) LORA_TX: Byte 190: 0x69 (i)[0m
+[0;32mI (1276) LORA_TX: Byte 191: 0x20 ( )[0m
+[0;32mI (1276) LORA_TX: Byte 192: 0x76 (v)[0m
+[0;32mI (1276) LORA_TX: Byte 193: 0xE1 (.)[0m
+[0;32mI (1286) LORA_TX: Byte 194: 0xBA (.)[0m
+[0;32mI (1286) LORA_TX: Byte 195: 0xAB (.)[0m
+[0;32mI (1296) LORA_TX: Byte 196: 0x6E (n)[0m
+[0;32mI (1296) LORA_TX: Byte 197: 0x20 ( )[0m
+[0;32mI (1306) LORA_TX: Byte 198: 0x63 (c)[0m
+[0;32mI (1306) LORA_TX: Byte 199: 0xC3 (.)[0m
+[0;32mI (1306) LORA_TX: Byte 200: 0xB2 (.)[0m
+[0;32mI (1316) LORA_TX: Byte 201: 0x6E (n)[0m
+[0;32mI (1316) LORA_TX: Byte 202: 0x20 ( )[0m
+[0;32mI (1326) LORA_TX: Byte 203: 0xE1 (.)[0m
+[0;32mI (1326) LORA_TX: Byte 204: 0xBA (.)[0m
+[0;32mI (1336) LORA_TX: Byte 205: 0xBF (.)[0m
+[0;32mI (1336) LORA_TX: Gửi tới Node 0x02 từ Node 0x1, STT: 0, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (1366) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=0)[0m
+[0;32mI (1386) LORA_TX: Ghi độ dài thanh ghi 0x22: 209[0m
+[0;32mI (1386) LORA_TX: Thanh ghi 0x22 sau khi ghi: 0[0m
+[0;32mI (1386) LORA_TX: Chế độ sau khi gửi: 0x00[0m
+[0;33mW (6386) LORA_TX: Timeout khi chờ TX Done[0m
+[0;32mI (11386) LORA_TX: Gửi tới Node 0x02 từ Node 0x1, STT: 1, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (11396) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=1)[0m
+[0;32mI (11416) LORA_TX: Ghi độ dài thanh ghi 0x22: 209[0m
+[0;32mI (11416) LORA_TX: Thanh ghi 0x22 sau khi ghi: 0[0m
+[0;32mI (11416) LORA_TX: Chế độ sau khi gửi: 0x00[0m
+[0;33mW (16426) LORA_TX: Timeout khi chờ TX Done[0m
+[0;32mI (21426) LORA_TX: Gửi tới Node 0x02 từ Node 0x1, STT: 2, Dữ liệu: Xin chào mọi người, tôi là Nguyễn Ngọc Đính đẹp trai số 1 thế giới, tôi đang học tại Đại học Công Nghiệp Thành phố Hồ Chí Minh và tất nhiên tôi vẫn còn ế[0m
+[0;32mI (21436) LORA_TX: Gửi gói tin, độ dài: 209 (dest=0x02, src=0x01, STT=2)[0m
+[0;32mI (21456) LORA_TX: Ghi độ dài thanh ghi 0x22: 209[0m
+[0;32mI (21456) LORA_TX: Thanh ghi 0x22 sau khi ghi: 0[0m
+[0;32mI (21456) LORA_TX: Chế độ sau khi gửi: 0x00[0m

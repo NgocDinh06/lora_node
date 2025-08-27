@@ -1,0 +1,644 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae50h ( 44624) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001ae78 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d0ec vaddr=40080000 size=02f2ch ( 12076) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=163c8h ( 91080) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000363f0 vaddr=40082f2c size=0a900h ( 43264) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (233) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (238) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (244) cpu_start: ELF file SHA256:  bf21dbcac9431f98...[0m
+[0;32mI (250) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (335) app_start: Starting scheduler on CPU1[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (455) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 0, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (455) main_task: Returned from app_main()[0m
+[0;32mI (3895) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (3995) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 1, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (7435) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (7535) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 2, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (10975) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (11075) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 3, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (14515) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (14615) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 4, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (18055) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (18155) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 5, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (21595) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (21695) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 6, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (25135) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (25235) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 7, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (28675) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (28775) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 8, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (32215) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (32315) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 9, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (35755) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (35855) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 10, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (39295) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (39395) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 11, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (42585) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (42685) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 12, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (46125) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (46225) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 13, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (49655) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (49755) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 14, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (53185) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (53285) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 15, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (56715) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (56815) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 16, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (60245) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (60345) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 17, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (63775) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (63875) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 18, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (67305) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (67405) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 19, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (70835) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (70935) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 20, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (74365) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (74465) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 21, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (77895) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (77995) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 22, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (81425) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (81525) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 23, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (84955) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (85055) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 24, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (88485) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (88585) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 25, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (92015) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (92115) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 26, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (95545) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (95645) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 27, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (99075) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (99175) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 28, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (102605) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (102705) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 29, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (106135) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (106235) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 30, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (109665) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (109765) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 31, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (113195) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (113295) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 32, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (116725) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (116825) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 33, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (120255) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (120355) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 34, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (123785) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (123885) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 35, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (127315) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (127415) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 36, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (130845) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (130945) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 37, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (134375) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (134475) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 38, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (137905) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (138005) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 39, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (141435) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (141535) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 40, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (144965) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (145065) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 41, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (148495) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (148595) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 42, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (152025) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (152125) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 43, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (155555) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (155655) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 44, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (159085) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (159185) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 45, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (162615) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (162715) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 46, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (166145) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (166245) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 47, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (169675) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (169775) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 48, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (173205) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (173305) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 49, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (176735) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (176835) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 50, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (180265) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (180365) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 51, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (183795) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (183895) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 52, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (187325) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (187425) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 53, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (190855) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (190955) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 54, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (194385) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (194485) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 55, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (197915) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (198015) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 56, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (201445) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (201545) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 57, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (204975) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (205075) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 58, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (208505) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (208605) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 59, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (212035) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (212135) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 60, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (215565) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (215665) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 61, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (219095) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (219195) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 62, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (222625) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (222725) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 63, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (226155) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (226255) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 64, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (229685) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (229785) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 65, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (233215) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (233315) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 66, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (236745) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (236845) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 67, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (240275) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (240375) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 68, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (243805) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (243905) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 69, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (247335) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (247435) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 70, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (250865) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (250965) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 71, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (254395) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (254495) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 72, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (257925) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (258025) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 73, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (261455) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (261555) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 74, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (264985) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (265085) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 75, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (268515) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (268615) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 76, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (272045) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (272145) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 77, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (275575) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (275675) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 78, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (279105) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (279205) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 79, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (282635) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (282735) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 80, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (286165) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (286265) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 81, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (289695) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (289795) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 82, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (293225) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (293325) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 83, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (296755) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (296855) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 84, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (300285) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (300385) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 85, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (303815) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (303915) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 86, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (307345) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (307445) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 87, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (310875) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (310975) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 88, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (314405) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (314505) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 89, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (317935) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (318035) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 90, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (321465) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (321565) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 91, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (324995) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (325095) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 92, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (328525) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (328625) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 93, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (332055) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (332155) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 94, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (335585) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (335685) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 95, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (338785) LORA_TRANSCEIVER: Invalid length: 255[0m
+[0;32mI (338885) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 96, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;33mW (340925) LORA_TRANSCEIVER: Invalid length: 255[0m
+[0;32mI (341025) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 97, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (344045) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (344145) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 98, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae50h ( 44624) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001ae78 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d0ec vaddr=40080000 size=02f2ch ( 12076) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=163c8h ( 91080) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000363f0 vaddr=40082f2c size=0a900h ( 43264) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (233) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (238) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (244) cpu_start: ELF file SHA256:  bf21dbcac9431f98...[0m
+[0;32mI (250) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (335) app_start: Starting scheduler on CPU1[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (455) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 0, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (455) main_task: Returned from app_main()[0m
+[0;32mI (25415) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (25515) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 1, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (28545) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (28645) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 2, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (32095) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (32195) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 3, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (35785) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (35885) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 4, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (39455) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (39555) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 5, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (43545) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (43645) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 6, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (200355) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (200455) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 7, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (203895) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (203995) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 8, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (207435) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (207535) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 9, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (210975) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (211075) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 10, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (214515) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (214615) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 11, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (218055) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (218155) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 12, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (221595) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (221695) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 13, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (225135) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (225235) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 14, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (228675) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (228775) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 15, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (232215) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (232315) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 16, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (235755) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (235855) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 17, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (239295) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (239395) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 18, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (242835) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (242935) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 19, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (246375) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (246475) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 20, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (249915) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (250015) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 21, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (253455) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (253555) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 22, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (256995) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (257095) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 23, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (260535) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (260635) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 24, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (264075) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (264175) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 25, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (267615) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (267715) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 26, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (271155) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (271255) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 27, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (274695) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (274795) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 28, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (278235) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (278335) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 29, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (281775) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (281875) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 30, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (285315) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (285415) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 31, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (288855) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (288955) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 32, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (292395) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (292495) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 33, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (295935) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (296035) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 34, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (299475) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (299575) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 35, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (303015) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (303115) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 36, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (306555) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (306655) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 37, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (310095) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (310195) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 38, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (313635) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (313735) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 39, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (317175) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (317275) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 40, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (320715) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (320815) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 41, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (324255) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (324355) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 42, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (327795) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (327895) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 43, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (331335) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (331435) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 44, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (334875) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (334975) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 45, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (338415) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (338515) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 46, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (341955) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (342055) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 47, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (345495) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (345595) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 48, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (349035) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (349135) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 49, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (352575) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (352675) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 50, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (356115) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (356215) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 51, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (359655) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (359755) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 52, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (363195) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (363295) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 53, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (366735) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (366835) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 54, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (370275) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (370375) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 55, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (373815) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (373915) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 56, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (377355) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (377455) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 57, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (380895) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (380995) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 58, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (384435) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (384535) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 59, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (387975) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (388075) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 60, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (391515) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (391615) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 61, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (395055) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (395155) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 62, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (398595) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (398695) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 63, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (402135) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (402235) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 64, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (405675) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (405775) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 65, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (409215) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (409315) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 66, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (412755) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (412855) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 67, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (416295) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (416395) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 68, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (419835) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (419935) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 69, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (423375) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (423475) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 70, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (426915) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (427015) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 71, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (430455) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (430555) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 72, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (433995) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (434095) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 73, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (437535) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (437635) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 74, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (441075) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (441175) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 75, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (444615) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (444715) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 76, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (448155) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (448255) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 77, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (451695) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (451795) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 78, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (455235) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (455335) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 79, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (458775) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (458875) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 80, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (462315) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (462415) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 81, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (465855) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (465955) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 82, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (469395) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (469495) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 83, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (472935) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (473035) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 84, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (476475) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (476575) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 85, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (480015) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (480115) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 86, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (483555) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (483655) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 87, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (487095) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (487195) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 88, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (490635) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (490735) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 89, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (494175) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (494275) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 90, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (497715) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (497815) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 91, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (501255) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (501355) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 92, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (504795) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (504895) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 93, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (508335) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (508435) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 94, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (511875) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (511975) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 95, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (515415) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (515515) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 96, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (518955) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (519055) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 97, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (522495) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (522595) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 98, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (526035) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (526135) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 99, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (529575) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (529675) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 100, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (533115) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (533215) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 101, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (536655) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (536755) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 102, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (540195) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (540295) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 103, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (543735) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (543835) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 104, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (547275) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (547375) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 105, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (550815) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (550915) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 106, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (554355) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (554455) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 107, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (557895) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (557995) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 108, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (561435) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (561535) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 109, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (564975) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (565075) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 110, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (568515) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (568615) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 111, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (572055) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (572155) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 112, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (575595) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (575695) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 113, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (579135) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (579235) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 114, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (582675) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (582775) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 115, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (586215) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (586315) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 116, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (589755) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (589855) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 117, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (593295) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (593395) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 118, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (596835) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (596935) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 119, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (600375) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (600475) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 120, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (603915) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (604015) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 121, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (607455) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (607555) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 122, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (610995) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (611095) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 123, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (614535) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (614635) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 124, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (618075) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (618175) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 125, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (621615) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (621715) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 126, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (625155) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (625255) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 127, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (628695) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (628795) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 128, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (632235) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (632335) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 129, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (635775) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (635875) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 130, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (639315) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (639415) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 131, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (642855) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (642955) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 132, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (646395) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (646495) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 133, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (649935) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (650035) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 134, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (653475) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (653575) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 135, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (657015) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (657115) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 136, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (660555) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (660655) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 137, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (664095) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (664195) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 138, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (667635) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (667735) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 139, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (671175) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (671275) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 140, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (674715) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (674815) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 141, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (678255) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (678355) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 142, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (681795) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (681895) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 143, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (685335) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (685435) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 144, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (688875) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (688975) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 145, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (692415) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (692515) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 146, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (695955) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (696055) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 147, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (699495) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (699595) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 148, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (703035) LORA_TRANSCEIVER: Receive timeout[0m
+[0;32mI (703135) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 149, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (706575) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (706675) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 150, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (710105) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (710205) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 151, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (713635) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (713735) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 152, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (717165) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (717265) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 153, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (720695) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (720795) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 154, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (724225) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (724325) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 155, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (727755) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (727855) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 156, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (731285) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (731385) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 157, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (734815) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (734915) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 158, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (738345) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (738445) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 159, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (741875) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (741975) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 160, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m
+[0;32mI (745405) LORA_TRANSCEIVER: Packet not for this node (Dest: 0x02, My Addr: 0x01)[0m
+[0;32mI (745505) LORA_TRANSCEIVER: Sending to Node 0x02, Seq: 161, Data: Bèo dạt về đâu, hàng nối hàng; Hiu hiu gió thổi, chiều tà tà. Trôi mãi.[0m

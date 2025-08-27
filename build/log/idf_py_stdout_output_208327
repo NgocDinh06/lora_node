@@ -1,0 +1,150 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b190h ( 45456) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b1b8 vaddr=3ffb0000 size=0226ch (  8812) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d42c vaddr=40080000 size=02bech ( 11244) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=166bch ( 91836) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000366e4 vaddr=40082bec size=0ac40h ( 44096) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x400811b4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (223) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (234) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (239) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (245) cpu_start: ELF file SHA256:  1c20276265cdaacb...[0m
+[0;32mI (251) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (257) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (261) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (278) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB2B20 len 0002D4E0 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 4008D82C len 000127D4 (73 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (10456) LORA_NODE1: Khởi tạo LoRa thành công: 470 MHz, SF=10, BW=125 kHz, CR=4/5[0m
+[0;32mI (11786) LORA_NODE1: Gửi đến Node 0x02, STT: 0, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;33mW (16786) LORA_NODE1: Timeout khi chờ nhận dữ liệu[0m
+[0;32mI (22316) LORA_NODE1: Gửi đến Node 0x02, STT: 1, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (22736) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;32mI (23736) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (23736) LORA_NODE1: Nhận từ Node 0x02, STT: 0, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (28076) LORA_NODE1: Gửi đến Node 0x02, STT: 2, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (28496) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;32mI (29496) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (29496) LORA_NODE1: Nhận từ Node 0x02, STT: 1, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (33836) LORA_NODE1: Gửi đến Node 0x02, STT: 3, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (34256) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;32mI (35256) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (35256) LORA_NODE1: Nhận từ Node 0x02, STT: 2, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (39596) LORA_NODE1: Gửi đến Node 0x02, STT: 4, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (40016) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;32mI (41016) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (41016) LORA_NODE1: Nhận từ Node 0x02, STT: 3, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (45356) LORA_NODE1: Gửi đến Node 0x02, STT: 5, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (45776) LORA_NODE1: RSSI: -62 dBm, SNR: 13 dB[0m
+[0;32mI (46776) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (46776) LORA_NODE1: Nhận từ Node 0x02, STT: 4, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (51116) LORA_NODE1: Gửi đến Node 0x02, STT: 6, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (51536) LORA_NODE1: RSSI: -62 dBm, SNR: 13 dB[0m
+[0;32mI (52536) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (52536) LORA_NODE1: Nhận từ Node 0x02, STT: 5, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (56876) LORA_NODE1: Gửi đến Node 0x02, STT: 7, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (57296) LORA_NODE1: RSSI: -61 dBm, SNR: 14 dB[0m
+[0;32mI (58296) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (58296) LORA_NODE1: Nhận từ Node 0x02, STT: 6, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (62636) LORA_NODE1: Gửi đến Node 0x02, STT: 8, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (63056) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;32mI (64056) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (64056) LORA_NODE1: Nhận từ Node 0x02, STT: 7, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (68396) LORA_NODE1: Gửi đến Node 0x02, STT: 9, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (68816) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;32mI (69816) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (69816) LORA_NODE1: Nhận từ Node 0x02, STT: 8, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (74156) LORA_NODE1: Gửi đến Node 0x02, STT: 10, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (74576) LORA_NODE1: RSSI: -62 dBm, SNR: 12 dB[0m
+[0;32mI (75576) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (75576) LORA_NODE1: Nhận từ Node 0x02, STT: 9, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (79916) LORA_NODE1: Gửi đến Node 0x02, STT: 11, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (80336) LORA_NODE1: RSSI: -64 dBm, SNR: 11 dB[0m
+[0;32mI (81336) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (81336) LORA_NODE1: Nhận từ Node 0x02, STT: 10, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (85676) LORA_NODE1: Gửi đến Node 0x02, STT: 12, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (86096) LORA_NODE1: RSSI: -62 dBm, SNR: 12 dB[0m
+[0;32mI (87096) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (87096) LORA_NODE1: Nhận từ Node 0x02, STT: 11, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (91436) LORA_NODE1: Gửi đến Node 0x02, STT: 13, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (91856) LORA_NODE1: RSSI: -63 dBm, SNR: 10 dB[0m
+[0;32mI (92856) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (92856) LORA_NODE1: Nhận từ Node 0x02, STT: 12, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (97196) LORA_NODE1: Gửi đến Node 0x02, STT: 14, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (97616) LORA_NODE1: RSSI: -62 dBm, SNR: 13 dB[0m
+[0;32mI (98616) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (98616) LORA_NODE1: Nhận từ Node 0x02, STT: 13, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (102956) LORA_NODE1: Gửi đến Node 0x02, STT: 15, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (103376) LORA_NODE1: RSSI: -62 dBm, SNR: 12 dB[0m
+[0;32mI (104376) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (104376) LORA_NODE1: Nhận từ Node 0x02, STT: 14, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (108716) LORA_NODE1: Gửi đến Node 0x02, STT: 16, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (109136) LORA_NODE1: RSSI: -62 dBm, SNR: 12 dB[0m
+[0;32mI (110136) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (110136) LORA_NODE1: Nhận từ Node 0x02, STT: 15, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (114476) LORA_NODE1: Gửi đến Node 0x02, STT: 17, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (114896) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;32mI (115896) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (115896) LORA_NODE1: Nhận từ Node 0x02, STT: 16, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (120236) LORA_NODE1: Gửi đến Node 0x02, STT: 18, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (120656) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
+[0;32mI (121656) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (121656) LORA_NODE1: Nhận từ Node 0x02, STT: 17, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (125996) LORA_NODE1: Gửi đến Node 0x02, STT: 19, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (126416) LORA_NODE1: RSSI: -62 dBm, SNR: 12 dB[0m
+[0;32mI (127416) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (127416) LORA_NODE1: Nhận từ Node 0x02, STT: 18, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (131756) LORA_NODE1: Gửi đến Node 0x02, STT: 20, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (132176) LORA_NODE1: RSSI: -63 dBm, SNR: 10 dB[0m
+[0;32mI (133176) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (133176) LORA_NODE1: Nhận từ Node 0x02, STT: 19, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (137516) LORA_NODE1: Gửi đến Node 0x02, STT: 21, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (137936) LORA_NODE1: RSSI: -63 dBm, SNR: 11 dB[0m
+[0;32mI (138936) LORA_NODE1: LED GPIO2 chớp 1 lần do nhận thành công[0m
+[0;32mI (138936) LORA_NODE1: Nhận từ Node 0x02, STT: 20, Dữ liệu: Phản hồi từ RX: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Dữ liệu bảo toàn: Không[0m
+[0;32mI (143276) LORA_NODE1: Gửi đến Node 0x02, STT: 22, Dữ liệu: Bèo dạt mây trôi, chốn xa xôi. Em ơi, anh vẫn đợi..., Checksum: 0x5C[0m
+[0;32mI (143696) LORA_NODE1: RSSI: -62 dBm, SNR: 14 dB[0m
