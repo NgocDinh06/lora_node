@@ -1,0 +1,205 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2025 17:42:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0cb98h ( 52120) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001cbc0 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001eed0 vaddr=40080000 size=01148h (  4424) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b958h (112984) map[0m
+[0;32mI (178) esp_image: segment 4: paddr=0003b980 vaddr=40081148 size=0d948h ( 55624) load[0m
+[0;32mI (209) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (209) boot: Disabling RNG early entropy source...[0m
+[0;32mI (220) cpu_start: Multicore app[0m
+[0;32mI (221) cpu_start: Pro cpu up.[0m
+[0;32mI (221) cpu_start: Starting app cpu, entry point is 0x400812d0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (239) cpu_start: Pro cpu start user code[0m
+[0;32mI (239) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (239) cpu_start: Application information:[0m
+[0;32mI (243) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (249) cpu_start: App version:      v5.1.2-dirty[0m
+[0;32mI (254) cpu_start: Compile time:     Jul 16 2025 16:52:21[0m
+[0;32mI (261) cpu_start: ELF file SHA256:  5053eb8d6ba37a3f...[0m
+[0;32mI (267) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (272) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (277) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (281) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (286) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (294) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFB2C10 len 0002D3F0 (180 KiB): DRAM[0m
+[0;32mI (306) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (319) heap_init: At 4008EA90 len 00011570 (69 KiB): IRAM[0m
+[0;32mI (326) spi_flash: detected chip: generic[0m
+[0;32mI (329) spi_flash: flash io: dio[0m
+[0;33mW (333) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (347) app_start: Starting scheduler on CPU0[0m
+[0;32mI (351) app_start: Starting scheduler on CPU1[0m
+[0;32mI (351) main_task: Started on CPU0[0m
+[0;32mI (361) main_task: Calling app_main()[0m
+[0;32mI (361) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (371) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (491) NODE: LoRa init OK[0m
+[0;32mI (491) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (491) NODE: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (491) NODE: Send REGISTER (fix=0, lat=0.000000 lon=0.000000)[0m
+[0;32mI (991) main_task: Returned from app_main()[0m
+[0;33mW (20991) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (40991) NODE: Send REGISTER (fix=1, lat=10.828661 lon=106.692006)[0m
+[0;33mW (61481) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (81481) NODE: Send REGISTER (fix=1, lat=10.828612 lon=106.692069)[0m
+[0;33mW (101971) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (121971) NODE: Send REGISTER (fix=1, lat=10.828605 lon=106.692063)[0m
+[0;33mW (142461) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (162461) NODE: Send REGISTER (fix=1, lat=10.828602 lon=106.692066)[0m
+[0;33mW (182951) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (202951) NODE: Send REGISTER (fix=1, lat=10.828605 lon=106.692079)[0m
+[0;33mW (223441) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (243441) NODE: Send REGISTER (fix=1, lat=10.828649 lon=106.692089)[0m
+[0;33mW (263931) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (283931) NODE: Send REGISTER (fix=1, lat=10.828632 lon=106.692088)[0m
+[0;33mW (304421) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (324421) NODE: Send REGISTER (fix=1, lat=10.828630 lon=106.692086)[0m
+[0;33mW (344911) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (364911) NODE: Send REGISTER (fix=1, lat=10.828662 lon=106.692072)[0m
+[0;33mW (385401) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (405401) NODE: Send REGISTER (fix=1, lat=10.828643 lon=106.692064)[0m
+[0;33mW (425891) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (445891) NODE: Send REGISTER (fix=1, lat=10.828588 lon=106.692014)[0m
+[0;33mW (466381) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (486381) NODE: Send REGISTER (fix=1, lat=10.828572 lon=106.692044)[0m
+[0;33mW (506871) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (526871) NODE: Send REGISTER (fix=1, lat=10.828571 lon=106.692039)[0m
+[0;33mW (547361) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (567361) NODE: Send REGISTER (fix=1, lat=10.828594 lon=106.692031)[0m
+[0;33mW (587851) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (607851) NODE: Send REGISTER (fix=1, lat=10.828591 lon=106.692031)[0m
+[0;33mW (628341) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (648341) NODE: Send REGISTER (fix=1, lat=10.828584 lon=106.692022)[0m
+[0;33mW (668831) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (688831) NODE: Send REGISTER (fix=1, lat=10.828588 lon=106.692020)[0m
+[0;33mW (709321) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (729321) NODE: Send REGISTER (fix=1, lat=10.828592 lon=106.692009)[0m
+[0;33mW (749811) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (769811) NODE: Send REGISTER (fix=1, lat=10.828597 lon=106.692030)[0m
+[0;33mW (790301) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (810301) NODE: Send REGISTER (fix=1, lat=10.828604 lon=106.692058)[0m
+[0;33mW (830791) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (850791) NODE: Send REGISTER (fix=1, lat=10.828611 lon=106.692057)[0m
+[0;33mW (871281) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (891281) NODE: Send REGISTER (fix=1, lat=10.828627 lon=106.692047)[0m
+[0;33mW (911771) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (931771) NODE: Send REGISTER (fix=1, lat=10.828638 lon=106.692049)[0m
+[0;33mW (952261) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (972261) NODE: Send REGISTER (fix=1, lat=10.828647 lon=106.692048)[0m
+[0;33mW (992751) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1012751) NODE: Send REGISTER (fix=1, lat=10.828632 lon=106.692059)[0m
+[0;33mW (1033241) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1053241) NODE: Send REGISTER (fix=1, lat=10.828639 lon=106.692067)[0m
+[0;33mW (1073731) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1093731) NODE: Send REGISTER (fix=1, lat=10.828649 lon=106.692062)[0m
+[0;33mW (1114221) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1134221) NODE: Send REGISTER (fix=1, lat=10.828643 lon=106.692068)[0m
+[0;33mW (1154711) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1174711) NODE: Send REGISTER (fix=1, lat=10.828631 lon=106.692066)[0m
+[0;33mW (1195201) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1215201) NODE: Send REGISTER (fix=1, lat=10.828621 lon=106.692087)[0m
+[0;33mW (1235691) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1255691) NODE: Send REGISTER (fix=1, lat=10.828581 lon=106.692126)[0m
+[0;33mW (1276181) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1296181) NODE: Send REGISTER (fix=1, lat=10.828602 lon=106.692116)[0m
+[0;33mW (1316671) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1336671) NODE: Send REGISTER (fix=1, lat=10.828582 lon=106.692147)[0m
+[0;33mW (1357161) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1377161) NODE: Send REGISTER (fix=1, lat=10.828559 lon=106.692164)[0m
+[0;33mW (1397651) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1417651) NODE: Send REGISTER (fix=1, lat=10.828552 lon=106.692153)[0m
+[0;32mI (1418861) NODE: ACK_REG received, isAssigned=0[0m
+[0;32mI (1418861) NODE: Send REGISTER (fix=1, lat=10.828552 lon=106.692153)[0m
+[0;33mW (1439361) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1459361) NODE: Send REGISTER (fix=1, lat=10.828570 lon=106.692129)[0m
+[0;32mI (1471931) NODE: ACK_REG received, isAssigned=0[0m
+[0;32mI (1471931) NODE: Send REGISTER (fix=1, lat=10.828578 lon=106.692124)[0m
+[0;33mW (1492431) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1512431) NODE: Send REGISTER (fix=1, lat=10.828585 lon=106.692103)[0m
+[0;32mI (1516241) NODE: ACK_REG received, isAssigned=0[0m
+[0;32mI (1516241) NODE: Send REGISTER (fix=1, lat=10.828583 lon=106.692104)[0m
+[0;33mW (1536741) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1556741) NODE: Send REGISTER (fix=1, lat=10.828540 lon=106.692137)[0m
+[0;32mI (1558971) NODE: ACK_REG received, isAssigned=0[0m
+[0;32mI (1558971) NODE: Send REGISTER (fix=1, lat=10.828540 lon=106.692135)[0m
+[0;33mW (1579461) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1599461) NODE: Send REGISTER (fix=1, lat=10.828556 lon=106.692099)[0m
+[0;32mI (1600391) NODE: ACK_REG received, isAssigned=0[0m
+[0;32mI (1600391) NODE: Send REGISTER (fix=1, lat=10.828556 lon=106.692099)[0m
+[0;33mW (1620881) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1640881) NODE: Send REGISTER (fix=1, lat=10.828569 lon=106.692090)[0m
+[0;32mI (1646271) NODE: ACK_REG received, isAssigned=0[0m
+[0;32mI (1646271) NODE: Send REGISTER (fix=1, lat=10.828565 lon=106.692094)[0m
+[0;33mW (1666771) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1686771) NODE: Send REGISTER (fix=1, lat=10.828565 lon=106.692104)[0m
+[0;32mI (1688251) NODE: ACK_REG received, isAssigned=0[0m
+[0;32mI (1688251) NODE: Send REGISTER (fix=1, lat=10.828566 lon=106.692105)[0m
+[0;33mW (1708751) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1728751) NODE: Send REGISTER (fix=1, lat=10.828594 lon=106.692071)[0m
+[0;32mI (1729851) NODE: ACK_REG received, isAssigned=0[0m
+[0;32mI (1729851) NODE: Send REGISTER (fix=1, lat=10.828595 lon=106.692069)[0m
+[0;33mW (1750351) NODE: No/invalid ACK, retry in 20s[0m
+[0;32mI (1770351) NODE: Send REGISTER (fix=1, lat=10.828610 lon=106.692044)[0m
+[0;32mI (1771401) NODE: ACK_REG received, isAssigned=1[0m
+[0;32mI (1777191) NODE: CONTROL cmd=1[0m
+[0;32mI (1777731) NODE: REPORT sent (cmd=1, fix=1, lat=10.828611, lon=106.692041)[0m
+[0;32mI (1783931) NODE: CONTROL cmd=0[0m
+[0;32mI (1784471) NODE: REPORT sent (cmd=0, fix=1, lat=10.828607, lon=106.692041)[0m
+[0;32mI (1789551) NODE: CONTROL cmd=1[0m
+[0;32mI (1790091) NODE: REPORT sent (cmd=1, fix=1, lat=10.828606, lon=106.692041)[0m
+[0;32mI (1795141) NODE: CONTROL cmd=0[0m
+[0;32mI (1795671) NODE: REPORT sent (cmd=0, fix=1, lat=10.828610, lon=106.692037)[0m
+[0;32mI (1875031) NODE: CONTROL cmd=0[0m
+[0;32mI (1875561) NODE: REPORT sent (cmd=0, fix=1, lat=10.828599, lon=106.692025)[0m
+[0;32mI (1880571) NODE: CONTROL cmd=1[0m
+[0;32mI (1881111) NODE: REPORT sent (cmd=1, fix=1, lat=10.828592, lon=106.692015)[0m
+[0;32mI (1947521) NODE: CONTROL cmd=0[0m
+[0;32mI (1948051) NODE: REPORT sent (cmd=0, fix=1, lat=10.828579, lon=106.692012)[0m
+[0;32mI (1956141) NODE: CONTROL cmd=1[0m
+[0;32mI (1956681) NODE: REPORT sent (cmd=1, fix=1, lat=10.828571, lon=106.692017)[0m
+[0;32mI (1961861) NODE: CONTROL cmd=0[0m
+[0;32mI (1962401) NODE: REPORT sent (cmd=0, fix=1, lat=10.828567, lon=106.692017)[0m
+[0;32mI (1997211) NODE: CONTROL cmd=1[0m
+[0;32mI (1997741) NODE: REPORT sent (cmd=1, fix=1, lat=10.828590, lon=106.692024)[0m
+[0;32mI (2004981) NODE: CONTROL cmd=0[0m
+[0;32mI (2005521) NODE: REPORT sent (cmd=0, fix=1, lat=10.828595, lon=106.692025)[0m
+[0;32mI (2012321) NODE: CONTROL cmd=1[0m
+[0;32mI (2012861) NODE: REPORT sent (cmd=1, fix=1, lat=10.828599, lon=106.692028)[0m
+[0;32mI (2117461) NODE: CONTROL cmd=1[0m
+[0;32mI (2117991) NODE: REPORT sent (cmd=1, fix=1, lat=10.828562, lon=106.692051)[0m
+[0;32mI (2135441) NODE: CONTROL cmd=0[0m
+[0;32mI (2135971) NODE: REPORT sent (cmd=0, fix=1, lat=10.828557, lon=106.692050)[0m
+[0;32mI (2168171) NODE: CONTROL cmd=1[0m
+[0;32mI (2168701) NODE: REPORT sent (cmd=1, fix=1, lat=10.828557, lon=106.692039)[0m
+[0;32mI (2173831) NODE: CONTROL cmd=0[0m
+[0;32mI (2174371) NODE: REPORT sent (cmd=0, fix=1, lat=10.828560, lon=106.692040)[0m
+[0;32mI (2274371) NODE: CONTROL cmd=1[0m
+[0;32mI (2274911) NODE: REPORT sent (cmd=1, fix=1, lat=10.828584, lon=106.692023)[0m

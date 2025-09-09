@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "bootloader",
-    "project_version":    "v5.1.2",
+    "project_version":    "v5.1.2-1-g80b364ac72-dirty",
     "project_path":       "/home/thefee/esp-idf/components/bootloader/subproject",
     "idf_path":           "/home/thefee/esp-idf",
     "build_dir":          "/home/thefee/esp-idf/esp32-http-relay/build/bootloader",
@@ -11,7 +11,7 @@
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
     "build_type":         "flash_app",
-    "git_revision":       "v5.1.2",
+    "git_revision":       "v5.1.2-1-g80b364ac72-dirty",
     "target":             "esp32",
     "rev":                "0",
     "min_rev":            "0",

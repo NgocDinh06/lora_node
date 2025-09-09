@@ -1,0 +1,352 @@
+ InputEn: 0| OutputEn: 1| OpenDrain: 0| Pull�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7100
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-1-g80b364ac72-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep  9 2025 10:47:52[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ce88h ( 52872) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001ceb0 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0001f1c0 vaddr=40080000 size=00e58h (  3672) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1baf8h (113400) map[0m
+[0;32mI (180) esp_image: segment 4: paddr=0003bb20 vaddr=40080e58 size=0e310h ( 58128) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (224) cpu_start: Pro cpu up.[0m
+[0;32mI (224) cpu_start: Starting app cpu, entry point is 0x40081348[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (242) cpu_start: Pro cpu start user code[0m
+[0;32mI (242) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (242) cpu_start: Application information:[0m
+[0;32mI (247) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (253) cpu_start: App version:      efc76e5-dirty[0m
+[0;32mI (258) cpu_start: Compile time:     Sep  9 2025 10:48:09[0m
+[0;32mI (264) cpu_start: ELF file SHA256:  55b4c9e8a250a83b...[0m
+[0;32mI (270) cpu_start: ESP-IDF:          v5.1.2-1-g80b364ac72-dirty[0m
+[0;32mI (277) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (281) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (286) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (291) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (298) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (304) heap_init: At 3FFB2D50 len 0002D2B0 (180 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (317) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (323) heap_init: At 4008F168 len 00010E98 (67 KiB): IRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (352) app_start: Starting scheduler on CPU0[0m
+[0;32mI (356) app_start: Starting scheduler on CPU1[0m
+[0;32mI (356) main_task: Started on CPU0[0m
+[0;32mI (366) main_task: Calling app_main()[0m
+[0;32mI (366) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (376) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (496) NODE: LoRa init OK[0m
+[0;32mI (496) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (496) NODE: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (496) main_task: Returned from app_main()[0m
+[0;32mI (30496) NODE: Send REGISTER (fix=1, lat=10.828598 lon=106.692030)[0m
+[0;33mW (50986) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (60986) NODE: Send REGISTER (fix=1, lat=10.828612 lon=106.692041)[0m
+[0;33mW (81476) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (91476) NODE: Send REGISTER (fix=1, lat=10.828611 lon=106.692047)[0m
+[0;33mW (111966) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (121966) NODE: Send REGISTER (fix=1, lat=10.828558 lon=106.692080)[0m
+[0;33mW (142456) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (152456) NODE: Send REGISTER (fix=1, lat=10.828567 lon=106.692074)[0m
+[0;33mW (172946) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (182946) NODE: Send REGISTER (fix=1, lat=10.828575 lon=106.692067)[0m
+[0;33mW (203436) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (213436) NODE: Send REGISTER (fix=1, lat=10.828526 lon=106.692056)[0m
+[0;33mW (233926) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (243926) NODE: Send REGISTER (fix=1, lat=10.828559 lon=106.692076)[0m
+[0;33mW (264416) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (274416) NODE: Send REGISTER (fix=1, lat=10.828563 lon=106.692083)[0m
+[0;33mW (294906) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (304906) NODE: Send REGISTER (fix=1, lat=10.828591 lon=106.692049)[0m
+[0;33mW (325396) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (335396) NODE: Send REGISTER (fix=1, lat=10.828549 lon=106.692058)[0m
+[0;33mW (355886) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (365886) NODE: Send REGISTER (fix=1, lat=10.828549 lon=106.692064)[0m
+[0;33mW (386376) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (396376) NODE: Send REGISTER (fix=1, lat=10.828576 lon=106.692048)[0m
+[0;33mW (416866) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (426866) NODE: Send REGISTER (fix=1, lat=10.828583 lon=106.692041)[0m
+[0;33mW (447356) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (457356) NODE: Send REGISTER (fix=1, lat=10.828547 lon=106.692047)[0m
+[0;33mW (477846) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (487846) NODE: Send REGISTER (fix=1, lat=10.828577 lon=106.692016)[0m
+[0;33mW (508336) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (518336) NODE: Send REGISTER (fix=1, lat=10.828572 lon=106.692017)[0m
+[0;33mW (538826) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (548826) NODE: Send REGISTER (fix=1, lat=10.828586 lon=106.692012)[0m
+[0;33mW (569316) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (579316) NODE: Send REGISTER (fix=1, lat=10.828583 lon=106.692011)[0m
+[0;33mW (599806) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (609806) NODE: Send REGISTER (fix=1, lat=10.828589 lon=106.691991)[0m
+[0;33mW (630296) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (640296) NODE: Send REGISTER (fix=1, lat=10.828592 lon=106.691997)[0m
+[0;33mW (660786) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (670786) NODE: Send REGISTER (fix=1, lat=10.828598 lon=106.691999)[0m
+[0;33mW (691276) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (701276) NODE: Send REGISTER (fix=1, lat=10.828596 lon=106.692016)[0m
+[0;33mW (721766) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (731766) NODE: Send REGISTER (fix=1, lat=10.828590 lon=106.692032)[0m
+[0;33mW (752256) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (762256) NODE: Send REGISTER (fix=1, lat=10.828599 lon=106.692038)[0m
+[0;33mW (782746) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (792746) NODE: Send REGISTER (fix=1, lat=10.828582 lon=106.692032)[0m
+[0;33mW (813236) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (823236) NODE: Send REGISTER (fix=1, lat=10.828581 lon=106.692025)[0m
+[0;33mW (843726) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (853726) NODE: Send REGISTER (fix=1, lat=10.828576 lon=106.692054)[0m
+[0;33mW (874216) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (884216) NODE: Send REGISTER (fix=1, lat=10.828568 lon=106.692052)[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7100
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-1-g80b364ac72-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep  9 2025 10:47:52[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF
+d[0;32mI (
+9ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7100
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-1-g80b364ac72-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep  9 2025 10:47:52[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ce88h ( 52872) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001ceb0 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0001f1c0 vaddr=40080000 size=00e58h (  3672) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1baf8h (113400) map[0m
+[0;32mI (180) esp_image: segment 4: paddr=0003bb20 vaddr=40080e58 size=0e310h ( 58128) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (224) cpu_start: Pro cpu up.[0m
+[0;32mI (224) cpu_start: Starting app cpu, entry point is 0x40081348[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (242) cpu_start: Pro cpu start user code[0m
+[0;32mI (242) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (242) cpu_start: Application information:[0m
+[0;32mI (247) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (253) cpu_start: App version:      efc76e5-dirty[0m
+[0;32mI (258) cpu_start: Compile time:     Sep  9 2025 10:48:09[0m
+[0;32mI (264) cpu_start: ELF file SHA256:  55b4c9e8a250a83b...[0m
+[0;32mI (270) cpu_start: ESP-IDF:          v5.1.2-1-g80b364ac72-dirty[0m
+[0;32mI (277) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (281) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (286) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (291) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (298) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (304) heap_init: At 3FFB2D50 len 0002D2B0 (180 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (317) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (323) heap_init: At 4008F168 len 00010E98 (67 KiB): IRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (352) app_start: Starting scheduler on CPU0[0m
+[0;32mI (356) app_start: Starting scheduler on CPU1[0m
+[0;32mI (356) main_task: Started on CPU0[0m
+[0;32mI (366) main_task: Calling app_main()[0m
+[0;32mI (366) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (376) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (496) NODE: LoRa init OK[0m
+[0;32mI (496) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (496) NODE: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (496) main_task: Returned from app_main()[0m
+[0;32mI (30496) NODE: Send REGISTER (fix=1, lat=10.828577 lon=106.692037)[0m
+[0;33mW (50986) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (60986) NODE: Send REGISTER (fix=1, lat=10.828558 lon=106.692053)[0m
+[0;33mW (81476) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (91476) NODE: Send REGISTER (fix=1, lat=10.828583 lon=106.692051)[0m
+[0;33mW (111966) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (121966) NODE: Send REGISTER (fix=1, lat=10.828586 lon=106.692056)[0m
+[0;33mW (142456) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (152456) NODE: Send REGISTER (fix=1, lat=10.828569 lon=106.692050)[0m
+[0;33mW (172946) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (182946) NODE: Send REGISTER (fix=1, lat=10.828566 lon=106.692053)[0m
+[0;33mW (203436) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (213436) NODE: Send REGISTER (fix=1, lat=10.828583 lon=106.692054)[0m
+[0;33mW (233926) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (243926) NODE: Send REGISTER (fix=1, lat=10.828594 lon=106.692053)[0m
+[0;33mW (264416) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (274416) NODE: Send REGISTER (fix=1, lat=10.828594 lon=106.692056)[0m
+[0;33mW (294906) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (304906) NODE: Send REGISTER (fix=1, lat=10.828602 lon=106.692035)[0m
+[0;33mW (325396) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (335396) NODE: Send REGISTER (fix=1, lat=10.828604 lon=106.692049)[0m
+[0;33mW (355886) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (365886) NODE: Send REGISTER (fix=1, lat=10.828565 lon=106.692071)[0m
+[0;33mW (386376) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (396376) NODE: Send REGISTER (fix=1, lat=10.828577 lon=106.692046)[0m
+[0;33mW (416866) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (426866) NODE: Send REGISTER (fix=1, lat=10.828565 lon=106.692045)[0m
+[0;33mW (447356) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (457356) NODE: Send REGISTER (fix=1, lat=10.828535 lon=106.692065)[0m
+[0;33mW (477846) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (487846) NODE: Send REGISTER (fix=1, lat=10.828554 lon=106.692065)[0m
+[0;33mW (508336) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (518336) NODE: Send REGISTER (fix=1, lat=10.828497 lon=106.692122)[0m
+[0;33mW (538826) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (548826) NODE: Send REGISTER (fix=1, lat=10.828545 lon=106.692127)[0m
+[0;33mW (569316) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (579316) NODE: Send REGISTER (fix=1, lat=10.828556 lon=106.692108)[0m
+[0;33mW (599806) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (609806) NODE: Send REGISTER (fix=1, lat=10.828586 lon=106.692080)[0m
+[0;33mW (630296) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (640296) NODE: Send REGISTER (fix=1, lat=10.828611 lon=106.692048)[0m
+[0;33mW (660786) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (670786) NODE: Send REGISTER (fix=1, lat=10.828634 lon=106.692003)[0m
+[0;33mW (691276) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (701276) NODE: Send REGISTER (fix=1, lat=10.828649 lon=106.691969)[0m
+[0;33mW (721766) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (731766) NODE: Send REGISTER (fix=1, lat=10.828673 lon=106.691956)[0m
+[0;33mW (752256) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (762256) NODE: Send REGISTER (fix=1, lat=10.828683 lon=106.691939)[0m
+[0;33mW (782746) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (792746) NODE: Send REGISTER (fix=1, lat=10.828649 lon=106.691981)[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7100
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-1-g80b364ac72-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep  9 2025 10:47:52[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ce88h ( 52872) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001ceb0 vaddr=3ffb0000 size=02308h (  8968) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0001f1c0 vaddr=40080000 size=00e58h (  3672) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1baf8h (113400) map[0m
+[0;32mI (180) esp_image: segment 4: paddr=0003bb20 vaddr=40080e58 size=0e310h ( 58128) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (224) cpu_start: Pro cpu up.[0m
+[0;32mI (224) cpu_start: Starting app cpu, entry point is 0x40081348[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (242) cpu_start: Pro cpu start user code[0m
+[0;32mI (242) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (242) cpu_start: Application information:[0m
+[0;32mI (247) cpu_start: Project name:     esp32-http-relay[0m
+[0;32mI (253) cpu_start: App version:      efc76e5-dirty[0m
+[0;32mI (258) cpu_start: Compile time:     Sep  9 2025 10:48:09[0m
+[0;32mI (264) cpu_start: ELF file SHA256:  55b4c9e8a250a83b...[0m
+[0;32mI (270) cpu_start: ESP-IDF:          v5.1.2-1-g80b364ac72-dirty[0m
+[0;32mI (277) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (281) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (286) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (291) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (298) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (304) heap_init: At 3FFB2D50 len 0002D2B0 (180 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (317) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (323) heap_init: At 4008F168 len 00010E98 (67 KiB): IRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (352) app_start: Starting scheduler on CPU0[0m
+[0;32mI (356) app_start: Starting scheduler on CPU1[0m
+[0;32mI (356) main_task: Started on CPU0[0m
+[0;32mI (366) main_task: Calling app_main()[0m
+[0;32mI (366) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (376) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (496) NODE: LoRa init OK[0m
+[0;32mI (496) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (496) NODE: Node MAC: FC:B4:67:78:BE:CC[0m
+[0;32mI (496) main_task: Returned from app_main()[0m
+[0;32mI (30496) NODE: Send REGISTER (fix=1, lat=10.828612 lon=106.692043)[0m
+[0;33mW (50986) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (60986) NODE: Send REGISTER (fix=1, lat=10.828591 lon=106.692094)[0m
+[0;33mW (81476) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (91476) NODE: Send REGISTER (fix=1, lat=10.828566 lon=106.692130)[0m
+[0;33mW (111966) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (121966) NODE: Send REGISTER (fix=1, lat=10.828574 lon=106.692117)[0m
+[0;32mI (137806) NODE: ACK_REG received, isAssigned=0[0m
+[0;32mI (152806) NODE: Send REGISTER (fix=1, lat=10.828550 lon=106.692119)[0m
+[0;33mW (173296) NODE: No/invalid ACK for REGISTER, retry in 30s[0m
+[0;32mI (183296) NODE: Send REGISTER (fix=1, lat=10.828589 lon=106.692133)[0m
+[0;32mI (191786) NODE: ACK_REG received, isAssigned=1[0m
+[0;33mW (300496) NODE: Watchdog timer: No activity for 60s, resetting assigned[0m
+[0;32mI (301786) NODE: Send REGISTER (fix=1, lat=10.828599 lon=106.692108)[0m
+[0;32mI (302746) NODE: ACK_REG received, isAssigned=1[0m
+[0;33mW (420496) NODE: Watchdog timer: No activity for 60s, resetting assigned[0m
+[0;32mI (422746) NODE: Send REGISTER (fix=1, lat=10.828612 lon=106.692043)[0m
+[0;32mI (423806) NODE: ACK_REG received, isAssigned=1[0m
